@@ -1,5 +1,22 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "../../public/assets/css/header.css";
+import "../../public/assets/css/bootstrap.min.css";
+import "../../public/assets/css/elements.css";
+import "../../public/assets/css/fontawesome.min.css";
+import "../../public/assets/css/jquery.datetimepicker.min.css";
+import "../../public/assets/css/main.css";
+import "../../public/assets/css/nice-select.css";
+import "../../public/assets/css/venobox.min.css";
+import "../../public/assets/css/nice-select.css";
+import "../../public/assets/css/blog.css";
+import "../../public/assets/css/jquery.datetimepicker.min.css";
+import "../../public/assets/css/keyframe-animation.css";
+import "../../public/assets/css/line-awesome.min.css";
+import Header from "../components/ui/header/header";
+import Banner from "../components/common/banner/banner";
+import Footer from "../components/ui/footer/footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +28,52 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Script src="assets/js/vendor/jquary-3.6.0.min.js"></Script>
+      <Script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></Script>
+      <Script src="assets/js/vendor/jquery.ajaxchimp.min.js"></Script>
+      <Script src="assets/js/vendor/bootstrap.min.js"></Script>
+      <Script src="assets/js/vendor/popper.min.js"></Script>
+      <Script src="assets/js/vendor/swiper.min.js"></Script>
+      <Script src="assets/js/vendor/jquery.datetimepicker.full.js"></Script>
+      <Script src="assets/js/vendor/jquery.nice-select.min.js"></Script>
+      <Script src="assets/js/vendor/venobox.min.js"></Script>
+      <Script src="assets/js/vendor/smooth-scroll.js"></Script>
+      <Script src="assets/js/vendor/wow.min.js"></Script>
+      <Script src="assets/js/book-ride.js"></Script>
+      <Script src="assets/js/main.js"></Script>
+      <div>
+        <body className={inter.className}>
+          <Header />
+          {children}
+          <Footer />
+          <div id="popup-sidebox" className="popup-sidebox">
+            <div className="sidebox-content">
+              <div className="site-logo">
+                <a href="index.html">
+                  <img src="/assets/img/logo-light.png" alt="logo" />
+                </a>
+              </div>
+              <p>
+                Everything your taxi business needs is already here! Ridek, a
+                theme made for taxi service companies.
+              </p>
+              <ul className="sidebox-list">
+                <li className="call">
+                  <span>Call for ride:</span>5267-214-392
+                </li>
+                <li>
+                  <span>You can find us at:</span>Halk Street New York, USA -
+                  2386
+                </li>
+                <li>
+                  <span>Email now:</span>Info.ridek@mail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="sidebox-overlay"></div>
+        </body>
+      </div>
     </html>
   );
 }
