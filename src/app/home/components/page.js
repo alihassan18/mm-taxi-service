@@ -1,11 +1,142 @@
 "use client";
 import React from "react";
 // import OurTaxi from "@/components/common/ourtaxi/page";
-
 const HomePage = () => {
   return (
     <React.Fragment>
       <div>
+        <div class="slider-section">
+          <div class="main-slider-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-img">
+                  <img
+                    src="/assets/img/slider-bg.jpg"
+                    alt="img"
+                    class="kenburns"
+                    style={{ animationDuration: "12000ms" }}
+                  />
+                </div>
+                <div class="slider-content-wrap d-flex align-items-center text-left">
+                  <div class="container">
+                    <div class="slider-content text-center pb-60">
+                      <div class="slider-caption medium">
+                        <div class="inner-layer">
+                          <div
+                            data-animation="fade-in-bottom"
+                            data-delay="0.3s"
+                          >
+                            Travel securely with us!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-caption big">
+                        <div class="inner-layer">
+                          <div
+                            data-animation="fade-in-bottom"
+                            data-delay="0.5s"
+                          >
+                            Book your taxi from <br />
+                            anywhare today!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-caption small">
+                        <div class="inner-layer">
+                          <div
+                            data-animation="fade-in-bottom"
+                            data-delay="0.7s"
+                            data-duration="1s"
+                          >
+                            Everything your taxi business needs is already here!
+                            <br />
+                            Ridek made for taxi service companies!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-btn">
+                        <a
+                          href="book-taxi.html"
+                          class="default-btn"
+                          data-animation="fade-in-bottom"
+                          data-delay="0.9s"
+                        >
+                          Book Now
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-img">
+                  <img
+                    src="/assets/img/slider-bg.jpg"
+                    alt="img"
+                    class="kenburns"
+                    style={{ animationDuration: "12000ms" }}
+                  />
+                </div>
+                <div class="slider-content-wrap d-flex align-items-center text-left">
+                  <div class="container">
+                    <div class="slider-content text-center pb-60">
+                      <div class="slider-caption medium">
+                        <div class="inner-layer">
+                          <div
+                            data-animation="fade-in-bottom"
+                            data-delay="0.3s"
+                          >
+                            Travel securely with us!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-caption big">
+                        <div class="inner-layer">
+                          <div
+                            data-animation="fade-in-bottom"
+                            data-delay="0.5s"
+                          >
+                            Book your taxi from <br />
+                            anywhare today!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-caption small">
+                        <div class="inner-layer">
+                          <div
+                            data-animation="fade-in-bottom"
+                            data-delay="0.7s"
+                            data-duration="1s"
+                          >
+                            Everything your taxi business needs is already here!
+                            <br />
+                            Ridek made for taxi service companies!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-btn">
+                        <a
+                          href="book-taxi.html"
+                          class="default-btn"
+                          data-animation="fade-in-bottom"
+                          data-delay="0.9s"
+                        >
+                          Book Now
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-nav swiper-next">
+              <i class="las la-long-arrow-alt-right"></i>
+            </div>
+            <div class="swiper-nav swiper-prev">
+              <i class="las la-long-arrow-alt-left"></i>
+            </div>
+          </div>
+        </div>
         {/* <div className="site-preloader">
           <div className="car">
             <div className="strike"></div>
@@ -241,7 +372,7 @@ const HomePage = () => {
                           <div className="service-shape" />
                         </div>
                         <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
+                          <img src="/assets/img/service-2.jpg" alt="car" />
                         </div>
                       </div>
                       <div className="service-content">
@@ -631,7 +762,7 @@ const HomePage = () => {
                     technologies.
                   </p>
                 </div>
-                {/* <div class="swiper-outside testi-pagination">
+                <div class="swiper-outside testi-pagination">
                   <div class="testimonial-carousel">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
@@ -715,7 +846,7 @@ const HomePage = () => {
                     </div>
                   </div>
                   <div class="swiper-pagination"></div>
-                </div> */}
+                </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-wrap">

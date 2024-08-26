@@ -1,8 +1,9 @@
 import React from "react";
-
+import Banner from "../../../components/common/banner/banner";
 function page() {
   return (
     <div>
+      <Banner title="BLOG DETAILS!" />
       <section class="blog-section blog-page bg-grey padding">
         <div class="container">
           <div class="row">

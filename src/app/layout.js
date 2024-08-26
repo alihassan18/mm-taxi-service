@@ -13,6 +13,7 @@ import "../../public/assets/css/blog.css";
 import "../../public/assets/css/jquery.datetimepicker.min.css";
 import "../../public/assets/css/keyframe-animation.css";
 import "../../public/assets/css/line-awesome.min.css";
+import "../../public/assets/css/swiper.min.css";
 import Header from "../components/ui/header/header";
 import Banner from "../components/common/banner/banner";
 import Footer from "../components/ui/footer/footer";
@@ -28,19 +29,34 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Script src="assets/js/vendor/jquary-3.6.0.min.js"></Script>
-      <Script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></Script>
-      <Script src="assets/js/vendor/jquery.ajaxchimp.min.js"></Script>
-      <Script src="assets/js/vendor/bootstrap.min.js"></Script>
-      <Script src="assets/js/vendor/popper.min.js"></Script>
-      <Script src="assets/js/vendor/swiper.min.js"></Script>
-      <Script src="assets/js/vendor/jquery.datetimepicker.full.js"></Script>
-      <Script src="assets/js/vendor/jquery.nice-select.min.js"></Script>
-      <Script src="assets/js/vendor/venobox.min.js"></Script>
-      <Script src="assets/js/vendor/smooth-scroll.js"></Script>
-      <Script src="assets/js/vendor/wow.min.js"></Script>
-      <Script src="assets/js/book-ride.js"></Script>
-      <Script src="assets/js/main.js"></Script>
+      <Script
+        src="assets/js/vendor/jquary-3.6.0.min.js"
+        // strategy="lazyOnload"
+        strategy="beforeInteractive"
+      ></Script>
+      <Script
+        src="/assets/js/vendor/bootstrap.min.js"
+        // strategy="lazyOnload"
+        strategy="afterInteractive"
+      ></Script>
+      <Script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></Script>
+      <Script
+        src="/assets/js/vendor/jquery.ajaxchimp.min.js"
+        strategy="afterInteractive"
+      ></Script>
+      <Script src="/assets/js/vendor/popper.min.js"></Script>
+      <Script src="/assets/js/vendor/swiper.min.js"></Script>
+      <Script
+        src="/assets/js/vendor/jquery.datetimepicker.full.js"
+        strategy="afterInteractive"
+      ></Script>
+      <Script src="/assets/js/vendor/jquery.nice-select.min.js"></Script>
+      <Script src="/assets/js/vendor/venobox.min.js"></Script>
+      <Script src="/assets/js/vendor/smooth-scroll.js"></Script>
+      <Script src="/assets/js/vendor/wow.min.js"></Script>
+      <Script src="/assets/js/book-ride.js"></Script>
+      <Script src="/assets/js/main.js"></Script>
+
       <div>
         <body className={inter.className}>
           <Header />
