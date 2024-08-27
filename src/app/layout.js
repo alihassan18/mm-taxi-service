@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "../../public/assets/css/header.css";
+import "../../public/assets/css/animate.min.css";
 import "../../public/assets/css/bootstrap.min.css";
 import "../../public/assets/css/elements.css";
 import "../../public/assets/css/fontawesome.min.css";
@@ -8,16 +9,33 @@ import "../../public/assets/css/jquery.datetimepicker.min.css";
 import "../../public/assets/css/main.css";
 import "../../public/assets/css/nice-select.css";
 import "../../public/assets/css/venobox.min.css";
-import "../../public/assets/css/nice-select.css";
 import "../../public/assets/css/blog.css";
-import "../../public/assets/css/jquery.datetimepicker.min.css";
 import "../../public/assets/css/keyframe-animation.css";
 import "../../public/assets/css/line-awesome.min.css";
 import "../../public/assets/css/swiper.min.css";
+import "../../public/assets/css/slider.css";
+import "../../public/assets/css/responsive.css";
 import Header from "../components/ui/header/header";
-import Banner from "../components/common/banner/banner";
 import Footer from "../components/ui/footer/footer";
 import Script from "next/script";
+
+{
+  /* <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/animate.min.css">
+<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/css/line-awesome.min.css">
+<link rel="stylesheet" href="assets/css/keyframe-animation.css">
+<link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+<link rel="stylesheet" href="assets/css/nice-select.css">
+<link rel="stylesheet" href="assets/css/venobox.min.css">
+<link rel="stylesheet" href="assets/css/swiper.min.css">
+<link rel="stylesheet" href="assets/css/elements.css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/slider.css">
+<link rel="stylesheet" href="assets/css/blog.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/responsive.css"> */
+}
 
 const inter = Inter({ subsets: ["latin"] });
 

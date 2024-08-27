@@ -6,7 +6,7 @@ const HomePage = () => {
     <React.Fragment>
       <div>
         <div class="slider-section">
-          <div class="main-slider-2">
+          <div class="main-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="slider-img">
@@ -17,9 +17,34 @@ const HomePage = () => {
                     style={{ animationDuration: "12000ms" }}
                   />
                 </div>
+                <div class="car-holder">
+                  <img
+                    src="/assets/img/car-1.png"
+                    alt="car"
+                    data-animation="car-animation"
+                    data-duration="1.5s"
+                  />
+                  <div class="shape">
+                    <div
+                      data-animation="slide-in-bottom"
+                      data-duration="1.5s"
+                      data-delay="0.3s"
+                    ></div>
+                    <div
+                      data-animation="fade-in"
+                      data-duration="1.5s"
+                      data-delay="0.2s"
+                    ></div>
+                    <div
+                      data-animation="slide-in-top"
+                      data-duration="1.5s"
+                      data-delay="0.5s"
+                    ></div>
+                  </div>
+                </div>
                 <div class="slider-content-wrap d-flex align-items-center text-left">
                   <div class="container">
-                    <div class="slider-content text-center pb-60">
+                    <div class="slider-content">
                       <div class="slider-caption medium">
                         <div class="inner-layer">
                           <div
@@ -36,7 +61,8 @@ const HomePage = () => {
                             data-animation="fade-in-bottom"
                             data-delay="0.5s"
                           >
-                            Book your taxi from <br />
+                            Book your taxi from
+                            <br />
                             anywhare today!
                           </div>
                         </div>
@@ -48,7 +74,7 @@ const HomePage = () => {
                             data-delay="0.7s"
                             data-duration="1s"
                           >
-                            Everything your taxi business needs is already here!
+                            Everything your taxi business needs is already here!{" "}
                             <br />
                             Ridek made for taxi service companies!
                           </div>
@@ -77,9 +103,34 @@ const HomePage = () => {
                     style={{ animationDuration: "12000ms" }}
                   />
                 </div>
+                <div class="car-holder">
+                  <img
+                    src="/assets/img/car-1.png"
+                    alt="car"
+                    data-animation="car-animation"
+                    data-duration="1.5s"
+                  />
+                  <div class="shape">
+                    <div
+                      data-animation="slide-in-bottom"
+                      data-duration="1.5s"
+                      data-delay="0.3s"
+                    ></div>
+                    <div
+                      data-animation="fade-in"
+                      data-duration="1.5s"
+                      data-delay="0.2s"
+                    ></div>
+                    <div
+                      data-animation="slide-in-top"
+                      data-duration="1.5s"
+                      data-delay="0.5s"
+                    ></div>
+                  </div>
+                </div>
                 <div class="slider-content-wrap d-flex align-items-center text-left">
                   <div class="container">
-                    <div class="slider-content text-center pb-60">
+                    <div class="slider-content">
                       <div class="slider-caption medium">
                         <div class="inner-layer">
                           <div
@@ -96,7 +147,8 @@ const HomePage = () => {
                             data-animation="fade-in-bottom"
                             data-delay="0.5s"
                           >
-                            Book your taxi from <br />
+                            Book your taxi from
+                            <br />
                             anywhare today!
                           </div>
                         </div>
@@ -108,7 +160,7 @@ const HomePage = () => {
                             data-delay="0.7s"
                             data-duration="1s"
                           >
-                            Everything your taxi business needs is already here!
+                            Everything your taxi business needs is already here!{" "}
                             <br />
                             Ridek made for taxi service companies!
                           </div>
@@ -129,11 +181,21 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div class="swiper-nav swiper-next">
-              <i class="las la-long-arrow-alt-right"></i>
-            </div>
-            <div class="swiper-nav swiper-prev">
-              <i class="las la-long-arrow-alt-left"></i>
+            {/* <!-- Slider navigation buttons --> */}
+            <div class="slider-controls">
+              <div class="slider-control slider-button-prev">
+                <span>
+                  <i class="las la-long-arrow-alt-left"></i>
+                </span>
+                Prev
+              </div>
+              <div class="slider-pagination"></div>
+              <div class="slider-control slider-button-next">
+                Next
+                <span>
+                  <i class="las la-long-arrow-alt-right"></i>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -174,7 +236,7 @@ const HomePage = () => {
         </div>
         <div id="searchbox-overlay"></div>
 
-        {/* <div id="popup-sidebox" className="popup-sidebox">
+        <div id="popup-sidebox" className="popup-sidebox">
           <div className="sidebox-content">
             <div className="site-logo">
               <a href="index.html">
@@ -198,7 +260,7 @@ const HomePage = () => {
             </ul>
           </div>
         </div>
-        <div id="sidebox-overlay"></div> */}
+        <div id="sidebox-overlay"></div>
 
         {/*  */}
         <section className="about-section padding">
