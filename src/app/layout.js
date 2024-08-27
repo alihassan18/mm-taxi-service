@@ -15,8 +15,8 @@ import "../../public/assets/css/slider.css";
 import "../../public/assets/css/blog.css";
 import "../../public/assets/css/main.css";
 import "../../public/assets/css/responsive.css";
-import Header from "../components/ui/header/header";
-import Footer from "../components/ui/footer/footer";
+import Header from "../components/ui/header/Header";
+import Footer from "../components/ui/footer/Footer";
 import Script from "next/script";
 
 {
