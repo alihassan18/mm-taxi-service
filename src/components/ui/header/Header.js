@@ -192,7 +192,7 @@ function Header() {
                 <div className="sidebox-icon dl-sidebox-icon">
                   <i className="las la-bars"></i>
                 </div>
-                <Link href="/compony/book-a-ride" className="menu-btn">
+                <Link href="/company/book-a-ride" className="menu-btn">
                   Book a Taxi
                 </Link>
               </div>
