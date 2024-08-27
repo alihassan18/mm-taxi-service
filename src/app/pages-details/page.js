@@ -5,28 +5,28 @@ function page() {
   return (
     <div>
       <Banner title="SERVICES DETAILS!" />
-      <section class="about-section padding">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-sm-6">
-              <div class="about-img">
+      <section className="about-section padding">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 col-sm-6">
+              <div className="about-img">
                 <img
-                  class="about-img1"
+                  className="about-img1"
                   src="assets/img/about-1.png"
                   alt="img"
                 />
                 <img
-                  class="about-img2"
+                  className="about-img2"
                   src="assets/img/about-2.png"
                   alt="img"
                 />
-                <figure class="round-text">
+                <figure className="round-text">
                   <img src="assets/img/experience-text-round.png" alt="img" />
                 </figure>
               </div>
             </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="section-heading mb-40">
+            <div className="col-md-6 col-sm-6">
+              <div className="section-heading mb-40">
                 <h4>
                   <span></span>About Our Company
                 </h4>
@@ -41,17 +41,17 @@ function page() {
                   finishes and good repairs. Book your taxi from anywhare today!
                 </p>
               </div>
-              <ul class="about-info">
+              <ul className="about-info">
                 <li>
                   <img
-                    class="owner-thumb"
+                    className="owner-thumb"
                     src="assets/img/comment-1.png"
                     alt="thumb"
                   />
-                  <div class="owner">
+                  <div className="owner">
                     <h4>Founder - CEO</h4>
                     <img
-                      class="signature"
+                      className="signature"
                       src="assets/img/signature.png"
                       alt="signature"
                     />

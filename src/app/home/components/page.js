@@ -5,26 +5,26 @@ const HomePage = () => {
   return (
     <React.Fragment>
       <div>
-        <div class="slider-section">
-          <div class="main-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="slider-img">
+        <div className="slider-section">
+          <div className="main-slider">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
+                <div className="slider-img">
                   <img
                     src="/assets/img/slider-bg.jpg"
                     alt="img"
-                    class="kenburns"
+                    className="kenburns"
                     style={{ animationDuration: "12000ms" }}
                   />
                 </div>
-                <div class="car-holder">
+                <div className="car-holder">
                   <img
                     src="/assets/img/car-1.png"
                     alt="car"
                     data-animation="car-animation"
                     data-duration="1.5s"
                   />
-                  <div class="shape">
+                  <div className="shape">
                     <div
                       data-animation="slide-in-bottom"
                       data-duration="1.5s"
@@ -42,11 +42,11 @@ const HomePage = () => {
                     ></div>
                   </div>
                 </div>
-                <div class="slider-content-wrap d-flex align-items-center text-left">
-                  <div class="container">
-                    <div class="slider-content">
-                      <div class="slider-caption medium">
-                        <div class="inner-layer">
+                <div className="slider-content-wrap d-flex align-items-center text-left">
+                  <div className="container">
+                    <div className="slider-content">
+                      <div className="slider-caption medium">
+                        <div className="inner-layer">
                           <div
                             data-animation="fade-in-bottom"
                             data-delay="0.3s"
@@ -55,8 +55,8 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="slider-caption big">
-                        <div class="inner-layer">
+                      <div className="slider-caption big">
+                        <div className="inner-layer">
                           <div
                             data-animation="fade-in-bottom"
                             data-delay="0.5s"
@@ -67,8 +67,8 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="slider-caption small">
-                        <div class="inner-layer">
+                      <div className="slider-caption small">
+                        <div className="inner-layer">
                           <div
                             data-animation="fade-in-bottom"
                             data-delay="0.7s"
@@ -80,10 +80,10 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="slider-btn">
+                      <div className="slider-btn">
                         <a
                           href="book-taxi.html"
-                          class="default-btn"
+                          className="default-btn"
                           data-animation="fade-in-bottom"
                           data-delay="0.9s"
                         >
@@ -94,23 +94,23 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="slider-img">
+              <div className="swiper-slide">
+                <div className="slider-img">
                   <img
                     src="/assets/img/slider-bg.jpg"
                     alt="img"
-                    class="kenburns"
+                    className="kenburns"
                     style={{ animationDuration: "12000ms" }}
                   />
                 </div>
-                <div class="car-holder">
+                <div className="car-holder">
                   <img
                     src="/assets/img/car-1.png"
                     alt="car"
                     data-animation="car-animation"
                     data-duration="1.5s"
                   />
-                  <div class="shape">
+                  <div className="shape">
                     <div
                       data-animation="slide-in-bottom"
                       data-duration="1.5s"
@@ -128,11 +128,11 @@ const HomePage = () => {
                     ></div>
                   </div>
                 </div>
-                <div class="slider-content-wrap d-flex align-items-center text-left">
-                  <div class="container">
-                    <div class="slider-content">
-                      <div class="slider-caption medium">
-                        <div class="inner-layer">
+                <div className="slider-content-wrap d-flex align-items-center text-left">
+                  <div className="container">
+                    <div className="slider-content">
+                      <div className="slider-caption medium">
+                        <div className="inner-layer">
                           <div
                             data-animation="fade-in-bottom"
                             data-delay="0.3s"
@@ -141,8 +141,8 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="slider-caption big">
-                        <div class="inner-layer">
+                      <div className="slider-caption big">
+                        <div className="inner-layer">
                           <div
                             data-animation="fade-in-bottom"
                             data-delay="0.5s"
@@ -153,8 +153,8 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="slider-caption small">
-                        <div class="inner-layer">
+                      <div className="slider-caption small">
+                        <div className="inner-layer">
                           <div
                             data-animation="fade-in-bottom"
                             data-delay="0.7s"
@@ -166,10 +166,10 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="slider-btn">
+                      <div className="slider-btn">
                         <a
                           href="book-taxi.html"
-                          class="default-btn"
+                          className="default-btn"
                           data-animation="fade-in-bottom"
                           data-delay="0.9s"
                         >
@@ -182,19 +182,10 @@ const HomePage = () => {
               </div>
             </div>
             {/* <!-- Slider navigation buttons --> */}
-            <div class="slider-controls">
-              <div class="slider-control slider-button-prev">
-                <span>
-                  <i class="las la-long-arrow-alt-left"></i>
-                </span>
-                Prev
-              </div>
-              <div class="slider-pagination"></div>
-              <div class="slider-control slider-button-next">
-                Next
-                <span>
-                  <i class="las la-long-arrow-alt-right"></i>
-                </span>
+            <div className="slider-controls">
+              <div className="slider-control slider-button-prev"><span><i className="las la-long-arrow-alt-left"></i></span>Prev</div>
+              <div className="slider-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span className="swiper-pagination-current">1</span> / <span className="swiper-pagination-total">2</span></div>
+              <div className="slider-control slider-button-next">Next<span><i className="las la-long-arrow-alt-right"></i></span>
               </div>
             </div>
           </div>
@@ -588,38 +579,38 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section class="booking-section">
-          <div class="container">
-            <div class="row pos-relative padding">
-              <div class="col-lg-4">
+        <section className="booking-section">
+          <div className="container">
+            <div className="row pos-relative padding">
+              <div className="col-lg-4">
                 <div
-                  class="booking-car wow fade-in-left"
+                  className="booking-car wow fade-in-left"
                   data-wow-delay="200ms"
                 ></div>
               </div>
-              <div class="col-lg-8">
-                <div class="booking-wrap">
-                  <div class="section-heading mb-30">
+              <div className="col-lg-8">
+                <div className="booking-wrap">
+                  <div className="section-heading mb-30">
                     <h4>
                       <span></span>Online Booking
                     </h4>
-                    <h2 class="white">Book Your Taxi Ride</h2>
+                    <h2 className="white">Book Your Taxi Ride</h2>
                   </div>
                   <form action="book-ride.php" id="book-taxi-ride">
-                    <div class="booking-form">
-                      <div class="form-field">
-                        <i class="las la-user-tie"></i>
-                        <input type="text" id="full-name" name="full-name" class="form-control"
+                    <div className="booking-form">
+                      <div className="form-field">
+                        <i className="las la-user-tie"></i>
+                        <input type="text" id="full-name" name="full-name" className="form-control"
                           placeholder="Your Name" required />
                       </div>
-                      <div class="form-field">
-                        <i class="las la-envelope-open"></i>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Email"
+                      <div className="form-field">
+                        <i className="las la-envelope-open"></i>
+                        <input type="email" id="email" name="email" className="form-control" placeholder="Email"
                           required />
                       </div>
-                      <div class="form-field">
-                        <i class="las la-tags"></i>
-                        <select name="package-type" id="type" class="niceSelect">
+                      <div className="form-field">
+                        <i className="las la-tags"></i>
+                        <select name="package-type" id="type" className="niceSelect">
                           <option value="standard">Standard</option>
                           <option value="business">Business</option>
                           <option value="economy">Economy</option>
@@ -627,9 +618,9 @@ const HomePage = () => {
                           <option value="comfort">Comfort</option>
                         </select>
                       </div>
-                      <div class="form-field">
-                        <i class="las la-user-friends"></i>
-                        <select name="passengers" id="passengers" class="niceSelect">
+                      <div className="form-field">
+                        <i className="las la-user-friends"></i>
+                        <select name="passengers" id="passengers" className="niceSelect">
                           <option value="1">1 Person</option>
                           <option value="2">2 Person</option>
                           <option value="3">3 Person</option>
@@ -637,31 +628,31 @@ const HomePage = () => {
                           <option value="5">5 Person</option>
                         </select>
                       </div>
-                      <div class="form-field">
-                        <i class="las la-map-marker"></i>
-                        <input type="text" id="start-dest" name="start-dest" class="form-control"
+                      <div className="form-field">
+                        <i className="las la-map-marker"></i>
+                        <input type="text" id="start-dest" name="start-dest" className="form-control"
                           placeholder="Start Destination" required />
                       </div>
-                      <div class="form-field">
-                        <i class="las la-map-marker"></i>
-                        <input type="text" id="end-dest" name="end-dest" class="form-control"
+                      <div className="form-field">
+                        <i className="las la-map-marker"></i>
+                        <input type="text" id="end-dest" name="end-dest" className="form-control"
                           placeholder="End Destination" required />
                       </div>
-                      <div class="form-field">
-                        <i class="las la-calendar"></i>
-                        <input type="text" id="ride-date" name="ride-date" class="form-control date-picker"
+                      <div className="form-field">
+                        <i className="las la-calendar"></i>
+                        <input type="text" id="ride-date" name="ride-date" className="form-control date-picker"
                           placeholder="Select Date" required />
                       </div>
-                      <div class="form-field">
-                        <i class="las la-clock"></i>
-                        <input type="text" id="ride-time" name="ride-time" class="form-control time-picker"
+                      <div className="form-field">
+                        <i className="las la-clock"></i>
+                        <input type="text" id="ride-time" name="ride-time" className="form-control time-picker"
                           placeholder="Select Time" required />
                       </div>
-                      <div class="form-field">
-                        <button id="submit" class="default-btn" type="submit">Book Your Taxi</button>
+                      <div className="form-field">
+                        <button id="submit" className="default-btn" type="submit">Book Your Taxi</button>
                       </div>
                     </div>
-                    <div id="form-messages" class="alert" role="alert"></div>
+                    <div id="form-messages" className="alert" role="alert"></div>
                   </form>
                 </div>
               </div>
@@ -669,12 +660,12 @@ const HomePage = () => {
           </div>
         </section>
         {/* <OurTaxi /> */}
-        <section class="download-section bd-bottom padding">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6">
+        <section className="download-section bd-bottom padding">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
                 <div
-                  class="section-heading wow fade-in-left"
+                  className="section-heading wow fade-in-left"
                   data-wow-delay="200ms"
                 >
                   <h4>
@@ -686,11 +677,11 @@ const HomePage = () => {
                     provide long-term guarantees and regularly master
                     technologies.
                   </p>
-                  <ul class="app-feature">
+                  <ul className="app-feature">
                     <li>
                       <i>
                         <img
-                          class="feature-icon"
+                          className="feature-icon"
                           src="/assets/img/icon-navigator.svg"
                           alt="icon"
                         />
@@ -703,7 +694,7 @@ const HomePage = () => {
                     <li>
                       <i>
                         <img
-                          class="feature-icon"
+                          className="feature-icon"
                           src="/assets/img/icon-clock.svg"
                           alt="icon"
                         />
@@ -716,7 +707,7 @@ const HomePage = () => {
                     <li>
                       <i>
                         <img
-                          class="feature-icon"
+                          className="feature-icon"
                           src="/assets/img/icon-docs.svg"
                           alt="icon"
                         />
@@ -728,7 +719,7 @@ const HomePage = () => {
                       </h3>
                     </li>
                   </ul>
-                  <div class="download-btn">
+                  <div className="download-btn">
                     <a href="#">
                       <img src="/assets/img/google-play.svg" alt="PlayStore" />
                     </a>
@@ -738,22 +729,22 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 d-none d-lg-block">
-                <div class="taxi-holder">
+              <div className="col-lg-6 d-none d-lg-block">
+                <div className="taxi-holder">
                   <div
-                    class="taxi wow fade-in-left"
+                    className="taxi wow fade-in-left"
                     data-wow-delay="300ms"
                   ></div>
                   <div
-                    class="mockup wow fade-in-bottom"
+                    className="mockup wow fade-in-bottom"
                     data-wow-delay="400ms"
                   ></div>
                   <div
-                    class="charecter wow fade-in-right"
+                    className="charecter wow fade-in-right"
                     data-wow-delay="500ms"
                   ></div>
                   <img
-                    class="location-marker"
+                    className="location-marker"
                     src="/assets/img/location-marker.png"
                     alt="location"
                   />
@@ -763,11 +754,11 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section class="testimonial-section bg-grey">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <div class="section-heading mb-10">
+        <section className="testimonial-section bg-grey">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="section-heading mb-10">
                   <h4>
                     <span></span>Clients Testimonial
                   </h4>
@@ -778,13 +769,13 @@ const HomePage = () => {
                     technologies.
                   </p>
                 </div>
-                <div class="swiper-outside testi-pagination">
-                  <div class="testimonial-carousel">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="testi-item">
-                          <div class="quote-icon">
-                            <i class="las la-quote-right"></i>
+                <div className="swiper-outside testi-pagination">
+                  <div className="testimonial-carousel">
+                    <div className="swiper-wrapper">
+                      <div className="swiper-slide">
+                        <div className="testi-item">
+                          <div className="quote-icon">
+                            <i className="las la-quote-right"></i>
                           </div>
                           <p>
                             Good to have transportation available in places and
@@ -792,14 +783,14 @@ const HomePage = () => {
                             always been a bit difficult to use especially how it
                             works or doesnt with large font phone settings.
                           </p>
-                          <div class="testi-author">
-                            <div class="author-thumb">
+                          <div className="testi-author">
+                            <div className="author-thumb">
                               <img
                                 src="/assets/img/comment-1.png"
                                 alt="author"
                               />
                             </div>
-                            <div class="author-info">
+                            <div className="author-info">
                               <h3>
                                 Eredrik Johanson <span>Financial .INC</span>
                               </h3>
@@ -807,10 +798,10 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide">
-                        <div class="testi-item">
-                          <div class="quote-icon">
-                            <i class="las la-quote-right"></i>
+                      <div className="swiper-slide">
+                        <div className="testi-item">
+                          <div className="quote-icon">
+                            <i className="las la-quote-right"></i>
                           </div>
                           <p>
                             Good to have transportation available in places and
@@ -818,14 +809,14 @@ const HomePage = () => {
                             always been a bit difficult to use especially how it
                             works or doesnt with large font phone settings.
                           </p>
-                          <div class="testi-author">
-                            <div class="author-thumb">
+                          <div className="testi-author">
+                            <div className="author-thumb">
                               <img
                                 src="/assets/img/comment-1.png"
                                 alt="author"
                               />
                             </div>
-                            <div class="author-info">
+                            <div className="author-info">
                               <h3>
                                 Eredrik Johanson <span>Financial .INC</span>
                               </h3>
@@ -833,10 +824,10 @@ const HomePage = () => {
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide">
-                        <div class="testi-item">
-                          <div class="quote-icon">
-                            <i class="las la-quote-right"></i>
+                      <div className="swiper-slide">
+                        <div className="testi-item">
+                          <div className="quote-icon">
+                            <i className="las la-quote-right"></i>
                           </div>
                           <p>
                             Good to have transportation available in places and
@@ -844,14 +835,14 @@ const HomePage = () => {
                             always been a bit difficult to use especially how it
                             works or doesnt with large font phone settings.
                           </p>
-                          <div class="testi-author">
-                            <div class="author-thumb">
+                          <div className="testi-author">
+                            <div className="author-thumb">
                               <img
                                 src="/assets/img/comment-1.png"
                                 alt="author"
                               />
                             </div>
-                            <div class="author-info">
+                            <div className="author-info">
                               <h3>
                                 Eredrik Johanson <span>Financial .INC</span>
                               </h3>
@@ -861,32 +852,32 @@ const HomePage = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
+                  <div className="swiper-pagination"></div>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="feature-wrap">
+              <div className="col-lg-6">
+                <div className="feature-wrap">
                   <div
-                    class="section-heading mb-30 wow fade-in-right"
+                    className="section-heading mb-30 wow fade-in-right"
                     data-wow-delay="200ms"
                   >
-                    <h4 class="white">
+                    <h4 className="white">
                       <span></span>Why Choose Us!
                     </h4>
-                    <h2 class="white">Why Ride with Ridek?</h2>
-                    <p class="white">
+                    <h2 className="white">Why Ride with Ridek?</h2>
+                    <p className="white">
                       We successfully cope with tasks of varying complexity,
                       provide long-term guarantees and regularly master
                       technologies.
                     </p>
                   </div>
 
-                  <ul class="mmtaxi-features">
-                    <li class="wow fade-in-right" data-wow-delay="300ms">
-                      <div class="feature-icon">
-                        <i class="las la-gem"></i>
+                  <ul className="mmtaxi-features">
+                    <li className="wow fade-in-right" data-wow-delay="300ms">
+                      <div className="feature-icon">
+                        <i className="las la-gem"></i>
                       </div>
-                      <div class="feature-content">
+                      <div className="feature-content">
                         <h3>Safe Guarantee</h3>
                         <p>
                           We successfully cope with tasks of <br />
@@ -894,11 +885,11 @@ const HomePage = () => {
                         </p>
                       </div>
                     </li>
-                    <li class="wow fade-in-right" data-wow-delay="400ms">
-                      <div class="feature-icon">
-                        <i class="las la-taxi"></i>
+                    <li className="wow fade-in-right" data-wow-delay="400ms">
+                      <div className="feature-icon">
+                        <i className="las la-taxi"></i>
                       </div>
-                      <div class="feature-content">
+                      <div className="feature-content">
                         <h3>Fast Pickups</h3>
                         <p>
                           We successfully cope with tasks of <br />
@@ -906,11 +897,11 @@ const HomePage = () => {
                         </p>
                       </div>
                     </li>
-                    <li class="wow fade-in-right" data-wow-delay="500ms">
-                      <div class="feature-icon">
-                        <i class="las la-tachometer-alt"></i>
+                    <li className="wow fade-in-right" data-wow-delay="500ms">
+                      <div className="feature-icon">
+                        <i className="las la-tachometer-alt"></i>
                       </div>
-                      <div class="feature-content">
+                      <div className="feature-content">
                         <h3>Quick Ride</h3>
                         <p>
                           We successfully cope with tasks of <br />
@@ -925,10 +916,10 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section class="cta-section padding">
-          <div class="cta-men wow fade-in-bottom" data-wow-delay="200ms"></div>
-          <div class="container">
-            <div class="cta-content">
+        <section className="cta-section padding">
+          <div className="cta-men wow fade-in-bottom" data-wow-delay="200ms"></div>
+          <div className="container">
+            <div className="cta-content">
               <h2>
                 Call Us Now <span>Book Your Taxi</span> <br />
                 For Your Next Ride!
@@ -938,8 +929,8 @@ const HomePage = () => {
                 <br />
                 guarantees and regularly master new technologies.
               </p>
-              <div class="cta-call">
-                <i class="las la-phone-volume"></i>
+              <div className="cta-call">
+                <i className="las la-phone-volume"></i>
                 <p>
                   <span>Call For Taxi</span>
                   <a href="tel:5267214392">5267-214-392</a>
@@ -949,10 +940,10 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section class="blog-section bg-grey padding">
-          <div class="container">
+        <section className="blog-section bg-grey padding">
+          <div className="container">
             <div
-              class="section-heading text-center mb-40 wow fade-in-bottom"
+              className="section-heading text-center mb-40 wow fade-in-bottom"
               data-wow-delay="200ms"
             >
               <h4>
@@ -966,27 +957,27 @@ const HomePage = () => {
               </p>
             </div>
 
-            <div class="row grid-post">
-              <div class="col-lg-4 col-md-6 padding-15">
-                <div class="post-card">
-                  <div class="post-thumb">
+            <div className="row grid-post">
+              <div className="col-lg-4 col-md-6 padding-15">
+                <div className="post-card">
+                  <div className="post-thumb">
                     <img src="/assets/img/post-1.jpg" alt="post" />
-                    <a href="blog-details.html" class="post-category">
+                    <a href="blog-details.html" className="post-category">
                       Business
                     </a>
                   </div>
-                  <div class="post-content-wrap">
-                    <ul class="post-meta">
+                  <div className="post-content-wrap">
+                    <ul className="post-meta">
                       <li>
-                        <i class="las la-calendar"></i>Jan 01 2022
+                        <i className="las la-calendar"></i>Jan 01 2022
                       </li>
                       <li>
-                        <i class="las la-user"></i>Elliot Alderson
+                        <i className="las la-user"></i>Elliot Alderson
                       </li>
                     </ul>
-                    <div class="post-content">
+                    <div className="post-content">
                       <h3>
-                        <a href="blog-details.html" class="hover">
+                        <a href="blog-details.html" className="hover">
                           How to start initiating an startup in few days.
                         </a>
                       </h3>
@@ -994,31 +985,31 @@ const HomePage = () => {
                         Financial experts support or help you to to find out
                         which way you can raise your funds more...
                       </p>
-                      <a href="blog-details.html" class="read-more">
+                      <a href="blog-details.html" className="read-more">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 padding-15">
-                <div class="post-card">
-                  <div class="post-thumb">
+              <div className="col-lg-4 col-md-6 padding-15">
+                <div className="post-card">
+                  <div className="post-thumb">
                     <img src="/assets/img/post-2.jpg" alt="post" />
-                    <a href="blog-details.html" class="post-category">
+                    <a href="blog-details.html" className="post-category">
                       Startup
                     </a>
                   </div>
-                  <div class="post-content-wrap">
-                    <ul class="post-meta">
+                  <div className="post-content-wrap">
+                    <ul className="post-meta">
                       <li>
-                        <i class="las la-calendar"></i>Jan 01 2022
+                        <i className="las la-calendar"></i>Jan 01 2022
                       </li>
                       <li>
-                        <i class="las la-user"></i>Elliot Alderson
+                        <i className="las la-user"></i>Elliot Alderson
                       </li>
                     </ul>
-                    <div class="post-content">
+                    <div className="post-content">
                       <h3>
                         <a href="blog-details.html">
                           Financial experts support help you to find out.
@@ -1028,31 +1019,31 @@ const HomePage = () => {
                         Financial experts support or help you to to find out
                         which way you can raise your funds more...
                       </p>
-                      <a href="blog-details.html" class="read-more">
+                      <a href="blog-details.html" className="read-more">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 padding-15">
-                <div class="post-card">
-                  <div class="post-thumb">
+              <div className="col-lg-4 col-md-6 padding-15">
+                <div className="post-card">
+                  <div className="post-thumb">
                     <img src="/assets/img/post-3.jpg" alt="post" />
-                    <a href="blog-details.html" class="post-category">
+                    <a href="blog-details.html" className="post-category">
                       Finance
                     </a>
                   </div>
-                  <div class="post-content-wrap">
-                    <ul class="post-meta">
+                  <div className="post-content-wrap">
+                    <ul className="post-meta">
                       <li>
-                        <i class="las la-calendar"></i>Jan 01 2022
+                        <i className="las la-calendar"></i>Jan 01 2022
                       </li>
                       <li>
-                        <i class="las la-user"></i>Elliot Alderson
+                        <i className="las la-user"></i>Elliot Alderson
                       </li>
                     </ul>
-                    <div class="post-content">
+                    <div className="post-content">
                       <h3>
                         <a href="blog-details.html">
                           Innovative business all over the world.
@@ -1062,7 +1053,7 @@ const HomePage = () => {
                         Financial experts support or help you to to find out
                         which way you can raise your funds more...
                       </p>
-                      <a href="blog-details.html" class="read-more">
+                      <a href="blog-details.html" className="read-more">
                         Read More
                       </a>
                     </div>

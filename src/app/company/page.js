@@ -5,28 +5,28 @@ function page() {
   return (
     <div>
       <Banner title="ABOUT US!" />
-      <section class="about-section padding">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-sm-6">
-              <div class="about-img">
+      <section className="about-section padding">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6 col-sm-6">
+              <div className="about-img">
                 <img
-                  class="about-img1"
+                  className="about-img1"
                   src="assets/img/about-1.png"
                   alt="img"
                 />
                 <img
-                  class="about-img2"
+                  className="about-img2"
                   src="assets/img/about-2.png"
                   alt="img"
                 />
-                <figure class="round-text">
+                <figure className="round-text">
                   <img src="assets/img/experience-text-round.png" alt="img" />
                 </figure>
               </div>
             </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="section-heading mb-40">
+            <div className="col-md-6 col-sm-6">
+              <div className="section-heading mb-40">
                 <h4>
                   <span></span>About Our Company
                 </h4>
@@ -42,17 +42,17 @@ function page() {
                 </p>
               </div>
 
-              <ul class="about-info">
+              <ul className="about-info">
                 <li>
                   <img
-                    class="owner-thumb"
+                    className="owner-thumb"
                     src="assets/img/comment-1.png"
                     alt="thumb"
                   />
-                  <div class="owner">
+                  <div className="owner">
                     <h4>Founder - CEO</h4>
                     <img
-                      class="signature"
+                      className="signature"
                       src="assets/img/signature.png"
                       alt="signature"
                     />
@@ -70,14 +70,14 @@ function page() {
         </div>
       </section>
 
-      <section class="service-section bg-grey bd-bottom padding">
-        <div class="bg-half"></div>
-        <div class="container">
-          <div class="section-heading text-center mb-40">
+      <section className="service-section bg-grey bd-bottom padding">
+        <div className="bg-half"></div>
+        <div className="container">
+          <div className="section-heading text-center mb-40">
             <h4>
               <span></span>What We Offer
             </h4>
-            <h2 class="white">
+            <h2 className="white">
               Start your journey with
               <br />
               Ridek Taxi Company!
@@ -89,21 +89,21 @@ function page() {
             </p>
           </div>
 
-          <div class="swiper-outside">
-            <div class="service-carousel">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="service-item">
-                    <div class="service-thumb">
+          <div className="swiper-outside">
+            <div className="service-carousel">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide">
+                  <div className="service-item">
+                    <div className="service-thumb">
                       <img src="assets/img/service-1.jpg" alt="img" />
-                      <div class="service-shape-wrap">
-                        <div class="service-shape"></div>
+                      <div className="service-shape-wrap">
+                        <div className="service-shape"></div>
                       </div>
-                      <div class="service-car">
+                      <div className="service-car">
                         <img src="assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
-                    <div class="service-content">
+                    <div className="service-content">
                       <h3>
                         <a href="service-details.html">Regular Transport</a>
                       </h3>
@@ -111,24 +111,24 @@ function page() {
                         Everything your taxi business needs is already here!
                         Ridek made for taxi service companies!
                       </p>
-                      <a class="read-more" href="service-details.html">
+                      <a className="read-more" href="service-details.html">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="service-item">
-                    <div class="service-thumb">
+                <div className="swiper-slide">
+                  <div className="service-item">
+                    <div className="service-thumb">
                       <img src="assets/img/service-2.jpg" alt="img" />
-                      <div class="service-shape-wrap">
-                        <div class="service-shape"></div>
+                      <div className="service-shape-wrap">
+                        <div className="service-shape"></div>
                       </div>
-                      <div class="service-car">
+                      <div className="service-car">
                         <img src="assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
-                    <div class="service-content">
+                    <div className="service-content">
                       <h3>
                         <a href="service-details.html">Airport Transport</a>
                       </h3>
@@ -136,24 +136,24 @@ function page() {
                         Everything your taxi business needs is already here!
                         Ridek made for taxi service companies!
                       </p>
-                      <a class="read-more" href="service-details.html">
+                      <a className="read-more" href="service-details.html">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="service-item">
-                    <div class="service-thumb">
+                <div className="swiper-slide">
+                  <div className="service-item">
+                    <div className="service-thumb">
                       <img src="assets/img/service-3.jpg" alt="img" />
-                      <div class="service-shape-wrap">
-                        <div class="service-shape"></div>
+                      <div className="service-shape-wrap">
+                        <div className="service-shape"></div>
                       </div>
-                      <div class="service-car">
+                      <div className="service-car">
                         <img src="assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
-                    <div class="service-content">
+                    <div className="service-content">
                       <h3>
                         <a href="service-details.html">Luggage Transport</a>
                       </h3>
@@ -161,24 +161,24 @@ function page() {
                         Everything your taxi business needs is already here!
                         Ridek made for taxi service companies!
                       </p>
-                      <a class="read-more" href="service-details.html">
+                      <a className="read-more" href="service-details.html">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="service-item">
-                    <div class="service-thumb">
+                <div className="swiper-slide">
+                  <div className="service-item">
+                    <div className="service-thumb">
                       <img src="assets/img/service-4.jpg" alt="img" />
-                      <div class="service-shape-wrap">
-                        <div class="service-shape"></div>
+                      <div className="service-shape-wrap">
+                        <div className="service-shape"></div>
                       </div>
-                      <div class="service-car">
+                      <div className="service-car">
                         <img src="assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
-                    <div class="service-content">
+                    <div className="service-content">
                       <h3>
                         <a href="service-details.html">City Transport</a>
                       </h3>
@@ -186,24 +186,24 @@ function page() {
                         Everything your taxi business needs is already here!
                         Ridek made for taxi service companies!
                       </p>
-                      <a class="read-more" href="service-details.html">
+                      <a className="read-more" href="service-details.html">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="service-item">
-                    <div class="service-thumb">
+                <div className="swiper-slide">
+                  <div className="service-item">
+                    <div className="service-thumb">
                       <img src="assets/img/service-5.jpg" alt="img" />
-                      <div class="service-shape-wrap">
-                        <div class="service-shape"></div>
+                      <div className="service-shape-wrap">
+                        <div className="service-shape"></div>
                       </div>
-                      <div class="service-car">
+                      <div className="service-car">
                         <img src="assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
-                    <div class="service-content">
+                    <div className="service-content">
                       <h3>
                         <a href="service-details.html">Business Transport</a>
                       </h3>
@@ -211,31 +211,31 @@ function page() {
                         Everything your taxi business needs is already here!
                         Ridek made for taxi service companies!
                       </p>
-                      <a class="read-more" href="service-details.html">
+                      <a className="read-more" href="service-details.html">
                         Read More
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div className="swiper-pagination"></div>
             </div>
 
-            <div class="swiper-nav swiper-next">
-              <i class="las la-long-arrow-alt-right"></i>
+            <div className="swiper-nav swiper-next">
+              <i className="las la-long-arrow-alt-right"></i>
             </div>
-            <div class="swiper-nav swiper-prev">
-              <i class="las la-long-arrow-alt-left"></i>
+            <div className="swiper-nav swiper-prev">
+              <i className="las la-long-arrow-alt-left"></i>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="testimonial-section bg-grey">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="section-heading mb-10">
+      <section className="testimonial-section bg-grey">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="section-heading mb-10">
                 <h4>
                   <span></span>Clients Testimonial
                 </h4>
@@ -245,13 +245,13 @@ function page() {
                   long-term guarantees and regularly master technologies.
                 </p>
               </div>
-              <div class="swiper-outside testi-pagination">
-                <div class="testimonial-carousel">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="testi-item">
-                        <div class="quote-icon">
-                          <i class="las la-quote-right"></i>
+              <div className="swiper-outside testi-pagination">
+                <div className="testimonial-carousel">
+                  <div className="swiper-wrapper">
+                    <div className="swiper-slide">
+                      <div className="testi-item">
+                        <div className="quote-icon">
+                          <i className="las la-quote-right"></i>
                         </div>
                         <p>
                           Good to have transportation available in places and
@@ -259,11 +259,11 @@ function page() {
                           always been a bit difficult to use especially how it
                           works or doesnt with large font phone settings.
                         </p>
-                        <div class="testi-author">
-                          <div class="author-thumb">
+                        <div className="testi-author">
+                          <div className="author-thumb">
                             <img src="assets/img/comment-1.png" alt="author" />
                           </div>
-                          <div class="author-info">
+                          <div className="author-info">
                             <h3>
                               Eredrik Johanson <span>Financial .INC</span>
                             </h3>
@@ -271,10 +271,10 @@ function page() {
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="testi-item">
-                        <div class="quote-icon">
-                          <i class="las la-quote-right"></i>
+                    <div className="swiper-slide">
+                      <div className="testi-item">
+                        <div className="quote-icon">
+                          <i className="las la-quote-right"></i>
                         </div>
                         <p>
                           Good to have transportation available in places and
@@ -282,11 +282,11 @@ function page() {
                           always been a bit difficult to use especially how it
                           works or doesnt with large font phone settings.
                         </p>
-                        <div class="testi-author">
-                          <div class="author-thumb">
+                        <div className="testi-author">
+                          <div className="author-thumb">
                             <img src="assets/img/comment-1.png" alt="author" />
                           </div>
-                          <div class="author-info">
+                          <div className="author-info">
                             <h3>
                               Eredrik Johanson <span>Financial .INC</span>
                             </h3>
@@ -294,10 +294,10 @@ function page() {
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="testi-item">
-                        <div class="quote-icon">
-                          <i class="las la-quote-right"></i>
+                    <div className="swiper-slide">
+                      <div className="testi-item">
+                        <div className="quote-icon">
+                          <i className="las la-quote-right"></i>
                         </div>
                         <p>
                           Good to have transportation available in places and
@@ -305,11 +305,11 @@ function page() {
                           always been a bit difficult to use especially how it
                           works or doesnt with large font phone settings.
                         </p>
-                        <div class="testi-author">
-                          <div class="author-thumb">
+                        <div className="testi-author">
+                          <div className="author-thumb">
                             <img src="assets/img/comment-1.png" alt="author" />
                           </div>
-                          <div class="author-info">
+                          <div className="author-info">
                             <h3>
                               Eredrik Johanson <span>Financial .INC</span>
                             </h3>
@@ -319,29 +319,29 @@ function page() {
                     </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div className="swiper-pagination"></div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="feature-wrap">
-                <div class="section-heading mb-30">
-                  <h4 class="white">
+            <div className="col-lg-6">
+              <div className="feature-wrap">
+                <div className="section-heading mb-30">
+                  <h4 className="white">
                     <span></span>Why Choose Us!
                   </h4>
-                  <h2 class="white">Why Ride with Ridek?</h2>
-                  <p class="white">
+                  <h2 className="white">Why Ride with Ridek?</h2>
+                  <p className="white">
                     We successfully cope with tasks of varying complexity,
                     provide long-term guarantees and regularly master
                     technologies.
                   </p>
                 </div>
 
-                <ul class="mmtaxi-features">
+                <ul className="mmtaxi-features">
                   <li>
-                    <div class="feature-icon">
-                      <i class="las la-gem"></i>
+                    <div className="feature-icon">
+                      <i className="las la-gem"></i>
                     </div>
-                    <div class="feature-content">
+                    <div className="feature-content">
                       <h3>Safe Guarantee</h3>
                       <p>
                         We successfully cope with tasks of <br /> varying
@@ -350,10 +350,10 @@ function page() {
                     </div>
                   </li>
                   <li>
-                    <div class="feature-icon">
-                      <i class="las la-taxi"></i>
+                    <div className="feature-icon">
+                      <i className="las la-taxi"></i>
                     </div>
-                    <div class="feature-content">
+                    <div className="feature-content">
                       <h3>Fast Pickups</h3>
                       <p>
                         We successfully cope with tasks of <br /> varying
@@ -362,10 +362,10 @@ function page() {
                     </div>
                   </li>
                   <li>
-                    <div class="feature-icon">
-                      <i class="las la-tachometer-alt"></i>
+                    <div className="feature-icon">
+                      <i className="las la-tachometer-alt"></i>
                     </div>
-                    <div class="feature-content">
+                    <div className="feature-content">
                       <h3>Quick Ride</h3>
                       <p>
                         We successfully cope with tasks of <br /> varying
@@ -380,9 +380,9 @@ function page() {
         </div>
       </section>
 
-      <section class="team-section padding">
-        <div class="container">
-          <div class="section-heading text-center mb-40">
+      <section className="team-section padding">
+        <div className="container">
+          <div className="section-heading text-center mb-40">
             <h4>
               <span></span>Lets Go With Us!
             </h4>
@@ -393,13 +393,13 @@ function page() {
               guarantees and regularly master new technologies.
             </p>
           </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+          <div className="row">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="assets/img/team-1.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Félix Lengyel</a>
                   </h3>
@@ -407,12 +407,12 @@ function page() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="assets/img/team-2.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Henry Nathan</a>
                   </h3>
@@ -420,12 +420,12 @@ function page() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="assets/img/team-3.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Brandon Larned</a>
                   </h3>
@@ -433,12 +433,12 @@ function page() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="assets/img/team-4.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Sasha Hostyn</a>
                   </h3>
@@ -450,10 +450,10 @@ function page() {
         </div>
       </section>
 
-      <section class="cta-section padding">
-        <div class="cta-men"></div>
-        <div class="container">
-          <div class="cta-content">
+      <section className="cta-section padding">
+        <div className="cta-men"></div>
+        <div className="container">
+          <div className="cta-content">
             <h2>
               Call Us Now <span>Book Your Taxi</span> <br /> For Your Next Ride!
             </h2>
@@ -462,8 +462,8 @@ function page() {
               <br />
               guarantees and regularly master new technologies.
             </p>
-            <div class="cta-call">
-              <i class="las la-phone-volume"></i>
+            <div className="cta-call">
+              <i className="las la-phone-volume"></i>
               <p>
                 <span>Call For Taxi</span>
                 <a href="tel:5267214392">5267-214-392</a>
@@ -473,9 +473,9 @@ function page() {
         </div>
       </section>
 
-      <section class="blog-section bg-grey padding">
-        <div class="container">
-          <div class="section-heading text-center mb-40">
+      <section className="blog-section bg-grey padding">
+        <div className="container">
+          <div className="section-heading text-center mb-40">
             <h4>
               <span></span>Recent Posts!
             </h4>
@@ -487,27 +487,27 @@ function page() {
             </p>
           </div>
 
-          <div class="row grid-post">
-            <div class="col-lg-4 col-md-6 padding-15">
-              <div class="post-card">
-                <div class="post-thumb">
+          <div className="row grid-post">
+            <div className="col-lg-4 col-md-6 padding-15">
+              <div className="post-card">
+                <div className="post-thumb">
                   <img src="assets/img/post-1.jpg" alt="post" />
-                  <a href="blog-details.html" class="post-category">
+                  <a href="blog-details.html" className="post-category">
                     Business
                   </a>
                 </div>
-                <div class="post-content-wrap">
-                  <ul class="post-meta">
+                <div className="post-content-wrap">
+                  <ul className="post-meta">
                     <li>
-                      <i class="las la-calendar"></i>Jan 01 2022
+                      <i className="las la-calendar"></i>Jan 01 2022
                     </li>
                     <li>
-                      <i class="las la-user"></i>Elliot Alderson
+                      <i className="las la-user"></i>Elliot Alderson
                     </li>
                   </ul>
-                  <div class="post-content">
+                  <div className="post-content">
                     <h3>
-                      <a href="blog-details.html" class="hover">
+                      <a href="blog-details.html" className="hover">
                         How to start initiating an startup in few days.
                       </a>
                     </h3>
@@ -515,31 +515,31 @@ function page() {
                       Financial experts support or help you to to find out which
                       way you can raise your funds more...
                     </p>
-                    <a href="blog-details.html" class="read-more">
+                    <a href="blog-details.html" className="read-more">
                       Read More
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 padding-15">
-              <div class="post-card">
-                <div class="post-thumb">
+            <div className="col-lg-4 col-md-6 padding-15">
+              <div className="post-card">
+                <div className="post-thumb">
                   <img src="assets/img/post-2.jpg" alt="post" />
-                  <a href="blog-details.html" class="post-category">
+                  <a href="blog-details.html" className="post-category">
                     Startup
                   </a>
                 </div>
-                <div class="post-content-wrap">
-                  <ul class="post-meta">
+                <div className="post-content-wrap">
+                  <ul className="post-meta">
                     <li>
-                      <i class="las la-calendar"></i>Jan 01 2022
+                      <i className="las la-calendar"></i>Jan 01 2022
                     </li>
                     <li>
-                      <i class="las la-user"></i>Elliot Alderson
+                      <i className="las la-user"></i>Elliot Alderson
                     </li>
                   </ul>
-                  <div class="post-content">
+                  <div className="post-content">
                     <h3>
                       <a href="blog-details.html">
                         Financial experts support help you to find out.
@@ -549,31 +549,31 @@ function page() {
                       Financial experts support or help you to to find out which
                       way you can raise your funds more...
                     </p>
-                    <a href="blog-details.html" class="read-more">
+                    <a href="blog-details.html" className="read-more">
                       Read More
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 padding-15">
-              <div class="post-card">
-                <div class="post-thumb">
+            <div className="col-lg-4 col-md-6 padding-15">
+              <div className="post-card">
+                <div className="post-thumb">
                   <img src="assets/img/post-3.jpg" alt="post" />
-                  <a href="blog-details.html" class="post-category">
+                  <a href="blog-details.html" className="post-category">
                     Finance
                   </a>
                 </div>
-                <div class="post-content-wrap">
-                  <ul class="post-meta">
+                <div className="post-content-wrap">
+                  <ul className="post-meta">
                     <li>
-                      <i class="las la-calendar"></i>Jan 01 2022
+                      <i className="las la-calendar"></i>Jan 01 2022
                     </li>
                     <li>
-                      <i class="las la-user"></i>Elliot Alderson
+                      <i className="las la-user"></i>Elliot Alderson
                     </li>
                   </ul>
-                  <div class="post-content">
+                  <div className="post-content">
                     <h3>
                       <a href="blog-details.html">
                         Innovative business all over the world.
@@ -583,7 +583,7 @@ function page() {
                       Financial experts support or help you to to find out which
                       way you can raise your funds more...
                     </p>
-                    <a href="blog-details.html" class="read-more">
+                    <a href="blog-details.html" className="read-more">
                       Read More
                     </a>
                   </div>

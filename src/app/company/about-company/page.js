@@ -5,11 +5,11 @@ function page() {
   return (
     <div>
       <Banner title="ABOUT COMPANY!" />
-      <section class="about-section padding">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-              <div class="section-heading mb-40">
+      <section className="about-section padding">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <div className="section-heading mb-40">
                 <h4>
                   <span></span>About Our Company
                 </h4>
@@ -24,17 +24,17 @@ function page() {
                   finishes and good repairs. Book your taxi from anywhare today!
                 </p>
               </div>
-              <ul class="about-info">
+              <ul className="about-info">
                 <li>
                   <img
-                    class="owner-thumb"
+                    className="owner-thumb"
                     src="/assets/img/comment-1.png"
                     alt="thumb"
                   />
-                  <div class="owner">
+                  <div className="owner">
                     <h4>Founder - CEO</h4>
                     <img
-                      class="signature"
+                      className="signature"
                       src="/assets/img/signature.png"
                       alt="signature"
                     />
@@ -48,19 +48,19 @@ function page() {
                 </li>
               </ul>
             </div>
-            <div class="col-md-6">
-              <div class="video-box-inner">
+            <div className="col-md-6">
+              <div className="video-box-inner">
                 <img src="/assets/img/about-3.jpg" alt="thumb" />
-                <div class="video-box">
+                <div className="video-box">
                   <img src="/assets/img/about-1.png" alt="thumb" />
                   <a
                     data-autoplay="true"
                     data-vbtype="video"
                     href="https://www.youtube.com/watch?v=lrf-GAYUOkQ"
-                    class="dl-video-popup play-btn"
+                    className="dl-video-popup play-btn"
                   >
                     <video />
-                    <div class="ripple"></div>
+                    <div className="ripple"></div>
                   </a>
                 </div>
               </div>
@@ -242,10 +242,10 @@ function page() {
           </div>
         </div>
       </section>
-      <section class="blog-section bg-grey padding">
-        <div class="container">
+      <section className="blog-section bg-grey padding">
+        <div className="container">
           <div
-            class="section-heading text-center mb-40 wow fade-in-bottom"
+            className="section-heading text-center mb-40 wow fade-in-bottom"
             data-wow-delay="200ms"
           >
             <h4>
@@ -259,27 +259,27 @@ function page() {
             </p>
           </div>
 
-          <div class="row grid-post">
-            <div class="col-lg-4 col-md-6 padding-15">
-              <div class="post-card">
-                <div class="post-thumb">
+          <div className="row grid-post">
+            <div className="col-lg-4 col-md-6 padding-15">
+              <div className="post-card">
+                <div className="post-thumb">
                   <img src="/assets/img/post-1.jpg" alt="post" />
-                  <a href="blog-details.html" class="post-category">
+                  <a href="blog-details.html" className="post-category">
                     Business
                   </a>
                 </div>
-                <div class="post-content-wrap">
-                  <ul class="post-meta">
+                <div className="post-content-wrap">
+                  <ul className="post-meta">
                     <li>
-                      <i class="las la-calendar"></i>Jan 01 2022
+                      <i className="las la-calendar"></i>Jan 01 2022
                     </li>
                     <li>
-                      <i class="las la-user"></i>Elliot Alderson
+                      <i className="las la-user"></i>Elliot Alderson
                     </li>
                   </ul>
-                  <div class="post-content">
+                  <div className="post-content">
                     <h3>
-                      <a href="blog-details.html" class="hover">
+                      <a href="blog-details.html" className="hover">
                         How to start initiating an startup in few days.
                       </a>
                     </h3>
@@ -287,31 +287,31 @@ function page() {
                       Financial experts support or help you to to find out which
                       way you can raise your funds more...
                     </p>
-                    <a href="blog-details.html" class="read-more">
+                    <a href="blog-details.html" className="read-more">
                       Read More
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 padding-15">
-              <div class="post-card">
-                <div class="post-thumb">
+            <div className="col-lg-4 col-md-6 padding-15">
+              <div className="post-card">
+                <div className="post-thumb">
                   <img src="/assets/img/post-2.jpg" alt="post" />
-                  <a href="blog-details.html" class="post-category">
+                  <a href="blog-details.html" className="post-category">
                     Startup
                   </a>
                 </div>
-                <div class="post-content-wrap">
-                  <ul class="post-meta">
+                <div className="post-content-wrap">
+                  <ul className="post-meta">
                     <li>
-                      <i class="las la-calendar"></i>Jan 01 2022
+                      <i className="las la-calendar"></i>Jan 01 2022
                     </li>
                     <li>
-                      <i class="las la-user"></i>Elliot Alderson
+                      <i className="las la-user"></i>Elliot Alderson
                     </li>
                   </ul>
-                  <div class="post-content">
+                  <div className="post-content">
                     <h3>
                       <a href="blog-details.html">
                         Financial experts support help you to find out.
@@ -321,31 +321,31 @@ function page() {
                       Financial experts support or help you to to find out which
                       way you can raise your funds more...
                     </p>
-                    <a href="blog-details.html" class="read-more">
+                    <a href="blog-details.html" className="read-more">
                       Read More
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 padding-15">
-              <div class="post-card">
-                <div class="post-thumb">
+            <div className="col-lg-4 col-md-6 padding-15">
+              <div className="post-card">
+                <div className="post-thumb">
                   <img src="/assets/img/post-3.jpg" alt="post" />
-                  <a href="blog-details.html" class="post-category">
+                  <a href="blog-details.html" className="post-category">
                     Finance
                   </a>
                 </div>
-                <div class="post-content-wrap">
-                  <ul class="post-meta">
+                <div className="post-content-wrap">
+                  <ul className="post-meta">
                     <li>
-                      <i class="las la-calendar"></i>Jan 01 2022
+                      <i className="las la-calendar"></i>Jan 01 2022
                     </li>
                     <li>
-                      <i class="las la-user"></i>Elliot Alderson
+                      <i className="las la-user"></i>Elliot Alderson
                     </li>
                   </ul>
-                  <div class="post-content">
+                  <div className="post-content">
                     <h3>
                       <a href="blog-details.html">
                         Innovative business all over the world.
@@ -355,7 +355,7 @@ function page() {
                       Financial experts support or help you to to find out which
                       way you can raise your funds more...
                     </p>
-                    <a href="blog-details.html" class="read-more">
+                    <a href="blog-details.html" className="read-more">
                       Read More
                     </a>
                   </div>

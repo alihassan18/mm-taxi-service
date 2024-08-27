@@ -4,12 +4,12 @@ function page() {
   return (
     <div>
       <Banner title="BLOG DETAILS!" />
-      <section class="blog-section blog-page bg-grey padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-              <div class="post-details">
-                <div class="post-thumb">
+      <section className="blog-section blog-page bg-grey padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 offset-lg-2">
+              <div className="post-details">
+                <div className="post-thumb">
                   <img src="/assets/img/post-1.jpg" alt="img" />
                 </div>
                 <p>
@@ -28,7 +28,7 @@ function page() {
                 </p>
 
                 <blockquote>
-                  <i class="fas fa-quote-right"></i>
+                  <i className="fas fa-quote-right"></i>
                   There are no secrets to success. It is the result preparation,
                   hard work and learning from failure.
                   <span>- Winston Churchill.</span>
@@ -44,7 +44,7 @@ function page() {
                   fleet-based businesses.
                 </p>
 
-                <ul class="post-details-gallery">
+                <ul className="post-details-gallery">
                   <li>
                     <img src="/assets/img/post-1.jpg" alt="img" />
                   </li>
@@ -68,7 +68,7 @@ function page() {
                   of a single Caterpillar 966 wheel loader.
                 </p>
 
-                <ul class="tags">
+                <ul className="tags">
                   <li>
                     <a href="#">Business</a>
                   </li>
@@ -83,11 +83,11 @@ function page() {
                   </li>
                 </ul>
 
-                <ul class="post-navigation">
+                <ul className="post-navigation">
                   <li>
                     <a href="blog-details.html">
                       <span>
-                        <i class="las la-angle-left"></i>Previous
+                        <i className="las la-angle-left"></i>Previous
                       </span>
                       How To Start Initiating An Startup In Few Days.
                     </a>
@@ -95,92 +95,92 @@ function page() {
                   <li>
                     <a href="blog-details.html">
                       <span>
-                        Next<i class="las la-angle-right"></i>
+                        Next<i className="las la-angle-right"></i>
                       </span>
                       Fresh Startup Ideas For Digital Business.
                     </a>
                   </li>
                 </ul>
 
-                <div class="author-box">
-                  <div class="author-thumb">
+                <div className="author-box">
+                  <div className="author-thumb">
                     <img src="/assets/img/auhtor.png" alt="img" />
                   </div>
-                  <div class="author-info">
+                  <div className="author-info">
                     <h3>Elliot Alderson</h3>
                     <p>
                       Our versatile team is built of designers, developers and
                       digital marketers who all bring unique experience.
                     </p>
-                    <ul class="social-icon">
+                    <ul className="social-icon">
                       <li>
                         <a href="#">
-                          <i class="lab la-facebook-f"></i>
+                          <i className="lab la-facebook-f"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="lab la-twitter"></i>
+                          <i className="lab la-twitter"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="lab la-instagram"></i>
+                          <i className="lab la-instagram"></i>
                         </a>
                       </li>
                       <li>
                         <a href="#">
-                          <i class="lab la-behance"></i>
+                          <i className="lab la-behance"></i>
                         </a>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                <h3 class="comment-title">Post Comments</h3>
-                <ul class="comments-box">
-                  <li class="comment">
-                    <div class="comment-inner">
-                      <div class="comment-thumb">
+                <h3 className="comment-title">Post Comments</h3>
+                <ul className="comments-box">
+                  <li className="comment">
+                    <div className="comment-inner">
+                      <div className="comment-thumb">
                         <img src="/assets/img/comment-1.png" alt="img" />
                       </div>
-                      <div class="comment-wrap">
-                        <div class="comments-meta">
+                      <div className="comment-wrap">
+                        <div className="comments-meta">
                           <h4>
                             Ashton Porter <span>Jan 01, 2022 at 8:00</span>
                           </h4>
                         </div>
-                        <div class="comment-area">
+                        <div className="comment-area">
                           <p>
                             You guys have put so much work, effort, and time
                             while designing this awesome theme I can see that
                             passion when I incorporated it into my website.
                           </p>
-                          <a href="#" class="reply">
+                          <a href="#" className="reply">
                             Reply
                           </a>
                         </div>
                       </div>
                     </div>
-                    <ul class="children">
-                      <li class="comment">
-                        <div class="comment-inner">
-                          <div class="comment-thumb">
+                    <ul className="children">
+                      <li className="comment">
+                        <div className="comment-inner">
+                          <div className="comment-thumb">
                             <img src="/assets/img/comment-2.png" alt="img" />
                           </div>
-                          <div class="comment-wrap">
-                            <div class="comments-meta">
+                          <div className="comment-wrap">
+                            <div className="comments-meta">
                               <h4>
                                 Melania Trump <span>Jan 01, 2022 at 8:00</span>
                               </h4>
                             </div>
-                            <div class="comment-area">
+                            <div className="comment-area">
                               <p>
                                 The only thing I LOVE more than this theme and
                                 it’s incredible options is the support team!
                                 They are freaking amazable!
                               </p>
-                              <a href="#" class="reply">
+                              <a href="#" className="reply">
                                 Reply
                               </a>
                             </div>
@@ -189,24 +189,24 @@ function page() {
                       </li>
                     </ul>
                   </li>
-                  <li class="comment">
-                    <div class="comment-inner">
-                      <div class="comment-thumb">
+                  <li className="comment">
+                    <div className="comment-inner">
+                      <div className="comment-thumb">
                         <img src="/assets/img/comment-3.png" alt="img" />
                       </div>
-                      <div class="comment-wrap">
-                        <div class="comments-meta">
+                      <div className="comment-wrap">
+                        <div className="comments-meta">
                           <h4>
                             Elliot Alderson <span>Jan 01, 2022 at 8:00</span>
                           </h4>
                         </div>
-                        <div class="comment-area">
+                        <div className="comment-area">
                           <p>
                             Outstanding quality in this theme, brilliant Effects
                             and perfect crafted Code. We absolutely love it and
                             can highly recommend DynamicLayers!
                           </p>
-                          <a href="#" class="reply">
+                          <a href="#" className="reply">
                             Reply
                           </a>
                         </div>
@@ -215,49 +215,49 @@ function page() {
                   </li>
                 </ul>
 
-                <h3 class="comment-title">Leave a Comment</h3>
+                <h3 className="comment-title">Leave a Comment</h3>
                 <form
                   action="#"
                   method="post"
-                  class="comment-form form-horizontal"
+                  className="comment-form form-horizontal"
                 >
-                  <div class="form-group row">
-                    <div class="col-sm-6 padding-15">
+                  <div className="form-group row">
+                    <div className="col-sm-6 padding-15">
                       <input
                         type="text"
                         id="name"
                         name="name"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Name*"
                         required
                       />
                     </div>
-                    <div class="col-sm-6 padding-15">
+                    <div className="col-sm-6 padding-15">
                       <input
                         type="text"
                         id="email"
                         name="email"
-                        class="form-control"
+                        className="form-control"
                         placeholder="Email*"
                         required
                       />
                     </div>
-                    <div class="col-md-12 padding-15">
+                    <div className="col-md-12 padding-15">
                       <textarea
                         id="comment"
                         name="comment"
                         cols="30"
                         rows="5"
-                        class="form-control comment"
+                        className="form-control comment"
                         placeholder="Your Comment*"
                         required
                       ></textarea>
                     </div>
-                    <div class="col-md-12 padding-15">
-                      <button id="submit" class="default-btn" type="submit">
+                    <div className="col-md-12 padding-15">
+                      <button id="submit" className="default-btn" type="submit">
                         Submit Comment<span></span>
                       </button>
-                      <div id="form-messages" class="alert" role="alert"></div>
+                      <div id="form-messages" className="alert" role="alert"></div>
                     </div>
                   </div>
                 </form>

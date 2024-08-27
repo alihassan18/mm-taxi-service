@@ -5,24 +5,24 @@ function page() {
   return (
     <div>
       <Banner title="OUR TAXI LIST!" />
-      <section class="our-taxi padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 sm-padding">
-              <div class="pricing-item">
-                <div class="pricing-head-wrap">
-                  <div class="pricing-car">
+      <section className="our-taxi padding">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 sm-padding">
+              <div className="pricing-item">
+                <div className="pricing-head-wrap">
+                  <div className="pricing-car">
                     <img src="/assets/img/pricing-car.png" alt="car" />
-                    <div class="price">$2.50/km</div>
+                    <div className="price">$2.50/km</div>
                   </div>
                 </div>
-                <div class="pricing-head">
+                <div className="pricing-head">
                   <h3>
                     <a href="taxi-details.html">BMW X5 2008</a>
                   </h3>
-                  <span class="location">Chicago</span>
+                  <span className="location">Chicago</span>
                 </div>
-                <ul class="pricing-list">
+                <ul className="pricing-list">
                   <li>
                     Initial Charge: <span>$2.50</span>
                   </li>
@@ -36,28 +36,28 @@ function page() {
                     Passengers: <span>4 Person</span>
                   </li>
                   <li>
-                    <a href="book-taxi.html" class="default-btn">
+                    <a href="book-taxi.html" className="default-btn">
                       Book Taxi Now
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 sm-padding">
-              <div class="pricing-item">
-                <div class="pricing-head-wrap">
-                  <div class="pricing-car">
+            <div className="col-lg-4 col-md-6 sm-padding">
+              <div className="pricing-item">
+                <div className="pricing-head-wrap">
+                  <div className="pricing-car">
                     <img src="/assets/img/pricing-car.png" alt="car" />
-                    <div class="price">$3.50/km</div>
+                    <div className="price">$3.50/km</div>
                   </div>
                 </div>
-                <div class="pricing-head">
+                <div className="pricing-head">
                   <h3>
                     <a href="taxi-details.html">Mercedes‑Benz</a>
                   </h3>
-                  <span class="location">Florida</span>
+                  <span className="location">Florida</span>
                 </div>
-                <ul class="pricing-list">
+                <ul className="pricing-list">
                   <li>
                     Initial Charge: <span>$2.50</span>
                   </li>
@@ -71,28 +71,28 @@ function page() {
                     Passengers: <span>4 Person</span>
                   </li>
                   <li>
-                    <a href="book-taxi.html" class="default-btn">
+                    <a href="book-taxi.html" className="default-btn">
                       Book Taxi Now
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 sm-padding">
-              <div class="pricing-item">
-                <div class="pricing-head-wrap">
-                  <div class="pricing-car">
+            <div className="col-lg-4 col-md-6 sm-padding">
+              <div className="pricing-item">
+                <div className="pricing-head-wrap">
+                  <div className="pricing-car">
                     <img src="/assets/img/pricing-car.png" alt="car" />
-                    <div class="price">$4.50/km</div>
+                    <div className="price">$4.50/km</div>
                   </div>
                 </div>
-                <div class="pricing-head">
+                <div className="pricing-head">
                   <h3>
                     <a href="taxi-details.html">Hyundai 2022</a>
                   </h3>
-                  <span class="location">New York</span>
+                  <span className="location">New York</span>
                 </div>
-                <ul class="pricing-list">
+                <ul className="pricing-list">
                   <li>
                     Initial Charge: <span>$2.50</span>
                   </li>
@@ -106,7 +106,7 @@ function page() {
                     Passengers: <span>4 Person</span>
                   </li>
                   <li>
-                    <a href="book-taxi.html" class="default-btn">
+                    <a href="book-taxi.html" className="default-btn">
                       Book Taxi Now
                     </a>
                   </li>

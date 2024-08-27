@@ -7,9 +7,9 @@ function page() {
     <div>
       <Banner title="OUR DRIVERS!" />
 
-      <section class="team-section padding">
-        <div class="container">
-          <div class="section-heading text-center mb-40">
+      <section className="team-section padding">
+        <div className="container">
+          <div className="section-heading text-center mb-40">
             <h4>
               <span></span>Lets Go With Us!
             </h4>
@@ -20,13 +20,13 @@ function page() {
               guarantees and regularly master new technologies.
             </p>
           </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+          <div className="row">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="/assets/img/team-1.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Félix Lengyel</a>
                   </h3>
@@ -34,12 +34,12 @@ function page() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="/assets/img/team-2.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Henry Nathan</a>
                   </h3>
@@ -47,12 +47,12 @@ function page() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="/assets/img/team-3.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Brandon Larned</a>
                   </h3>
@@ -60,12 +60,12 @@ function page() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 sm-padding">
-              <div class="team-item">
-                <div class="team-thumb">
+            <div className="col-lg-3 col-md-6 sm-padding">
+              <div className="team-item">
+                <div className="team-thumb">
                   <img src="/assets/img/team-4.jpg" alt="thumb" />
                 </div>
-                <div class="team-content">
+                <div className="team-content">
                   <h3>
                     <a href="driver-details.html">Sasha Hostyn</a>
                   </h3>

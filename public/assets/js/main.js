@@ -1,5 +1,5 @@
 /*===================================================
-	Template Scripts
+  Template Scripts
 ====================================================*/
 (function ($) {
   "use strict";
@@ -14,7 +14,7 @@
     function stickyHeader() {
       var primaryHeader = $(".nav-menu-wrapper"),
         headerClone = primaryHeader.clone();
-      $(".main-header").after('<div class="sticky-header"></div>');
+      $(".main-header").after('<div className="sticky-header"></div>');
       $(".sticky-header").html(headerClone);
 
       var headerSelector = document.querySelector(".sticky-header"),
@@ -46,7 +46,7 @@
       }
 
       $(".header-menu-wrap ul li:has(ul)").each(function () {
-        $(this).append('<span class="dropdown-plus"></span>');
+        $(this).append('<span className="dropdown-plus"></span>');
         $(this).addClass("dropdown_menu");
       });
 
