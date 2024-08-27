@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../.././components/common/banner/banner";
+import Banner from "../../components/common/banner/Banner";
 
 function page() {
   return (
