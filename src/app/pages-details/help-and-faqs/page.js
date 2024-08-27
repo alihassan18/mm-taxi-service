@@ -85,7 +85,7 @@ function page() {
                       aria-controls="collapseThree"
                     >
                       {" "}
-                      How to download the ridek taxi app online?{" "}
+                      How to download the mmtaxi taxi app online?{" "}
                     </button>
                   </h2>
                   <div
@@ -151,7 +151,7 @@ function page() {
                       aria-controls="collapseFive"
                     >
                       {" "}
-                      How Many cars does ridek taxi service Have?{" "}
+                      How Many cars does mmtaxi taxi service Have?{" "}
                     </button>
                   </h2>
                   <div

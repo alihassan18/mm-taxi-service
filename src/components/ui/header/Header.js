@@ -76,7 +76,7 @@ function Header() {
                   </div>
                   <div className="header-info-text">
                     <h3>
-                      <span>Email now</span>Info.ridek@mail.com
+                      <span>Email now</span>Info.mmtaxi@mail.com
                     </h3>
                   </div>
                 </li>
@@ -161,7 +161,7 @@ function Header() {
                       </li>
                       <li>
                         <Link href="/pages-details/help-and-faqs">
-                          Help &amp; Faq's
+                          Help &amp; Faq&apos;s
                         </Link>
                       </li>
                     </ul>

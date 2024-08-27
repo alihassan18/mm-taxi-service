@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
                 2386
               </li>
               <li>
-                <span>Email now:</span>Info.ridek@mail.com
+                <span>Email now:</span>Info.mmtaxi@mail.com
               </li>
             </ul>
           </div>

@@ -255,7 +255,7 @@ const HomePage = () => {
                 <span>You can find us at:</span>Halk Street New York, USA - 2386
               </li>
               <li>
-                <span>Email now:</span>Info.ridek@mail.com
+                <span>Email now:</span>Info.mmtaxi@mail.com
               </li>
             </ul>
           </div>
@@ -881,7 +881,7 @@ const HomePage = () => {
                     </p>
                   </div>
 
-                  <ul class="ridek-features">
+                  <ul class="mmtaxi-features">
                     <li class="wow fade-in-right" data-wow-delay="300ms">
                       <div class="feature-icon">
                         <i class="las la-gem"></i>

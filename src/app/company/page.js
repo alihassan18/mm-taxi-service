@@ -336,7 +336,7 @@ function page() {
                   </p>
                 </div>
 
-                <ul class="ridek-features">
+                <ul class="mmtaxi-features">
                   <li>
                     <div class="feature-icon">
                       <i class="las la-gem"></i>
