@@ -207,7 +207,7 @@ const HomePage = () => {
           </div>
         </div> */}
 
-        <div id="popup-search-box">
+        {/* <div id="popup-search-box">
           <div className="box-inner-wrap d-flex align-items-center">
             <form id="form" action="#" method="get" role="search">
               <input
@@ -225,9 +225,9 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div id="searchbox-overlay"></div>
+        <div id="searchbox-overlay"></div> */}
 
-        <div id="popup-sidebox" className="popup-sidebox">
+        {/* <div id="popup-sidebox" className="popup-sidebox">
           <div className="sidebox-content">
             <div className="site-logo">
               <a href="index.html">
@@ -250,8 +250,8 @@ const HomePage = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div id="sidebox-overlay"></div>
+        </div> */}
+        {/* <div id="sidebox-overlay"></div> */}
 
         {/*  */}
         <section className="about-section padding">
