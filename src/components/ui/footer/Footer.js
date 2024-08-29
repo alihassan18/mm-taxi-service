@@ -25,7 +25,7 @@ function Footer() {
                     <i className="las la-phone-volume" />
                     <p>
                       <span>Call For Taxi</span>
-                      <a href="tel:5267214392">5267-214-392</a>
+                      <a href="tel:5267214392">+966595783153</a>
                     </p>
                   </div>
                 </div>
@@ -62,10 +62,10 @@ function Footer() {
                   </div>
                   <ul className="footer-links">
                     <li>
-                      <a href="book-taxi.html">Taxi Booking</a>
+                      <a href="/company/book-a-ride">Taxi Booking</a>
                     </li>
                     <li>
-                      <a href="faqs.html">Help Center</a>
+                      <a href="/pages-details/help-and-faqs">Help Center</a>
                     </li>
                     <li>
                       <a href="about-us.html">Privacy and Policy</a>
@@ -74,7 +74,7 @@ function Footer() {
                       <a href="about-company.html">Terms of Use</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact Us</a>
+                      <a href="/contact">Contact Us</a>
                     </li>
                   </ul>
                 </div>
@@ -86,11 +86,11 @@ function Footer() {
                   </div>
                   <ul className="footer-contact">
                     <li>
-                      <span>Location:</span>153 Williamson Plaza, Maggieberg, MT
-                      09514
+                      <span>Location:</span>Makkah Al Mukarma kingdom saudi
+                      Arabia
                     </li>
                     <li>
-                      <span>Join Us:</span>Info@YourGmail24.com
+                      <span>Join Us:</span>mmtaxiservice95@gmail.com
                     </li>
                   </ul>
                 </div>
@@ -130,7 +130,7 @@ function Footer() {
             <div className="taxi-3" />
           </div>
         </div>
-        {/*/.footer-mid-wrap*/}
+
         <div className="copyright-wrap">
           <div className="container">
             <p>
@@ -138,7 +138,15 @@ function Footer() {
             </p>
           </div>
         </div>
-        {/*/.copyright-wrap*/}
+        <a href="https://wa.me/+966595783153" target="_blank">
+          <div class="whatsapp-button">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
+              alt=""
+              class="whatsapp-icon"
+            />
+          </div>
+        </a>
       </footer>
     </div>
   );

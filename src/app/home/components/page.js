@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
   return (
@@ -183,9 +184,21 @@ const HomePage = () => {
             </div>
             {/* <!-- Slider navigation buttons --> */}
             <div className="slider-controls">
-              <div className="slider-control slider-button-prev"><span><i className="las la-long-arrow-alt-left"></i></span>Prev</div>
-              <div className="slider-pagination swiper-pagination-fraction swiper-pagination-horizontal"><span className="swiper-pagination-current">1</span> / <span className="swiper-pagination-total">2</span></div>
-              <div className="slider-control slider-button-next">Next<span><i className="las la-long-arrow-alt-right"></i></span>
+              <div className="slider-control slider-button-prev">
+                <span>
+                  <i className="las la-long-arrow-alt-left"></i>
+                </span>
+                Prev
+              </div>
+              <div className="slider-pagination swiper-pagination-fraction swiper-pagination-horizontal">
+                <span className="swiper-pagination-current">1</span> /{" "}
+                <span className="swiper-pagination-total">2</span>
+              </div>
+              <div className="slider-control slider-button-next">
+                Next
+                <span>
+                  <i className="las la-long-arrow-alt-right"></i>
+                </span>
               </div>
             </div>
           </div>
@@ -323,7 +336,7 @@ const HomePage = () => {
                   <li>
                     <h2>
                       <span>Call For Taxi</span>
-                      <a href="tel:5267214392">5267-214-392</a>
+                      <a href="tel:5267214392">+966595783153</a>
                     </h2>
                   </li>
                 </ul>
@@ -507,7 +520,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="taxi-details bd-bottom padding">
+        <section className="taxi-details bd-bottom padding" id="taxi-booking">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -530,7 +543,7 @@ const HomePage = () => {
                     technologies. Our portfolio includes dozens of successfully
                     completed projects of houses of different storeys, with
                     high–quality finishes and good repairs. Book your taxi from
-                    anywhare today!
+                    anywhere today!
                   </p>
                 </div>
                 <ul className="taxi-features">
@@ -571,9 +584,9 @@ const HomePage = () => {
                     4
                   </li>
                 </ul>
-                <a href="book-taxi.html" className="default-btn mt-30">
+                <Link href="/company/book-a-ride" className="default-btn mt-30">
                   Book Your Ride
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -600,17 +613,33 @@ const HomePage = () => {
                     <div className="booking-form">
                       <div className="form-field">
                         <i className="las la-user-tie"></i>
-                        <input type="text" id="full-name" name="full-name" className="form-control"
-                          placeholder="Your Name" required />
+                        <input
+                          type="text"
+                          id="full-name"
+                          name="full-name"
+                          className="form-control"
+                          placeholder="Your Name"
+                          required
+                        />
                       </div>
                       <div className="form-field">
                         <i className="las la-envelope-open"></i>
-                        <input type="email" id="email" name="email" className="form-control" placeholder="Email"
-                          required />
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          className="form-control"
+                          placeholder="Email"
+                          required
+                        />
                       </div>
                       <div className="form-field">
                         <i className="las la-tags"></i>
-                        <select name="package-type" id="type" className="niceSelect">
+                        <select
+                          name="package-type"
+                          id="type"
+                          className="niceSelect"
+                        >
                           <option value="standard">Standard</option>
                           <option value="business">Business</option>
                           <option value="economy">Economy</option>
@@ -620,7 +649,11 @@ const HomePage = () => {
                       </div>
                       <div className="form-field">
                         <i className="las la-user-friends"></i>
-                        <select name="passengers" id="passengers" className="niceSelect">
+                        <select
+                          name="passengers"
+                          id="passengers"
+                          className="niceSelect"
+                        >
                           <option value="1">1 Person</option>
                           <option value="2">2 Person</option>
                           <option value="3">3 Person</option>
@@ -630,29 +663,63 @@ const HomePage = () => {
                       </div>
                       <div className="form-field">
                         <i className="las la-map-marker"></i>
-                        <input type="text" id="start-dest" name="start-dest" className="form-control"
-                          placeholder="Start Destination" required />
+                        <input
+                          type="text"
+                          id="start-dest"
+                          name="start-dest"
+                          className="form-control"
+                          placeholder="Start Destination"
+                          required
+                        />
                       </div>
                       <div className="form-field">
                         <i className="las la-map-marker"></i>
-                        <input type="text" id="end-dest" name="end-dest" className="form-control"
-                          placeholder="End Destination" required />
+                        <input
+                          type="text"
+                          id="end-dest"
+                          name="end-dest"
+                          className="form-control"
+                          placeholder="End Destination"
+                          required
+                        />
                       </div>
                       <div className="form-field">
                         <i className="las la-calendar"></i>
-                        <input type="text" id="ride-date" name="ride-date" className="form-control date-picker"
-                          placeholder="Select Date" required />
+                        <input
+                          type="text"
+                          id="ride-date"
+                          name="ride-date"
+                          className="form-control date-picker"
+                          placeholder="Select Date"
+                          required
+                        />
                       </div>
                       <div className="form-field">
                         <i className="las la-clock"></i>
-                        <input type="text" id="ride-time" name="ride-time" className="form-control time-picker"
-                          placeholder="Select Time" required />
+                        <input
+                          type="text"
+                          id="ride-time"
+                          name="ride-time"
+                          className="form-control time-picker"
+                          placeholder="Select Time"
+                          required
+                        />
                       </div>
                       <div className="form-field">
-                        <button id="submit" className="default-btn" type="submit">Book Your Taxi</button>
+                        <button
+                          id="submit"
+                          className="default-btn"
+                          type="submit"
+                        >
+                          Book Your Taxi
+                        </button>
                       </div>
                     </div>
-                    <div id="form-messages" className="alert" role="alert"></div>
+                    <div
+                      id="form-messages"
+                      className="alert"
+                      role="alert"
+                    ></div>
                   </form>
                 </div>
               </div>
@@ -917,7 +984,10 @@ const HomePage = () => {
         </section>
 
         <section className="cta-section padding">
-          <div className="cta-men wow fade-in-bottom" data-wow-delay="200ms"></div>
+          <div
+            className="cta-men wow fade-in-bottom"
+            data-wow-delay="200ms"
+          ></div>
           <div className="container">
             <div className="cta-content">
               <h2>
@@ -933,7 +1003,7 @@ const HomePage = () => {
                 <i className="las la-phone-volume"></i>
                 <p>
                   <span>Call For Taxi</span>
-                  <a href="tel:5267214392">5267-214-392</a>
+                  <a href="tel:5267214392">+966595783153</a>
                 </p>
               </div>
             </div>

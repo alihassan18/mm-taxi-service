@@ -224,7 +224,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { act } from "react";
 
-const activeLinkColor = "#ff9900"
+const activeLinkColor = "#ff9900";
 
 function Header() {
   const pathname = usePathname();
@@ -245,15 +245,33 @@ function Header() {
               </div>
               <div className="top-right">
                 <ul className="top-header-nav">
-                  <li><a href="faqs.html">Help</a></li>
-                  <li><a href="contact.html">Support</a></li>
-                  <li><a href="faqs.html">FAQ</a></li>
+                  <li>
+                    <Link href="/pages-details/help-and-faqs"> Help</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Support</Link>
+                  </li>
+                  <li>
+                    <Link href="/pages-details/help-and-faqs"> Help FAQ</Link>
+                  </li>
                 </ul>
                 <ul className="header-social-share">
-                  <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                  <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                  <li>
+                    <Link href="https://www.facebook.com/MMTaxiService">
+                      <i className="fab fa-facebook-f"></i>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link href="https://www.twitter.com/@MM Taxi Service">
+                      <i className="fab fa-twitter"></i>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.instagram.com/@mmtaxiservice">
+                      <i className="fab fa-instagram"></i>
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -278,7 +296,7 @@ function Header() {
                   <div className="header-info-text">
                     <h3>
                       <span>Call us now</span>
-                      <a href="tel:5267214392">5267-214-392</a>
+                      <a href="tel:5267214392">+966595783153</a>
                     </h3>
                   </div>
                 </li>
@@ -288,7 +306,7 @@ function Header() {
                   </div>
                   <div className="header-info-text">
                     <h3>
-                      <span>Email now</span>Info.mmtaxi@mail.com
+                      <span>Email now</span>mmtaxiservice95@gmail.com
                     </h3>
                   </div>
                 </li>
@@ -298,7 +316,8 @@ function Header() {
                   </div>
                   <div className="header-info-text">
                     <h3>
-                      <span>Halk Street</span>New York, USA - 2386
+                      <span>Halk Street</span>Makkah Al Mukarma kingdom saudi
+                      Arabia
                     </h3>
                   </div>
                 </li>
@@ -321,65 +340,215 @@ function Header() {
                   <li className={isPathActive("/") ? "active" : ""}>
                     <Link href="/">Home</Link>
                   </li>
-                  <li className={isDropdownActive(['/company']) ? "active dropdown_menu" : "dropdown_menu"}>
+                  <li
+                    className={
+                      isDropdownActive(["/company"])
+                        ? "active dropdown_menu"
+                        : "dropdown_menu"
+                    }
+                  >
                     <Link href="/company">Company</Link>
                     <ul>
                       <li>
-                        <Link href="/company/about-us" style={{ color: isPathActive("/company/about-us") ? activeLinkColor : "" }}>About Us</Link>
+                        <Link
+                          href="/company/about-us"
+                          style={{
+                            color: isPathActive("/company/about-us")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          About Us
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/company/about-company" style={{ color: isPathActive("/company/about-company") ? activeLinkColor : "" }}>About Company</Link>
+                        <Link
+                          href="/company/about-company"
+                          style={{
+                            color: isPathActive("/company/about-company")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          About Company
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/company/our-services" style={{ color: isPathActive("/company/our-services") ? activeLinkColor : "" }}>Our Services</Link>
+                        <Link
+                          href="/company/our-services"
+                          style={{
+                            color: isPathActive("/company/our-services")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Our Services
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/company/services-details" style={{ color: isPathActive("/company/services-details") ? activeLinkColor : "" }}>Services Details</Link>
+                        <Link
+                          href="/company/services-details"
+                          style={{
+                            color: isPathActive("/company/services-details")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Services Details
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/company/book-a-ride" style={{ color: isPathActive("/company/book-a-ride") ? activeLinkColor : "" }}>Book a Ride</Link>
+                        <Link
+                          href="/company/book-a-ride"
+                          style={{
+                            color: isPathActive("/company/book-a-ride")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Book a Ride
+                        </Link>
                       </li>
                     </ul>
                   </li>
-                  <li className={isDropdownActive(['/our-taxi']) ? "active dropdown_menu" : "dropdown_menu"}>
+                  <li
+                    className={
+                      isDropdownActive(["/our-taxi"])
+                        ? "active dropdown_menu"
+                        : "dropdown_menu"
+                    }
+                  >
                     <Link href="/our-taxi">Our Taxi</Link>
                     <ul>
                       <li>
-                        <Link href="/our-taxi/taxi-lists" style={{ color: isPathActive("/our-taxi/taxi-lists") ? activeLinkColor : "" }}>Taxi Lists</Link>
+                        <Link
+                          href="/our-taxi/taxi-lists"
+                          style={{
+                            color: isPathActive("/our-taxi/taxi-lists")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Taxi Lists
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/our-taxi/taxi-details" style={{ color: isPathActive("/our-taxi/taxi-details") ? activeLinkColor : "" }}>Taxi Details</Link>
+                        <Link
+                          href="/our-taxi/taxi-details"
+                          style={{
+                            color: isPathActive("/our-taxi/taxi-details")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Taxi Details
+                        </Link>
                       </li>
                     </ul>
                   </li>
-                  <li className={isDropdownActive(['/pages-details']) ? "active dropdown_menu" : "dropdown_menu"}>
+                  <li
+                    className={
+                      isDropdownActive(["/pages-details"])
+                        ? "active dropdown_menu"
+                        : "dropdown_menu"
+                    }
+                  >
                     <Link href="/pages-details">Pages</Link>
                     <ul>
                       <li>
-                        <Link href="/pages-details/ourdrivers" style={{ color: isPathActive("/pages-details/ourdrivers") ? activeLinkColor : "" }}>Our Drivers</Link>
+                        <Link
+                          href="/pages-details/ourdrivers"
+                          style={{
+                            color: isPathActive("/pages-details/ourdrivers")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Our Drivers
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/pages-details/driversdetails" style={{ color: isPathActive("/pages-details/driversdetails") ? activeLinkColor : "" }}>Driver Details</Link>
-                      </li>
-                      <li >
-                        <Link href="/pages-details/customerviews" style={{ color: isPathActive("/pages-details/customerviews") ? activeLinkColor : "" }}>Customer Reviews</Link>
+                        <Link
+                          href="/pages-details/driversdetails"
+                          style={{
+                            color: isPathActive("/pages-details/driversdetails")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Driver Details
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/pages-details/help-and-faqs" style={{ color: isPathActive("/pages-details/help-and-faqs") ? activeLinkColor : "" }}>Help & Faq&apos;s</Link>
+                        <Link
+                          href="/pages-details/customerviews"
+                          style={{
+                            color: isPathActive("/pages-details/customerviews")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Customer Reviews
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/pages-details/help-and-faqs"
+                          style={{
+                            color: isPathActive("/pages-details/help-and-faqs")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Help & Faq&apos;s
+                        </Link>
                       </li>
                     </ul>
                   </li>
-                  <li className={isDropdownActive(['/blog']) ? "active dropdown_menu" : "dropdown_menu"}>
+                  <li
+                    className={
+                      isDropdownActive(["/blog"])
+                        ? "active dropdown_menu"
+                        : "dropdown_menu"
+                    }
+                  >
                     <Link href="/blog">Blog</Link>
                     <ul>
                       <li>
-                        <Link href="/blog/grid-post" style={{ color: isPathActive("/blog/grid-post") ? activeLinkColor : "" }}>Grid Posts</Link>
+                        <Link
+                          href="/blog/grid-post"
+                          style={{
+                            color: isPathActive("/blog/grid-post")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Grid Posts
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/blog/classes-posts" style={{ color: isPathActive("/blog/classes-posts") ? activeLinkColor : "" }}>Classic Posts</Link>
+                        <Link
+                          href="/blog/classes-posts"
+                          style={{
+                            color: isPathActive("/blog/classes-posts")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Classic Posts
+                        </Link>
                       </li>
                       <li>
-                        <Link href="/blog/details-blogs" style={{ color: isPathActive("/blog/details-blogs") ? activeLinkColor : "" }}>Blog Details</Link>
+                        <Link
+                          href="/blog/details-blogs"
+                          style={{
+                            color: isPathActive("/blog/details-blogs")
+                              ? activeLinkColor
+                              : "",
+                          }}
+                        >
+                          Blog Details
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -408,9 +577,9 @@ function Header() {
               </div>
             </div>
           </div>
-        </div >
-      </header >
-    </div >
+        </div>
+      </header>
+    </div>
   );
 }
 

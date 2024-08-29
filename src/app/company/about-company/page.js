@@ -33,17 +33,18 @@ function page() {
                   />
                   <div className="owner">
                     <h4>Founder - CEO</h4>
-                    <img
+                    {/* <img
                       className="signature"
                       src="/assets/img/signature.png"
                       alt="signature"
-                    />
+                    /> */}
+                    <h2></h2>
                   </div>
                 </li>
                 <li>
                   <h2>
                     <span>Call For Taxi</span>
-                    <a href="tel:5267214392">5267-214-392</a>
+                    <a href="tel:5267214392">+966595783153</a>
                   </h2>
                 </li>
               </ul>

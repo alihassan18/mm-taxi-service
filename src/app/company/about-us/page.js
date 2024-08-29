@@ -469,7 +469,7 @@ const page = () => {
               <i className="las la-phone-volume"></i>
               <p>
                 <span>Call For Taxi</span>
-                <a href="tel:5267214392">5267-214-392</a>
+                <a href="tel:5267214392">+966595783153</a>
               </p>
             </div>
           </div>
