@@ -316,8 +316,7 @@ function Header() {
                   </div>
                   <div className="header-info-text">
                     <h3>
-                      <span>Halk Street</span>Makkah Al Mukarma kingdom saudi
-                      Arabia
+                      <span>Halk Street</span>Makkah Al Mukarma KSA
                     </h3>
                   </div>
                 </li>
