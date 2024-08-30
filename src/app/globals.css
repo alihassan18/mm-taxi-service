@@ -120,9 +120,114 @@ a {
 .whatsapp-icon {
   width: 100%;
   height: 100%;
-  opacity: 0.7; /* Adjust the opacity to make the icon transparent */
+  opacity: 0.8;
+  /* Adjust the opacity to make the icon transparent */
 }
 
 .whatsapp-button:hover .whatsapp-icon {
   opacity: 1; /* Make the icon fully opaque on hover */
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: start; /* Center the tabs */
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: #ff9900;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  cursor: pointer; /* Change cursor to pointer */
+  color: #fff; /* Ensure the text color is white */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #fff; /* White underline for the active tab */
+  font-weight: bold;
+  bottom: 2px;
+  color: black; /* Ensure active tab text is white */
+}
+
+.tab-content .tab-panel {
+  display: block;
+  color: #fff; /* Ensure the content text is white */
+}
+
+.tab-content .tab-panel:not(.active) {
+  display: none;
+  color: #fff;
+}
+
+.bd {
+  border: red 3px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #333; /* Thicker border for header */
+}
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tbody tr:hover {
+  background-color: #e0e0e0; /* Highlight row on hover */
+}
+
+.table-header {
+  width: 50%;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 780px) {
+  .table-header {
+    width: auto;
+  }
+}
+
+.table-cell-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.tabs-nav {
+  display: flex;
+  overflow-x: auto;
+
+  white-space: nowrap; /* Prevent tabs from wrapping to the next line */
+}
+
+.tab-button {
+  flex: 0 0 auto; /* Prevent buttons from shrinking */
+  margin-right: 10px; /* Adjust spacing between tabs */
+  /* Additional styling as needed */
+}
+
+.tabs-container {
+  background: transparent;
+  overflow: hidden; /* Hide any overflow that might occur outside the container */
+}
+.tabs-content {
+  overflow-x: auto;
+  width: 100%;
+}
+.AtScrollHide {
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }

@@ -141,8 +141,8 @@ function Footer() {
         <a href="https://wa.me/+966595783153" target="_blank">
           <div class="whatsapp-button">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
-              alt=""
+              src="/assets/img/WSimages-removebg-preview.png"
+              alt="WhatsApp Icon"
               class="whatsapp-icon"
             />
           </div>
