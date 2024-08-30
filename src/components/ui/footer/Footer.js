@@ -139,11 +139,11 @@ function Footer() {
           </div>
         </div>
         <a href="https://wa.me/+966595783153" target="_blank">
-          <div class="whatsapp-button">
+          <div className="whatsapp-button">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png"
               alt=""
-              class="whatsapp-icon"
+              className="whatsapp-icon"
             />
           </div>
         </a>
