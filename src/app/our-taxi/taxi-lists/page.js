@@ -325,6 +325,7 @@ import Banner from "../../../components/common/banner/Banner";
 
 const page = () => {
   // const [activeTab, setActiveTab] = useState(tabsData[0].id);
+  // const [activeTab, setActiveTab] = useState(tabsData[0].id);
 
   const handleTabClick = (id) => {
     setActiveTab(id);
