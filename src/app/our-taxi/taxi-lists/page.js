@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
-import Tabs from "../../../components/ui/Tabs";
-import { useState } from "react";
-import CamrySonata from "../../route/CamrySonata";
+// import Tabs from "../../../components/ui/Tabs";
+// import { useState } from "react";
+// import CamrySonata from "../../route/CamrySonata";
 
 // const pricingData = [
 //   {
@@ -324,7 +324,7 @@ import CamrySonata from "../../route/CamrySonata";
 // ];
 
 const page = () => {
-  const [activeTab, setActiveTab] = useState(tabsData[0].id);
+  // const [activeTab, setActiveTab] = useState(tabsData[0].id);
 
   const handleTabClick = (id) => {
     setActiveTab(id);
