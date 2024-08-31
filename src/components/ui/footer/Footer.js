@@ -34,6 +34,7 @@ function Footer() {
           </div>
         </div>
         {/*/.footer-top-wrap*/}
+        {/*/.footer-top-wrap*/}
         <div className="footer-mid-wrap">
           <div className="container">
             <div className="row">
