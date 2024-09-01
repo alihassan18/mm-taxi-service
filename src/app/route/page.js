@@ -60,7 +60,7 @@ const Route = () => {
                   </button>
                 ))}
               </div>
-              <div className="tabs-content AtScrollHide">
+              <div className="tabs-content AtScrollHide nowrap">
                 {tabsData.find((tab) => tab.id === activeTab)?.content}
               </div>
             </div>

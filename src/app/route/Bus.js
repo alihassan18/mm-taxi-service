@@ -38,7 +38,7 @@ const Bus = () => {
             <tr key={index}>
               <td>{route.route}</td>
               <td>
-                <div className="table-cell-end">{route.price}</div>
+                <div className="table-cell-end nowrap">{route.price}</div>
               </td>
             </tr>
           ))}
