@@ -144,7 +144,7 @@ function Footer() {
             <img
               src="/assets/img/WSimages-removebg-preview.png"
               alt="WhatsApp Icon"
-              class="whatsapp-icon"
+              className="whatsapp-icon"
             />
           </div>
         </a>
