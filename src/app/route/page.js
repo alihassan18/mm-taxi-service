@@ -2,12 +2,13 @@
 import { useState } from "react";
 import CamrySonata from "./CamrySonata";
 import Hyundai from "./Hyundai";
-import GMC from "./GMC";
+
 import Gmc22Modal from "./Gmc22Modal";
 import Hiace from "./Hiace";
 import Coaster from "./Coaster";
 import Bus from "./Bus";
 import Banner from "../../components/common/banner/Banner";
+import Gmc from "./Gmc";
 const Route = () => {
   const tabsData = [
     {
@@ -23,7 +24,7 @@ const Route = () => {
     {
       id: "GMC 2016 to 2020 model",
       label: " GMC 2016 to 2020 mode",
-      content: <GMC />,
+      content: <Gmc />,
     },
     {
       id: "GMC 2022 model",

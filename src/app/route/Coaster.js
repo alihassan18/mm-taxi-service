@@ -1,5 +1,4 @@
 import React from "react";
-
 const coasterRoutes = [
   { route: "Jeddah Airport to Makkah Hotel", price: "800/SR" },
   { route: "Makkah Hotel to Jeddah Airport", price: "700/SR" },

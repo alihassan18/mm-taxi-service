@@ -1,5 +1,4 @@
 import React from "react";
-
 const routes = [
   { route: "Jeddah Airport to Makkah Hotel", price: "250/SR" },
   { route: "Makkah Hotel to Jeddah Airport", price: "200/SR" },

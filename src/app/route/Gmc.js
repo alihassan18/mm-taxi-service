@@ -1,5 +1,4 @@
 import React from "react";
-
 const gmcRoutes = [
   { route: "Jeddah Airport to Makkah Hotel", price: "400/SR" },
   { route: "Makkah Hotel to Jeddah Airport", price: "400/SR" },
@@ -19,7 +18,7 @@ const gmcRoutes = [
   { route: "Per Hour Rate", price: "150/SR" },
 ];
 
-const GMC = () => {
+const Gmc = () => {
   return (
     <div>
       <table>
@@ -48,4 +47,4 @@ const GMC = () => {
   );
 };
 
-export default GMC;
+export default Gmc;
