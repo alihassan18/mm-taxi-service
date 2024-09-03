@@ -12,16 +12,16 @@ function page() {
               <div className="about-img">
                 <img
                   className="about-img1"
-                  src="assets/img/about-1.png"
+                  src="/assets/img/about-1.png"
                   alt="img"
                 />
                 <img
                   className="about-img2"
-                  src="assets/img/about-2.png"
+                  src="/assets/img/about-2.png"
                   alt="img"
                 />
                 <figure className="round-text">
-                  <img src="assets/img/experience-text-round.png" alt="img" />
+                  <img src="/assets/img/experience-text-round.png" alt="img" />
                 </figure>
               </div>
             </div>
@@ -95,12 +95,12 @@ function page() {
                 <div className="swiper-slide">
                   <div className="service-item">
                     <div className="service-thumb">
-                      <img src="assets/img/service-1.jpg" alt="img" />
+                      <img src="/assets/img/service-1.jpg" alt="img" />
                       <div className="service-shape-wrap">
                         <div className="service-shape"></div>
                       </div>
                       <div className="service-car">
-                        <img src="assets/img/car-1.png" alt="car" />
+                        <img src="/assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
                     <div className="service-content">
@@ -120,12 +120,12 @@ function page() {
                 <div className="swiper-slide">
                   <div className="service-item">
                     <div className="service-thumb">
-                      <img src="assets/img/service-2.jpg" alt="img" />
+                      <img src="/assets/img/service-2.jpg" alt="img" />
                       <div className="service-shape-wrap">
                         <div className="service-shape"></div>
                       </div>
                       <div className="service-car">
-                        <img src="assets/img/car-1.png" alt="car" />
+                        <img src="/assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
                     <div className="service-content">
@@ -145,12 +145,12 @@ function page() {
                 <div className="swiper-slide">
                   <div className="service-item">
                     <div className="service-thumb">
-                      <img src="assets/img/service-3.jpg" alt="img" />
+                      <img src="/assets/img/service-3.jpg" alt="img" />
                       <div className="service-shape-wrap">
                         <div className="service-shape"></div>
                       </div>
                       <div className="service-car">
-                        <img src="assets/img/car-1.png" alt="car" />
+                        <img src="/assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
                     <div className="service-content">
@@ -170,12 +170,12 @@ function page() {
                 <div className="swiper-slide">
                   <div className="service-item">
                     <div className="service-thumb">
-                      <img src="assets/img/service-4.jpg" alt="img" />
+                      <img src="/assets/img/service-4.jpg" alt="img" />
                       <div className="service-shape-wrap">
                         <div className="service-shape"></div>
                       </div>
                       <div className="service-car">
-                        <img src="assets/img/car-1.png" alt="car" />
+                        <img src="/assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
                     <div className="service-content">
@@ -195,12 +195,12 @@ function page() {
                 <div className="swiper-slide">
                   <div className="service-item">
                     <div className="service-thumb">
-                      <img src="assets/img/service-5.jpg" alt="img" />
+                      <img src="/assets/img/service-5.jpg" alt="img" />
                       <div className="service-shape-wrap">
                         <div className="service-shape"></div>
                       </div>
                       <div className="service-car">
-                        <img src="assets/img/car-1.png" alt="car" />
+                        <img src="/assets/img/car-1.png" alt="car" />
                       </div>
                     </div>
                     <div className="service-content">
@@ -261,7 +261,7 @@ function page() {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="assets/img/comment-1.png" alt="author" />
+                            <img src="/assets/img/comment-1.png" alt="author" />
                           </div>
                           <div className="author-info">
                             <h3>
@@ -284,7 +284,7 @@ function page() {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="assets/img/comment-1.png" alt="author" />
+                            <img src="/assets/img/comment-1.png" alt="author" />
                           </div>
                           <div className="author-info">
                             <h3>
@@ -307,7 +307,7 @@ function page() {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="assets/img/comment-1.png" alt="author" />
+                            <img src="/assets/img/comment-1.png" alt="author" />
                           </div>
                           <div className="author-info">
                             <h3>
@@ -397,7 +397,7 @@ function page() {
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="team-item">
                 <div className="team-thumb">
-                  <img src="assets/img/team-1.jpg" alt="thumb" />
+                  <img src="/assets/img/team-1.jpg" alt="thumb" />
                 </div>
                 <div className="team-content">
                   <h3>
@@ -410,7 +410,7 @@ function page() {
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="team-item">
                 <div className="team-thumb">
-                  <img src="assets/img/team-2.jpg" alt="thumb" />
+                  <img src="/assets/img/team-2.jpg" alt="thumb" />
                 </div>
                 <div className="team-content">
                   <h3>
@@ -423,7 +423,7 @@ function page() {
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="team-item">
                 <div className="team-thumb">
-                  <img src="assets/img/team-3.jpg" alt="thumb" />
+                  <img src="/assets/img/team-3.jpg" alt="thumb" />
                 </div>
                 <div className="team-content">
                   <h3>
@@ -436,7 +436,7 @@ function page() {
             <div className="col-lg-3 col-md-6 sm-padding">
               <div className="team-item">
                 <div className="team-thumb">
-                  <img src="assets/img/team-4.jpg" alt="thumb" />
+                  <img src="/assets/img/team-4.jpg" alt="thumb" />
                 </div>
                 <div className="team-content">
                   <h3>
@@ -491,7 +491,7 @@ function page() {
             <div className="col-lg-4 col-md-6 padding-15">
               <div className="post-card">
                 <div className="post-thumb">
-                  <img src="assets/img/post-1.jpg" alt="post" />
+                  <img src="/assets/img/post-1.jpg" alt="post" />
                   <a href="blog-details.html" className="post-category">
                     Business
                   </a>
@@ -525,7 +525,7 @@ function page() {
             <div className="col-lg-4 col-md-6 padding-15">
               <div className="post-card">
                 <div className="post-thumb">
-                  <img src="assets/img/post-2.jpg" alt="post" />
+                  <img src="/assets/img/post-2.jpg" alt="post" />
                   <a href="blog-details.html" className="post-category">
                     Startup
                   </a>
@@ -559,7 +559,7 @@ function page() {
             <div className="col-lg-4 col-md-6 padding-15">
               <div className="post-card">
                 <div className="post-thumb">
-                  <img src="assets/img/post-3.jpg" alt="post" />
+                  <img src="/assets/img/post-3.jpg" alt="post" />
                   <a href="blog-details.html" className="post-category">
                     Finance
                   </a>

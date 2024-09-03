@@ -144,7 +144,7 @@ a {
 }
 
 .tab-button.active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid black;
   font-weight: bold;
   bottom: 2px;
   color: black;
@@ -228,4 +228,14 @@ tbody tr:hover {
   overflow: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+@media (min-width: 768px) {
+  .dropdown_menu ul {
+    display: block;
+  }
+
+  .dropdown_menu:hover ul {
+    display: block;
+  }
 }

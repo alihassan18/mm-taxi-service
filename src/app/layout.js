@@ -67,8 +67,7 @@ export default function RootLayout({ children }) {
                 <span>Call for ride:</span>+966595783153
               </li>
               <li>
-                <span>You can find us at:</span>Makkah Al Mukarma kingdom saudi
-                Arabia
+                <span>You can find us at:</span>Makkah Al Mukarma KSA
               </li>
               <li>
                 <span>Email now:</span>mmtaxiservice95@gmail.com
