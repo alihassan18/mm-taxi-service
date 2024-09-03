@@ -323,4 +323,40 @@ const page = () => {
   );
 };
 
+export const metadata = {
+  title: 'Our Services | MM Taxi Service',
+  description: 'Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.',
+  keywords: ['Umra taxi services', 'airport transfers', 'hotel transfers', 'city tours', 'Saudi Arabia'],
+  author: 'MM Taxi Service',
+  robots: 'index, follow',
+  viewport: 'width=device-width, initial-scale=1.0',
+  openGraph: {
+    title: 'Our Services | MM Taxi Service',
+    description: 'Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.',
+    url: 'https://www.mmtaxiservice.com/services',
+    siteName: 'MM Taxi Service',
+    type: 'website',
+    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    images: [
+      {
+        url: 'https://www.mmtaxiservice.com/assets/img/services-page-image.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Our Services | MM Taxi Service',
+    description: 'Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.',
+    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+  },
+  canonical: 'https://www.mmtaxiservice.com/services',
+  favicon: 'https://www.mmtaxiservice.com/favicon.ico',
+  themeColor: '#333',
+  appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
+  msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
+};
+
+
 export default page;

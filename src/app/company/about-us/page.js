@@ -601,4 +601,40 @@ const page = () => {
   );
 };
 
+export const metadata = {
+  title: 'About Us | MM Taxi Service',
+  description: 'Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.',
+  keywords: ['About MM Taxi Service', 'Umra taxi service', 'Saudi Arabia', 'team', 'mission', 'vision'],
+  author: 'MM Taxi Service',
+  robots: 'index, follow',
+  viewport: 'width=device-width, initial-scale=1.0',
+  openGraph: {
+    title: 'About Us | MM Taxi Service',
+    description: 'Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.',
+    url: 'https://www.mmtaxiservice.com/about',
+    siteName: 'MM Taxi Service',
+    type: 'website',
+    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    images: [
+      {
+        url: 'https://www.mmtaxiservice.com/assets/img/about-page-image.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'About Us | MM Taxi Service',
+    description: 'Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.',
+    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+  },
+  canonical: 'https://www.mmtaxiservice.com/about',
+  favicon: 'https://www.mmtaxiservice.com/favicon.ico',
+  themeColor: '#333',
+  appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
+  msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
+};
+
+
 export default page;
