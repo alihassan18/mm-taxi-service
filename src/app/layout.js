@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         {/* Google Tag Manager */}
-        <cript
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
