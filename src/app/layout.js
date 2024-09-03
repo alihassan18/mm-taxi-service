@@ -50,6 +50,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <!-- Google Tag Manager (noscript) --> */}
+        <noscript>
+          <iframe
+            title="google tag manager"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WPHGK9HC"
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
+        {/* <!-- End Google Tag Manager (noscript) --> */}
+
+
+
         <Header />
         {children}
         <Footer />
@@ -93,8 +107,8 @@ export default function RootLayout({ children }) {
           }}
         />
         {/* End Google Tag Manager */}
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPHGK9HC"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
         <Script
           src="assets/js/vendor/jquary-3.6.0.min.js"
           // strategy="lazyOnload"
@@ -123,6 +137,7 @@ export default function RootLayout({ children }) {
         <Script src="assets/js/book-ride.js"></Script>
         <Script src="assets/js/main.js"></Script>
       </body>
+
     </html>
   );
 }
