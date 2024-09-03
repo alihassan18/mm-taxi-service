@@ -21,6 +21,11 @@ export const metadata = {
     description: 'Book our trusted Umra taxi service for convenient and safe transportation in Saudi Arabia. Get airport transfers, hotel transfers, and city tours with our experienced drivers.',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
   },
+  canonical: 'https://www.mmtaxiservice.com', // canonical URL
+  favicon: 'https://www.mmtaxiservice.com/favicon.ico', // favicon URL
+  themeColor: '#333', // theme color for mobile devices
+  appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png', // Apple touch icon
+  msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png', // Microsoft tile image
 };
 
 
