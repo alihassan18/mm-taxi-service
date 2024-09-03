@@ -450,12 +450,12 @@ function Header() {
                   </li>
                   <li
                     className={
-                      isDropdownActive(["/route"])
+                      isDropdownActive(["/routes"])
                         ? "active dropdown_menu"
                         : "dropdown_menu"
                     }
                   >
-                    <Link href="/route">Routes</Link>
+                    <Link href="/routes">Routes</Link>
                   </li>
                   <li
                     className={
