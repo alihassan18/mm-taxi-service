@@ -36,7 +36,6 @@ export const metadata = {
   },
   canonical: 'https://www.mmtaxiservice.com', // canonical URL
   favicon: 'https://www.mmtaxiservice.com/favicon.ico', // favicon URL
-  themeColor: '#333', // theme color for mobile devices
   appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png', // Apple touch icon
   msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png', // Microsoft tile image
 };

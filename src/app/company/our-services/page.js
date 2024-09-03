@@ -353,7 +353,6 @@ export const metadata = {
   },
   canonical: 'https://www.mmtaxiservice.com/services',
   favicon: 'https://www.mmtaxiservice.com/favicon.ico',
-  themeColor: '#333',
   appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
   msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
 };
