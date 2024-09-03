@@ -14,6 +14,19 @@ export const metadata = {
     siteName: 'MM Taxi Service',
     type: 'website',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    images: [
+      {
+        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'My custom alt',
+      },
+    ],
   },
   twitter: {
     card: 'summary',
