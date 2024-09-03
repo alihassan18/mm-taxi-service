@@ -18,6 +18,7 @@ import "../../public/assets/css/responsive.css";
 import Header from "../components/ui/header/Header";
 import Footer from "../components/ui/footer/Footer";
 import Script from "next/script";
+import Head from "next/head";
 
 {
   /* <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -48,6 +49,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        {/* Google Tag Manager */}
+        <cript
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-WPHGK9HC');
+            `,
+          }}
+        />
+        {/* End Google Tag Manager */}
+      </Head>
+
       <body className={inter.className}>
         <Header />
         {children}
@@ -78,6 +95,8 @@ export default function RootLayout({ children }) {
         </div>
 
         <div id="sidebox-overlay"></div>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPHGK9HC"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <Script
           src="assets/js/vendor/jquary-3.6.0.min.js"
           // strategy="lazyOnload"
