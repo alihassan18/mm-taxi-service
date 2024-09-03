@@ -15,7 +15,7 @@
     Elements CSS
 ==================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 /*=== 1.0 Common Styles ===*/
 * {
@@ -25,7 +25,7 @@
 
 body {
     background-color: #fff;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 17px;
     line-height: 27px;
     color: #666;
@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #222;
 }
@@ -175,7 +175,7 @@ button {
 }
 
 .bg-grey {
-    background-color: #F4F5F8;
+    background-color: #f4f5f8;
 }
 
 .bg-dark {
@@ -292,7 +292,7 @@ button {
 ::-webkit-scrollbar {
     background-color: #222;
     width: 8px;
-    height: 8px
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -302,17 +302,17 @@ button {
 
 ::selection {
     background-color: #ff9900;
-    color: #fff
+    color: #fff;
 }
 
 -webkit-::selection {
     background-color: #ff9900;
-    color: #fff
+    color: #fff;
 }
 
 ::-moz-selection {
     background-color: #ff9900;
-    color: #fff
+    color: #fff;
 }
 
 /*=== 5.0 Site Preloader ===*/
@@ -426,7 +426,41 @@ button {
     top: 20px;
     left: 12px;
     border: 3px solid #222;
-    background: linear-gradient(45deg, transparent 45%, #ffe4e1 46%, #ffe4e1 54%, transparent 55%), linear-gradient(-45deg, transparent 45%, #ffe4e1 46%, #ffe4e1 54%, transparent 55%), linear-gradient(90deg, transparent 45%, #ffe4e1 46%, #ffe4e1 54%, transparent 55%), linear-gradient(0deg, transparent 45%, #ffe4e1 46%, #ffe4e1 54%, transparent 55%), radial-gradient(#ffe4e1 29%, transparent 30%, transparent 50%, #ffe4e1 51%), #222;
+    background: linear-gradient(
+            45deg,
+            transparent 45%,
+            #ffe4e1 46%,
+            #ffe4e1 54%,
+            transparent 55%
+        ),
+        linear-gradient(
+            -45deg,
+            transparent 45%,
+            #ffe4e1 46%,
+            #ffe4e1 54%,
+            transparent 55%
+        ),
+        linear-gradient(
+            90deg,
+            transparent 45%,
+            #ffe4e1 46%,
+            #ffe4e1 54%,
+            transparent 55%
+        ),
+        linear-gradient(
+            0deg,
+            transparent 45%,
+            #ffe4e1 46%,
+            #ffe4e1 54%,
+            transparent 55%
+        ),
+        radial-gradient(
+            #ffe4e1 29%,
+            transparent 30%,
+            transparent 50%,
+            #ffe4e1 51%
+        ),
+        #222;
     animation-name: spin;
 }
 
@@ -551,8 +585,8 @@ button {
     transform: translate(50%, 50%);
     visibility: hidden;
     z-index: 10000;
-    -webkit-transition: all .3s cubic-bezier(.165, .85, .45, 1);
-    transition: all .3s cubic-bezier(.165, .85, .45, 1);
+    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.85, 0.45, 1);
+    transition: all 0.3s cubic-bezier(0.165, 0.85, 0.45, 1);
 }
 
 .dl-cursor:before {
@@ -597,7 +631,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .dl-cursor.cross:before {
@@ -787,7 +820,13 @@ button {
 
 .page-header-shape:before {
     background-color: #ff9900;
-    background-image: repeating-linear-gradient(45deg, #f7a20f 0, #f7a20f 2px, transparent 0, transparent 50%);
+    background-image: repeating-linear-gradient(
+        45deg,
+        #f7a20f 0,
+        #f7a20f 2px,
+        transparent 0,
+        transparent 50%
+    );
     background-size: 10px 10px;
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
     content: "";
@@ -888,7 +927,7 @@ button {
 /* Rattings */
 .ratting li {
     display: inline-block;
-    color: #FF9529;
+    color: #ff9529;
     font-size: 14px;
     margin: 0 -2px;
 }
@@ -991,6 +1030,10 @@ button {
 
 @media all and (max-width: 580px) {
     #scrollup {
+        bottom: 20px;
+        right: 20px;
+    }
+    #whatsapp-button {
         bottom: 20px;
         right: 20px;
     }

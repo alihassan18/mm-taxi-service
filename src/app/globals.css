@@ -110,15 +110,25 @@ a {
 }
 
 .whatsapp-button {
+    width: 45px;
+    height: 45px;
     position: fixed;
-    right: 30px;
     bottom: 80px;
-    width: 40px;
-    height: 40px;
-    z-index: 50;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    right: 30px;
+    overflow: hidden;
+    z-index: 999;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* transition: all 0.3s ease-in-out; */
 }
+/* #scrollup {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    overflow: hidden;
+    z-index: 999;
+} */
 
 .whatsapp-icon {
     width: 100%;
