@@ -333,13 +333,13 @@ export const metadata = {
   openGraph: {
     title: 'Our Services | MM Taxi Service',
     description: 'Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.',
-    url: 'https://www.mmtaxiservice.com/services',
+    url: 'https://www.mmtaxiservice.com/company/our-services',
     siteName: 'MM Taxi Service',
     type: 'website',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
     images: [
       {
-        url: 'https://www.mmtaxiservice.com/assets/img/services-page-image.png',
+        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png',
         width: 800,
         height: 600,
       },

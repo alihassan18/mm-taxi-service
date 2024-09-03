@@ -613,7 +613,7 @@ export const metadata = {
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
     images: [
       {
-        url: 'https://www.mmtaxiservice.com/assets/img/about-page-image.png',
+        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png',
         width: 800,
         height: 600,
       },

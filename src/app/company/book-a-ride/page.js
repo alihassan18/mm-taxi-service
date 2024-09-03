@@ -138,7 +138,7 @@ export const metadata = {
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
     images: [
       {
-        url: 'https://www.mmtaxiservice.com/assets/img/book-ride-image.png', // Replace with an appropriate image URL
+        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png', // Replace with an appropriate image URL
         width: 800,
         height: 600,
       },

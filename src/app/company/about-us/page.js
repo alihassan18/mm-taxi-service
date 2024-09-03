@@ -611,13 +611,13 @@ export const metadata = {
   openGraph: {
     title: 'About Us | MM Taxi Service',
     description: 'Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.',
-    url: 'https://www.mmtaxiservice.com/about',
+    url: 'https://www.mmtaxiservice.com/company/about-us',
     siteName: 'MM Taxi Service',
     type: 'website',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
     images: [
       {
-        url: 'https://www.mmtaxiservice.com/assets/img/about-page-image.png',
+        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png',
         width: 800,
         height: 600,
       },
