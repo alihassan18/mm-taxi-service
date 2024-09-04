@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 function page() {
@@ -123,5 +122,39 @@ function page() {
     </div>
   );
 }
+
+export const metadata = {
+  title: 'Contact Us | MM Taxi Service',
+  description: 'Get in touch with MM Taxi Service for any inquiries, bookings, or feedback. We are here to assist you with our reliable Umra taxi services.',
+  keywords: ['Contact MM Taxi Service', 'Umra taxi service', 'Saudi Arabia', 'customer support'],
+  author: 'MM Taxi Service',
+  robots: 'index, follow',
+  viewport: 'width=device-width, initial-scale=1.0',
+  openGraph: {
+    title: 'Contact Us | MM Taxi Service',
+    description: 'Get in touch with MM Taxi Service for any inquiries, bookings, or feedback. We are here to assist you with our reliable Umra taxi services.',
+    url: 'https://www.mmtaxiservice.com/contact',
+    siteName: 'MM Taxi Service',
+    type: 'website',
+    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    images: [
+      {
+        url: 'https://www.mmtaxiservice.com/assets/img/contact-page-image.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Contact Us | MM Taxi Service',
+    description: 'Get in touch with MM Taxi Service for any inquiries, bookings, or feedback. We are here to assist you with our reliable Umra taxi services.',
+    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+  },
+  canonical: 'https://www.mmtaxiservice.com/contact',
+  favicon: 'https://www.mmtaxiservice.com/favicon.ico',
+  appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
+  msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
+};
 
 export default page;
