@@ -28,7 +28,7 @@ const Coaster = () => {
               <div>Route</div>
             </th>
             <th>
-              <div className="table-cell-end">COASTER</div>
+              <div className="table-cell-end">Rate</div>
             </th>
           </tr>
         </thead>
