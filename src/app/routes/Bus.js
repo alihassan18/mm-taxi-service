@@ -29,7 +29,7 @@ const Bus = () => {
               <div>Route</div>
             </th>
             <th>
-              <div className="table-cell-end">BUS</div>
+              <div className="table-cell-end">Rate</div>
             </th>
           </tr>
         </thead>

@@ -18,7 +18,7 @@ const HomePage = () => {
                     style={{ animationDuration: "12000ms" }}
                   />
                 </div>
-                <div className="car-holder">
+                {/* <div className="car-holder">
                   <img
                     src="/assets/img/car-1.png"
                     alt="car"
@@ -42,7 +42,7 @@ const HomePage = () => {
                       data-delay="0.5s"
                     ></div>
                   </div>
-                </div>
+                </div> */}
                 <div className="slider-content-wrap d-flex align-items-center text-left">
                   <div className="container">
                     <div className="slider-content">
@@ -438,7 +438,7 @@ const HomePage = () => {
                           <div className="service-shape" />
                         </div>
                         <div className="service-car">
-                          <img src="/assets/img/service-2.jpg" alt="car" />
+                          <img src="/assets/img/car-1.png" alt="car" />
                         </div>
                       </div>
                       <div className="service-content">
