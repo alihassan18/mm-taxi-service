@@ -82,14 +82,14 @@ const HomePage = () => {
                         </div>
                       </div>
                       <div className="slider-btn">
-                        <a
-                          href="book-taxi.html"
+                        <Link
+                          href="/company/book-a-ride"
                           className="default-btn"
                           data-animation="fade-in-bottom"
                           data-delay="0.9s"
                         >
                           Book Now
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -168,14 +168,14 @@ const HomePage = () => {
                         </div>
                       </div>
                       <div className="slider-btn">
-                        <a
-                          href="book-taxi.html"
+                        <Link
+                          href="/company/book-a-ride"
                           className="default-btn"
                           data-animation="fade-in-bottom"
                           data-delay="0.9s"
                         >
                           Book Now
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
