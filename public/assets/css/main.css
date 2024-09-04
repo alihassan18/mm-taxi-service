@@ -342,6 +342,12 @@ html {
   position: relative;
 }
 
+.service-thumb .serviceimg {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .service-shape-wrap {
   transform: skew(-20deg, 0deg);
   width: 200px;

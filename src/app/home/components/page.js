@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import BookingForm from './BookingForm'
+import BookingForm from "./BookingForm";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
   return (
@@ -13,7 +13,7 @@ const HomePage = () => {
               <div className="swiper-slide">
                 <div className="slider-img">
                   <img
-                    src="/assets/img/slider-bg.jpg"
+                    src="/assets/img/new-slider-bg.jpg"
                     alt="img"
                     className="kenburns"
                     style={{ animationDuration: "12000ms" }}
@@ -378,7 +378,11 @@ const HomePage = () => {
                       data-wow-delay="200ms"
                     >
                       <div className="service-thumb">
-                        <img src="/assets/img/service-1.jpg" alt="img" />
+                        <img
+                          src="/assets/img/service-1.jpg"
+                          className="serviceimg"
+                          alt="img"
+                        />
                         <div className="service-shape-wrap">
                           <div className="service-shape" />
                         </div>
@@ -406,7 +410,11 @@ const HomePage = () => {
                       data-wow-delay="400ms"
                     >
                       <div className="service-thumb">
-                        <img src="/assets/img/service-2.jpg" alt="img" />
+                        <img
+                          src="/assets/img/service-2.jpg"
+                          className="serviceimg"
+                          alt="img"
+                        />
                         <div className="service-shape-wrap">
                           <div className="service-shape" />
                         </div>
@@ -434,12 +442,16 @@ const HomePage = () => {
                       data-wow-delay="600ms"
                     >
                       <div className="service-thumb">
-                        <img src="/assets/img/service-3.jpg" alt="img" />
+                        <img
+                          src="/assets/img/service-3.jpg"
+                          className="serviceimg"
+                          alt="img"
+                        />
                         <div className="service-shape-wrap">
                           <div className="service-shape" />
                         </div>
                         <div className="service-car">
-                          <img src="/assets/img/service-2.jpg" alt="car" />
+                          <img src="/assets/img/car-1.png" alt="car" />
                         </div>
                       </div>
                       <div className="service-content">
@@ -459,7 +471,11 @@ const HomePage = () => {
                   <div className="swiper-slide">
                     <div className="service-item">
                       <div className="service-thumb">
-                        <img src="/assets/img/service-4.jpg" alt="img" />
+                        <img
+                          src="/assets/img/service-4.jpg"
+                          className="serviceimg"
+                          alt="img"
+                        />
                         <div className="service-shape-wrap">
                           <div className="service-shape" />
                         </div>
@@ -484,7 +500,11 @@ const HomePage = () => {
                   <div className="swiper-slide">
                     <div className="service-item">
                       <div className="service-thumb">
-                        <img src="/assets/img/service-5.jpg" alt="img" />
+                        <img
+                          src="/assets/img/service-5.jpg"
+                          className="serviceimg"
+                          alt="img"
+                        />
                         <div className="service-shape-wrap">
                           <div className="service-shape" />
                         </div>
@@ -899,7 +919,7 @@ const HomePage = () => {
               <div className="col-lg-4 col-md-6 padding-15">
                 <div className="post-card">
                   <div className="post-thumb">
-                    <img src="/assets/img/post-1.jpg" alt="post" />
+                    <img src="/assets/img/new-post-1.jpg" alt="post" />
                     <a href="blog-details.html" className="post-category">
                       Business
                     </a>
@@ -933,7 +953,7 @@ const HomePage = () => {
               <div className="col-lg-4 col-md-6 padding-15">
                 <div className="post-card">
                   <div className="post-thumb">
-                    <img src="/assets/img/post-2.jpg" alt="post" />
+                    <img src="/assets/img/new-post-2.jpg" alt="post" />
                     <a href="blog-details.html" className="post-category">
                       Startup
                     </a>
@@ -967,7 +987,7 @@ const HomePage = () => {
               <div className="col-lg-4 col-md-6 padding-15">
                 <div className="post-card">
                   <div className="post-thumb">
-                    <img src="/assets/img/post-3.jpg" alt="post" />
+                    <img src="/assets/img/new-post-3.jpg" alt="post" />
                     <a href="blog-details.html" className="post-category">
                       Finance
                     </a>
