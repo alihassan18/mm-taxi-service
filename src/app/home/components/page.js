@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 // import OurTaxi from "@/components/common/ourtaxi/page";
+import BookingForm from './BookingForm'
 const HomePage = () => {
   return (
     <React.Fragment>
@@ -592,7 +593,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="booking-section">
+        {/* <section className="booking-section">
           <div className="container">
             <div className="row pos-relative padding">
               <div className="col-lg-4">
@@ -725,7 +726,8 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+        <BookingForm />
         {/* <OurTaxi /> */}
         <section className="download-section bd-bottom padding">
           <div className="container">
