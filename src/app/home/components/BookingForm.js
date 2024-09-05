@@ -12,6 +12,8 @@ const BookingForm = () => {
     rideTime: '',
   });
 
+  const [isloading, setIsLoading] = useState(false)
+
   const [formMessage, setFormMessage] = useState('');
 
   const handleChange = (e) => {
@@ -26,6 +28,7 @@ const BookingForm = () => {
 
     // Example of how to send the data to an API endpoint in your Next.js app
     try {
+      setIsLoading(true)
       const response = await fetch('/api/book-ride', {
         method: 'POST',
         headers: {
@@ -36,6 +39,7 @@ const BookingForm = () => {
 
       if (response.ok) {
         setFormMessage('Booking successful!');
+        setIsLoading(false)
       } else {
         setFormMessage('Something went wrong, please try again.');
       }
@@ -173,9 +177,13 @@ const BookingForm = () => {
                     />
                   </div>
                   <div className="form-field">
-                    <button id="submit" className="default-btn" type="submit">
-                      Book Your Taxi
-                    </button>
+                    {
+                      isloading ? <button id="submit" className="default-btn" type="submit">
+                        Loading....
+                      </button> : <button id="submit" className="default-btn" type="submit">
+                        Book Your Taxi
+                      </button>
+                    }
                   </div>
                 </div>
                 {formMessage && (
