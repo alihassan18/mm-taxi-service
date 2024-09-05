@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 
 const ContactUsForm = () => {
@@ -13,7 +14,6 @@ const ContactUsForm = () => {
 
     const [isloading, setIsLoading] = useState(false)
 
-    const [formMessage, setFormMessage] = useState("");
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -26,8 +26,8 @@ const ContactUsForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        setIsLoading(true)
         try {
+            setIsLoading(true)
             const response = await fetch('/api/contact-us', {
                 method: 'POST',
                 headers: {
@@ -37,14 +37,16 @@ const ContactUsForm = () => {
             });
 
             if (response.ok) {
-                setFormMessage('Booking successful!');
-                setIsLoading(false)
+                toast.success('Request sent successfully!');
+                setIsLoading(false);
+                setFormData('')
             } else {
-                setFormMessage('Something went wrong, please try again.');
+                toast.error('Request failed. Please try again.');
             }
         } catch (error) {
             console.error('Error:', error);
-            setFormMessage('An error occurred. Please try again later.');
+            toast.error('An error occurred. Please try again later.');
+            setIsLoading(false);
         }
     };
 
@@ -133,11 +135,6 @@ const ContactUsForm = () => {
                     }
                 </div>
             </div>
-            {formMessage && (
-                <div id="form-messages" className="alert" role="alert">
-                    {formMessage}
-                </div>
-            )}
         </form>
     );
 };

@@ -5,8 +5,8 @@ const transporter = nodemailer.createTransport({
     port: 587, // Replace with the correct port
     secure: false, // Set to true if using TLS
     auth: {
-        user: 'your-email@example.com', // Replace with your email address
-        pass: 'your-password', // Replace with your email password
+        user: 'muhammadfaizan7986@gmail.com', // Replace with your email address
+        pass: 'rcffmlfsbiirgljc', // Replace with your email password
     },
 });
 
@@ -15,8 +15,8 @@ export async function POST(request) {
     const { firstname, lastname, email, phone, message } = await request.json();
 
     const mailOptions = {
-        from: 'your-email@example.com', // Replace with your email address
-        to: email, // Replace with the recipient's email address
+        from: email, // Replace with your email address
+        to: 'muhammadfaizan7986@gmail.com',
         subject: 'Taxi Booking Request',
         html: `
       <h1>Taxi Booking Request</h1>

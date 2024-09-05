@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const BookingForm = () => {
   const [formData, setFormData] = useState({
@@ -38,14 +39,15 @@ const BookingForm = () => {
       });
 
       if (response.ok) {
-        setFormMessage('Booking successful!');
-        setIsLoading(false)
+        toast.success('Booking successful!');
+        setIsLoading(false);
       } else {
-        setFormMessage('Something went wrong, please try again.');
+        toast.error('Booking failed. Please try again.');
       }
     } catch (error) {
       console.error('Error:', error);
-      setFormMessage('An error occurred. Please try again later.');
+      toast.error('An error occurred. Please try again later.');
+      setIsLoading(false);
     }
   };
 

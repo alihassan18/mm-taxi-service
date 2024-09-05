@@ -19,6 +19,8 @@ import Header from "../components/ui/header/Header";
 import Footer from "../components/ui/footer/Footer";
 import Script from "next/script";
 import Head from "next/head";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 {
   /* <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -50,6 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <ToastContainer />
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe
