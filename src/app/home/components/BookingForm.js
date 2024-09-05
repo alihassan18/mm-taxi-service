@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const BookingForm = () => {
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    packageType: "standard",
-    passengers: "1",
-    startDest: "",
-    endDest: "",
-    rideDate: "",
-    rideTime: "",
+    fullName: '',
+    email: '',
+    packageType: 'standard',
+    passengers: '1',
+    startDest: '',
+    endDest: '',
+    rideDate: '',
+    rideTime: '',
   });
 
-  const [formMessage, setFormMessage] = useState("");
+  const [formMessage, setFormMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -26,22 +26,22 @@ const BookingForm = () => {
 
     // Example of how to send the data to an API endpoint in your Next.js app
     try {
-      const response = await fetch("/api/book-ride", {
-        method: "POST",
+      const response = await fetch('/api/book-ride', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setFormMessage("Booking successful!");
+        setFormMessage('Booking successful!');
       } else {
-        setFormMessage("Something went wrong, please try again.");
+        setFormMessage('Something went wrong, please try again.');
       }
     } catch (error) {
-      console.error("Error:", error);
-      setFormMessage("An error occurred. Please try again later.");
+      console.error('Error:', error);
+      setFormMessage('An error occurred. Please try again later.');
     }
   };
 
@@ -50,10 +50,7 @@ const BookingForm = () => {
       <div className="container">
         <div className="row pos-relative padding">
           <div className="col-lg-4">
-            <div
-              className="booking-car wow fade-in-left"
-              data-wow-delay="200ms"
-            ></div>
+            <div className="booking-car wow fade-in-left" data-wow-delay="200ms"></div>
           </div>
           <div className="col-lg-8">
             <div className="booking-wrap">

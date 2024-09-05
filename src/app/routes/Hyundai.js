@@ -29,7 +29,7 @@ const Hyundai = () => {
               <div>Route</div>
             </th>
             <th>
-              <div className="table-cell-end"> H1 HYUNDAI</div>
+              <div className="table-cell-end">Rate</div>
             </th>
           </tr>
         </thead>

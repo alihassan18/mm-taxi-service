@@ -28,7 +28,7 @@ const Gmc = () => {
               <div>Route</div>
             </th>
             <th>
-              <div className="table-cell-end">GMC 2016 to 2020 model</div>
+              <div className="table-cell-end">Rate</div>
             </th>
           </tr>
         </thead>

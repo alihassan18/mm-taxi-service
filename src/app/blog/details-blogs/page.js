@@ -10,7 +10,7 @@ function page() {
             <div className="col-lg-8 offset-lg-2">
               <div className="post-details">
                 <div className="post-thumb">
-                  <img src="/assets/img/post-1.jpg" alt="img" />
+                  <img src="/assets/img/post-3.jpg" alt="img" />
                 </div>
                 <p>
                   Financial experts support or help you to to find out which way
@@ -44,9 +44,9 @@ function page() {
                   fleet-based businesses.
                 </p>
 
-                <ul className="post-details-gallery">
+                <ul className="post-details-gallery ">
                   <li>
-                    <img src="/assets/img/post-1.jpg" alt="img" />
+                    <img src="/assets/img/post-4.jpg" alt="img" />
                   </li>
                   <li>
                     <img src="/assets/img/post-2.jpg" alt="img" />
@@ -89,7 +89,7 @@ function page() {
                       <span>
                         <i className="las la-angle-left"></i>Previous
                       </span>
-                      How To Start Initiating An Startup In Few Days.
+                      {/* How To Start Initiating An Startup In Few Days. */}
                     </a>
                   </li>
                   <li>
@@ -97,12 +97,12 @@ function page() {
                       <span>
                         Next<i className="las la-angle-right"></i>
                       </span>
-                      Fresh Startup Ideas For Digital Business.
+                      {/* Fresh Startup Ideas For Digital Business. */}
                     </a>
                   </li>
                 </ul>
 
-                <div className="author-box">
+                {/* <div className="author-box">
                   <div className="author-thumb">
                     <img src="/assets/img/auhtor.png" alt="img" />
                   </div>
@@ -135,9 +135,9 @@ function page() {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
 
-                <h3 className="comment-title">Post Comments</h3>
+                {/* <h3 className="comment-title">Post Comments</h3>
                 <ul className="comments-box">
                   <li className="comment">
                     <div className="comment-inner">
@@ -213,9 +213,9 @@ function page() {
                       </div>
                     </div>
                   </li>
-                </ul>
+                </ul> */}
 
-                <h3 className="comment-title">Leave a Comment</h3>
+                {/* <h3 className="comment-title">Leave a Comment</h3>
                 <form
                   action="#"
                   method="post"
@@ -257,10 +257,14 @@ function page() {
                       <button id="submit" className="default-btn" type="submit">
                         Submit Comment<span></span>
                       </button>
-                      <div id="form-messages" className="alert" role="alert"></div>
+                      <div
+                        id="form-messages"
+                        className="alert"
+                        role="alert"
+                      ></div>
                     </div>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>

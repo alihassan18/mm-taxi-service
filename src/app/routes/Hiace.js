@@ -29,7 +29,7 @@ const Hiace = () => {
               <div>Route</div>
             </th>
             <th>
-              <div className="table-cell-end">HIACE</div>
+              <div className="table-cell-end">Rate</div>
             </th>
           </tr>
         </thead>

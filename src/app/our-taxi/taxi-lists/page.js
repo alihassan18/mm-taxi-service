@@ -1,378 +1,90 @@
 "use client";
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
-// import Tabs from "../../../components/ui/Tabs";
-// import { useState } from "react";
-// import CamrySonata from "../../route/CamrySonata";
-
-// const pricingData = [
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Jeddah Airport to Makkah Hotel",
-//     initialCharge: "250/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Jeddah Airport to Makkah Hotel",
-//     initialCharge: "350/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Jeddah Airport to Makkah Hotel",
-//     initialCharge: "400/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Jeddah Airport to Makkah Hotel",
-//     initialCharge: "550/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Jeddah Airport to Makkah Hotel",
-//     initialCharge: "400/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Jeddah Airport to Makkah Hotel",
-//     initialCharge: "800/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Jeddah Airport to Makkah Hotel",
-//     initialCharge: "800/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Makkah Hotel to Jeddah Airport",
-//     initialCharge: "200/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Makkah Hotel to Jeddah Airport",
-//     initialCharge: "300/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Makkah Hotel to Jeddah Airport",
-//     initialCharge: "400/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Makkah Hotel to Jeddah Airport",
-//     initialCharge: "500/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Makkah Hotel to Jeddah Airport",
-//     initialCharge: "400/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Makkah Hotel to Jeddah Airport",
-//     initialCharge: "700/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Makkah Hotel to Jeddah Airport",
-//     initialCharge: "800/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Makkah Hotel to Madina Hotel",
-//     initialCharge: "450/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Makkah Hotel to Madina Hotel",
-//     initialCharge: "550/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Makkah Hotel to Madina Hotel",
-//     initialCharge: "800/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Makkah Hotel to Madina Hotel",
-//     initialCharge: "1000/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Makkah Hotel to Madina Hotel",
-//     initialCharge: "650/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Makkah Hotel to Madina Hotel",
-//     initialCharge: "1100/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Makkah Hotel to Madina Hotel",
-//     initialCharge: "1400/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Madina Hotel to Makkah Hotel",
-//     initialCharge: "450/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Madina Hotel to Makkah Hotel",
-//     initialCharge: "550/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Madina Hotel to Makkah Hotel",
-//     initialCharge: "800/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Madina Hotel to Makkah Hotel",
-//     initialCharge: "1000/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Madina Hotel to Makkah Hotel",
-//     initialCharge: "650/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Madina Hotel to Makkah Hotel",
-//     initialCharge: "1100/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Madina Hotel to Makkah Hotel",
-//     initialCharge: "1400/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Madina Airport to Madina Hotel",
-//     initialCharge: "150/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Madina Airport to Madina Hotel",
-//     initialCharge: "200/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Madina Airport to Madina Hotel",
-//     initialCharge: "300/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Madina Airport to Madina Hotel",
-//     initialCharge: "400/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Madina Airport to Madina Hotel",
-//     initialCharge: "300/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Madina Airport to Madina Hotel",
-//     initialCharge: "500/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Madina Airport to Madina Hotel",
-//     initialCharge: "700/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Madina Hotel to Madina Airport",
-//     initialCharge: "120/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Madina Hotel to Madina Airport",
-//     initialCharge: "150/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Madina Hotel to Madina Airport",
-//     initialCharge: "250/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Madina Hotel to Madina Airport",
-//     initialCharge: "300/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Madina Hotel to Madina Airport",
-//     initialCharge: "300/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Madina Hotel to Madina Airport",
-//     initialCharge: "500/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Madina Hotel to Madina Airport",
-//     initialCharge: "700/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Makkah Ziyarat",
-//     initialCharge: "200/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Makkah Ziyarat",
-//     initialCharge: "300/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Makkah Ziyarat",
-//     initialCharge: "350/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Makkah Ziyarat",
-//     initialCharge: "500/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Makkah Ziyarat",
-//     initialCharge: "400/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Makkah Ziyarat",
-//     initialCharge: "600/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Makkah Ziyarat",
-//     initialCharge: "700/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Madina Ziyarat",
-//     initialCharge: "200/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Madina Ziyarat",
-//     initialCharge: "250/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Madina Ziyarat",
-//     initialCharge: "350/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Madina Ziyarat",
-//     initialCharge: "500/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Madina Ziyarat",
-//     initialCharge: "400/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Madina Ziyarat",
-//     initialCharge: "600/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Madina Ziyarat",
-//     initialCharge: "700/SAR",
-//   },
-//   {
-//     title: "CAMRY SONATA",
-//     location: "Jeddah Airport to Madina Hotel",
-//     initialCharge: "500/SAR",
-//   },
-//   {
-//     title: "H1 HYUNDAI",
-//     location: "Jeddah Airport to Madina Hotel",
-//     initialCharge: "600/SAR",
-//   },
-//   {
-//     title: "GMC 2016 to 2020 model",
-//     location: "Jeddah Airport to Madina Hotel",
-//     initialCharge: "800/SAR",
-//   },
-//   {
-//     title: "GMC 2022 model",
-//     location: "Jeddah Airport to Madina Hotel",
-//     initialCharge: "1000/SAR",
-//   },
-//   {
-//     title: "HIACE",
-//     location: "Jeddah Airport to Madina Hotel",
-//     initialCharge: "650/SAR",
-//   },
-//   {
-//     title: "COASTER",
-//     location: "Jeddah Airport to Madina Hotel",
-//     initialCharge: "1100/SAR",
-//   },
-//   {
-//     title: "BUS",
-//     location: "Jeddah Airport to Madina Hotel",
-//     initialCharge: "1400/SAR",
-//   },
-// ];
+import Link from "next/link";
 
 const page = () => {
-  // const [activeTab, setActiveTab] = useState(tabsData[0].id);
-  // const [activeTab, setActiveTab] = useState(tabsData[0].id);
+  const vehicles = [
+    {
+      "name": "Camry Car",
+      "passengers": 4,
+      "luggage": 3,
+      "image": '/assets/img/pricing-car.png'
+    },
+    {
+      "name": "GMC- 2022",
+      "passengers": 7,
+      "luggage": 8,
+      "image": '/assets/img/pricing-car-1.png'
+    },
+    {
+      "name": "GMC- 2020",
+      "passengers": 7,
+      "luggage": 8,
+      "image": '/assets/img/pricing-car-2.png'
+    },
+    {
+      "name": "Hyundai Staria",
+      "passengers": 7,
+      "luggage": 10,
+      "image": '/assets/img/pricing-car-3.png'
+    },
+    {
+      "name": "Toyota HIACE",
+      "passengers": 11,
+      "luggage": 16,
+      "image": '/assets/img/pricing-car-4.png'
+    },
+    {
+      "name": "Coaster Saloon",
+      "passengers": 15,
+      "luggage": 20,
+      "image": '/assets/img/pricing-car-5.png'
+    }
+  ]
 
-  const handleTabClick = (id) => {
-    setActiveTab(id);
-  };
   return (
     <div>
       <Banner title="OUR DRIVERS!" />
       <section className="our-taxi padding">
         <div className="container">
-          <div className="row ">
-            {/* {pricingData.map((item, index) => (
-              <div key={index} className="col-lg-4 col-md-6 sm-padding mb-4">
-                <div className="pricing-item">
-                  <div className="pricing-head-wrap">
-                    <div className="pricing-car">
-                      <img src="/assets/img/pricing-car.png" alt="car" />
-                      <div className="price">{item.initialCharge}</div>
-                    </div>
+          <div className="row">
+            {vehicles.map((item, key) => <div className="col-lg-4 col-md-6 sm-padding mb-4" key={key}>
+              <div className="pricing-item">
+                <div className="pricing-head-wrap">
+                  <div className="pricing-car">
+                    <img src={item.image || "/assets/img/pricing-car-2.png"} alt="car" />
+                    <div className="price">$2.50/km</div>
                   </div>
-                  <div className="pricing-head">
-                    <h3>
-                      <a href="taxi-details.html">{item.title}</a>
-                    </h3>
-                    <span className="location">{item.location}</span>
-                  </div>
-                  <ul className="pricing-list">
-                    <li>
-                      Initial Charge: <span>{item.initialCharge}</span>
-                    </li>
-                    <li>
-                      Per Mile/KM: <span>$4.20</span>
-                    </li>
-                    <li>
-                      Per Stopped Traffic: <span>$1.50</span>
-                    </li>
-                    <li>
-                      Passengers: <span>4 Person</span>
-                    </li>
-                    <li>
-                      <a href="book-taxi.html" className="default-btn">
-                        Book Taxi Now
-                      </a>
-                    </li>
-                  </ul>
                 </div>
+                <div className="pricing-head">
+                  <h3>
+                    <a href="taxi-details.html">{item.name}</a>
+                  </h3>
+                  {/* <span className="location">Chicago</span> */}
+                </div>
+                <ul className="pricing-list">
+                  <li>
+                    Initial Charge: <span>$2.50</span>
+                  </li>
+                  <li>
+                    Per Mile/KM: <span>$4.20</span>
+                  </li>
+                  <li>
+                    Luggage: <span>{item.luggage}</span>
+                  </li>
+                  <li>
+                    Passengers: <span>{item.passengers} Person</span>
+                  </li>
+                  <li>
+                    <Link href="/company/book-a-ride" className="default-btn">
+                      Book Taxi Now
+                    </Link>
+                  </li>
+                </ul>
               </div>
-            ))} */}
+            </div>)}
+
           </div>
         </div>
       </section>
