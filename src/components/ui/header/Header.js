@@ -226,7 +226,7 @@ import React, { act } from "react";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-const activeLinkColor = "#ff9900";
+const activeLinkColor = "#198754";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
