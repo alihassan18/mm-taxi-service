@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-// import OurTaxi from "@/components/common/ourtaxi/page";
 import BookingForm from './BookingForm'
+// import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
   return (
     <React.Fragment>
@@ -1147,8 +1147,8 @@ const HomePage = () => {
             <i className="las la-times"></i>
           </div>
         </div>
-      </div>
-    </React.Fragment>
+      </div >
+    </React.Fragment >
   );
 };
 
