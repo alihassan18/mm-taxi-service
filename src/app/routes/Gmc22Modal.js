@@ -29,7 +29,7 @@ const Gmc22Modal = () => {
               <div>Route</div>
             </th>
             <th>
-              <div className="table-cell-end">GMC 2022 model</div>
+              <div className="table-cell-end">Rate</div>
             </th>
           </tr>
         </thead>

@@ -19,7 +19,7 @@ const HomePage = () => {
                     style={{ animationDuration: "12000ms" }}
                   />
                 </div>
-                <div className="car-holder">
+                {/* <div className="car-holder">
                   <img
                     src="/assets/img/car-1.png"
                     alt="car"
@@ -43,7 +43,7 @@ const HomePage = () => {
                       data-delay="0.5s"
                     ></div>
                   </div>
-                </div>
+                </div> */}
                 <div className="slider-content-wrap d-flex align-items-center text-left">
                   <div className="container">
                     <div className="slider-content">
@@ -439,7 +439,7 @@ const HomePage = () => {
                           <div className="service-shape" />
                         </div>
                         <div className="service-car">
-                          <img src="/assets/img/service-2.jpg" alt="car" />
+                          <img src="/assets/img/car-1.png" alt="car" />
                         </div>
                       </div>
                       <div className="service-content">
@@ -593,6 +593,140 @@ const HomePage = () => {
           </div>
         </section>
 
+        {/* <section className="booking-section">
+          <div className="container">
+            <div className="row pos-relative padding">
+              <div className="col-lg-4">
+                <div
+                  className="booking-car wow fade-in-left"
+                  data-wow-delay="200ms"
+                ></div>
+              </div>
+              <div className="col-lg-8">
+                <div className="booking-wrap">
+                  <div className="section-heading mb-30">
+                    <h4>
+                      <span></span>Online Booking
+                    </h4>
+                    <h2 className="white">Book Your Taxi Ride</h2>
+                  </div>
+                  <form action="book-ride.php" id="book-taxi-ride">
+                    <div className="booking-form">
+                      <div className="form-field">
+                        <i className="las la-user-tie"></i>
+                        <input
+                          type="text"
+                          id="full-name"
+                          name="full-name"
+                          className="form-control"
+                          placeholder="Your Name"
+                          required
+                        />
+                      </div>
+                      <div className="form-field">
+                        <i className="las la-envelope-open"></i>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          className="form-control"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div className="form-field">
+                        <i className="las la-tags"></i>
+                        <select
+                          name="package-type"
+                          id="type"
+                          className="niceSelect"
+                        >
+                          <option value="standard">Standard</option>
+                          <option value="business">Business</option>
+                          <option value="economy">Economy</option>
+                          <option value="vip-spacial">VIP Spacial</option>
+                          <option value="comfort">Comfort</option>
+                        </select>
+                      </div>
+                      <div className="form-field">
+                        <i className="las la-user-friends"></i>
+                        <select
+                          name="passengers"
+                          id="passengers"
+                          className="niceSelect"
+                        >
+                          <option value="1">1 Person</option>
+                          <option value="2">2 Person</option>
+                          <option value="3">3 Person</option>
+                          <option value="4">4 Person</option>
+                          <option value="5">5 Person</option>
+                        </select>
+                      </div>
+                      <div className="form-field">
+                        <i className="las la-map-marker"></i>
+                        <input
+                          type="text"
+                          id="start-dest"
+                          name="start-dest"
+                          className="form-control"
+                          placeholder="Start Destination"
+                          required
+                        />
+                      </div>
+                      <div className="form-field">
+                        <i className="las la-map-marker"></i>
+                        <input
+                          type="text"
+                          id="end-dest"
+                          name="end-dest"
+                          className="form-control"
+                          placeholder="End Destination"
+                          required
+                        />
+                      </div>
+                      <div className="form-field">
+                        <i className="las la-calendar"></i>
+                        <input
+                          type="text"
+                          id="ride-date"
+                          name="ride-date"
+                          className="form-control date-picker"
+                          placeholder="Select Date"
+                          required
+                        />
+                      </div>
+                      <div className="form-field">
+                        <i className="las la-clock"></i>
+                        <input
+                          type="text"
+                          id="ride-time"
+                          name="ride-time"
+                          className="form-control time-picker"
+                          placeholder="Select Time"
+                          required
+                        />
+                      </div>
+                      <div className="form-field">
+                        <button
+                          id="submit"
+                          className="default-btn"
+                          type="submit"
+                        >
+                          Book Your Taxi
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      id="form-messages"
+                      className="alert"
+                      role="alert"
+                    ></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> */}
         <BookingForm />
         {/* <OurTaxi /> */}
         <section className="download-section bd-bottom padding">
@@ -1013,8 +1147,8 @@ const HomePage = () => {
             <i className="las la-times"></i>
           </div>
         </div>
-      </div>
-    </React.Fragment>
+      </div >
+    </React.Fragment >
   );
 };
 

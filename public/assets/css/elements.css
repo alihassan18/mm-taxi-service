@@ -297,21 +297,21 @@ button {
 
 ::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background: #ff9900;
+    background: #198754;
 }
 
 ::selection {
-    background-color: #ff9900;
+    background-color: #198754;
     color: #fff;
 }
 
 -webkit-::selection {
-    background-color: #ff9900;
+    background-color: #198754;
     color: #fff;
 }
 
 ::-moz-selection {
-    background-color: #ff9900;
+    background-color: #198754;
     color: #fff;
 }
 
@@ -371,7 +371,7 @@ button {
 .car-detail {
     position: absolute;
     display: block;
-    background: #ff9900;
+    background: #198754;
     animation: speed 0.5s linear infinite;
 }
 
@@ -381,8 +381,8 @@ button {
     top: 7px;
     background: none;
     border: 20px solid transparent;
-    border-bottom: 8px solid #ff9900;
-    border-left: 20px solid #ff9900;
+    border-bottom: 8px solid #198754;
+    border-left: 20px solid #198754;
 }
 
 .car-detail.back {
@@ -398,7 +398,7 @@ button {
     left: 12px;
     border-top-left-radius: 30px;
     border-top-right-radius: 45px 40px;
-    border: 4px solid #ff9900;
+    border: 4px solid #198754;
     background: none;
     box-sizing: border-box;
 }
@@ -590,7 +590,7 @@ button {
 }
 
 .dl-cursor:before {
-    background: #ff9900;
+    background: #198754;
     opacity: 0.7;
     content: "";
     width: 100%;
@@ -649,7 +649,7 @@ button {
 }
 
 .default-btn {
-    background-color: #ff9900;
+    background-color: #198754;
     border-radius: 2px;
     height: 45px;
     font-size: 16px;
@@ -698,7 +698,7 @@ button {
 /*=== 8.0 Section Heading ===*/
 .section-heading h4 {
     font-size: 16px;
-    color: #ff9900;
+    color: #198754;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-flex;
@@ -706,7 +706,7 @@ button {
 }
 
 .section-heading h4 span {
-    background-color: #ff9900;
+    background-color: #198754;
     transform: skew(-20deg, 0deg);
     display: inline-flex;
     width: 4px;
@@ -718,7 +718,7 @@ button {
 
 .section-heading h4 span:after,
 .section-heading h4 span:before {
-    background-color: #ff9900;
+    background-color: #198754;
     content: "";
     width: 4px;
     height: 100%;
@@ -763,7 +763,7 @@ button {
 }
 
 .section-heading h2 span {
-    color: #ff9900;
+    color: #198754;
 }
 
 .section-heading p {
@@ -819,11 +819,11 @@ button {
 }
 
 .page-header-shape:before {
-    background-color: #ff9900;
+    background-color: #198754;
     background-image: repeating-linear-gradient(
         45deg,
-        #f7a20f 0,
-        #f7a20f 2px,
+        #198754 0,
+        #198754 2px,
         transparent 0,
         transparent 50%
     );
@@ -853,7 +853,7 @@ button {
 }
 
 .page-header-info h4 {
-    background-color: #ff9900;
+    background-color: #198754;
     clip-path: polygon(93% 0%, 100% 30%, 100% 100%, 0 100%, 0 0);
     height: 25px;
     line-height: 25px;
@@ -876,7 +876,7 @@ button {
 }
 
 .page-header-info h2 span {
-    color: #ff9900;
+    color: #198754;
 }
 
 .page-header-info p {
@@ -947,7 +947,7 @@ button {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #ff9900;
+    background-color: #198754;
     font-size: 20px;
     padding: 0;
     line-height: 40px;

@@ -138,11 +138,11 @@ a {
 }
 
 .tabs-nav {
-  display: flex;
-  justify-content: start;
-  margin-bottom: 16px;
-  width: 100%;
-  background-color: #ff9900;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: #198754;
 }
 
 .tab-button {
@@ -241,9 +241,9 @@ tbody tr:hover {
 }
 
 @media (min-width: 320px) {
-  .dropdown_menu ul {
-    display: block;
-  }
+    .dropdown_menu ul {
+        display: block;
+    }
 
   .dropdown_menu:hover ul {
     display: block;

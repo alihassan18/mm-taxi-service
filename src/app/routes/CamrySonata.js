@@ -28,7 +28,7 @@ const CamrySonata = () => {
               <div>Route</div>
             </th>
             <th>
-              <div className="table-cell-end">CAMRY SONATA</div>
+              <div className="table-cell-end">Rate</div>
             </th>
           </tr>
         </thead>

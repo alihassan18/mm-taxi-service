@@ -226,7 +226,7 @@ import React, { act } from "react";
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-const activeLinkColor = "#ff9900";
+const activeLinkColor = "#198754";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -343,7 +343,7 @@ function Header() {
                   <li className={isPathActive("/") ? "active" : ""}>
                     <Link href="/">Home</Link>
                   </li>
-                  <li
+                  {/* <li
                     onMouseEnter={() => setIsMenuOpen(true)}
                     onMouseLeave={() => setIsMenuOpen(false)}
                   >
@@ -412,8 +412,8 @@ function Header() {
                         </li>
                       </ul>
                     )}
-                  </li>
-                  <li
+                  </li> */}
+                  {/* <li
                     className={
                       isDropdownActive(["/our-taxi"])
                         ? "active dropdown_menu"
@@ -447,7 +447,17 @@ function Header() {
                         </Link>
                       </li>
                     </ul>
+                  </li> */}
+                  <li className={isPathActive("/company/our-services") ? "active" : ""}>
+                    <Link href="/company/our-services">Services</Link>
                   </li>
+                  <li className={isPathActive("/company/about-us") ? "active" : ""}>
+                    <Link href="/company/about-us">About Us</Link>
+                  </li>
+                  <li className={isPathActive("/our-taxi/taxi-lists") ? "active" : ""}>
+                    <Link href="/our-taxi/taxi-lists">Taxi Lists</Link>
+                  </li>
+
                   <li
                     className={
                       isDropdownActive(["/routes"])
@@ -457,7 +467,7 @@ function Header() {
                   >
                     <Link href="/routes">Routes</Link>
                   </li>
-                  <li
+                  {/* <li
                     className={
                       isDropdownActive(["/pages-details"])
                         ? "active dropdown_menu"
@@ -515,8 +525,8 @@ function Header() {
                         </Link>
                       </li>
                     </ul>
-                  </li>
-                  <li
+                  </li> */}
+                  {/* <li
                     className={
                       isDropdownActive(["/blog"])
                         ? "active dropdown_menu"
@@ -562,7 +572,7 @@ function Header() {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li className={isPathActive("/contact") ? "active" : ""}>
                     <Link href="/contact">Contact</Link>
                   </li>
