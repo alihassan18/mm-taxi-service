@@ -138,11 +138,11 @@ a {
 }
 
 .tabs-nav {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 16px;
-    width: 100%;
-    background-color: #198754;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: #198754;
 }
 
 .tab-button {
@@ -241,11 +241,49 @@ tbody tr:hover {
 }
 
 @media (min-width: 320px) {
-    .dropdown_menu ul {
-        display: block;
-    }
+  .dropdown_menu ul {
+    display: block;
+  }
 
   .dropdown_menu:hover ul {
     display: block;
   }
+}
+.location-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Items ko wrap karne ke liye */
+  gap: 16px; /* Gap between items */
+}
+
+.default-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Gap between icon and text */
+}
+
+.margin-class {
+  margin-top: 100px; /* Adjust as needed */
+  margin-bottom: 100px; /* Adjust as needed */
+}
+
+.bg-grey-section {
+  background-color: #f4f5f8;
+}
+
+section {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  margin: 8px 0;
 }
