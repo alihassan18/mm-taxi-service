@@ -1,88 +1,55 @@
-
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { useSearchParams } from 'next/navigation';
 
-
 const vehicles = [
-    {
-        "option": "Camry Car",
-        "value": "camry-car"
-    },
-    {
-        "option": "GMC- 2022",
-        "value": "gmc-2022"
-    },
-    {
-        "option": "GMC- 2020",
-        "value": "gmc-2020"
-    },
-    {
-        "option": "Hyundai Staria",
-        "value": "hyundai-staria"
-    },
-    {
-        "option": "Toyota HIACE",
-        "value": "toyota-hiace"
-    },
-    {
-        "option": "Coaster Saloon",
-        "value": "coaster-saloon"
-    }
+    { "option": "Camry Car", "value": "camry-car" },
+    { "option": "GMC- 2022", "value": "gmc-2022" },
+    { "option": "GMC- 2020", "value": "gmc-2020" },
+    { "option": "Hyundai Staria", "value": "hyundai-staria" },
+    { "option": "Toyota HIACE", "value": "toyota-hiace" },
+    { "option": "Coaster Saloon", "value": "coaster-saloon" }
 ];
 
 const persons = [
-    { "passengers": 1 },
-    { "passengers": 2 },
-    { "passengers": 3 },
-    { "passengers": 4 },
-    { "passengers": 5 },
-    { "passengers": 6 },
-    { "passengers": 7 },
-    { "passengers": 8 },
-    { "passengers": 9 },
-    { "passengers": 10 },
-    { "passengers": 11 },
-    { "passengers": 12 },
-    { "passengers": 13 },
-    { "passengers": 14 },
-    { "passengers": 15 },
-    { "passengers": 16 },
-    { "passengers": 17 },
-    { "passengers": 18 }
-]
-
+    { "passengers": 1 }, { "passengers": 2 }, { "passengers": 3 },
+    { "passengers": 4 }, { "passengers": 5 }, { "passengers": 6 },
+    { "passengers": 7 }, { "passengers": 8 }, { "passengers": 9 },
+    { "passengers": 10 }, { "passengers": 11 }, { "passengers": 12 },
+    { "passengers": 13 }, { "passengers": 14 }, { "passengers": 15 },
+    { "passengers": 16 }, { "passengers": 17 }, { "passengers": 18 }
+];
 
 const BookARide = () => {
-
-    const searchParams = useSearchParams();
-
-    const name = searchParams.get('name');
-    const passengers = searchParams.get('passengers');
-
-    const vehicle = vehicles.find(vehicle => vehicle.option == name);
-
-    const passenger = persons.find(person => person.passengers == passengers);
-
-    console.log(passengers, 'pppp');
-
-
-
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
-        packageType: vehicle ? vehicle.value : '',
-        passengers: passenger ? passenger.passengers : '',
+        packageType: '',
+        passengers: '',
         startDest: '',
         endDest: '',
         rideDate: '',
         rideTime: '',
     });
+    const [isLoading, setIsLoading] = useState(false);
 
-    const [isloading, setIsLoading] = useState(false)
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const searchParams = new URLSearchParams(window.location.search);
+            const name = searchParams.get('name');
+            const passengers = searchParams.get('passengers');
 
-    const [formMessage, setFormMessage] = useState('');
+            const vehicle = vehicles.find(vehicle => vehicle.option === name);
+            const passenger = persons.find(person => person.passengers === parseInt(passengers));
+
+            setFormData(prevState => ({
+                ...prevState,
+                packageType: vehicle ? vehicle.value : '',
+                passengers: passenger ? passenger.passengers : ''
+            }));
+        }
+    }, []);
 
     const handleChange = (e) => {
         setFormData({
@@ -91,20 +58,13 @@ const BookARide = () => {
         });
     };
 
-    console.log(formData);
-
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        // Example of how to send the data to an API endpoint in your Next.js app
         try {
-            setIsLoading(true)
+            setIsLoading(true);
             const response = await fetch('/api/book-ride', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
             });
 
@@ -113,6 +73,7 @@ const BookARide = () => {
                 setIsLoading(false);
             } else {
                 toast.error('Booking failed. Please try again.');
+                setIsLoading(false);
             }
         } catch (error) {
             console.error('Error:', error);
@@ -122,8 +83,9 @@ const BookARide = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} action="book-ride.php" id="book-taxi-ride">
+        <form onSubmit={handleSubmit} id="book-taxi-ride">
             <div className="taxi-booking-form">
+                {/* Input fields */}
                 <div className="form-field">
                     <i className="las la-user-tie"></i>
                     <input
@@ -181,6 +143,7 @@ const BookARide = () => {
                         ))}
                     </select>
                 </div>
+                {/* Additional input fields */}
                 <div className="form-field">
                     <i className="las la-map-marker"></i>
                     <input
@@ -234,20 +197,14 @@ const BookARide = () => {
                     />
                 </div>
                 <div className="form-field">
-                    {
-                        isloading ? <button id="submit" className="default-btn" type="submit">
-                            Loading....
-                        </button> : <button id="submit" className="default-btn" type="submit">
-                            Book Your Taxi
-                        </button>
-                    }
+                    <button id="submit" className="default-btn" type="submit" disabled={isLoading}>
+                        {isLoading ? 'Loading...' : 'Book Your Taxi'}
+                    </button>
                 </div>
             </div>
             <div id="form-messages" className="alert" role="alert"></div>
         </form>
-    )
-}
+    );
+};
 
-
-
-export default BookARide
+export default BookARide;
