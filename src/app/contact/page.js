@@ -1,9 +1,11 @@
 import React from "react";
 import ContactUsForm from '../contact/components/ContactUsForm'
+import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 
 function page() {
   return (
     <div>
+      <DynamicScriptsLoader />
       <div className="map-wrapper pt-90">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234301.31831330296!2d39.59558905124113!3d21.42248725872801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204a883b84f6d%3A0x6b2bc91c0a791fd7!2sMecca%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1693315134853!5m2!1sen!2sus"

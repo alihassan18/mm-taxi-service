@@ -1,4 +1,5 @@
 import React from "react";
+import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 
 const hyundaiRoutes = [
   { route: "Jeddah Airport to Makkah Hotel", price: "350/SR" },
@@ -22,6 +23,7 @@ const hyundaiRoutes = [
 const Hyundai = () => {
   return (
     <div>
+      <DynamicScriptsLoader />
       <table>
         <thead>
           <tr className="nowrap">
