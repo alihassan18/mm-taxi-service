@@ -138,8 +138,7 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/vendor/smooth-scroll.js"></Script>
         <Script src="/assets/js/vendor/wow.min.js"></Script>
         <Script src="/assets/js/book-ride.js"></Script>
-        > */}
-        <Script src="/assets/js/main.js" strategy="afterInteractive"></Script>
+        <Script src="/assets/js/main.js"></Script> */}
       </body>
 
     </html>
