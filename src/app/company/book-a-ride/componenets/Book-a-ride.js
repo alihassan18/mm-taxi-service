@@ -2,15 +2,78 @@
 'use client'
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
+import { useSearchParams } from 'next/navigation';
+
+
+const vehicles = [
+    {
+        "option": "Camry Car",
+        "value": "camry-car"
+    },
+    {
+        "option": "GMC- 2022",
+        "value": "gmc-2022"
+    },
+    {
+        "option": "GMC- 2020",
+        "value": "gmc-2020"
+    },
+    {
+        "option": "Hyundai Staria",
+        "value": "hyundai-staria"
+    },
+    {
+        "option": "Toyota HIACE",
+        "value": "toyota-hiace"
+    },
+    {
+        "option": "Coaster Saloon",
+        "value": "coaster-saloon"
+    }
+];
+
+const persons = [
+    { "passengers": 1 },
+    { "passengers": 2 },
+    { "passengers": 3 },
+    { "passengers": 4 },
+    { "passengers": 5 },
+    { "passengers": 6 },
+    { "passengers": 7 },
+    { "passengers": 8 },
+    { "passengers": 9 },
+    { "passengers": 10 },
+    { "passengers": 11 },
+    { "passengers": 12 },
+    { "passengers": 13 },
+    { "passengers": 14 },
+    { "passengers": 15 },
+    { "passengers": 16 },
+    { "passengers": 17 },
+    { "passengers": 18 }
+]
+
 
 const BookARide = () => {
+
+    const searchParams = useSearchParams();
+
+    const name = searchParams.get('name');
+    const passengers = searchParams.get('passengers');
+
+    const vehicle = vehicles.find(vehicle => vehicle.option == name);
+
+    const passenger = persons.find(person => person.passengers == passengers);
+
+    console.log(passengers, 'pppp');
+
 
 
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
-        packageType: 'standard',
-        passengers: '1',
+        packageType: vehicle ? vehicle.value : '',
+        passengers: passenger ? passenger.passengers : '',
         startDest: '',
         endDest: '',
         rideDate: '',
@@ -91,16 +154,15 @@ const BookARide = () => {
                     <i className="las la-tags"></i>
                     <select
                         name="packageType"
-                        id="type"
                         className="niceSelect"
                         value={formData.packageType}
                         onChange={handleChange}
                     >
-                        <option value="standard">Standard</option>
-                        <option value="business">Business</option>
-                        <option value="economy">Economy</option>
-                        <option value="vip-spacial">VIP Spacial</option>
-                        <option value="comfort">Comfort</option>
+                        {vehicles.map((vehicle, index) => (
+                            <option key={index} value={vehicle.value}>
+                                {vehicle.option}
+                            </option>
+                        ))}
                     </select>
                 </div>
                 <div className="form-field">
@@ -112,11 +174,11 @@ const BookARide = () => {
                         value={formData.passengers}
                         onChange={handleChange}
                     >
-                        <option value="1">1 Person</option>
-                        <option value="2">2 Person</option>
-                        <option value="3">3 Person</option>
-                        <option value="4">4 Person</option>
-                        <option value="5">5 Person</option>
+                        {persons.map((person, index) => (
+                            <option key={index} value={person.passengers}>
+                                {`${person.passengers} Person${person.passengers > 1 ? 's' : ''}`}
+                            </option>
+                        ))}
                     </select>
                 </div>
                 <div className="form-field">
