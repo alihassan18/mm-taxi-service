@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const BookingForm = () => {
+
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -12,6 +15,8 @@ const BookingForm = () => {
     rideTime: '',
   });
 
+  const [isloading, setIsLoading] = useState(false)
+
   const [formMessage, setFormMessage] = useState('');
 
   const handleChange = (e) => {
@@ -21,11 +26,15 @@ const BookingForm = () => {
     });
   };
 
+  console.log(formData);
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Example of how to send the data to an API endpoint in your Next.js app
     try {
+      setIsLoading(true)
       const response = await fetch('/api/book-ride', {
         method: 'POST',
         headers: {
@@ -35,15 +44,18 @@ const BookingForm = () => {
       });
 
       if (response.ok) {
-        setFormMessage('Booking successful!');
+        toast.success('Booking successful!');
+        setIsLoading(false);
       } else {
-        setFormMessage('Something went wrong, please try again.');
+        toast.error('Booking failed. Please try again.');
       }
     } catch (error) {
       console.error('Error:', error);
-      setFormMessage('An error occurred. Please try again later.');
+      toast.error('An error occurred. Please try again later.');
+      setIsLoading(false);
     }
   };
+
 
   return (
     <section className="booking-section">
@@ -173,9 +185,13 @@ const BookingForm = () => {
                     />
                   </div>
                   <div className="form-field">
-                    <button id="submit" className="default-btn" type="submit">
-                      Book Your Taxi
-                    </button>
+                    {
+                      isloading ? <button id="submit" className="default-btn" type="submit">
+                        Loading....
+                      </button> : <button id="submit" className="default-btn" type="submit">
+                        Book Your Taxi
+                      </button>
+                    }
                   </div>
                 </div>
                 {formMessage && (

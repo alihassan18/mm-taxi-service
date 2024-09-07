@@ -1,4 +1,5 @@
 import React from "react";
+import ContactUsForm from '../contact/components/ContactUsForm'
 
 function page() {
   return (
@@ -47,73 +48,7 @@ function page() {
             </div>
             <div className="col-md-6">
               <div className="contact-form">
-                <form
-                  action="contact.php"
-                  method="post"
-                  id="ajax_contact"
-                  className="form-horizontal"
-                >
-                  <div className="contact-title">
-                    <h2>
-                      Contact With Us! <span></span>
-                    </h2>
-                  </div>
-                  <div className="contact-form-group">
-                    <div className="form-field">
-                      <input
-                        type="text"
-                        id="firstname"
-                        name="firstname"
-                        className="form-control"
-                        placeholder="First Name"
-                      />
-                    </div>
-                    <div className="form-field">
-                      <input
-                        type="text"
-                        id="lastname"
-                        name="lastname"
-                        className="form-control"
-                        placeholder="Last Name"
-                      />
-                    </div>
-                    <div className="form-field">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className="form-field">
-                      <input
-                        type="text"
-                        id="phone"
-                        name="phone"
-                        className="form-control"
-                        placeholder="Phone Number"
-                      />
-                    </div>
-                    <div className="form-field message">
-                      <textarea
-                        id="message"
-                        name="message"
-                        cols="30"
-                        rows="4"
-                        className="form-control"
-                        placeholder="Message"
-                        required
-                      ></textarea>
-                    </div>
-                    <div className="form-field">
-                      <button id="submit" className="default-btn" type="submit">
-                        Send Massage
-                      </button>
-                    </div>
-                  </div>
-                  <div id="form-messages" className="alert" role="alert"></div>
-                </form>
+                <ContactUsForm />
               </div>
             </div>
           </div>
