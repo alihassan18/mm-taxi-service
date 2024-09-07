@@ -1,11 +1,13 @@
 
 import Banner from "../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 import Tabs from "./Tabs";
 
 const Route = () => {
 
   return (
     <div>
+      <DynamicScriptsLoader />
       <Banner title="OUR DRIVERS!" />
       <section className="our-taxi padding">
         <div className="container">

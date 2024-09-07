@@ -112,7 +112,7 @@ export default function RootLayout({ children }) {
         {/* End Google Tag Manager */}
 
 
-        <Script
+        {/* <Script
           src="/assets/js/vendor/jquary-3.6.0.min.js"
           // strategy="lazyOnload"
           strategy="beforeInteractive"
@@ -138,7 +138,7 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/vendor/smooth-scroll.js"></Script>
         <Script src="/assets/js/vendor/wow.min.js"></Script>
         <Script src="/assets/js/book-ride.js"></Script>
-        <Script src="/assets/js/main.js"></Script>
+        <Script src="/assets/js/main.js"></Script> */}
       </body>
 
     </html>

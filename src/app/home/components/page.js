@@ -2,10 +2,12 @@
 import React from "react";
 import Link from "next/link";
 import BookingForm from './BookingForm'
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
   return (
     <React.Fragment>
+      <DynamicScriptsLoader />
       <div>
         <div className="slider-section">
           <div className="main-slider">

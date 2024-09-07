@@ -1,10 +1,12 @@
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 import BookARide from '../book-a-ride/componenets/Book-a-ride'
 
 const page = () => {
   return (
     <div>
+      <DynamicScriptsLoader />
       <Banner title="GET YOUR CAB!" />
       <div className="taxi-booking bg-grey padding">
         <div className="container">
