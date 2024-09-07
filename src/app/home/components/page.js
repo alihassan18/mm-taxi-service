@@ -1,9 +1,100 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import BookingForm from './BookingForm'
+import Locationicon from "../../../components/common/icon/Locationicon";
+import BookingForm from "./BookingForm";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
+  const locations = [
+    {
+      name: "Jeddah Airport ⟶ Makkah Hotel",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Makkah Hotel ⟶ Jeddah Airport",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Makkah Hotel ⟶ Madina Hotel",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Madina Hotel ⟶ Makkah Hotel",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Madina Airport ⟶ Madina Hotel",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Madina Hotel ⟶ Madina Airport",
+      link: "https://wa.me/+966595783153",
+    },
+    { name: "Makkah Ziyarat ⟶", link: "https://wa.me/+966595783153" },
+    { name: "Madina Ziyarat ⟶", link: "https://wa.me/+966595783153" },
+    {
+      name: "Jeddah Airport ⟶ Madina Hotel",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Madina Hotel ⟶ Jeddah Airport",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Jeddah ⟶ Taif Zariat & Return",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Makkah ⟶ Taif Zariat & Return",
+      link: "https://wa.me/+966595783153",
+    },
+    {
+      name: "Jeddah Airport ⟶ Jeddah Hotel",
+      link: "https://wa.me/+966595783153",
+    },
+    { name: "Hotal ⟶ Train Station", link: "https://wa.me/+966595783153" },
+    { name: "Train Station ⟶ Hotal", link: "https://wa.me/+966595783153" },
+    { name: "Per Hour Rate ⟶", link: "https://wa.me/+966595783153" },
+  ];
+
+  const vehicles = [
+    {
+      name: "Camry Car",
+      passengers: 4,
+      luggage: 3,
+      image: "/assets/img/pricing-car.png",
+    },
+    {
+      name: "GMC- 2022",
+      passengers: 7,
+      luggage: 8,
+      image: "/assets/img/pricing-car-1.png",
+    },
+    {
+      name: "GMC- 2020",
+      passengers: 7,
+      luggage: 8,
+      image: "/assets/img/pricing-car-2.png",
+    },
+    {
+      name: "Hyundai Staria",
+      passengers: 7,
+      luggage: 10,
+      image: "/assets/img/pricing-car-3.png",
+    },
+    // {
+    //   name: "Toyota HIACE",
+    //   passengers: 11,
+    //   luggage: 16,
+    //   image: "/assets/img/pricing-car-4.png",
+    // },
+    // {
+    //   name: "Coaster Saloon",
+    //   passengers: 15,
+    //   luggage: 20,
+    //   image: "/assets/img/pricing-car-5.png",
+    // },
+  ];
   return (
     <React.Fragment>
       <div>
@@ -521,7 +612,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="taxi-details bd-bottom padding" id="taxi-booking">
+        {/* <section className="taxi-details bd-bottom padding" id="taxi-booking">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -591,8 +682,103 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
+        <div className="container mt-4">
+          <div className="text-center  margin-class">
+            <h1 style={{ marginBottom: "16px" }}>City-to-City Routes</h1>
+
+            <div className="location-container">
+              {locations.map((item, index) => (
+                <div className="location-item" key={index}>
+                  <Link
+                    href={item.link}
+                    passHref
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="whatsapp-link"
+                  >
+                    <div className="whatsapp-button">
+                      <img
+                        src="/assets/img/WSimages-removebg-preview.png"
+                        alt="WhatsApp Icon"
+                        className="whatsapp-icon"
+                      />
+                    </div>
+                    <div className="default-btn">
+                      <Locationicon />
+                      <span className="elementor-button-text">{item.name}</span>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
+            <div className="d-flex justify-content-end align-items-end mb-4">
+              <Link href="/routes" className="default-btn">
+                View more
+              </Link>
+            </div>
+          </div>
+        </div>
+        <section className="bg-grey-section">
+          <div className="container ">
+            <div className="section-heading  ">
+              <h4>
+                <span></span>Clients Testimonial
+              </h4>
+              <h2 className="my-2">Ridek Passenger Reviews...</h2>
+            </div>
+            <div className="row">
+              {vehicles.map((item, key) => (
+                <div className="col-lg-3 col-md-6 sm-padding mb-4" key={key}>
+                  <div className="pricing-item">
+                    <div className="pricing-head-wrap">
+                      <div className="pricing-car">
+                        <img
+                          src={item.image || "/assets/img/pricing-car-2.png"}
+                          alt="car"
+                        />
+                        <div className="price">$2.50/km</div>
+                      </div>
+                    </div>
+                    <div className="pricing-head">
+                      <h3>
+                        <a href="taxi-details.html">{item.name}</a>
+                      </h3>
+                    </div>
+                    <ul className="pricing-list">
+                      <li>
+                        Negotiable: <span>$2.50</span>
+                      </li>
+                      <li>
+                        Per Mile/KM: <span>$4.20</span>
+                      </li>
+                      <li>
+                        Luggage: <span>{item.luggage}</span>
+                      </li>
+                      <li>
+                        Passengers: <span>{item.passengers} Person</span>
+                      </li>
+                      <li>
+                        <Link
+                          href="/company/book-a-ride"
+                          className="default-btn"
+                        >
+                          Book Taxi Now
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="d-flex justify-content-end align-items-end mb-4">
+              <Link href="/our-taxi/taxi-lists" className="default-btn">
+                See more
+              </Link>
+            </div>
+          </div>
+        </section>
         {/* <section className="booking-section">
           <div className="container">
             <div className="row pos-relative padding">
@@ -1147,8 +1333,8 @@ const HomePage = () => {
             <i className="las la-times"></i>
           </div>
         </div>
-      </div >
-    </React.Fragment >
+      </div>
+    </React.Fragment>
   );
 };
 
