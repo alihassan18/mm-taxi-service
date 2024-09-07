@@ -2,6 +2,7 @@
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
 import Link from "next/link";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 
 const page = () => {
   const vehicles = [
@@ -45,6 +46,7 @@ const page = () => {
 
   return (
     <div>
+      <DynamicScriptsLoader />
       <Banner title="OUR DRIVERS!" />
       <section className="our-taxi padding">
         <div className="container">

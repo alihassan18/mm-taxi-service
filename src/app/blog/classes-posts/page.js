@@ -1,8 +1,10 @@
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 function page() {
   return (
     <div>
+      <DynamicScriptsLoader />
       <Banner title="BLOG CLASSIC!" />
       <section className="blog-section blog-page bg-grey padding">
         <div className="container">

@@ -1,3 +1,4 @@
+import DynamicScriptsLoader from "../components/common/script/ScriptLoader";
 import HomePage from "./home/components/page";
 
 export const metadata = {
@@ -44,6 +45,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <DynamicScriptsLoader />
       <HomePage />
     </main>
   );
