@@ -21,7 +21,7 @@ const DynamicScriptsLoader = () => {
             "/assets/js/vendor/smooth-scroll.js",
             "/assets/js/vendor/wow.min.js",
             "/assets/js/book-ride.js",
-            "/assets/js/main.js"
+            // "/assets/js/main.js"
         ];
 
         // Function to load a script
