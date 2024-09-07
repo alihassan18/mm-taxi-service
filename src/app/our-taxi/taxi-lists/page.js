@@ -65,16 +65,14 @@ const page = () => {
                   </div>
                   <div className="pricing-head">
                     <h3>
-                      <a href="taxi-details.html">{item.name}</a>
+                      {/* <a href="taxi-details.html"></a> */}
+                      {item.name}
                     </h3>
                     {/* <span className="location">Chicago</span> */}
                   </div>
                   <ul className="pricing-list">
                     <li>
                       Initial Charge: <span>$2.50</span>
-                    </li>
-                    <li>
-                      Per Mile/KM: <span>$4.20</span>
                     </li>
                     <li>
                       Luggage: <span>{item.luggage}</span>
