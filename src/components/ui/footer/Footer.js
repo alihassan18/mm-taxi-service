@@ -135,7 +135,7 @@ function Footer() {
         <div className="copyright-wrap">
           <div className="container">
             <p>
-              © <span id="currentYear" /> DynamicLayers All Rights Reserved.
+              © {new Date().getFullYear()} DynamicLayers All Rights Reserved.
             </p>
           </div>
         </div>
