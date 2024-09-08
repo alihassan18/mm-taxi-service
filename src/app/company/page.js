@@ -110,8 +110,8 @@ function page() {
                         <a href="service-details.html">Regular Transport</a>
                       </h3>
                       <p>
-                        Everything your taxi business needs is already here!
-                        Ridek made for taxi service companies!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
+                        Designed for Taxi Service Excellence!
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -135,8 +135,8 @@ function page() {
                         <a href="service-details.html">Airport Transport</a>
                       </h3>
                       <p>
-                        Everything your taxi business needs is already here!
-                        Ridek made for taxi service companies!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
+                        Designed for Taxi Service Excellence!
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -160,8 +160,8 @@ function page() {
                         <a href="service-details.html">Luggage Transport</a>
                       </h3>
                       <p>
-                        Everything your taxi business needs is already here!
-                        Ridek made for taxi service companies!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
+                        Designed for Taxi Service Excellence!
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -185,8 +185,8 @@ function page() {
                         <a href="service-details.html">City Transport</a>
                       </h3>
                       <p>
-                        Everything your taxi business needs is already here!
-                        Ridek made for taxi service companies!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
+                        Designed for Taxi Service Excellence!
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -210,8 +210,8 @@ function page() {
                         <a href="service-details.html">Business Transport</a>
                       </h3>
                       <p>
-                        Everything your taxi business needs is already here!
-                        Ridek made for taxi service companies!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
+                        Designed for Taxi Service Excellence!
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More

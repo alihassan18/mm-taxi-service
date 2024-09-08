@@ -35,7 +35,7 @@ const page = () => {
                     <div>
                       <h3>Fast &amp; Easy Pickups</h3>
                       <p>
-                        Everything your taxi business needs is already here!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
                       </p>
                     </div>
                   </li>
@@ -46,7 +46,7 @@ const page = () => {
                     <div>
                       <h3>Instant Car Provide</h3>
                       <p>
-                        Everything your taxi business needs is already here!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
                       </p>
                     </div>
                   </li>
@@ -57,7 +57,7 @@ const page = () => {
                     <div>
                       <h3>Save Expert Drive</h3>
                       <p>
-                        Everything your taxi business needs is already here!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
                       </p>
                     </div>
                   </li>
@@ -68,7 +68,7 @@ const page = () => {
                     <div>
                       <h3>24/7 Support</h3>
                       <p>
-                        Everything your taxi business needs is already here!
+                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
                       </p>
                     </div>
                   </li>
@@ -85,7 +85,7 @@ const page = () => {
                   <img src="/assets/img/post-1.jpg" alt="img" />
                   <div>
                     <h3>Passenger Benefits!</h3>
-                    <p>Everything your taxi business needs is already here!</p>
+                    <p>MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!</p>
                     <ul className="service-icon-list">
                       <li>
                         <i className="las la-hand-point-right"></i>Use the latest
@@ -144,7 +144,7 @@ const page = () => {
                   <h3>
                     Feel your journey with <span>Ridek!</span>
                   </h3>
-                  <p>Everything your taxi business needs is already here!</p>
+                  <p>MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!</p>
                   <h2 className="discount">
                     <span>-60%</span> Off Today!
                   </h2>

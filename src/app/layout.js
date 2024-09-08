@@ -78,8 +78,8 @@ export default function RootLayout({ children }) {
               </a>
             </div>
             <p>
-              Everything your taxi business needs is already here! Ridek, a
-              theme made for taxi service companies.
+              MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
+              Designed for Taxi Service Excellence!
             </p>
             <ul className="sidebox-list">
               <li className="call">
