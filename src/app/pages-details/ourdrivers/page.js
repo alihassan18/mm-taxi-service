@@ -17,9 +17,10 @@ function page() {
             </h4>
             <h2>Our Expert Drivers</h2>
             <p>
-              We successfully cope with tasks of varying complexity, provide
-              long-term <br />
-              guarantees and regularly master new technologies.
+              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              reliability for Umrah and Hajj.
+
+
             </p>
           </div>
           <div className="row">

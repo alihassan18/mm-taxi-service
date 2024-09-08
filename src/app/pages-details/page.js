@@ -33,14 +33,10 @@ function page() {
                   <span></span>About Our Company
                 </h4>
                 <h2>
-                  Feel the difference and Relaxation with M&M Taxi Company!
+                  Feel the difference and Relaxation with MM Taxi Company!
                 </h2>
                 <p>
-                  We successfully cope with tasks of varying complexity, provide
-                  long-term guarantees and regularly master new technologies.
-                  Our portfolio includes dozens of successfully completed
-                  projects of houses of different storeys, with high–quality
-                  finishes and good repairs. Book your taxi from anywhare today!
+                  At MM Taxi Service, we specialize in providing reliable and efficient transportation for Umrah and Hajj pilgrims. Whether it's short trips or long journeys, we ensure a seamless and comfortable experience. Our team is committed to delivering top-quality service with modern vehicles, ensuring your travel is smooth and stress-free. Trust us for safe, timely, and professional transportation during your sacred journey. Book your Umrah or Hajj taxi from anywhere today!
                 </p>
               </div>
               <ul className="about-info">
@@ -62,7 +58,7 @@ function page() {
                 <li>
                   <h2>
                     <span>Call For Taxi</span>
-                    <a href="tel:5267214392">+966595783153</a>
+                    <a href="tel:+966595783153">+966595783153</a>
                   </h2>
                 </li>
               </ul>

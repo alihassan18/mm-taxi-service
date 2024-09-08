@@ -14,9 +14,8 @@ function Footer() {
                       <img src="/assets/img/logo-light.png" alt="logo" />
                     </a>
                     <p>
-                      We successfully cope with tasks of varying complexity,
-                      provide long-term guarantees and regularly master new
-                      technologies.
+                      MM Taxi Service handles trips of all complexities,
+                      provide long-term offering long-term reliability for Umrah and Hajj.
                     </p>
                   </div>
                 </div>
@@ -25,7 +24,7 @@ function Footer() {
                     <i className="las la-phone-volume" />
                     <p>
                       <span>Call For Taxi</span>
-                      <a href="tel:5267214392">+966595783153</a>
+                      <a href="tel:+966595783153">+966595783153</a>
                     </p>
                   </div>
                 </div>

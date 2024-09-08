@@ -72,7 +72,7 @@
 //                   <div className="header-info-text">
 //                     <h3>
 //                       <span>Call us now</span>
-//                       <a href="tel:5267214392">5267-214-392</a>
+//                       <a href="tel:+966595783153">5267-214-392</a>
 //                     </h3>
 //                   </div>
 //                 </li>
@@ -300,7 +300,7 @@ function Header() {
                   <div className="header-info-text">
                     <h3>
                       <span>Call us now</span>
-                      <a href="tel:5267214392">+966595783153</a>
+                      <a href="tel:+966595783153">+966595783153</a>
                     </h3>
                   </div>
                 </li>

@@ -9,7 +9,7 @@ const Banner = ({ title }) => {
           <div className="page-header-info">
             <h4>{title}</h4>
             <h2>
-              Feel your journey <br /> with <span>M&M!</span>
+              Feel your journey <br /> with <span>MM!</span>
             </h2>
             <p>
               Everything your taxi business <br />

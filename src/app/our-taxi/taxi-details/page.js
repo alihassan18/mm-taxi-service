@@ -25,11 +25,7 @@ const page = () => {
                 </h4>
                 <h2>Mercedes-Maybach Haute Voiture - 2024</h2>
                 <p>
-                  We successfully cope with tasks of varying complexity, provide
-                  long-term guarantees and regularly master new technologies.
-                  Our portfolio includes dozens of successfully completed
-                  projects of houses of different storeys, with high–quality
-                  finishes and good repairs. Book your taxi from anywhare today!
+                  At MM Taxi Service, we specialize in providing reliable and efficient transportation for Umrah and Hajj pilgrims. Whether it's short trips or long journeys, we ensure a seamless and comfortable experience. Our team is committed to delivering top-quality service with modern vehicles, ensuring your travel is smooth and stress-free. Trust us for safe, timely, and professional transportation during your sacred journey. Book your Umrah or Hajj taxi from anywhere today!
                 </p>
               </div>
               <ul className="taxi-features">
@@ -87,9 +83,10 @@ const page = () => {
             </h4>
             <h2>Related Taxis To Ride</h2>
             <p>
-              We successfully cope with tasks of varying complexity, provide
-              long-term <br />
-              guarantees and regularly master new technologies.
+              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              reliability for Umrah and Hajj.
+
+
             </p>
           </div>
           {/* <!--/.section-heading--> */}

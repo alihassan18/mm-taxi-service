@@ -13,10 +13,10 @@ function page() {
             <h4>
               <span></span>Clients Testimonial
             </h4>
-            <h2>M&M Passenger Reviews...</h2>
+            <h2>MM Passenger Reviews...</h2>
             <p>
-              We successfully cope with tasks of varying complexity, provide
-              long-term <br /> guarantees and regularly master technologies.
+              MM Taxi Service handles trips of all complexities, provide
+              long-term <br /> offering long-term reliability for Umrah and Hajj.
             </p>
           </div>
           <div className="swiper-outside testi-pagination">

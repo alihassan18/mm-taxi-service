@@ -33,14 +33,10 @@ function page() {
                   <span></span>About Our Company
                 </h4>
                 <h2>
-                  Feel the difference and Relaxation with M&M Taxi Company!
+                  Feel the difference and Relaxation with MM Taxi Company!
                 </h2>
                 <p>
-                  We successfully cope with tasks of varying complexity, provide
-                  long-term guarantees and regularly master new technologies.
-                  Our portfolio includes dozens of successfully completed
-                  projects of houses of different storeys, with high–quality
-                  finishes and good repairs. Book your taxi from anywhare today!
+                  At MM Taxi Service, we specialize in providing reliable and efficient transportation for Umrah and Hajj pilgrims. Whether it's short trips or long journeys, we ensure a seamless and comfortable experience. Our team is committed to delivering top-quality service with modern vehicles, ensuring your travel is smooth and stress-free. Trust us for safe, timely, and professional transportation during your sacred journey. Book your Umrah or Hajj taxi from anywhere today!
                 </p>
               </div>
 
@@ -63,7 +59,7 @@ function page() {
                 <li>
                   <h2>
                     <span>Call For Taxi</span>
-                    <a href="tel:5267214392">+966595783153</a>
+                    <a href="tel:+966595783153">+966595783153</a>
                   </h2>
                 </li>
               </ul>
@@ -82,12 +78,13 @@ function page() {
             <h2 className="white">
               Start your journey with
               <br />
-              M&M Taxi Company!
+              MM Taxi Company!
             </h2>
             <p>
-              We successfully cope with tasks of varying complexity, provide
-              long-term <br />
-              guarantees and regularly master new technologies.
+              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              reliability for Umrah and Hajj.
+
+
             </p>
           </div>
 
@@ -110,8 +107,7 @@ function page() {
                         <a href="service-details.html">Regular Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                        Designed for Taxi Service Excellence!
+                        MM Taxi Service offers reliable regular transport, ensuring consistent and comfortable rides for your daily needs.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -135,8 +131,7 @@ function page() {
                         <a href="service-details.html">Airport Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                        Designed for Taxi Service Excellence!
+                        MM Taxi Service offers reliable and punctual airport transportation, ensuring you reach your destination comfortably and on time.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -160,8 +155,7 @@ function page() {
                         <a href="service-details.html">Luggage Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                        Designed for Taxi Service Excellence!
+                        MM Taxi Service offers secure and efficient luggage transport, ensuring your belongings arrive safely and on time.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -185,8 +179,7 @@ function page() {
                         <a href="service-details.html">City Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                        Designed for Taxi Service Excellence!
+                        MM Taxi Service provides reliable city transport, ensuring smooth and convenient travel throughout the city.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -241,10 +234,11 @@ function page() {
                 <h4>
                   <span></span>Clients Testimonial
                 </h4>
-                <h2>M&M Passenger Reviews...</h2>
+                <h2>MM Passenger Reviews...</h2>
                 <p>
-                  We successfully cope with tasks of varying complexity, provide
-                  long-term guarantees and regularly master technologies.
+                  MM Taxi Service handles trips of all complexities, offering long-term reliability for Umrah and Hajj.
+
+
                 </p>
               </div>
               <div className="swiper-outside testi-pagination">
@@ -330,11 +324,10 @@ function page() {
                   <h4 className="white">
                     <span></span>Why Choose Us!
                   </h4>
-                  <h2 className="white">Why Ride with M&M?</h2>
+                  <h2 className="white">Why Ride with MM?</h2>
                   <p className="white">
-                    We successfully cope with tasks of varying complexity,
-                    provide long-term guarantees and regularly master
-                    technologies.
+                    MM Taxi Service handles trips of all complexities, offering long-term reliability for Umrah and Hajj.
+
                   </p>
                 </div>
 
@@ -390,9 +383,10 @@ function page() {
             </h4>
             <h2>Our Expert Drivers</h2>
             <p>
-              We successfully cope with tasks of varying complexity, provide
-              long-term <br />
-              guarantees and regularly master new technologies.
+              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              reliability for Umrah and Hajj.
+
+
             </p>
           </div>
           <div className="row">
@@ -460,15 +454,15 @@ function page() {
               Call Us Now <span>Book Your Taxi</span> <br /> For Your Next Ride!
             </h2>
             <p>
-              We successfully cope with tasks of varying complexity,
+              MM Taxi Service handles trips of all complexities, offering long-term,
               <br />
-              guarantees and regularly master new technologies.
+              reliability for Umrah and Hajj.
             </p>
             <div className="cta-call">
               <i className="las la-phone-volume"></i>
               <p>
                 <span>Call For Taxi</span>
-                <a href="tel:5267214392">+966595783153</a>
+                <a href="tel:+966595783153">+966595783153</a>
               </p>
             </div>
           </div>
@@ -483,9 +477,10 @@ function page() {
             </h4>
             <h2>News And Insights!</h2>
             <p>
-              We successfully cope with tasks of varying complexity, provide
-              long-term <br />
-              guarantees and regularly master new technologies.
+              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              reliability for Umrah and Hajj.
+
+
             </p>
           </div>
 

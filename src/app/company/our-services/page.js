@@ -26,8 +26,7 @@ const page = () => {
                     <a href="service-details.html">Regular Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
-                    made for taxi service companies!
+                    MM Taxi Service offers reliable regular transport, ensuring consistent and comfortable rides for your daily needs.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -51,8 +50,7 @@ const page = () => {
                     <a href="service-details.html">Airport Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
-                    made for taxi service companies!
+                    MM Taxi Service offers reliable and punctual airport transportation, ensuring you reach your destination comfortably and on time.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -76,8 +74,7 @@ const page = () => {
                     <a href="service-details.html">Luggage Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
-                    made for taxi service companies!
+                    MM Taxi Service offers secure and efficient luggage transport, ensuring your belongings arrive safely and on time.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -101,8 +98,7 @@ const page = () => {
                     <a href="service-details.html">City Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
-                    made for taxi service companies!
+                    MM Taxi Service provides reliable city transport, ensuring smooth and convenient travel throughout the city.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -151,7 +147,7 @@ const page = () => {
                     <a href="service-details.html">Local Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
+                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! MM
                     made for taxi service companies!
                   </p>
                   <a className="read-more" href="service-details.html">
@@ -170,8 +166,8 @@ const page = () => {
           <div className="row align-items-center">
             <div className="col-lg-4">
               <div className="cta-content">
-                <h4>M&M Taxi Services!</h4>
-                <h2>Feel your journey with M&M!</h2>
+                <h4>MM Taxi Services!</h4>
+                <h2>Feel your journey with MM!</h2>
                 <a href="book-taxi.html" className="default-btn">
                   Book a Taxi
                 </a>
@@ -189,7 +185,7 @@ const page = () => {
                   <i className="las la-arrow-right"></i>First and quick pickups.
                 </li>
                 <li>
-                  <i className="las la-arrow-right"></i>Access M&M globally.
+                  <i className="las la-arrow-right"></i>Access MM globally.
                 </li>
               </ul>
             </div>
@@ -209,9 +205,10 @@ const page = () => {
             </h4>
             <h2>News And Insights!</h2>
             <p>
-              We successfully cope with tasks of varying complexity, provide
-              long-term <br />
-              guarantees and regularly master new technologies.
+              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              reliability for Umrah and Hajj.
+
+
             </p>
           </div>
           {/* <!--/.section-heading--> */}
