@@ -63,28 +63,28 @@ const HomePage = () => {
     {
       name: "Camry Car",
       passengers: 4,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 3,
       image: "/assets/img/pricing-car.png",
     },
     {
       name: "GMC- 2022",
       passengers: 7,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 8,
       image: "/assets/img/pricing-car-1.png",
     },
     {
       name: "GMC- 2020",
       passengers: 7,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 8,
       image: "/assets/img/pricing-car-2.png",
     },
     {
       name: "Hyundai Staria",
       passengers: 7,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 10,
       image: "/assets/img/pricing-car-3.png",
     },
@@ -174,8 +174,8 @@ const HomePage = () => {
                             data-delay="0.7s"
                             data-duration="1s"
                           >
-                            MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!{" "}
-                            <br />
+                            MM Taxi Service – Everything You Need for Reliable
+                            Umrah & Hajj Transportation! <br />
                             Designed for Taxi Service Excellence!
                           </div>
                         </div>
@@ -260,8 +260,8 @@ const HomePage = () => {
                             data-delay="0.7s"
                             data-duration="1s"
                           >
-                            MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!{" "}
-                            <br />
+                            MM Taxi Service – Everything You Need for Reliable
+                            Umrah & Hajj Transportation! <br />
                             Designed for Taxi Service Excellence!
                           </div>
                         </div>
@@ -489,8 +489,9 @@ const HomePage = () => {
                           <a href="service-details.html">Regular Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                          Designed for Taxi Service Excellence!
+                          MM Taxi Service – Everything You Need for Reliable
+                          Umrah & Hajj Transportation! Designed for Taxi Service
+                          Excellence!
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -517,8 +518,9 @@ const HomePage = () => {
                           <a href="service-details.html">Airport Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                          Designed for Taxi Service Excellence!
+                          MM Taxi Service – Everything You Need for Reliable
+                          Umrah & Hajj Transportation! Designed for Taxi Service
+                          Excellence!
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -545,8 +547,9 @@ const HomePage = () => {
                           <a href="service-details.html">Luggage Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                          Designed for Taxi Service Excellence!
+                          MM Taxi Service – Everything You Need for Reliable
+                          Umrah & Hajj Transportation! Designed for Taxi Service
+                          Excellence!
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -570,8 +573,9 @@ const HomePage = () => {
                           <a href="service-details.html">City Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                          Designed for Taxi Service Excellence!
+                          MM Taxi Service – Everything You Need for Reliable
+                          Umrah & Hajj Transportation! Designed for Taxi Service
+                          Excellence!
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -595,8 +599,9 @@ const HomePage = () => {
                           <a href="service-details.html">Business Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                          Designed for Taxi Service Excellence!
+                          MM Taxi Service – Everything You Need for Reliable
+                          Umrah & Hajj Transportation! Designed for Taxi Service
+                          Excellence!
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -692,12 +697,12 @@ const HomePage = () => {
         </section> */}
 
         <div className="container mt-4">
-          <div className="text-center margin-class">
+          <div className="text-center margin-class ">
             <div className="section-heading">
               <h2 className="my-2">City-to-City Routes</h2>
             </div>
-            <div className="scrollable-wrapper">
-              <div className="location-container">
+            <div className="scrollable-wrapper ">
+              <div className="location-container ">
                 {locations.map((item, index) => (
                   <div className="location-item" key={index}>
                     <Link
@@ -711,12 +716,14 @@ const HomePage = () => {
                         <img
                           src="/assets/img/WSimages-removebg-preview.png"
                           alt="WhatsApp Icon"
-                          className="whatsapp-icon"
+                          className="whatsapp-icon visually-hidden"
                         />
                       </div>
-                      <div className="default-btn">
+                      <div className="default-btn full-width-xs ">
                         <Locationicon />
-                        <span className="elementor-button-text">{item.name}</span>
+                        <span className="elementor-button-text ">
+                          {item.name}
+                        </span>
                       </div>
                     </Link>
                   </div>
@@ -755,7 +762,7 @@ const HomePage = () => {
                     </div>
                     <ul className="pricing-list">
                       <li>
-                        Initial Charge: <span>${item.Initial_Charge}</span>
+                        Initial Charge: <span>{item.Initial_Charge}</span>
                       </li>
                       <li>
                         Luggage: <span>{item.luggage}</span>
@@ -764,7 +771,10 @@ const HomePage = () => {
                         Passengers: <span>{item.passengers} Person</span>
                       </li>
                       <li>
-                        <Link href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`} className="default-btn">
+                        <Link
+                          href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
+                          className="default-btn"
+                        >
                           Book Taxi Now
                         </Link>
                       </li>
