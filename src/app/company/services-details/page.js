@@ -142,7 +142,7 @@ const page = () => {
                     />
                   </a>
                   <h3>
-                    Feel your journey with <span>Ridek!</span>
+                    Feel your journey with <span>M&M!</span>
                   </h3>
                   <p>MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!</p>
                   <h2 className="discount">

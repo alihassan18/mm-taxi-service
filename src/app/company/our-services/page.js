@@ -26,7 +26,7 @@ const page = () => {
                     <a href="service-details.html">Regular Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! Ridek
+                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
                     made for taxi service companies!
                   </p>
                   <a className="read-more" href="service-details.html">
@@ -51,7 +51,7 @@ const page = () => {
                     <a href="service-details.html">Airport Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! Ridek
+                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
                     made for taxi service companies!
                   </p>
                   <a className="read-more" href="service-details.html">
@@ -76,7 +76,7 @@ const page = () => {
                     <a href="service-details.html">Luggage Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! Ridek
+                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
                     made for taxi service companies!
                   </p>
                   <a className="read-more" href="service-details.html">
@@ -101,7 +101,7 @@ const page = () => {
                     <a href="service-details.html">City Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! Ridek
+                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
                     made for taxi service companies!
                   </p>
                   <a className="read-more" href="service-details.html">
@@ -151,7 +151,7 @@ const page = () => {
                     <a href="service-details.html">Local Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! Ridek
+                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M
                     made for taxi service companies!
                   </p>
                   <a className="read-more" href="service-details.html">
@@ -170,8 +170,8 @@ const page = () => {
           <div className="row align-items-center">
             <div className="col-lg-4">
               <div className="cta-content">
-                <h4>Ridek Taxi Services!</h4>
-                <h2>Feel your journey with Ridek!</h2>
+                <h4>M&M Taxi Services!</h4>
+                <h2>Feel your journey with M&M!</h2>
                 <a href="book-taxi.html" className="default-btn">
                   Book a Taxi
                 </a>
@@ -189,7 +189,7 @@ const page = () => {
                   <i className="las la-arrow-right"></i>First and quick pickups.
                 </li>
                 <li>
-                  <i className="las la-arrow-right"></i>Access Ridek globally.
+                  <i className="las la-arrow-right"></i>Access M&M globally.
                 </li>
               </ul>
             </div>

@@ -33,7 +33,7 @@ function page() {
                   <span></span>About Our Company
                 </h4>
                 <h2>
-                  Feel the difference and Relaxation with Ridek Taxi Company!
+                  Feel the difference and Relaxation with M&M Taxi Company!
                 </h2>
                 <p>
                   We successfully cope with tasks of varying complexity, provide
@@ -82,7 +82,7 @@ function page() {
             <h2 className="white">
               Start your journey with
               <br />
-              Ridek Taxi Company!
+              M&M Taxi Company!
             </h2>
             <p>
               We successfully cope with tasks of varying complexity, provide
@@ -241,7 +241,7 @@ function page() {
                 <h4>
                   <span></span>Clients Testimonial
                 </h4>
-                <h2>Ridek Passenger Reviews...</h2>
+                <h2>M&M Passenger Reviews...</h2>
                 <p>
                   We successfully cope with tasks of varying complexity, provide
                   long-term guarantees and regularly master technologies.
@@ -330,7 +330,7 @@ function page() {
                   <h4 className="white">
                     <span></span>Why Choose Us!
                   </h4>
-                  <h2 className="white">Why Ride with Ridek?</h2>
+                  <h2 className="white">Why Ride with M&M?</h2>
                   <p className="white">
                     We successfully cope with tasks of varying complexity,
                     provide long-term guarantees and regularly master

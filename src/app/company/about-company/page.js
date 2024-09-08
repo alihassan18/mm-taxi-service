@@ -16,7 +16,7 @@ function page() {
                   <span></span>About Our Company
                 </h4>
                 <h2>
-                  Feel the difference and Relaxation with Ridek Taxi Company!
+                  Feel the difference and Relaxation with M&M Taxi Company!
                 </h2>
                 <p>
                   We successfully cope with tasks of varying complexity, provide
@@ -85,7 +85,7 @@ function page() {
             <h2 className="white">
               Start your journey with
               <br />
-              Ridek Taxi Company!
+              M&M Taxi Company!
             </h2>
             <p>
               We successfully cope with tasks of varying complexity, provide

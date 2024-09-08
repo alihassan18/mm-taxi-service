@@ -347,7 +347,7 @@ const HomePage = () => {
               </a>
             </div>
             <p>
-              MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! Ridek, a
+              MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! M&M, a
               theme made for taxi service companies.
             </p>
             <ul className="sidebox-list">
@@ -401,7 +401,7 @@ const HomePage = () => {
                     About Our Company
                   </h4>
                   <h2>
-                    Feel the difference and Relaxation with Ridek Taxi Company!
+                    Feel the difference and Relaxation with M&M Taxi Company!
                   </h2>
                   <p>
                     We successfully cope with tasks of varying complexity,
@@ -458,7 +458,7 @@ const HomePage = () => {
               <h2 className="white">
                 Start your journey with
                 <br />
-                Ridek Taxi Company!
+                M&M Taxi Company!
               </h2>
               <p>
                 We successfully cope with tasks of varying complexity, provide
@@ -732,7 +732,7 @@ const HomePage = () => {
               <h4>
                 <span></span>Clients Testimonial
               </h4>
-              <h2 className="my-2">Ridek Passenger Reviews...</h2>
+              <h2 className="my-2">M&M Passenger Reviews...</h2>
             </div>
             <div className="row">
               {vehicles.map((item, key) => (
@@ -927,7 +927,7 @@ const HomePage = () => {
                   <h4>
                     <span></span>Online Booking
                   </h4>
-                  <h2>Get the Ridek Mobile app and Start Your Journey!</h2>
+                  <h2>Get the M&M Mobile app and Start Your Journey!</h2>
                   <p>
                     We successfully cope with tasks of varying complexity,
                     provide long-term guarantees and regularly master
@@ -944,7 +944,7 @@ const HomePage = () => {
                       </i>
                       <h3>
                         Easy to Search <br />
-                        Ridek Taxi!
+                        M&M Taxi!
                       </h3>
                     </li>
                     <li>
@@ -1018,7 +1018,7 @@ const HomePage = () => {
                   <h4>
                     <span></span>Clients Testimonial
                   </h4>
-                  <h2>Ridek Passenger Reviews...</h2>
+                  <h2>M&M Passenger Reviews...</h2>
                   <p>
                     We successfully cope with tasks of varying complexity,
                     provide long-term guarantees and regularly master
@@ -1120,7 +1120,7 @@ const HomePage = () => {
                     <h4 className="white">
                       <span></span>Why Choose Us!
                     </h4>
-                    <h2 className="white">Why Ride with Ridek?</h2>
+                    <h2 className="white">Why Ride with M&M?</h2>
                     <p className="white">
                       We successfully cope with tasks of varying complexity,
                       provide long-term guarantees and regularly master
