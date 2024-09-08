@@ -55,6 +55,7 @@ const HomePage = () => {
     { name: "Hotal ⟶ Train Station", link: "https://wa.me/+966595783153" },
     { name: "Train Station ⟶ Hotal", link: "https://wa.me/+966595783153" },
     { name: "Per Hour Rate ⟶", link: "https://wa.me/+966595783153" },
+    { name: "View more", link: "/routes" },
   ];
 
   const vehicles = [
@@ -685,41 +686,40 @@ const HomePage = () => {
         </section> */}
 
         <div className="container mt-4">
-          <div className="text-center  margin-class">
-            <h1 style={{ marginBottom: "16px" }}>City-to-City Routes</h1>
-
-            <div className="location-container">
-              {locations.map((item, index) => (
-                <div className="location-item" key={index}>
-                  <Link
-                    href={item.link}
-                    passHref
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="whatsapp-link"
-                  >
-                    <div className="whatsapp-button">
-                      <img
-                        src="/assets/img/WSimages-removebg-preview.png"
-                        alt="WhatsApp Icon"
-                        className="whatsapp-icon"
-                      />
-                    </div>
-                    <div className="default-btn">
-                      <Locationicon />
-                      <span className="elementor-button-text">{item.name}</span>
-                    </div>
-                  </Link>
-                </div>
-              ))}
+          <div className="text-center margin-class">
+            <div className="section-heading">
+              <h2 className="my-2">City-to-City Routes</h2>
             </div>
-            <div className="d-flex justify-content-end align-items-end mb-4">
-              <Link href="/routes" className="default-btn">
-                View more
-              </Link>
+            <div className="scrollable-wrapper">
+              <div className="location-container">
+                {locations.map((item, index) => (
+                  <div className="location-item" key={index}>
+                    <Link
+                      href={item.link}
+                      passHref
+                      target={index === item.length - 1 ? "" : "_blank"}
+                      rel="noopener noreferrer"
+                      className="whatsapp-link"
+                    >
+                      <div className="whatsapp-button">
+                        <img
+                          src="/assets/img/WSimages-removebg-preview.png"
+                          alt="WhatsApp Icon"
+                          className="whatsapp-icon"
+                        />
+                      </div>
+                      <div className="default-btn">
+                        <Locationicon />
+                        <span className="elementor-button-text">{item.name}</span>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
+
         <section className="bg-grey-section">
           <div className="container ">
             <div className="section-heading  ">
