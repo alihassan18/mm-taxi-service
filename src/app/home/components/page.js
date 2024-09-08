@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import blogs from "../../../components/common/data/blog.json";
 import Locationicon from "../../../components/common/icon/Locationicon";
 import BookingForm from "./BookingForm";
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
@@ -63,28 +64,28 @@ const HomePage = () => {
     {
       name: "Camry Car",
       passengers: 4,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 3,
       image: "/assets/img/pricing-car.png",
     },
     {
       name: "GMC- 2022",
       passengers: 7,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 8,
       image: "/assets/img/pricing-car-1.png",
     },
     {
       name: "GMC- 2020",
       passengers: 7,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 8,
       image: "/assets/img/pricing-car-2.png",
     },
     {
       name: "Hyundai Staria",
       passengers: 7,
-      Initial_Charge: 2.50,
+      Initial_Charge: "Negotiable",
       luggage: 10,
       image: "/assets/img/pricing-car-3.png",
     },
@@ -174,8 +175,8 @@ const HomePage = () => {
                             data-delay="0.7s"
                             data-duration="1s"
                           >
-                            MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!{" "}
-                            <br />
+                            MM Taxi Service – Everything You Need for Reliable
+                            Umrah & Hajj Transportation! <br />
                             Designed for Taxi Service Excellence!
                           </div>
                         </div>
@@ -260,8 +261,8 @@ const HomePage = () => {
                             data-delay="0.7s"
                             data-duration="1s"
                           >
-                            MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!{" "}
-                            <br />
+                            MM Taxi Service – Everything You Need for Reliable
+                            Umrah & Hajj Transportation! <br />
                             Designed for Taxi Service Excellence!
                           </div>
                         </div>
@@ -587,8 +588,9 @@ const HomePage = () => {
                           <a href="service-details.html">Business Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                          Designed for Taxi Service Excellence!
+                          MM Taxi Service – Everything You Need for Reliable
+                          Umrah & Hajj Transportation! Designed for Taxi Service
+                          Excellence!
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -684,12 +686,12 @@ const HomePage = () => {
         </section> */}
 
         <div className="container mt-4">
-          <div className="text-center margin-class">
+          <div className="text-center margin-class ">
             <div className="section-heading">
               <h2 className="my-2">City-to-City Routes</h2>
             </div>
-            <div className="scrollable-wrapper">
-              <div className="location-container">
+            <div className="scrollable-wrapper ">
+              <div className="location-container ">
                 {locations.map((item, index) => (
                   <div className="location-item" key={index}>
                     <Link
@@ -703,12 +705,14 @@ const HomePage = () => {
                         <img
                           src="/assets/img/WSimages-removebg-preview.png"
                           alt="WhatsApp Icon"
-                          className="whatsapp-icon"
+                          className="whatsapp-icon visually-hidden"
                         />
                       </div>
-                      <div className="default-btn">
+                      <div className="default-btn full-width-xs ">
                         <Locationicon />
-                        <span className="elementor-button-text">{item.name}</span>
+                        <span className="elementor-button-text ">
+                          {item.name}
+                        </span>
                       </div>
                     </Link>
                   </div>
@@ -747,7 +751,7 @@ const HomePage = () => {
                     </div>
                     <ul className="pricing-list">
                       <li>
-                        Initial Charge: <span>${item.Initial_Charge}</span>
+                        Initial Charge: <span>{item.Initial_Charge}</span>
                       </li>
                       <li>
                         Luggage: <span>{item.luggage}</span>
@@ -756,7 +760,10 @@ const HomePage = () => {
                         Passengers: <span>{item.passengers} Person</span>
                       </li>
                       <li>
-                        <Link href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`} className="default-btn">
+                        <Link
+                          href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
+                          className="default-btn"
+                        >
                           Book Taxi Now
                         </Link>
                       </li>
@@ -908,10 +915,10 @@ const HomePage = () => {
         </section> */}
         <BookingForm />
         {/* <OurTaxi /> */}
-        <section className="download-section bd-bottom padding">
+        <section className="download-section bd-bottom padding ">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-6">
+            <div className="row ">
+              <div className="col-lg-6" style={{ zIndex: "2 !important" }}>
                 <div
                   className="section-heading wow fade-in-left"
                   data-wow-delay="200ms"
@@ -925,7 +932,7 @@ const HomePage = () => {
                     provide long-term guarantees and regularly master
                     technologies.
                   </p>
-                  <ul className="app-feature">
+                  <ul className="app-feature ">
                     <li>
                       <i>
                         <img
@@ -967,7 +974,7 @@ const HomePage = () => {
                       </h3>
                     </li>
                   </ul>
-                  <div className="download-btn">
+                  <div className="download-btn ">
                     <a href="#">
                       <img src="/assets/img/google-play.svg" alt="PlayStore" />
                     </a>
@@ -977,8 +984,8 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 d-none d-lg-block">
-                <div className="taxi-holder">
+              <div className=" col-lg-6 d-none d-lg-block ">
+                <div className="taxi-holder ">
                   <div
                     className="taxi wow fade-in-left"
                     data-wow-delay="300ms"
@@ -992,7 +999,7 @@ const HomePage = () => {
                     data-wow-delay="500ms"
                   ></div>
                   <img
-                    className="location-marker"
+                    className="location-marker "
                     src="/assets/img/location-marker.png"
                     alt="location"
                   />
@@ -1207,111 +1214,51 @@ const HomePage = () => {
                 reliability for Umrah and Hajj.
               </p>
             </div>
-
             <div className="row grid-post">
-              <div className="col-lg-4 col-md-6 padding-15">
-                <div className="post-card">
-                  <div className="post-thumb">
-                    <img src="/assets/img/post-1.jpg" alt="post" />
-                    <a href="blog-details.html" className="post-category">
-                      Business
-                    </a>
-                  </div>
-                  <div className="post-content-wrap">
-                    <ul className="post-meta">
-                      <li>
-                        <i className="las la-calendar"></i>Jan 01 2022
-                      </li>
-                      <li>
-                        <i className="las la-user"></i>Elliot Alderson
-                      </li>
-                    </ul>
-                    <div className="post-content">
-                      <h3>
-                        <a href="blog-details.html" className="hover">
-                          How to start initiating an startup in few days.
+              <div className="row">
+                {blogs.map((post, index) => (
+                  <div className="col-lg-4 col-md-6 padding-15" key={index}>
+                    <div className="post-card">
+                      <div className="post-thumb">
+                        <img src={post.imgSrc} alt="post" />
+                        <a href="blog-details.html" className="post-category">
+                          {post.category}
                         </a>
-                      </h3>
-                      <p>
-                        Financial experts support or help you to to find out
-                        which way you can raise your funds more...
-                      </p>
-                      <a href="blog-details.html" className="read-more">
-                        Read More
-                      </a>
+                      </div>
+                      <div className="post-content-wrap">
+                        <ul className="post-meta">
+                          <li>
+                            <i className="las la-calendar"></i>
+                            {post.date}
+                          </li>
+                          <li>
+                            <i className="las la-user"></i>
+                            {post.author}
+                          </li>
+                        </ul>
+                        <div className="post-content">
+                          <h3>
+                            <Link
+                              href={`/blog/${post.slug}`}
+                              className="read-more hover"
+                            >
+                              {post.title}
+                            </Link>
+                          </h3>
+                          <p>{post.description}</p>
+                          <Link
+                            href={`/blog/${post.slug}`}
+                            className="read-more"
+                          >
+                            Read More
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
-              <div className="col-lg-4 col-md-6 padding-15">
-                <div className="post-card">
-                  <div className="post-thumb">
-                    <img src="/assets/img/post-2.jpg" alt="post" />
-                    <a href="blog-details.html" className="post-category">
-                      Startup
-                    </a>
-                  </div>
-                  <div className="post-content-wrap">
-                    <ul className="post-meta">
-                      <li>
-                        <i className="las la-calendar"></i>Jan 01 2022
-                      </li>
-                      <li>
-                        <i className="las la-user"></i>Elliot Alderson
-                      </li>
-                    </ul>
-                    <div className="post-content">
-                      <h3>
-                        <a href="blog-details.html">
-                          Financial experts support help you to find out.
-                        </a>
-                      </h3>
-                      <p>
-                        Financial experts support or help you to to find out
-                        which way you can raise your funds more...
-                      </p>
-                      <a href="blog-details.html" className="read-more">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 padding-15">
-                <div className="post-card">
-                  <div className="post-thumb">
-                    <img src="/assets/img/post-3.jpg" alt="post" />
-                    <a href="blog-details.html" className="post-category">
-                      Finance
-                    </a>
-                  </div>
-                  <div className="post-content-wrap">
-                    <ul className="post-meta">
-                      <li>
-                        <i className="las la-calendar"></i>Jan 01 2022
-                      </li>
-                      <li>
-                        <i className="las la-user"></i>Elliot Alderson
-                      </li>
-                    </ul>
-                    <div className="post-content">
-                      <h3>
-                        <a href="blog-details.html">
-                          Innovative business all over the world.
-                        </a>
-                      </h3>
-                      <p>
-                        Financial experts support or help you to to find out
-                        which way you can raise your funds more...
-                      </p>
-                      <a href="blog-details.html" className="read-more">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>{" "}
           </div>
         </section>
 
