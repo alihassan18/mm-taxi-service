@@ -112,6 +112,32 @@ export default function RootLayout({ children }) {
         {/* End Google Tag Manager */}
 
 
+        <Script
+          id="google-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
+            {
+              "@context": "https://schema.org",
+              "@type": "TaxiService",
+              "name": "Umrah and Hajj Taxi Services",
+              "description": "Book your Umrah and Hajj taxi services online with us. We offer reliable and affordable rides from Makkah to Madinah and other destinations.",
+              "image": "https://www.mmtaxiservice.com/assets/img/car-2.png",
+              "url": "https://www.mmtaxiservice.com",
+              "telephone": "+966 595783153",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Al Haram Makkah 24231 Saudi Arabia",
+                "addressLocality": "Makkah",
+                "addressRegion": "Makkah Province",
+                "postalCode": "24231",
+                "addressCountry": "Saudi Arabia"
+              }
+            }
+          `,
+          }}
+        />
+
         {/* <Script
           src="/assets/js/vendor/jquary-3.6.0.min.js"
           // strategy="lazyOnload"

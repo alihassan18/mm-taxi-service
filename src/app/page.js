@@ -2,15 +2,15 @@ import DynamicScriptsLoader from "../components/common/script/ScriptLoader";
 import HomePage from "./home/components/page";
 
 export const metadata = {
-  title: 'Reliable Umra Taxi Service for Pilgrims | MM Taxi Service',
-  description: 'Book our trusted Umra taxi service for convenient and safe transportation in Saudi Arabia. Get airport transfers, hotel transfers, and city tours with our experienced drivers.',
-  keywords: ['Umra taxi service', 'Saudi Arabia', 'airport transfers', 'hotel transfers', 'city tours'],
+  title: 'Book Umrah and Hajj Taxi Services Online | MM Taxi Service',
+  description: 'Book your Umrah and Hajj taxi services online with us. We offer reliable and affordable rides from Makkah to Madinah and other destinations. Get a quote now!',
+  keywords: ['Umra taxi service', 'Saudi Arabia', 'airport transfers', 'hotel transfers', 'city tours', 'Hajj taxi services', 'Makkah to Madinah taxi fare', 'Umrah taxi booking', 'Hajj taxi booking', 'Affordable taxi services', 'Reliable taxi services', 'Umrah and Hajj taxi services'],
   author: 'MM Taxi Service',
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1.0',
   openGraph: {
-    title: 'Reliable Umra Taxi Service for Pilgrims | MM Taxi Service',
-    description: 'Book our trusted Umra taxi service for convenient and safe transportation in Saudi Arabia. Get airport transfers, hotel transfers, and city tours with our experienced drivers.',
+    title: 'Book Umrah and Hajj Taxi Services Online | MM Taxi Service',
+    description: 'Book your Umrah and Hajj taxi services online with us. We offer reliable and affordable rides from Makkah to Madinah and other destinations. Get a quote now!',
     url: 'https://www.mmtaxiservice.com',
     siteName: 'MM Taxi Service',
     type: 'website',
@@ -31,8 +31,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Reliable Umra Taxi Service for Pilgrims | MM Taxi Service',
-    description: 'Book our trusted Umra taxi service for convenient and safe transportation in Saudi Arabia. Get airport transfers, hotel transfers, and city tours with our experienced drivers.',
+    title: 'Book Umrah and Hajj Taxi Services Online | MM Taxi Service',
+    description: 'Book your Umrah and Hajj taxi services online with us. We offer reliable and affordable rides from Makkah to Madinah and other destinations. Get a quote now!',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
   },
   canonical: 'https://www.mmtaxiservice.com', // canonical URL
