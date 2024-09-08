@@ -52,7 +52,7 @@ const DynamicScriptsLoader = () => {
             loadedScripts.forEach(script => script.remove());
         };
 
-    }, []); // Depend on pathname to trigger effect on route change
+    }, [pathname]); // Depend on pathname to trigger effect on route change
 
     return null; // This component does not render anything
 };
