@@ -1,10 +1,12 @@
 import { Bangers } from "next/font/google";
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 
 function page() {
   return (
     <div>
+      <DynamicScriptsLoader />
       <Banner title="OUR DRIVERS!" />
 
       <section className="team-section padding">

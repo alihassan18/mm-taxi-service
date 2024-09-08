@@ -2,6 +2,7 @@
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
 import Link from "next/link";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 
 const page = () => {
   const vehicles = [
@@ -45,6 +46,7 @@ const page = () => {
 
   return (
     <div>
+      <DynamicScriptsLoader />
       <Banner title="OUR DRIVERS!" />
       <section className="our-taxi padding">
         <div className="container">
@@ -63,7 +65,8 @@ const page = () => {
                   </div>
                   <div className="pricing-head">
                     <h3>
-                      <a href="taxi-details.html">{item.name}</a>
+                      {/* <a href="taxi-details.html"></a> */}
+                      {item.name}
                     </h3>
                     {/* <span className="location">Chicago</span> */}
                   </div>
@@ -72,16 +75,13 @@ const page = () => {
                       Initial Charge: <span>$2.50</span>
                     </li>
                     <li>
-                      Per Mile/KM: <span>$4.20</span>
-                    </li>
-                    <li>
                       Luggage: <span>{item.luggage}</span>
                     </li>
                     <li>
                       Passengers: <span>{item.passengers} Person</span>
                     </li>
                     <li>
-                      <Link href="/company/book-a-ride" className="default-btn">
+                      <Link href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`} className="default-btn">
                         Book Taxi Now
                       </Link>
                     </li>

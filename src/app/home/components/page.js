@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Locationicon from "../../../components/common/icon/Locationicon";
 import BookingForm from "./BookingForm";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
   const locations = [
@@ -62,24 +63,28 @@ const HomePage = () => {
     {
       name: "Camry Car",
       passengers: 4,
+      Initial_Charge: 2.50,
       luggage: 3,
       image: "/assets/img/pricing-car.png",
     },
     {
       name: "GMC- 2022",
       passengers: 7,
+      Initial_Charge: 2.50,
       luggage: 8,
       image: "/assets/img/pricing-car-1.png",
     },
     {
       name: "GMC- 2020",
       passengers: 7,
+      Initial_Charge: 2.50,
       luggage: 8,
       image: "/assets/img/pricing-car-2.png",
     },
     {
       name: "Hyundai Staria",
       passengers: 7,
+      Initial_Charge: 2.50,
       luggage: 10,
       image: "/assets/img/pricing-car-3.png",
     },
@@ -98,6 +103,7 @@ const HomePage = () => {
   ];
   return (
     <React.Fragment>
+      <DynamicScriptsLoader />
       <div>
         <div className="slider-section">
           <div className="main-slider">
@@ -743,15 +749,13 @@ const HomePage = () => {
                     </div>
                     <div className="pricing-head">
                       <h3>
-                        <a href="taxi-details.html">{item.name}</a>
+                        {item.name}
+                        {/* <a href="taxi-details.html"></a> */}
                       </h3>
                     </div>
                     <ul className="pricing-list">
                       <li>
-                        Negotiable: <span>$2.50</span>
-                      </li>
-                      <li>
-                        Per Mile/KM: <span>$4.20</span>
+                        Initial Charge: <span>${item.Initial_Charge}</span>
                       </li>
                       <li>
                         Luggage: <span>{item.luggage}</span>
@@ -760,10 +764,7 @@ const HomePage = () => {
                         Passengers: <span>{item.passengers} Person</span>
                       </li>
                       <li>
-                        <Link
-                          href="/company/book-a-ride"
-                          className="default-btn"
-                        >
+                        <Link href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`} className="default-btn">
                           Book Taxi Now
                         </Link>
                       </li>

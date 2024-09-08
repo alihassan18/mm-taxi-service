@@ -1,10 +1,12 @@
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 
 const page = () => {
   return (
     <div>
       {/* <!--/.page-header--> */}
+      <DynamicScriptsLoader />
       <Banner title="ABOUT US!" />
       <section className="about-section padding">
         <div className="container">

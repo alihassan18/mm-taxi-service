@@ -1,8 +1,10 @@
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 function page() {
   return (
     <div>
+      <DynamicScriptsLoader />
       <Banner title="SERVICES DETAILS!" />
       <section className="driver-details-section bd-bottom padding">
         <div className="container">
