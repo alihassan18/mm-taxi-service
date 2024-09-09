@@ -70,7 +70,7 @@ function page() {
                   of a single Caterpillar 966 wheel loader.
                 </p>
 
-                <ul className="tags">
+                <ul className="tags ">
                   <li>
                     <a href="#">Business</a>
                   </li>
@@ -85,7 +85,7 @@ function page() {
                   </li>
                 </ul>
 
-                <ul className="post-navigation">
+                <ul className="post-navigation ">
                   <li>
                     <a href="blog-details.html">
                       <span>
@@ -259,7 +259,11 @@ function page() {
                       <button id="submit" className="default-btn" type="submit">
                         Submit Comment<span></span>
                       </button>
-                      <div id="form-messages" className="alert" role="alert"></div>
+                      <div
+                        id="form-messages"
+                        className="alert"
+                        role="alert"
+                      ></div>
                     </div>
                   </div>
                 </form>

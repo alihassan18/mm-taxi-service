@@ -106,24 +106,24 @@ export default function BlogDetails({ params }) {
                   </li>
                 </ul>
                 <ul className="post-navigation">
-                  {prevPost && (
-                    <li>
+                  <li>
+                    {prevPost && (
                       <Link href={`/blog/${prevPost.slug}`}>
                         <span>
                           <i className="las la-angle-left"></i> Previous
                         </span>
                       </Link>
-                    </li>
-                  )}
-                  {nextPost && (
-                    <li className="next">
+                    )}
+                  </li>
+                  <li className="next">
+                    {nextPost && (
                       <Link href={`/blog/${nextPost.slug}`}>
                         <span>
                           Next <i className="las la-angle-right"></i>
                         </span>
                       </Link>
-                    </li>
-                  )}
+                    )}
+                  </li>
                 </ul>
 
                 {/* <div className="author-box">
