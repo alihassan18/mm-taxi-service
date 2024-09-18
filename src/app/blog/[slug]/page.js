@@ -36,35 +36,42 @@ export default function BlogDetails({ params }) {
                   <img src={post.imgSrc} alt="img" />
                 </div>
                 <p>
-                  Financial experts support or help you to to find out which way
-                  you can raise your funds more. Arkit a trusted name for
-                  providing assistants. Initially their main objective was to
-                  ensure the service they provide these people are loyal to
-                  their industry, experienced and professional.
+                  Makkah, the holiest city in Islam, holds immense religious
+                  importance for Muslims worldwide. It is home to the Kaaba, the
+                  sacred structure towards which Muslims face during prayer. The
+                  city’s significance dates back to the time of Prophet Ibrahim
+                  (Abraham), who, with his son Ismail, is believed to have built
+                  the Kaaba. Over the centuries, Makkah has evolved into the
+                  focal point of Islamic devotion, especially during the Hajj
+                  pilgrimage.
                 </p>
 
                 <p>
-                  Unless you are the one who really cares about this, it is not
-                  terribly important. What all matters are how your hybrid
-                  mobile application development is going to work in the long
-                  run as no one will care about how it was built.
+                  Millions of Muslims from every corner of the world visit
+                  annually to perform Hajj and Umrah, following in the footsteps
+                  of the Prophet Muhammad (PBUH), who was born in Makkah and
+                  received the first revelations of the Quran in the nearby Cave
+                  of Hira.
                 </p>
 
                 <blockquote>
                   <i className="fas fa-quote-right"></i>
-                  There are no secrets to success. It is the result preparation,
-                  hard work and learning from failure.
+                  Madinah, the second holiest city in Islam, is where the
+                  Prophet Muhammad (PBUH) migrated to from Makkah in 622 CE,
+                  marking the beginning of the Islamic calendar (Hijra).
                   <span>- Winston Churchill.</span>
                 </blockquote>
 
                 <p>
-                  There are some big shifts taking place in the field of
-                  construction equipment mathematics. Starting with the
-                  integration of mathematics devices in vehicles right from the
-                  manufacturers, to the standardization and integration of
-                  mathematics data across various business functions, the future
-                  of mathematics has never seemed so full of potential for
-                  fleet-based businesses.
+                  . Known as the "City of the Prophet," it is the site of the
+                  Prophet’s Mosque (Masjid an-Nabawi), which holds immense
+                  spiritual value as the resting place of Prophet Muhammad
+                  (PBUH). Historically, Madinah was the first city to embrace
+                  Islam and became the political and spiritual center of the
+                  Muslim community. The city's peaceful atmosphere and its role
+                  in the growth of Islam make it a cherished destination for
+                  Muslims, particularly for those who visit during Hajj and
+                  Umrah.
                 </p>
 
                 <ul className="post-details-gallery ">
@@ -76,19 +83,22 @@ export default function BlogDetails({ params }) {
                   </li>
                 </ul>
 
-                <h3>Creative approach to every project</h3>
+                <h3>The Spiritual Journey of Hajj: Makkah and Madinah</h3>
                 <p>
-                  Financial experts support or help you to to find out which way
-                  you can raise your funds more. Arkit a trusted name for
-                  providing assistants. Initially their main objective was to
-                  ensure the service they provide these people are loyal to
-                  their industry, experienced and professional.
+                  Makkah and Madinah are central to the Islamic rituals of Hajj
+                  and Umrah, drawing millions of Muslims annually. While Makkah
+                  hosts the Kaaba, which is circled during the Tawaf, and the
+                  Mount Arafat, where pilgrims stand in prayer on the Day of
+                  Arafah, Madinah offers a serene reflection of the Prophet’s
+                  life and mission. Pilgrims often visit Masjid an-Nabawi in
+                  Madinah to pay respects at the Prophet’s grave.
                 </p>
                 <p>
-                  Another speaker, John Meuse, senior director of heavy
-                  equipment at Waste Management Inc., echoed this, citing a
-                  cost-saving of $17,000 for the company when it cut idling time
-                  of a single Caterpillar 966 wheel loader.
+                  Both Makkah and Madinah are known for their breathtaking
+                  Islamic architecture that seamlessly blends tradition with
+                  modernity. In Makkah, the Masjid al-Haram, or the Grand
+                  Mosque, is the largest mosque in the world and houses the
+                  Kaaba
                 </p>
 
                 <ul className="tags">
