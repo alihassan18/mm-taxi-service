@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import postsData from "../../../components/common/data/blog.json";
 import Banner from "../../../components/common/banner/Banner";
-import Link from "next/link";
+// import Link from "next/link";
 
 export async function generateStaticParams() {
   return postsData.map((post) => ({
@@ -9,68 +9,147 @@ export async function generateStaticParams() {
   }));
 }
 
-export const metadata = {
-  title:
-    "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
-  description:
-    "Discover Islamic history, Hajj and Umrah guides, and more. Read our articles on the history of Makkah, tips for pilgrims, and detailed insights into Hajj and Umrah taxi services. Stay informed with MM Taxi Service blog.",
-  keywords: [
-    "Islamic history",
-    "Hajj and Umrah guides",
-    "Makkah history",
-    "Umrah taxi service",
-    "Saudi Arabia",
-    "Madinah travel",
-    "Hajj transportation",
-    "Umrah travel tips",
-    "Umrah taxi booking",
-    "Hajj taxi booking",
-    "Affordable taxi services",
-    "Reliable Hajj taxi services",
-    "Hajj and Umrah blog",
-    "Islamic articles",
-    "Makkah pilgrimage",
-  ],
-  author: "MM Taxi Service",
-  robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
-  openGraph: {
-    title:
-      "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
-    description:
-      "Read in-depth articles about the rich history of Makkah, Hajj & Umrah tips, and travel services provided by MM Taxi Service. Get inspired for your pilgrimage journey!",
-    url: "https://www.mmtaxiservice.com/blog",
-    siteName: "MM Taxi Service Blog",
-    type: "website",
-    image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
-    images: [
-      {
-        url: "https://www.mmtaxiservice.com/assets/img/blog-history-makkah.jpg",
+// export const metadata = {
+//   title:
+//     "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
+//   description:
+//     "Discover Islamic history, Hajj and Umrah guides, and more. Read our articles on the history of Makkah, tips for pilgrims, and detailed insights into Hajj and Umrah taxi services. Stay informed with MM Taxi Service blog.",
+//   keywords: [
+//     "Islamic history",
+//     "Hajj and Umrah guides",
+//     "Makkah history",
+//     "Umrah taxi service",
+//     "Saudi Arabia",
+//     "Madinah travel",
+//     "Hajj transportation",
+//     "Umrah travel tips",
+//     "Umrah taxi booking",
+//     "Hajj taxi booking",
+//     "Affordable taxi services",
+//     "Reliable Hajj taxi services",
+//     "Hajj and Umrah blog",
+//     "Islamic articles",
+//     "Makkah pilgrimage",
+//   ],
+//   author: "MM Taxi Service",
+//   robots: "index, follow",
+//   viewport: "width=device-width, initial-scale=1.0",
+//   openGraph: {
+//     title:
+//       "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
+//     description:
+//       "Read in-depth articles about the rich history of Makkah, Hajj & Umrah tips, and travel services provided by MM Taxi Service. Get inspired for your pilgrimage journey!",
+//     url: "https://www.mmtaxiservice.com/blog",
+//     siteName: "MM Taxi Service Blog",
+//     type: "website",
+//     image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
+//     images: [
+//       {
+//         url: "https://www.mmtaxiservice.com/assets/img/blog-history-makkah.jpg",
+//         width: 800,
+//         height: 600,
+//         alt: "The Holy City of Makkah",
+//       },
+//       {
+//         url: "https://www.mmtaxiservice.com/assets/img/blog-hajj-umrah-guide.jpg",
+//         width: 1800,
+//         height: 1600,
+//         alt: "Comprehensive Hajj and Umrah Guide",
+//       },
+//     ],
+//   },
+//   twitter: {
+//     card: "summary",
+//     title:
+//       "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
+//     description:
+//       "Discover engaging content about Islamic history, Makkah, Hajj and Umrah tips, and reliable taxi services for pilgrims.",
+//     image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
+//   },
+//   canonical: "https://www.mmtaxiservice.com/blog",
+//   favicon: "https://www.mmtaxiservice.com/favicon.ico",
+//   appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+//   msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
+// };
+
+// export const metadata = {
+//   title: `${post.postDetails.title} | MM Taxi Service Blog`,
+//   description: post.postDetails.description,
+//   keywords: post.postDetails.keywords,
+//   author: "MM Taxi Service",
+//   robots: "index, follow",
+//   viewport: "width=device-width, initial-scale=1.0",
+//   openGraph: {
+//     title: `${post.postDetails.title} | MM Taxi Service Blog`,
+//     description: post.postDetails.description,
+//     url: `https://www.mmtaxiservice.com/blog/${post.slug}`,
+//     siteName: "MM Taxi Service Blog",
+//     type: "article",
+//     image: post.postDetails.postThumb.imgSrc,
+//     images: post.postDetails.galleryImages.map((imgSrc) => ({
+//       url: imgSrc,
+//       width: 800,
+//       height: 600,
+//       alt: "Image",
+//     })),
+//   },
+//   twitter: {
+//     card: "summary",
+//     title: `${post.postDetails.title} | MM Taxi Service Blog`,
+//     description: post.postDetails.description,
+//     image: post.postDetails.postThumb.imgSrc,
+//   },
+//   canonical: `https://www.mmtaxiservice.com/blog/${post.slug}`,
+//   favicon: "https://www.mmtaxiservice.com/favicon.ico",
+//   appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+//   msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
+// };
+
+export function generateMetadata({ params, searchParams }) {
+  const { slug } = params
+  const currentIndex = postsData.findIndex(
+    (post) =>
+      post.slug === slug ||
+      post?.postDetails?.tags?.some(
+        (tag) => tag.replace(/\s+/g, "-") === slug
+      ) ||
+      post.category.replace(/\s+/g, "-").replace(/&/g, "-and-") === slug
+  );
+  const post = postsData[currentIndex];
+
+  return {
+    title: `${post.title} | MM Taxi Service Blog`,
+    description: post.description,
+    keywords: post.keywords,
+    author: "MM Taxi Service",
+    robots: "index, follow",
+    viewport: "width=device-width, initial-scale=1.0",
+    openGraph: {
+      title: `${post.title} | MM Taxi Service Blog`,
+      description: post.description,
+      url: `https://www.mmtaxiservice.com/blog/${post.slug}`,
+      siteName: "MM Taxi Service Blog",
+      type: "article",
+      image: post.postDetails.postThumb.imgSrc,
+      images: post.postDetails.galleryImages.map((imgSrc) => ({
+        url: imgSrc,
         width: 800,
         height: 600,
-        alt: "The Holy City of Makkah",
-      },
-      {
-        url: "https://www.mmtaxiservice.com/assets/img/blog-hajj-umrah-guide.jpg",
-        width: 1800,
-        height: 1600,
-        alt: "Comprehensive Hajj and Umrah Guide",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary",
-    title:
-      "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
-    description:
-      "Discover engaging content about Islamic history, Makkah, Hajj and Umrah tips, and reliable taxi services for pilgrims.",
-    image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
-  },
-  canonical: "https://www.mmtaxiservice.com/blog",
-  favicon: "https://www.mmtaxiservice.com/favicon.ico",
-  appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
-  msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
-};
+        alt: "Image",
+      })),
+    },
+    twitter: {
+      card: "summary",
+      title: `${post.postDetails.title} | MM Taxi Service Blog`,
+      description: post.postDetails.description,
+      image: post.postDetails.postThumb.imgSrc,
+    },
+    canonical: `https://www.mmtaxiservice.com/blog/${post.slug}`,
+    favicon: "https://www.mmtaxiservice.com/favicon.ico",
+    appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+    msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
+  };
+}
 
 export default function BlogDetails({ params }) {
   const { slug } = params;
@@ -85,15 +164,15 @@ export default function BlogDetails({ params }) {
       post.category.replace(/\s+/g, "-").replace(/&/g, "-and-") === slug
   );
   const post = postsData[currentIndex];
-
+  // const metadata = generateMetadata(post);
   // // Handle not found
   if (currentIndex === -1 || !post) {
     notFound();
   }
 
   // Get previous and next post
-  const prevPost = postsData[currentIndex - 1];
-  const nextPost = postsData[currentIndex + 1];
+  // const prevPost = postsData[currentIndex - 1];
+  // const nextPost = postsData[currentIndex + 1];
 
   return (
     <div>
