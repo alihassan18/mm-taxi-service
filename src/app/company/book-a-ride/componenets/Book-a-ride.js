@@ -202,7 +202,7 @@ const BookARide = () => {
                     </button>
                 </div>
             </div>
-            <div id="form-messages" className="alert" role="alert"></div>
+            {/* <div id="form-messages" className="alert" role="alert"></div> */}
         </form>
     );
 };
