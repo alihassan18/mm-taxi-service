@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../../components/common/banner/Banner";
-import NoData from "../../components/ui/noData/NoData";
 import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 import blogs from "../../components/common/data/blog.json";
 import Link from "next/link";
@@ -35,51 +34,47 @@ function page() {
           <div className="row">
             <div className="col-lg-8 sm-padding">
               <div className="row grid-post">
-                {blogs?.length > 0 ? (
-                  blogs.map((post) => (
-                    <div className="col-md-6 padding-15" key={post.id}>
-                      <div className="post-card">
-                        <div className="post-thumb">
-                          <img src={post.imgSrc} alt="post" />
-                          <a href={post.link} className="post-category">
-                            {post.category}
-                          </a>
-                        </div>
-                        <div className="post-content-wrap">
-                          <ul className="post-meta">
-                            <li>
-                              <i className="las la-calendar"></i>
-                              {post.date}
-                            </li>
-                            <li>
-                              <i className="las la-user"></i>
-                              {post.author}
-                            </li>
-                          </ul>
-                          <div className="post-content">
-                            <h3>
-                              <Link
-                                href={`/blog/${post.slug}`}
-                                className="read-more hover"
-                              >
-                                {post.title}
-                              </Link>
-                            </h3>
-                            <p>{post.description}</p>
+                {blogs.map((post) => (
+                  <div className="col-md-6 padding-15" key={post.id}>
+                    <div className="post-card">
+                      <div className="post-thumb">
+                        <img src={post.imgSrc} alt="post" />
+                        <a href={post.link} className="post-category">
+                          {post.category}
+                        </a>
+                      </div>
+                      <div className="post-content-wrap">
+                        <ul className="post-meta">
+                          <li>
+                            <i className="las la-calendar"></i>
+                            {post.date}
+                          </li>
+                          <li>
+                            <i className="las la-user"></i>
+                            {post.author}
+                          </li>
+                        </ul>
+                        <div className="post-content">
+                          <h3>
                             <Link
                               href={`/blog/${post.slug}`}
-                              className="read-more"
+                              className="read-more hover"
                             >
-                              Read More
+                              {post.title}
                             </Link>
-                          </div>
+                          </h3>
+                          <p>{post.description}</p>
+                          <Link
+                            href={`/blog/${post.slug}`}
+                            className="read-more"
+                          >
+                            Read More
+                          </Link>
                         </div>
                       </div>
                     </div>
-                  ))
-                ) : (
-                  <NoData title={"No Blogs Found"} />
-                )}
+                  </div>
+                ))}
               </div>
               {/* <ul className="pagination-wrap text-left mt-30">
                 <li>
