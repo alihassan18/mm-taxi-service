@@ -32,7 +32,7 @@ export const metadata = {
   openGraph: {
     title: 'Book a Ride | MM Taxi Service',
     description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks. Our experienced drivers are ready to assist you.',
-    url: 'https://www.mmtaxiservice.com/book-a-ride',
+    url: 'https://www.mmtaxiservice.com/company/book-a-ride',
     siteName: 'MM Taxi Service',
     type: 'website',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
@@ -50,7 +50,7 @@ export const metadata = {
     description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks. Our experienced drivers are ready to assist you.',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
   },
-  canonical: 'https://www.mmtaxiservice.com/book-a-ride',
+  canonical: 'https://www.mmtaxiservice.com/company/book-a-ride',
   favicon: 'https://www.mmtaxiservice.com/favicon.ico',
   appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
   msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
