@@ -9,68 +9,68 @@ export async function generateStaticParams() {
   }));
 }
 
-// export const metadata = {
-//   title:
-//     "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
-//   description:
-//     "Discover Islamic history, Hajj and Umrah guides, and more. Read our articles on the history of Makkah, tips for pilgrims, and detailed insights into Hajj and Umrah taxi services. Stay informed with MM Taxi Service blog.",
-//   keywords: [
-//     "Islamic history",
-//     "Hajj and Umrah guides",
-//     "Makkah history",
-//     "Umrah taxi service",
-//     "Saudi Arabia",
-//     "Madinah travel",
-//     "Hajj transportation",
-//     "Umrah travel tips",
-//     "Umrah taxi booking",
-//     "Hajj taxi booking",
-//     "Affordable taxi services",
-//     "Reliable Hajj taxi services",
-//     "Hajj and Umrah blog",
-//     "Islamic articles",
-//     "Makkah pilgrimage",
-//   ],
-//   author: "MM Taxi Service",
-//   robots: "index, follow",
-//   viewport: "width=device-width, initial-scale=1.0",
-//   openGraph: {
-//     title:
-//       "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
-//     description:
-//       "Read in-depth articles about the rich history of Makkah, Hajj & Umrah tips, and travel services provided by MM Taxi Service. Get inspired for your pilgrimage journey!",
-//     url: "https://www.mmtaxiservice.com/blog",
-//     siteName: "MM Taxi Service Blog",
-//     type: "website",
-//     image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
-//     images: [
-//       {
-//         url: "https://www.mmtaxiservice.com/assets/img/blog-history-makkah.jpg",
-//         width: 800,
-//         height: 600,
-//         alt: "The Holy City of Makkah",
-//       },
-//       {
-//         url: "https://www.mmtaxiservice.com/assets/img/blog-hajj-umrah-guide.jpg",
-//         width: 1800,
-//         height: 1600,
-//         alt: "Comprehensive Hajj and Umrah Guide",
-//       },
-//     ],
-//   },
-//   twitter: {
-//     card: "summary",
-//     title:
-//       "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
-//     description:
-//       "Discover engaging content about Islamic history, Makkah, Hajj and Umrah tips, and reliable taxi services for pilgrims.",
-//     image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
-//   },
-//   canonical: "https://www.mmtaxiservice.com/blog",
-//   favicon: "https://www.mmtaxiservice.com/favicon.ico",
-//   appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
-//   msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
-// };
+export const metadata = {
+  title:
+    "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
+  description:
+    "Discover Islamic history, Hajj and Umrah guides, and more. Read our articles on the history of Makkah, tips for pilgrims, and detailed insights into Hajj and Umrah taxi services. Stay informed with MM Taxi Service blog.",
+  keywords: [
+    "Islamic history",
+    "Hajj and Umrah guides",
+    "Makkah history",
+    "Umrah taxi service",
+    "Saudi Arabia",
+    "Madinah travel",
+    "Hajj transportation",
+    "Umrah travel tips",
+    "Umrah taxi booking",
+    "Hajj taxi booking",
+    "Affordable taxi services",
+    "Reliable Hajj taxi services",
+    "Hajj and Umrah blog",
+    "Islamic articles",
+    "Makkah pilgrimage",
+  ],
+  author: "MM Taxi Service",
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1.0",
+  openGraph: {
+    title:
+      "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
+    description:
+      "Read in-depth articles about the rich history of Makkah, Hajj & Umrah tips, and travel services provided by MM Taxi Service. Get inspired for your pilgrimage journey!",
+    url: "https://www.mmtaxiservice.com/blog",
+    siteName: "MM Taxi Service Blog",
+    type: "website",
+    image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
+    images: [
+      {
+        url: "https://www.mmtaxiservice.com/assets/img/blog-history-makkah.jpg",
+        width: 800,
+        height: 600,
+        alt: "The Holy City of Makkah",
+      },
+      {
+        url: "https://www.mmtaxiservice.com/assets/img/blog-hajj-umrah-guide.jpg",
+        width: 1800,
+        height: 1600,
+        alt: "Comprehensive Hajj and Umrah Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title:
+      "Explore Islamic History and Hajj & Umrah Guides | MM Taxi Service Blog",
+    description:
+      "Discover engaging content about Islamic history, Makkah, Hajj and Umrah tips, and reliable taxi services for pilgrims.",
+    image: "https://www.mmtaxiservice.com/assets/img/blog-banner.jpg",
+  },
+  canonical: "https://www.mmtaxiservice.com/blog",
+  favicon: "https://www.mmtaxiservice.com/favicon.ico",
+  appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+  msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
+};
 
 export default function BlogDetails({ params }) {
   const { slug } = params;
