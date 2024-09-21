@@ -107,13 +107,11 @@ function page() {
             </div>
             <div className="col-lg-4 sm-padding">
               <div className="sidebar-widget">
-                <form onSubmit={handleSearch} className="search-form">
+                <form className="search-form">
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Search"
-                    onChange={(e) => setSearch(e.target.value)}
-                    value={search}
                   />
                   <button className="search-btn" type="submit">
                     <i className="fa fa-search"></i>
