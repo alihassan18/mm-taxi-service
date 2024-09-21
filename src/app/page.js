@@ -1,5 +1,5 @@
 import DynamicScriptsLoader from "../components/common/script/ScriptLoader";
-import HomePage from "./home/components/page";
+import HomePage from "./home/components/HomePage";
 
 export const metadata = {
   title: 'Book Umrah and Hajj Taxi Services Online | MM Taxi Service',
