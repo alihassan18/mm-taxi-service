@@ -245,7 +245,9 @@ function Header() {
           <div className="container">
             <div className="top-header-wrap">
               <div className="top-left">
-                <p>Reliable Umrah and Hajj Taxi Service & Transport Solutions!</p>
+                <p>
+                  Reliable Umrah and Hajj Taxi Service & Transport Solutions!
+                </p>
               </div>
               <div className="top-right">
                 <ul className="top-header-nav">
@@ -261,18 +263,27 @@ function Header() {
                 </ul>
                 <ul className="header-social-share">
                   <li>
-                    <Link href="https://www.facebook.com/MMTaxiService">
+                    <Link
+                      href="https://www.facebook.com/share/p/oNtAg4rV9TA665Aw/?mibextid=qi2Omg"
+                      target="_blank"
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
                   </li>
 
                   <li>
-                    <Link href="https://www.twitter.com/@MM Taxi Service">
+                    <Link
+                      href="https://www.twitter.com/@MM Taxi Service"
+                      target="_blank"
+                    >
                       <i className="fab fa-twitter"></i>
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://www.instagram.com/@mmtaxiservice">
+                    <Link
+                      href="https://www.instagram.com/mmtaxiservice?igsh=d2piMGp2NnpsbTMw "
+                      target="_blank"
+                    >
                       <i className="fab fa-instagram"></i>
                     </Link>
                   </li>
@@ -448,13 +459,25 @@ function Header() {
                       </li>
                     </ul>
                   </li> */}
-                  <li className={isPathActive("/company/our-services") ? "active" : ""}>
+                  <li
+                    className={
+                      isPathActive("/company/our-services") ? "active" : ""
+                    }
+                  >
                     <Link href="/company/our-services">Services</Link>
                   </li>
-                  <li className={isPathActive("/company/about-us") ? "active" : ""}>
+                  <li
+                    className={
+                      isPathActive("/company/about-us") ? "active" : ""
+                    }
+                  >
                     <Link href="/company/about-us">About Us</Link>
                   </li>
-                  <li className={isPathActive("/our-taxi/taxi-lists") ? "active" : ""}>
+                  <li
+                    className={
+                      isPathActive("/our-taxi/taxi-lists") ? "active" : ""
+                    }
+                  >
                     <Link href="/our-taxi/taxi-lists">Taxi Lists</Link>
                   </li>
 
