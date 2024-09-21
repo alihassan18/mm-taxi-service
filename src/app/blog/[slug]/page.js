@@ -75,36 +75,18 @@ export const metadata = {
 export default function BlogDetails({ params }) {
   const { slug } = params;
 
-  // Find the post based on the slug
-  const currentIndex = postsData.findIndex((post) => post.slug === slug);
+  // Find the post based on the slug;
+  const currentIndex = postsData.findIndex(
+    (post) =>
+      post.slug === slug ||
+      post?.postDetails?.tags?.some(
+        (tag) => tag.replace(/\s+/g, "-") === slug
+      ) ||
+      post.category.replace(/\s+/g, "-").replace(/&/g, "-and-") === slug
+  );
   const post = postsData[currentIndex];
-  // const post = {
-  //   postDetails: {
-  //     postThumb: { imgSrc: "/assets/img/post-1.jpg", altText: "img" },
-  //     paragraphs: [
-  //       "Makkah, the holiest city in Islam, holds immense religious importance for Muslims worldwide...",
-  //       "Millions of Muslims from every corner of the world visit annually...",
-  //     ],
-  //     blockquote: {
-  //       quote: "Madinah, the second holiest city in Islam...",
-  //       author: "Winston Churchill",
-  //     },
-  //     moreParagraphs: [
-  //       ". Known as the 'City of the Prophet,' it is the site...",
-  //       "Makkah and Madinah are central to the Islamic rituals of Hajj and Umrah...",
-  //       "Both Makkah and Madinah are known for their breathtaking Islamic architecture...",
-  //     ],
-  //     galleryImages: ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
-  //     heading: "The Spiritual Journey of Hajj: Makkah and Madinah",
-  //     tags: ["Business", "Marketing", "Startup", "Design"],
-  //     postNavigation: {
-  //       prevPost: { slug: "previous-post", text: "Previous" },
-  //       nextPost: { slug: "next-post", text: "Next" },
-  //     },
-  //   },
-  // };
 
-  // Handle not found
+  // // Handle not found
   if (currentIndex === -1 || !post) {
     notFound();
   }

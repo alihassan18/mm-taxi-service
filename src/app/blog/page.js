@@ -1,10 +1,32 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Banner from "../../components/common/banner/Banner";
+import NoData from "../../components/ui/noData/NoData";
 import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 import blogs from "../../components/common/data/blog.json";
 import Link from "next/link";
 
 function page() {
+  const [search, setSearch] = useState("");
+  const [blogData, setBlogData] = useState(blogs || []);
+
+  const allTags = blogs.flatMap((post) => post.postDetails.tags);
+  const uniqueTags = [...new Set(allTags)];
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const findItem = blogs.filter((item) =>
+      item.title.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+    );
+    setBlogData(findItem);
+  };
+
+  useEffect(() => {
+    if (search.trim() === "") {
+      setBlogData(blogs);
+    }
+  }, [search]);
+
   return (
     <div>
       <DynamicScriptsLoader />
@@ -14,47 +36,51 @@ function page() {
           <div className="row">
             <div className="col-lg-8 sm-padding">
               <div className="row grid-post">
-                {blogs.map((post) => (
-                  <div className="col-md-6 padding-15" key={post.id}>
-                    <div className="post-card">
-                      <div className="post-thumb">
-                        <img src={post.imgSrc} alt="post" />
-                        <a href={post.link} className="post-category">
-                          {post.category}
-                        </a>
-                      </div>
-                      <div className="post-content-wrap">
-                        <ul className="post-meta">
-                          <li>
-                            <i className="las la-calendar"></i>
-                            {post.date}
-                          </li>
-                          <li>
-                            <i className="las la-user"></i>
-                            {post.author}
-                          </li>
-                        </ul>
-                        <div className="post-content">
-                          <h3>
+                {blogData?.length > 0 ? (
+                  blogData.map((post) => (
+                    <div className="col-md-6 padding-15" key={post.id}>
+                      <div className="post-card">
+                        <div className="post-thumb">
+                          <img src={post.imgSrc} alt="post" />
+                          <a href={post.link} className="post-category">
+                            {post.category}
+                          </a>
+                        </div>
+                        <div className="post-content-wrap">
+                          <ul className="post-meta">
+                            <li>
+                              <i className="las la-calendar"></i>
+                              {post.date}
+                            </li>
+                            <li>
+                              <i className="las la-user"></i>
+                              {post.author}
+                            </li>
+                          </ul>
+                          <div className="post-content">
+                            <h3>
+                              <Link
+                                href={`/blog/${post.slug}`}
+                                className="read-more hover"
+                              >
+                                {post.title}
+                              </Link>
+                            </h3>
+                            <p>{post.description}</p>
                             <Link
                               href={`/blog/${post.slug}`}
-                              className="read-more hover"
+                              className="read-more"
                             >
-                              {post.title}
+                              Read More
                             </Link>
-                          </h3>
-                          <p>{post.description}</p>
-                          <Link
-                            href={`/blog/${post.slug}`}
-                            className="read-more"
-                          >
-                            Read More
-                          </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))
+                ) : (
+                  <NoData title={"No Blogs Found"} />
+                )}
               </div>
               {/* <ul className="pagination-wrap text-left mt-30">
                 <li>
@@ -82,13 +108,15 @@ function page() {
             </div>
             <div className="col-lg-4 sm-padding">
               <div className="sidebar-widget">
-                <form action="" className="search-form">
+                <form onSubmit={handleSearch} className="search-form">
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Search"
+                    onChange={(e) => setSearch(e.target.value)}
+                    value={search}
                   />
-                  <button className="search-btn" type="button">
+                  <button className="search-btn" type="submit">
                     <i className="fa fa-search"></i>
                   </button>
                 </form>
@@ -98,26 +126,25 @@ function page() {
                   <h3>Categories</h3>
                 </div>
                 <ul className="category-list">
-                  <li>
-                    <a href="blog-grid.html">Business Strategy</a>
-                    <span>23</span>
-                  </li>
-                  <li>
-                    <a href="blog-grid.html">Project Management</a>
-                    <span>05</span>
-                  </li>
-                  <li>
-                    <a href="blog-grid.html">Digital Marketing</a>
-                    <span>18</span>
-                  </li>
-                  <li>
-                    <a href="blog-grid.html">Customer Experience</a>
-                    <span>04</span>
-                  </li>
-                  <li>
-                    <a href="blog-grid.html">Partnership System</a>
-                    <span>15</span>
-                  </li>
+                  {Object.entries(
+                    blogs.reduce((acc, post) => {
+                      acc[post.category] = (acc[post.category] || 0) + 1;
+                      return acc;
+                    }, {})
+                  ).map(([category, count], cat_index) => (
+                    <li key={cat_index}>
+                      {/* <a href="blog-grid.html">{category}</a> */}
+                      <Link
+                        href={`/blog/${category
+                          .replace(/\s+/g, "-")
+                          .replace(/&/g, "-and-")}`}
+                        className="read-more hover"
+                      >
+                        {category}
+                      </Link>
+                      <span>{count || 0}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="sidebar-widget">
@@ -125,51 +152,26 @@ function page() {
                   <h3>Recent Articles</h3>
                 </div>
                 <ul className="thumb-post">
-                  <li>
-                    <div className="thumb">
-                      <img src="/assets/img/post-thumb-1.jpg" alt="thumb" />
-                    </div>
-                    <div className="thumb-post-info">
-                      <h3>
-                        <a href="blog-details.html">
-                          How To Go About Initiating An Startup In Few Days.
+                  {blogs.map((item, i) => (
+                    <li key={i}>
+                      <div className="thumb">
+                        <img src={item?.imgSrc_artical} alt="thumb" />
+                      </div>
+                      <div className="thumb-post-info">
+                        <h3>
+                          <Link
+                            href={`/blog/${item.slug}`}
+                            className="read-more hover"
+                          >
+                            {item.title}
+                          </Link>
+                        </h3>
+                        <a href="#" className="date">
+                          {item?.date}
                         </a>
-                      </h3>
-                      <a href="#" className="date">
-                        Jan 01 2022
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="thumb">
-                      <img src="/assets/img/post-thumb-2.jpg" alt="thumb" />
-                    </div>
-                    <div className="thumb-post-info">
-                      <h3>
-                        <a href="blog-details.html">
-                          Financial Experts Support Help You To Find Out.
-                        </a>
-                      </h3>
-                      <a href="#" className="date">
-                        Jan 01 2022
-                      </a>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="thumb">
-                      <img src="/assets/img/post-thumb-3.jpg" alt="thumb" />
-                    </div>
-                    <div className="thumb-post-info">
-                      <h3>
-                        <a href="blog-details.html">
-                          Innovative Helping Business All Over The World.
-                        </a>
-                      </h3>
-                      <a href="#" className="date">
-                        Jan 01 2022
-                      </a>
-                    </div>
-                  </li>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="sidebar-widget">
@@ -177,33 +179,16 @@ function page() {
                   <h3>Tags</h3>
                 </div>
                 <ul className="tags">
-                  <li>
-                    <a href="#">business</a>
-                  </li>
-                  <li>
-                    <a href="#">marketing</a>
-                  </li>
-                  <li>
-                    <a href="#">startup</a>
-                  </li>
-                  <li>
-                    <a href="#">design</a>
-                  </li>
-                  <li>
-                    <a href="#">consulting</a>
-                  </li>
-                  <li>
-                    <a href="#">strategy</a>
-                  </li>
-                  <li>
-                    <a href="#">development</a>
-                  </li>
-                  <li>
-                    <a href="#">tips</a>
-                  </li>
-                  <li>
-                    <a href="#">Seo</a>
-                  </li>
+                  {uniqueTags.map((tag, index) => (
+                    <li key={index}>
+                      <Link
+                        href={`/blog/${tag.replace(/\s+/g, "-")}`}
+                        className="read-more hover"
+                      >
+                        {tag}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

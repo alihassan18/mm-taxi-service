@@ -1223,7 +1223,7 @@ const HomePage = () => {
             </div>
             <div className="row grid-post">
               <div className="row">
-                {blogs.map((post, index) => (
+                {blogs.slice(0, 3).map((post, index) => (
                   <div className="col-lg-4 col-md-6 padding-15" key={index}>
                     <div className="post-card">
                       <div className="post-thumb">
