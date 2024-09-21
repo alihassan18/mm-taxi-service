@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Banner from "../../components/common/banner/Banner";
 import NoData from "../../components/ui/noData/NoData";
 import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
@@ -7,25 +6,25 @@ import blogs from "../../components/common/data/blog.json";
 import Link from "next/link";
 
 function page() {
-  const [search, setSearch] = useState("");
-  const [blogData, setBlogData] = useState(blogs || []);
+  // const [search, setSearch] = useState("");
+  // const [blogData, setBlogData] = useState(blogs || []);
 
   const allTags = blogs.flatMap((post) => post.postDetails.tags);
   const uniqueTags = [...new Set(allTags)];
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    const findItem = blogs.filter((item) =>
-      item.title.toLocaleLowerCase().includes(search.toLocaleLowerCase())
-    );
-    setBlogData(findItem);
-  };
+  // const handleSearch = (e) => {
+  //   e.preventDefault();
+  //   const findItem = blogs.filter((item) =>
+  //     item.title.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+  //   );
+  //   setBlogData(findItem);
+  // };
 
-  useEffect(() => {
-    if (search.trim() === "") {
-      setBlogData(blogs);
-    }
-  }, [search]);
+  // useEffect(() => {
+  //   if (search.trim() === "") {
+  //     setBlogData(blogs);
+  //   }
+  // }, [search]);
 
   return (
     <div>
@@ -36,8 +35,8 @@ function page() {
           <div className="row">
             <div className="col-lg-8 sm-padding">
               <div className="row grid-post">
-                {blogData?.length > 0 ? (
-                  blogData.map((post) => (
+                {blogs?.length > 0 ? (
+                  blogs.map((post) => (
                     <div className="col-md-6 padding-15" key={post.id}>
                       <div className="post-card">
                         <div className="post-thumb">
