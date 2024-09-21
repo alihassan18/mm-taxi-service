@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
-import { toast } from 'react-toastify';
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const BookingForm = () => {
-
-
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    packageType: 'standard',
-    passengers: '1',
-    startDest: '',
-    endDest: '',
-    rideDate: '',
-    rideTime: '',
+    fullName: "",
+    email: "",
+    packageType: "standard",
+    passengers: "1",
+    startDest: "",
+    endDest: "",
+    rideDate: "",
+    rideTime: "",
   });
 
-  const [isloading, setIsLoading] = useState(false)
+  const [isloading, setIsLoading] = useState(false);
 
-  const [formMessage, setFormMessage] = useState('');
+  const [formMessage, setFormMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({
@@ -26,43 +24,42 @@ const BookingForm = () => {
     });
   };
 
-  console.log(formData);
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Example of how to send the data to an API endpoint in your Next.js app
     try {
-      setIsLoading(true)
-      const response = await fetch('/api/book-ride', {
-        method: 'POST',
+      setIsLoading(true);
+      const response = await fetch("/api/book-ride", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        toast.success('Booking successful!');
+        toast.success("Booking successful!");
         setIsLoading(false);
       } else {
-        toast.error('Booking failed. Please try again.');
+        toast.error("Booking failed. Please try again.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      toast.error('An error occurred. Please try again later.');
+      console.error("Error:", error);
+      toast.error("An error occurred. Please try again later.");
       setIsLoading(false);
     }
   };
-
 
   return (
     <section className="booking-section">
       <div className="container">
         <div className="row pos-relative padding">
           <div className="col-lg-4">
-            <div className="booking-car wow fade-in-left" data-wow-delay="200ms"></div>
+            <div
+              className="booking-car wow fade-in-left"
+              data-wow-delay="200ms"
+            ></div>
           </div>
           <div className="col-lg-8">
             <div className="booking-wrap">
@@ -185,13 +182,15 @@ const BookingForm = () => {
                     />
                   </div>
                   <div className="form-field">
-                    {
-                      isloading ? <button id="submit" className="default-btn" type="submit">
+                    {isloading ? (
+                      <button id="submit" className="default-btn" type="submit">
                         Loading....
-                      </button> : <button id="submit" className="default-btn" type="submit">
+                      </button>
+                    ) : (
+                      <button id="submit" className="default-btn" type="submit">
                         Book Your Taxi
                       </button>
-                    }
+                    )}
                   </div>
                 </div>
                 {formMessage && (

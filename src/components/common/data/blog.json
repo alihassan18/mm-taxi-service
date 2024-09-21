@@ -2,9 +2,10 @@
   {
     "slug": "role-of-makkah-and-madinah-in-hajj-and-umrah",
     "imgSrc": "/assets/img/post-1.jpg",
+    "imgSrc_artical": "/assets/img/post-1_100.jpeg",
     "category": "Hajj & Umrah",
     "date": "Jan 01 2022",
-    "author": "Elliot Alderson",
+    "author": "MM-Taxi",
     "title": "The Role of Makkah and Madinah in Islamic Pilgrimage",
     "description": "Makkah and Madinah are central to the Islamic rituals of Hajj and Umrah...",
     "link": "/blog/details-blogs",
@@ -16,7 +17,7 @@
       ],
       "blockquote": {
         "quote": "Madinah, the second holiest city in Islam, holds a unique position in Islamic history as the place where the Prophet Muhammad (PBUH) migrated after facing persecution in Makkah. It became the center of the Muslim community and the first Islamic state.",
-        "author": "Ali Hassan"
+        "author": "MM-Taxi"
       },
       "moreParagraphs": [
         "Madinah, known as the 'City of the Prophet,' is the second holiest city in Islam. It is the site of the Prophet Muhammad's mosque, Al-Masjid an-Nabawi, which holds his tomb. Muslims who visit Makkah for Hajj or Umrah also travel to Madinah to pray at the Prophet's Mosque and pay their respects. The city's significance is not only in its religious and historical importance but also in its role as a spiritual sanctuary for the Muslim community. After the Prophet's migration, Madinah became the base from which Islam spread throughout Arabia and beyond.",
@@ -25,7 +26,7 @@
       ],
       "galleryImages": ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
       "heading": "The Spiritual Journey of Hajj: Makkah and Madinah",
-      "tags": ["Business", "Marketing", "Startup", "Design"],
+      "tags": ["Makkah Travel", "Madinah Travel", "Health Precautions"],
       "postNavigation": {
         "prevPost": {
           "slug": "history-of-makkah",
@@ -39,9 +40,10 @@
   {
     "slug": "madinah-city-of-the-prophet",
     "imgSrc": "/assets/img/post-2.jpg",
+    "imgSrc_artical": "/assets/img/post-2_100.jpeg",
     "category": "Hajj & Umrah",
     "date": "Jan 01 2022",
-    "author": "Elliot Alderson",
+    "author": "MM-Taxi",
     "title": "Madinah: The City of the Prophet",
     "description": "Madinah, the second holiest city in Islam, is where the Prophet Muhammad (PBUH) migrated to...",
     "link": "/blog/details-blogs",
@@ -53,7 +55,7 @@
       ],
       "blockquote": {
         "quote": "Madinah, the second holiest city in Islam, holds a unique position in Islamic history as the place where the Prophet Muhammad (PBUH) migrated after facing persecution in Makkah. It became the center of the Muslim community and the first Islamic state.",
-        "author": "Ali Hassan"
+        "author": "MM-Taxi"
       },
       "moreParagraphs": [
         "Known as the 'City of the Prophet,' Madinah is the site of many significant events in Islamic history. It was in this city that the Muslim community grew stronger, and from here, the teachings of Islam spread far and wide. The migration of the Prophet to Madinah brought peace and unity among the people of the region, and it became a safe haven for the early Muslims. Today, Madinah serves as a place of reflection and prayer for Muslims who seek to deepen their connection to the Prophet and his teachings.",
@@ -62,7 +64,12 @@
       ],
       "galleryImages": ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
       "heading": "The Spiritual Journey of Hajj: Makkah and Madinah",
-      "tags": ["Business", "Marketing", "Startup", "Design"],
+      "tags": [
+        "Health Precautions",
+        "Business",
+        "Cultural Insights",
+        "Travel Packages"
+      ],
       "postNavigation": {
         "prevPost": {
           "slug": "madinah-city-of-the-prophet",
@@ -76,9 +83,10 @@
   {
     "slug": "history-of-makkah",
     "imgSrc": "/assets/img/post-3.jpg",
+    "imgSrc_artical": "/assets/img/post-3_100.jpeg",
     "category": "Hajj & Umrah",
     "date": "Jan 01 2022",
-    "author": "Elliot Alderson",
+    "author": "MM-Taxi",
     "title": "The History of the Holy City of Makkah",
     "description": "Makkah, the holiest city in Islam, holds immense religious importance for Muslims worldwide...",
     "link": "/blog/details-blogs",
@@ -90,7 +98,7 @@
       ],
       "blockquote": {
         "quote": "Makkah is the holiest city in Islam, the birthplace of the Prophet Muhammad (PBUH), and the site of the Kaaba, the spiritual heart of the Muslim world.",
-        "author": "Ali Hassan"
+        "author": "MM-Taxi"
       },
       "moreParagraphs": [
         "The liberation of Makkah by Prophet Muhammad (PBUH) is one of the most significant events in Islamic history. After the Prophet's return, Makkah was restored as a place of monotheism, and the Kaaba was reaffirmed as the center of the Islamic faith. This event also marked the establishment of Hajj as one of the five pillars of Islam, an annual pilgrimage required of all Muslims who are able to undertake the journey.",
@@ -99,7 +107,60 @@
       ],
       "galleryImages": ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
       "heading": "The Spiritual Journey of Hajj: Makkah and Madinah",
-      "tags": ["Business", "Marketing", "Startup", "Design"],
+      "tags": [
+        "Group Travel",
+        "Best Travel Seasons",
+        "Spiritual Experiences",
+        "Shopping in Makkah"
+      ],
+      "postNavigation": {
+        "prevPost": {
+          "slug": "madinah-city-of-the-prophet",
+          "text": "Previous"
+        },
+        "nextPost": {
+          "slug": "palestine-struggle-for-freedom",
+          "text": "Next"
+        }
+      }
+    }
+  },
+  {
+    "slug": "palestine-struggle-for-freedom",
+    "imgSrc": "/assets/img/post-4.jpg",
+    "imgSrc_artical": "/assets/img/post-4_100.jpeg",
+    "category": "World Issues",
+    "date": "Sep 21 2024",
+    "author": "MM-Taxi",
+    "title": "Palestine: A Struggle for Freedom",
+    "description": "The ongoing struggle in Palestine is a fight for justice, freedom, and the right to self-determination...",
+    "link": "/blog/details-palestine",
+    "postDetails": {
+      "postThumb": {
+        "imgSrc": "/assets/img/post-4.jpg",
+        "altText": "Palestine"
+      },
+      "paragraphs": [
+        "The issue of Palestine has been one of the most pressing and prolonged struggles in modern history. For decades, the people of Palestine have been fighting for their right to live freely in their homeland, amidst political tensions, armed conflict, and continuous displacement. This struggle has its roots in the early 20th century, with the establishment of the state of Israel and the subsequent displacement of hundreds of thousands of Palestinians from their homes.",
+        "Despite countless resolutions, peace efforts, and international dialogues, the conflict continues. The situation is characterized by military occupation, blockades, and a humanitarian crisis that affects millions of Palestinians. The Gaza Strip, in particular, has been a focal point of intense violence and blockade, with the people living under dire conditions, facing shortages of essential supplies and infrastructure."
+      ],
+      "blockquote": {
+        "quote": "The Palestinian struggle is not just a local issue; it is a global call for justice and human rights, representing the fight against occupation and oppression.",
+        "author": "MM-Taxi"
+      },
+      "moreParagraphs": [
+        "The conflict in Palestine has drawn international attention, with many countries and organizations advocating for a peaceful resolution. The United Nations has passed numerous resolutions calling for the recognition of Palestinian rights and the end of the occupation, but a sustainable solution remains elusive.",
+        "The two-state solution, which proposes the establishment of an independent Palestinian state alongside Israel, has been widely discussed. However, continued settlement expansion, political divisions, and regional instability have hindered the progress toward this goal. Palestinians continue to demand recognition, sovereignty, and the right to return to their homeland.",
+        "The struggle of the Palestinian people is not only about territory but also about human dignity. The occupation has led to a widespread violation of human rights, with restrictions on movement, economic deprivation, and constant threats to personal safety. Despite these challenges, the resilience and determination of the Palestinian people remain unwavering."
+      ],
+      "galleryImages": ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
+      "heading": "The Global Response to the Palestinian Cause",
+      "tags": [
+        "Middle East",
+        "Human Rights",
+        "Global Issues",
+        "Political Conflict"
+      ],
       "postNavigation": {
         "prevPost": {
           "slug": "madinah-city-of-the-prophet",
