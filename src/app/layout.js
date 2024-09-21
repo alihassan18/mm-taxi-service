@@ -118,22 +118,51 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: `
             {
-              "@context": "https://schema.org",
-              "@type": "TaxiService",
-              "name": "Umrah and Hajj Taxi Services",
-              "description": "Book your Umrah and Hajj taxi services online with us. We offer reliable and affordable rides from Makkah to Madinah and other destinations.",
-              "image": "https://www.mmtaxiservice.com/assets/img/car-2.png",
-              "url": "https://www.mmtaxiservice.com",
-              "telephone": "+966 595783153",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Al Haram Makkah 24231 Saudi Arabia",
-                "addressLocality": "Makkah",
-                "addressRegion": "Makkah Province",
-                "postalCode": "24231",
-                "addressCountry": "Saudi Arabia"
-              }
-            }
+  "@type": "TaxiService",
+  "name": "Umrah Taxi Services",
+  "description": "Book your Umrah taxi services online with us. We offer reliable and affordable rides from Makkah to Madinah and other destinations.",
+  "image": "https://www.umrahtaxiservice.com/assets/img/car-1.png",
+  "url": "https://www.umrahtaxiservice.com/",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+966 595783153",
+    "email": "info@umrahtaxiservice.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Al Haram Makkah 24231 Saudi Arabia",
+      "addressLocality": "Makkah",
+      "addressRegion": "Makkah Province",
+      "postalCode": "24231",
+      "addressCountry": {
+        "@type": "Country",
+        "name": "Saudi Arabia"
+      }
+    }
+  },
+  "areaServed": {
+    "@type": "GeoShape",
+    "address": "Makkah, Saudi Arabia",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.3891,
+      "longitude": 39.8579
+    }
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Umrah Taxi Services Offers",
+    "description": "Check out our latest offers and discounts for Umrah taxi services.",
+    "url": "https://www.umrahtaxiservice.com/offers/"
+  },
+  "paymentAccepted": "Cash, Credit Card, Online Payment",
+  "priceRange": "SAR 50 - SAR 500",
+  "openingHours": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "08:00",
+    "closes": "20:00"
+  }
+}
           `,
           }}
         />
