@@ -24,14 +24,14 @@ const page = () => {
 
 export const metadata = {
   title: 'Book Umrah Ride | MM Taxi Service',
-  description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks. Our experienced drivers are ready to assist you.',
+  description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks.',
   keywords: ['Book a ride', 'Umra taxi service', 'Saudi Arabia', 'taxi booking', 'MM Taxi Service'],
   author: 'MM Taxi Service',
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1.0',
   openGraph: {
     title: 'Book Umrah Ride | MM Taxi Service',
-    description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks. Our experienced drivers are ready to assist you.',
+    description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks.',
     url: 'https://www.mmtaxiservice.com/company/book-a-ride',
     siteName: 'MM Taxi Service',
     type: 'website',
