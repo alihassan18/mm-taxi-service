@@ -36,7 +36,14 @@ function page() {
                   Feel the difference and Relaxation with MM Taxi Company!
                 </h2>
                 <p>
-                  At MM Taxi Service, we specialize in providing reliable and efficient transportation for Umrah and Hajj pilgrims. Whether it's short trips or long journeys, we ensure a seamless and comfortable experience. Our team is committed to delivering top-quality service with modern vehicles, ensuring your travel is smooth and stress-free. Trust us for safe, timely, and professional transportation during your sacred journey. Book your Umrah or Hajj taxi from anywhere today!
+                  At MM Taxi Service, we specialize in providing reliable and
+                  efficient transportation for Umrah and Hajj pilgrims. Whether
+                  it's short trips or long journeys, we ensure a seamless and
+                  comfortable experience. Our team is committed to delivering
+                  top-quality service with modern vehicles, ensuring your travel
+                  is smooth and stress-free. Trust us for safe, timely, and
+                  professional transportation during your sacred journey. Book
+                  your Umrah or Hajj taxi from anywhere today!
                 </p>
               </div>
 
@@ -81,10 +88,9 @@ function page() {
               MM Taxi Company!
             </h2>
             <p>
-              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              MM Taxi Service handles trips of all complexities, offering
+              long-term <br />
               reliability for Umrah and Hajj.
-
-
             </p>
           </div>
 
@@ -107,7 +113,9 @@ function page() {
                         <a href="service-details.html">Regular Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service offers reliable regular transport, ensuring consistent and comfortable rides for your daily needs.
+                        MM Taxi Service offers reliable regular transport,
+                        ensuring consistent and comfortable rides for your daily
+                        needs.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -131,7 +139,9 @@ function page() {
                         <a href="service-details.html">Airport Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service offers reliable and punctual airport transportation, ensuring you reach your destination comfortably and on time.
+                        MM Taxi Service offers reliable and punctual airport
+                        transportation, ensuring you reach your destination
+                        comfortably and on time.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -155,7 +165,9 @@ function page() {
                         <a href="service-details.html">Luggage Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service offers secure and efficient luggage transport, ensuring your belongings arrive safely and on time.
+                        MM Taxi Service offers secure and efficient luggage
+                        transport, ensuring your belongings arrive safely and on
+                        time.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -179,7 +191,9 @@ function page() {
                         <a href="service-details.html">City Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service provides reliable city transport, ensuring smooth and convenient travel throughout the city.
+                        MM Taxi Service provides reliable city transport,
+                        ensuring smooth and convenient travel throughout the
+                        city.
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -203,8 +217,9 @@ function page() {
                         <a href="service-details.html">Business Transport</a>
                       </h3>
                       <p>
-                        MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                        Designed for Taxi Service Excellence!
+                        MM Taxi Service – Everything You Need for Reliable Umrah
+                        & Hajj Transportation! Designed for Taxi Service
+                        Excellence!
                       </p>
                       <a className="read-more" href="service-details.html">
                         Read More
@@ -236,9 +251,8 @@ function page() {
                 </h4>
                 <h2>MM Passenger Reviews...</h2>
                 <p>
-                  MM Taxi Service handles trips of all complexities, offering long-term reliability for Umrah and Hajj.
-
-
+                  MM Taxi Service handles trips of all complexities, offering
+                  long-term reliability for Umrah and Hajj.
                 </p>
               </div>
               <div className="swiper-outside testi-pagination">
@@ -326,8 +340,8 @@ function page() {
                   </h4>
                   <h2 className="white">Why Ride with MM?</h2>
                   <p className="white">
-                    MM Taxi Service handles trips of all complexities, offering long-term reliability for Umrah and Hajj.
-
+                    MM Taxi Service handles trips of all complexities, offering
+                    long-term reliability for Umrah and Hajj.
                   </p>
                 </div>
 
@@ -383,10 +397,9 @@ function page() {
             </h4>
             <h2>Our Expert Drivers</h2>
             <p>
-              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              MM Taxi Service handles trips of all complexities, offering
+              long-term <br />
               reliability for Umrah and Hajj.
-
-
             </p>
           </div>
           <div className="row">
@@ -454,7 +467,8 @@ function page() {
               Call Us Now <span>Book Your Taxi</span> <br /> For Your Next Ride!
             </h2>
             <p>
-              MM Taxi Service handles trips of all complexities, offering long-term,
+              MM Taxi Service handles trips of all complexities, offering
+              long-term,
               <br />
               reliability for Umrah and Hajj.
             </p>
@@ -477,10 +491,9 @@ function page() {
             </h4>
             <h2>News And Insights!</h2>
             <p>
-              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              MM Taxi Service handles trips of all complexities, offering
+              long-term <br />
               reliability for Umrah and Hajj.
-
-
             </p>
           </div>
 
@@ -595,38 +608,47 @@ function page() {
 }
 
 export const metadata = {
-  title: 'About Us | MM Taxi Service',
-  description: 'Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.',
-  keywords: ['About MM Taxi Service', 'Umra taxi service', 'Saudi Arabia', 'team', 'mission', 'vision'],
-  author: 'MM Taxi Service',
-  robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1.0',
+  title: "About Us | MM Taxi Service",
+  description:
+    "Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.",
+  keywords: [
+    "About MM Taxi Service",
+    "Umra taxi service",
+    "Saudi Arabia",
+    "team",
+    "mission",
+    "vision",
+  ],
+  author: "MM Taxi Service",
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
-    title: 'About Us | MM Taxi Service',
-    description: 'Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.',
-    url: 'https://www.mmtaxiservice.com/about',
-    siteName: 'MM Taxi Service',
-    type: 'website',
-    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    title: "About Us | MM Taxi Service",
+    description:
+      "Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.",
+    url: "https://www.mmtaxiservice.com/about",
+    siteName: "MM Taxi Service",
+    type: "website",
+    image: "https://www.mmtaxiservice.com/assets/img/logo-dark.png",
     images: [
       {
-        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png',
+        url: "https://www.mmtaxiservice.com/assets/img/car-2.png",
         width: 800,
         height: 600,
       },
     ],
   },
   twitter: {
-    card: 'summary',
-    title: 'About Us | MM Taxi Service',
-    description: 'Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.',
-    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    card: "summary",
+    title: "About Us | MM Taxi Service",
+    description:
+      "Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.",
+    image: "https://www.mmtaxiservice.com/assets/img/logo-dark.png",
   },
-  canonical: 'https://www.mmtaxiservice.com/about',
-  favicon: 'https://www.mmtaxiservice.com/favicon.ico',
-  appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
-  msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
+  canonical: "https://www.mmtaxiservice.com/about",
+  favicon: "https://www.mmtaxiservice.com/favicon.ico",
+  appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+  msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
 };
-
 
 export default page;

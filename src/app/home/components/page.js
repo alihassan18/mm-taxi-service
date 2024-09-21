@@ -405,8 +405,11 @@ const HomePage = () => {
                     Feel the difference and Relaxation with MM Taxi Company!
                   </h2>
                   <p>
-                    At MM Taxi Service, we handle all transportation needs with ease, no matter the complexity.
-                    We provide reliable service with long-term commitment and continually adopt the latest technologies to enhance your Umrah and Hajj travel experience.
+                    At MM Taxi Service, we handle all transportation needs with
+                    ease, no matter the complexity. We provide reliable service
+                    with long-term commitment and continually adopt the latest
+                    technologies to enhance your Umrah and Hajj travel
+                    experience.
                   </p>
                 </div>
                 {/*/.section-heading*/}
@@ -486,7 +489,9 @@ const HomePage = () => {
                           <a href="service-details.html">Regular Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service offers reliable regular transport, ensuring consistent and comfortable rides for your daily needs.
+                          MM Taxi Service offers reliable regular transport,
+                          ensuring consistent and comfortable rides for your
+                          daily needs.
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -513,7 +518,9 @@ const HomePage = () => {
                           <a href="service-details.html">Airport Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service offers reliable and punctual airport transportation, ensuring you reach your destination comfortably and on time.
+                          MM Taxi Service offers reliable and punctual airport
+                          transportation, ensuring you reach your destination
+                          comfortably and on time.
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -540,7 +547,9 @@ const HomePage = () => {
                           <a href="service-details.html">Luggage Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service offers secure and efficient luggage transport, ensuring your belongings arrive safely and on time.
+                          MM Taxi Service offers secure and efficient luggage
+                          transport, ensuring your belongings arrive safely and
+                          on time.
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -564,7 +573,9 @@ const HomePage = () => {
                           <a href="service-details.html">City Transport</a>
                         </h3>
                         <p>
-                          MM Taxi Service provides reliable city transport, ensuring smooth and convenient travel throughout the city.
+                          MM Taxi Service provides reliable city transport,
+                          ensuring smooth and convenient travel throughout the
+                          city.
                         </p>
                         <a className="read-more" href="service-details.html">
                           Read More
@@ -735,12 +746,11 @@ const HomePage = () => {
                 <div className="col-lg-3 col-md-6 sm-padding mb-4" key={key}>
                   <div className="pricing-item">
                     <div className="pricing-head-wrap">
-                      <div className="pricing-car">
+                      <div className="pricing-car ">
                         <img
                           src={item.image || "/assets/img/pricing-car-2.png"}
                           alt="car"
                         />
-                        <div className="price">$2.50/km</div>
                       </div>
                     </div>
                     <div className="pricing-head">
@@ -928,9 +938,8 @@ const HomePage = () => {
                   </h4>
                   <h2>Get the MM Mobile app and Start Your Journey!</h2>
                   <p>
-                    MM Taxi Service handles trips of all complexities,
-                    provide long-term guarantees and regularly master
-                    technologies.
+                    MM Taxi Service handles trips of all complexities, provide
+                    long-term guarantees and regularly master technologies.
                   </p>
                   <ul className="app-feature ">
                     <li>
@@ -1019,9 +1028,8 @@ const HomePage = () => {
                   </h4>
                   <h2>MM Passenger Reviews...</h2>
                   <p>
-                    MM Taxi Service handles trips of all complexities,
-                    provide long-term guarantees and regularly master
-                    technologies.
+                    MM Taxi Service handles trips of all complexities, provide
+                    long-term guarantees and regularly master technologies.
                   </p>
                 </div>
                 <div className="swiper-outside testi-pagination">
@@ -1121,9 +1129,8 @@ const HomePage = () => {
                     </h4>
                     <h2 className="white">Why Ride with MM?</h2>
                     <p className="white">
-                      MM Taxi Service handles trips of all complexities,
-                      provide long-term guarantees and regularly master
-                      technologies.
+                      MM Taxi Service handles trips of all complexities, provide
+                      long-term guarantees and regularly master technologies.
                     </p>
                   </div>
 
