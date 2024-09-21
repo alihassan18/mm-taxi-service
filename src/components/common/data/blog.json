@@ -1,32 +1,115 @@
 [
   {
-    "slug": "how-to-start-initiating-a-startup-in-few-days",
+    "slug": "role-of-makkah-and-madinah-in-hajj-and-umrah",
     "imgSrc": "/assets/img/post-1.jpg",
-    "category": "Business",
+    "category": "Hajj & Umrah",
     "date": "Jan 01 2022",
     "author": "Elliot Alderson",
     "title": "The Role of Makkah and Madinah in Islamic Pilgrimage",
-    "description": "Makkah and Madinah are central to the Islamic rituals of Hajj and Umrah more...",
-    "link": "/blog/details-blogs"
+    "description": "Makkah and Madinah are central to the Islamic rituals of Hajj and Umrah...",
+    "link": "/blog/details-blogs",
+    "postDetails": {
+      "postThumb": { "imgSrc": "/assets/img/post-1.jpg", "altText": "img" },
+      "paragraphs": [
+        "Makkah, the holiest city in Islam, holds immense religious importance for Muslims worldwide. It is home to the Kaaba, the sacred building that all Muslims face during their daily prayers. Makkah is also the focal point for the Hajj pilgrimage, which is one of the five pillars of Islam. Every year, millions of Muslims make the journey to Makkah to fulfill this religious duty and participate in the various rituals associated with Hajj. These include the Tawaf, where pilgrims circle the Kaaba seven times, and the Sa'i, a journey between the hills of Safa and Marwah. The significance of Makkah in Islamic tradition cannot be overstated, as it is not only a place of historical and spiritual significance but also a destination that unites Muslims from around the world in a shared experience of devotion.",
+        "Millions of Muslims from every corner of the world visit Makkah annually, both for Hajj and for Umrah, a pilgrimage that can be undertaken at any time of the year. Unlike Hajj, Umrah is not obligatory but holds great merit in Islamic tradition. The journey of Hajj and Umrah is considered a spiritual cleansing, with believers seeking to return home free of sin, renewed in their faith, and deeply connected to the history and teachings of Islam. The act of pilgrimage is a reminder of the unity of the Muslim Ummah, transcending race, nationality, and language, and bringing people together in worship."
+      ],
+      "blockquote": {
+        "quote": "Madinah, the second holiest city in Islam, holds a unique position in Islamic history as the place where the Prophet Muhammad (PBUH) migrated after facing persecution in Makkah. It became the center of the Muslim community and the first Islamic state.",
+        "author": "Ali Hassan"
+      },
+      "moreParagraphs": [
+        "Madinah, known as the 'City of the Prophet,' is the second holiest city in Islam. It is the site of the Prophet Muhammad's mosque, Al-Masjid an-Nabawi, which holds his tomb. Muslims who visit Makkah for Hajj or Umrah also travel to Madinah to pray at the Prophet's Mosque and pay their respects. The city's significance is not only in its religious and historical importance but also in its role as a spiritual sanctuary for the Muslim community. After the Prophet's migration, Madinah became the base from which Islam spread throughout Arabia and beyond.",
+        "Makkah and Madinah are central to the Islamic rituals of Hajj and Umrah. These cities serve as the spiritual axis for Muslims, grounding their faith in the shared history and teachings of the Prophet Muhammad (PBUH). Through their historical significance and spiritual importance, Makkah and Madinah have shaped the identity of the Muslim world. The journeys of Hajj and Umrah serve as transformative experiences for Muslims, reconnecting them to the essence of their faith and the unity of the global Muslim community.",
+        "Both Makkah and Madinah are known for their breathtaking Islamic architecture, with iconic landmarks such as the Kaaba and the Prophet's Mosque. The sacred precincts of these cities have been preserved over centuries, maintaining their spiritual aura. For pilgrims, visiting these cities is not only a religious obligation but a deeply emotional and spiritual journey that strengthens their connection to Allah and the Prophet Muhammad (PBUH)."
+      ],
+      "galleryImages": ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
+      "heading": "The Spiritual Journey of Hajj: Makkah and Madinah",
+      "tags": ["Business", "Marketing", "Startup", "Design"],
+      "postNavigation": {
+        "prevPost": {
+          "slug": "history-of-makkah",
+          "text": "Previous"
+        },
+        "nextPost": { "slug": "madinah-city-of-the-prophet", "text": "Next" }
+      }
+    }
   },
+
   {
-    "slug": "financial-experts-support-help-you-to-find-out",
+    "slug": "madinah-city-of-the-prophet",
     "imgSrc": "/assets/img/post-2.jpg",
-    "category": "Startup",
+    "category": "Hajj & Umrah",
     "date": "Jan 01 2022",
     "author": "Elliot Alderson",
     "title": "Madinah: The City of the Prophet",
-    "description": "Madinah, the second holiest city in Islam, is where the Prophet Muhammad (PBUH) migrated to from more...",
-    "link": "/blog/details-blogs"
+    "description": "Madinah, the second holiest city in Islam, is where the Prophet Muhammad (PBUH) migrated to...",
+    "link": "/blog/details-blogs",
+    "postDetails": {
+      "postThumb": { "imgSrc": "/assets/img/post-1.jpg", "altText": "img" },
+      "paragraphs": [
+        "Madinah, also known as Al-Madinah Al-Munawwarah, holds a central place in the hearts of Muslims as the city to which the Prophet Muhammad (PBUH) migrated following persecution in Makkah. This migration, known as the Hijrah, marked the beginning of the Islamic calendar and laid the foundation for the Islamic state. Madinah became the Prophet’s home and the base from which Islam spread across the Arabian Peninsula. It is in Madinah that the Prophet built the first mosque, Al-Masjid an-Nabawi, which remains one of the holiest sites in Islam.",
+        "Millions of Muslims visit Madinah every year, often in conjunction with their pilgrimage to Makkah. While Hajj and Umrah are focused on Makkah, a visit to Madinah is highly recommended due to its spiritual significance and the presence of the Prophet's Mosque, where the Prophet Muhammad (PBUH) is buried. Praying in Al-Masjid an-Nabawi holds immense merit in Islamic teachings, and pilgrims find great solace in visiting the Prophet’s tomb. The atmosphere of reverence and peace in Madinah provides an unmatched spiritual experience."
+      ],
+      "blockquote": {
+        "quote": "Madinah, the second holiest city in Islam, holds a unique position in Islamic history as the place where the Prophet Muhammad (PBUH) migrated after facing persecution in Makkah. It became the center of the Muslim community and the first Islamic state.",
+        "author": "Ali Hassan"
+      },
+      "moreParagraphs": [
+        "Known as the 'City of the Prophet,' Madinah is the site of many significant events in Islamic history. It was in this city that the Muslim community grew stronger, and from here, the teachings of Islam spread far and wide. The migration of the Prophet to Madinah brought peace and unity among the people of the region, and it became a safe haven for the early Muslims. Today, Madinah serves as a place of reflection and prayer for Muslims who seek to deepen their connection to the Prophet and his teachings.",
+        "Makkah and Madinah are central to the Islamic rituals of Hajj and Umrah. Both cities play crucial roles in the spiritual journeys of Muslims, with Makkah serving as the focal point of pilgrimage and Madinah offering pilgrims the opportunity to connect with the legacy of the Prophet Muhammad (PBUH). Visiting these cities is an act of spiritual renewal, allowing Muslims to reaffirm their faith and feel a closer connection to the Prophet and the message of Islam.",
+        "Both Makkah and Madinah are known for their breathtaking Islamic architecture, and the Prophet's Mosque in Madinah is a shining example of this. Over the centuries, it has been expanded and embellished, making it one of the most awe-inspiring religious structures in the world. Madinah continues to be a place of spiritual refuge, where the presence of the Prophet Muhammad (PBUH) is felt deeply by all who visit."
+      ],
+      "galleryImages": ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
+      "heading": "The Spiritual Journey of Hajj: Makkah and Madinah",
+      "tags": ["Business", "Marketing", "Startup", "Design"],
+      "postNavigation": {
+        "prevPost": {
+          "slug": "madinah-city-of-the-prophet",
+          "text": "Previous"
+        },
+        "nextPost": { "slug": "history-of-makkah", "text": "Next" }
+      }
+    }
   },
+
   {
-    "slug": "innovative-business-all-over-the-world.",
+    "slug": "history-of-makkah",
     "imgSrc": "/assets/img/post-3.jpg",
-    "category": "Finance",
+    "category": "Hajj & Umrah",
     "date": "Jan 01 2022",
     "author": "Elliot Alderson",
-    "title": "The History of the Holy City of Makkah.",
-    "description": "Makkah, the holiest city in Islam, holds immense religious importance for Muslims worldwide  more...",
-    "link": "/blog/details-blogs"
+    "title": "The History of the Holy City of Makkah",
+    "description": "Makkah, the holiest city in Islam, holds immense religious importance for Muslims worldwide...",
+    "link": "/blog/details-blogs",
+    "postDetails": {
+      "postThumb": { "imgSrc": "/assets/img/post-1.jpg", "altText": "img" },
+      "paragraphs": [
+        "Makkah, located in the heart of the Arabian Peninsula, has been a significant religious center long before the advent of Islam. Its history is tied to the story of Prophet Ibrahim (Abraham) and his son Ismail (Ishmael). According to Islamic tradition, Ibrahim was commanded by Allah to build the Kaaba, the cubical structure that serves as the focal point of Islamic worship. This sacred building became the center of pilgrimage for the early followers of Ibrahim, and it continues to hold its place as the most revered site in Islam.",
+        "Over time, Makkah became a flourishing city, attracting traders and pilgrims from all over the Arabian Peninsula and beyond. It was a bustling center of commerce and culture. However, by the time of Prophet Muhammad’s (PBUH) birth, the city had fallen into the grip of idol worship, with hundreds of idols placed around the Kaaba. The Prophet’s mission to rid the city of idolatry and return it to the worship of the one true God was a key aspect of his prophetic message. After years of struggle and persecution, Makkah was eventually liberated, and the Kaaba was cleansed of idols."
+      ],
+      "blockquote": {
+        "quote": "Makkah is the holiest city in Islam, the birthplace of the Prophet Muhammad (PBUH), and the site of the Kaaba, the spiritual heart of the Muslim world.",
+        "author": "Ali Hassan"
+      },
+      "moreParagraphs": [
+        "The liberation of Makkah by Prophet Muhammad (PBUH) is one of the most significant events in Islamic history. After the Prophet's return, Makkah was restored as a place of monotheism, and the Kaaba was reaffirmed as the center of the Islamic faith. This event also marked the establishment of Hajj as one of the five pillars of Islam, an annual pilgrimage required of all Muslims who are able to undertake the journey.",
+        "Makkah and Madinah are central to the Islamic rituals of Hajj and Umrah. Both cities are key destinations for millions of Muslims each year, with Makkah being the center of Hajj. The city’s rich history and religious significance make it a place of immense spiritual value for Muslims, who come to perform Hajj and Umrah in search of forgiveness, renewal, and closeness to Allah.",
+        "Both Makkah and Madinah are known for their breathtaking Islamic architecture. The expansion of the Grand Mosque (Masjid al-Haram) over the centuries has made it one of the most magnificent religious structures in the world. The city of Makkah continues to be a beacon for Muslims around the world, serving as a reminder of the unity and devotion shared by believers from all corners of the globe."
+      ],
+      "galleryImages": ["/assets/img/post-4.jpg", "/assets/img/post-2.jpg"],
+      "heading": "The Spiritual Journey of Hajj: Makkah and Madinah",
+      "tags": ["Business", "Marketing", "Startup", "Design"],
+      "postNavigation": {
+        "prevPost": {
+          "slug": "madinah-city-of-the-prophet",
+          "text": "Previous"
+        },
+        "nextPost": {
+          "slug": "role-of-makkah-and-madinah-in-hajj-and-umrah",
+          "text": "Next"
+        }
+      }
+    }
   }
 ]

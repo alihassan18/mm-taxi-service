@@ -1,6 +1,8 @@
 import React from "react";
 import Banner from "../../components/common/banner/Banner";
 import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
+import blogs from "../../components/common/data/blog.json";
+import Link from "next/link";
 
 function page() {
   return (
@@ -12,144 +14,49 @@ function page() {
           <div className="row">
             <div className="col-lg-8 sm-padding">
               <div className="row grid-post">
-                <div className="col-md-6 padding-15">
-                  <div className="post-card">
-                    <div className="post-thumb">
-                      <img src="/assets/img/post-1.jpg" alt="post" />
-                      <a href="blog-details.html" className="post-category">
-                        Business
-                      </a>
-                    </div>
-                    <div className="post-content-wrap">
-                      <ul className="post-meta">
-                        <li>
-                          <i className="las la-calendar"></i>Jan 01 2022
-                        </li>
-                        <li>
-                          <i className="las la-user"></i>Elliot Alderson
-                        </li>
-                      </ul>
-                      <div className="post-content">
-                        <h3>
-                          <a href="blog-details.html" className="hover">
-                            How to Start initiating an startup in few days.
-                          </a>
-                        </h3>
-                        <p>
-                          Financial experts support or help you to to find out
-                          which way you can raise your funds more...
-                        </p>
-                        <a href="blog-details.html" className="read-more">
-                          Read More
+                {blogs.map((post) => (
+                  <div className="col-md-6 padding-15" key={post.id}>
+                    <div className="post-card">
+                      <div className="post-thumb">
+                        <img src={post.imgSrc} alt="post" />
+                        <a href={post.link} className="post-category">
+                          {post.category}
                         </a>
+                      </div>
+                      <div className="post-content-wrap">
+                        <ul className="post-meta">
+                          <li>
+                            <i className="las la-calendar"></i>
+                            {post.date}
+                          </li>
+                          <li>
+                            <i className="las la-user"></i>
+                            {post.author}
+                          </li>
+                        </ul>
+                        <div className="post-content">
+                          <h3>
+                            <Link
+                              href={`/blog/${post.slug}`}
+                              className="read-more hover"
+                            >
+                              {post.title}
+                            </Link>
+                          </h3>
+                          <p>{post.description}</p>
+                          <Link
+                            href={`/blog/${post.slug}`}
+                            className="read-more"
+                          >
+                            Read More
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-md-6 padding-15">
-                  <div className="post-card">
-                    <div className="post-thumb">
-                      <img src="/assets/img/post-2.jpg" alt="post" />
-                      <a href="blog-details.html" className="post-category">
-                        Startup
-                      </a>
-                    </div>
-                    <div className="post-content-wrap">
-                      <ul className="post-meta">
-                        <li>
-                          <i className="las la-calendar"></i>Jan 01 2022
-                        </li>
-                        <li>
-                          <i className="las la-user"></i>Elliot Alderson
-                        </li>
-                      </ul>
-                      <div className="post-content">
-                        <h3>
-                          <a href="blog-details.html">
-                            Financial experts support help you to find out.
-                          </a>
-                        </h3>
-                        <p>
-                          Financial experts support or help you to to find out
-                          which way you can raise your funds more...
-                        </p>
-                        <a href="blog-details.html" className="read-more">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 padding-15">
-                  <div className="post-card">
-                    <div className="post-thumb">
-                      <img src="/assets/img/post-3.jpg" alt="post" />
-                      <a href="blog-details.html" className="post-category">
-                        Finance
-                      </a>
-                    </div>
-                    <div className="post-content-wrap">
-                      <ul className="post-meta">
-                        <li>
-                          <i className="las la-calendar"></i>Jan 01 2022
-                        </li>
-                        <li>
-                          <i className="las la-user"></i>Elliot Alderson
-                        </li>
-                      </ul>
-                      <div className="post-content">
-                        <h3>
-                          <a href="blog-details.html">
-                            Innovative business all over the world.
-                          </a>
-                        </h3>
-                        <p>
-                          Financial experts support or help you to to find out
-                          which way you can raise your funds more...
-                        </p>
-                        <a href="blog-details.html" className="read-more">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 padding-15">
-                  <div className="post-card">
-                    <div className="post-thumb">
-                      <img src="/assets/img/post-4.jpg" alt="post" />
-                      <a href="blog-details.html" className="post-category">
-                        Consulting
-                      </a>
-                    </div>
-                    <div className="post-content-wrap">
-                      <ul className="post-meta">
-                        <li>
-                          <i className="las la-calendar"></i>Jan 01 2022
-                        </li>
-                        <li>
-                          <i className="las la-user"></i>Elliot Alderson
-                        </li>
-                      </ul>
-                      <div className="post-content">
-                        <h3>
-                          <a href="blog-details.html">
-                            Fresh startup ideas for digital business
-                          </a>
-                        </h3>
-                        <p>
-                          Financial experts support or help you to to find out
-                          which way you can raise your funds more...
-                        </p>
-                        <a href="blog-details.html" className="read-more">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
-              <ul className="pagination-wrap text-left mt-30">
+              {/* <ul className="pagination-wrap text-left mt-30">
                 <li>
                   <a href="#">
                     <i className="las la-arrow-left"></i>
@@ -171,7 +78,7 @@ function page() {
                     <i className="las la-arrow-right"></i>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
             <div className="col-lg-4 sm-padding">
               <div className="sidebar-widget">
