@@ -47,7 +47,7 @@ export const metadata = {
   twitter: {
     card: 'summary',
     title: 'Book a Ride | MM Taxi Service',
-    description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks. Our experienced drivers are ready to assist you.',
+    description: 'Easily book your Umra taxi ride with MM Taxi Service. Enjoy reliable and safe transportation in Saudi Arabia with just a few clicks.',
     image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
   },
   canonical: 'https://www.mmtaxiservice.com/company/book-a-ride',
