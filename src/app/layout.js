@@ -21,6 +21,7 @@ import Script from "next/script";
 import Head from "next/head";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+// import DynamicScriptsLoader from "../components/common/script/ScriptLoader";
 
 {
   /* <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -53,6 +54,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ToastContainer />
+        {/* <DynamicScriptsLoader /> */}
+
         {/* <!-- Google Tag Manager (noscript) --> */}
         <noscript>
           <iframe
@@ -166,6 +169,12 @@ export default function RootLayout({ children }) {
           `,
           }}
         />
+
+        <Script
+          src="/assets/js/vendor/jquary-3.6.0.min.js"
+          // strategy="lazyOnload"
+          strategy="beforeInteractive"
+        ></Script>
 
         {/* <Script
           src="/assets/js/vendor/jquary-3.6.0.min.js"

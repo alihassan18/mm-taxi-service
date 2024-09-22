@@ -9,10 +9,10 @@ const DynamicScriptsLoader = () => {
     useEffect(() => {
         // Array of script sources
         const scripts = [
-            "/assets/js/vendor/jquary-3.6.0.min.js",
-            "/assets/js/vendor/bootstrap.min.js",
+            // "/assets/js/vendor/jquary-3.6.0.min.js",
             "/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js",
             "/assets/js/vendor/jquery.ajaxchimp.min.js",
+            "/assets/js/vendor/bootstrap.min.js",
             "/assets/js/vendor/popper.min.js",
             "/assets/js/vendor/swiper.min.js",
             "/assets/js/vendor/jquery.datetimepicker.full.js",
@@ -20,7 +20,7 @@ const DynamicScriptsLoader = () => {
             "/assets/js/vendor/venobox.min.js",
             "/assets/js/vendor/smooth-scroll.js",
             "/assets/js/vendor/wow.min.js",
-            "/assets/js/book-ride.js",
+            // "/assets/js/book-ride.js",
             "/assets/js/main.js"
         ];
 
@@ -48,7 +48,7 @@ const DynamicScriptsLoader = () => {
 
         // Cleanup function to remove scripts on route change
         return () => {
-            removeScripts();
+            // removeScripts();
             loadedScripts.forEach(script => script.remove());
         };
 
