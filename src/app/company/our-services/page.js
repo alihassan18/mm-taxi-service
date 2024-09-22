@@ -1,6 +1,8 @@
 import React from "react";
 import Banner from "../../../components/common/banner/Banner";
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
+import blogs from "../../../components/common/data/blog.json";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -26,7 +28,8 @@ const page = () => {
                     <a href="service-details.html">Regular Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service offers reliable regular transport, ensuring consistent and comfortable rides for your daily needs.
+                    MM Taxi Service offers reliable regular transport, ensuring
+                    consistent and comfortable rides for your daily needs.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -50,7 +53,9 @@ const page = () => {
                     <a href="service-details.html">Airport Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service offers reliable and punctual airport transportation, ensuring you reach your destination comfortably and on time.
+                    MM Taxi Service offers reliable and punctual airport
+                    transportation, ensuring you reach your destination
+                    comfortably and on time.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -74,7 +79,9 @@ const page = () => {
                     <a href="service-details.html">Luggage Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service offers secure and efficient luggage transport, ensuring your belongings arrive safely and on time.
+                    MM Taxi Service offers secure and efficient luggage
+                    transport, ensuring your belongings arrive safely and on
+                    time.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -98,7 +105,8 @@ const page = () => {
                     <a href="service-details.html">City Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service provides reliable city transport, ensuring smooth and convenient travel throughout the city.
+                    MM Taxi Service provides reliable city transport, ensuring
+                    smooth and convenient travel throughout the city.
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -122,8 +130,8 @@ const page = () => {
                     <a href="service-details.html">Business Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-                    Designed for Taxi Service Excellence!
+                    MM Taxi Service – Everything You Need for Reliable Umrah &
+                    Hajj Transportation! Designed for Taxi Service Excellence!
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -147,8 +155,8 @@ const page = () => {
                     <a href="service-details.html">Local Transport</a>
                   </h3>
                   <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation! MM
-                    made for taxi service companies!
+                    MM Taxi Service – Everything You Need for Reliable Umrah &
+                    Hajj Transportation! MM made for taxi service companies!
                   </p>
                   <a className="read-more" href="service-details.html">
                     Read More
@@ -179,7 +187,8 @@ const page = () => {
                   <i className="las la-arrow-right"></i>Easy payment systems.
                 </li>
                 <li>
-                  <i className="las la-arrow-right"></i>Make safety a top priority.
+                  <i className="las la-arrow-right"></i>Make safety a top
+                  priority.
                 </li>
                 <li>
                   <i className="las la-arrow-right"></i>First and quick pickups.
@@ -203,117 +212,54 @@ const page = () => {
             <h4>
               <span></span>Recent Posts!
             </h4>
-            <h2>News And Insights!</h2>
+            <h2>News And Insights</h2>
             <p>
-              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              MM Taxi Service handles trips of all complexities, offering
+              long-term <br />
               reliability for Umrah and Hajj.
-
-
             </p>
           </div>
           {/* <!--/.section-heading--> */}
           <div className="row grid-post">
-            <div className="col-lg-4 col-md-6 padding-15">
-              <div className="post-card">
-                <div className="post-thumb">
-                  <img src="assets/img/post-1.jpg" alt="post" />
-                  <a href="blog-details.html" className="post-category">
-                    Business
-                  </a>
-                </div>
-                <div className="post-content-wrap">
-                  <ul className="post-meta">
-                    <li>
-                      <i className="las la-calendar"></i>Jan 01 2022
-                    </li>
-                    <li>
-                      <i className="las la-user"></i>Elliot Alderson
-                    </li>
-                  </ul>
-                  <div className="post-content">
-                    <h3>
-                      <a href="blog-details.html" className="hover">
-                        How to start initiating an startup in few days.
+            <div className="row">
+              {blogs.slice(0, 3).map((post, index) => (
+                <div className="col-lg-4 col-md-6 padding-15" key={index}>
+                  <div className="post-card">
+                    <div className="post-thumb">
+                      <img src={post.imgSrc} alt="post" />
+                      <a href="blog-details.html" className="post-category">
+                        {post.category}
                       </a>
-                    </h3>
-                    <p>
-                      Financial experts support or help you to to find out which
-                      way you can raise your funds more...
-                    </p>
-                    <a href="blog-details.html" className="read-more">
-                      Read More
-                    </a>
+                    </div>
+                    <div className="post-content-wrap">
+                      <ul className="post-meta">
+                        <li>
+                          <i className="las la-calendar"></i>
+                          {post.date}
+                        </li>
+                        <li>
+                          <i className="las la-user"></i>
+                          {post.author}
+                        </li>
+                      </ul>
+                      <div className="post-content">
+                        <h3>
+                          <Link
+                            href={`/blog/${post.slug}`}
+                            className="read-more hover"
+                          >
+                            {post.title}
+                          </Link>
+                        </h3>
+                        <p>{post.description}</p>
+                        <Link href={`/blog/${post.slug}`} className="read-more">
+                          Read More
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 padding-15">
-              <div className="post-card">
-                <div className="post-thumb">
-                  <img src="assets/img/post-2.jpg" alt="post" />
-                  <a href="blog-details.html" className="post-category">
-                    Startup
-                  </a>
-                </div>
-                <div className="post-content-wrap">
-                  <ul className="post-meta">
-                    <li>
-                      <i className="las la-calendar"></i>Jan 01 2022
-                    </li>
-                    <li>
-                      <i className="las la-user"></i>Elliot Alderson
-                    </li>
-                  </ul>
-                  <div className="post-content">
-                    <h3>
-                      <a href="blog-details.html">
-                        Financial experts support help you to find out.
-                      </a>
-                    </h3>
-                    <p>
-                      Financial experts support or help you to to find out which
-                      way you can raise your funds more...
-                    </p>
-                    <a href="blog-details.html" className="read-more">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 padding-15">
-              <div className="post-card">
-                <div className="post-thumb">
-                  <img src="assets/img/post-3.jpg" alt="post" />
-                  <a href="blog-details.html" className="post-category">
-                    Finance
-                  </a>
-                </div>
-                <div className="post-content-wrap">
-                  <ul className="post-meta">
-                    <li>
-                      <i className="las la-calendar"></i>Jan 01 2022
-                    </li>
-                    <li>
-                      <i className="las la-user"></i>Elliot Alderson
-                    </li>
-                  </ul>
-                  <div className="post-content">
-                    <h3>
-                      <a href="blog-details.html">
-                        Innovative business all over the world.
-                      </a>
-                    </h3>
-                    <p>
-                      Financial experts support or help you to to find out which
-                      way you can raise your funds more...
-                    </p>
-                    <a href="blog-details.html" className="read-more">
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -323,38 +269,46 @@ const page = () => {
 };
 
 export const metadata = {
-  title: 'Our Services | MM Taxi Service',
-  description: 'Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.',
-  keywords: ['Umra taxi services', 'airport transfers', 'hotel transfers', 'city tours', 'Saudi Arabia'],
-  author: 'MM Taxi Service',
-  robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1.0',
+  title: "Our Services | MM Taxi Service",
+  description:
+    "Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.",
+  keywords: [
+    "Umra taxi services",
+    "airport transfers",
+    "hotel transfers",
+    "city tours",
+    "Saudi Arabia",
+  ],
+  author: "MM Taxi Service",
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
-    title: 'Our Services | MM Taxi Service',
-    description: 'Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.',
-    url: 'https://www.mmtaxiservice.com/company/our-services',
-    siteName: 'MM Taxi Service',
-    type: 'website',
-    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    title: "Our Services | MM Taxi Service",
+    description:
+      "Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.",
+    url: "https://www.mmtaxiservice.com/company/our-services",
+    siteName: "MM Taxi Service",
+    type: "website",
+    image: "https://www.mmtaxiservice.com/assets/img/logo-dark.png",
     images: [
       {
-        url: 'https://www.mmtaxiservice.com/assets/img/car-2.png',
+        url: "https://www.mmtaxiservice.com/assets/img/car-2.png",
         width: 800,
         height: 600,
       },
     ],
   },
   twitter: {
-    card: 'summary',
-    title: 'Our Services | MM Taxi Service',
-    description: 'Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.',
-    image: 'https://www.mmtaxiservice.com/assets/img/logo-dark.png',
+    card: "summary",
+    title: "Our Services | MM Taxi Service",
+    description:
+      "Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.",
+    image: "https://www.mmtaxiservice.com/assets/img/logo-dark.png",
   },
-  canonical: 'https://www.mmtaxiservice.com/services',
-  favicon: 'https://www.mmtaxiservice.com/favicon.ico',
-  appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
-  msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
+  canonical: "https://www.mmtaxiservice.com/services",
+  favicon: "https://www.mmtaxiservice.com/favicon.ico",
+  appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+  msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
 };
-
 
 export default page;
