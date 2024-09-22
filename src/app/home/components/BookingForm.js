@@ -193,11 +193,11 @@ const BookingForm = () => {
                     )}
                   </div>
                 </div>
-                {formMessage && (
+                {/* {formMessage && (
                   <div id="form-messages" className="alert" role="alert">
                     {formMessage}
                   </div>
-                )}
+                )} */}
               </form>
             </div>
           </div>

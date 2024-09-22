@@ -1,5 +1,5 @@
-import DynamicScriptsLoader from "../components/common/script/ScriptLoader";
-import HomePage from "./home/components/page";
+// import DynamicScriptsLoader from "../components/common/script/ScriptLoader";
+import HomePage from "./home/components/HomePage";
 
 export const metadata = {
   title: 'Book Umrah and Hajj Taxi Services Online | MM Taxi Service',
@@ -45,7 +45,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      <DynamicScriptsLoader />
+      {/* <DynamicScriptsLoader /> */}
       <HomePage />
     </main>
   );
