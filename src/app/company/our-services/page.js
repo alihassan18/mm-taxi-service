@@ -3,6 +3,109 @@ import Banner from "../../../components/common/banner/Banner";
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 import blogs from "../../../components/common/data/blog.json";
 import Link from "next/link";
+import serviceDetailData from "../../../components/common/data/blogDetails.json";
+
+const servicesData = [
+  {
+    id: 1,
+    title: "Makkah Taxi",
+    description:
+      "A company in Mecca, Saudi Arabia, that provides transportation services to both residents and visitors.",
+    imgSrc: "/assets/img/service-1.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 2,
+    title: "Madina Taxi",
+    description:
+      "Operating as a taxi service in Medina, Saudi Arabia, we offer transportation services to both local residents and visitors.",
+    imgSrc: "/assets/img/service-3.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 3,
+    title: "Jeddah Taxi",
+    description:
+      "A taxi service operates in Jeddah, Saudi Arabia, providing transportation services to both locals and tourists.",
+    imgSrc: "/assets/img/jeddah.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 4,
+    title: "City Transport",
+    description:
+      "MM Taxi Service provides reliable city transport, ensuring smooth and convenient travel throughout the city.",
+    imgSrc: "/assets/img/service-4.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 5,
+    title: "Riyadh Taxi",
+    description:
+      "This taxi company's transportation services are accessible to both the city's residents and tourists in Riyadh, Saudi Arabia.",
+    imgSrc: "/assets/img/riyadh.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 6,
+    title: "Dammam Taxi",
+    description:
+      "This taxi service provides transportation to both residents and tourists in Dammam, Saudi Arabia, as part of its operations.",
+    imgSrc: "/assets/img/dammim.webp",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 7,
+    title: "Jeddah Airport Taxi",
+    description:
+      "ChaCha Taxi Service offers reliable Jeddah Airport taxi services for hassle-free transportation to and from the airport.",
+    imgSrc: "/assets/img/jaddah-airport.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 8,
+    title: "Riyadh Airport Taxi",
+    description:
+      "ChaCha Taxi Service offers a dependable airport taxi service for convenient and comfortable transportation.",
+    imgSrc: "/assets/img/riydah-airport.png",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 9,
+    title: "Dammam Airport Taxi",
+    description:
+      "ChaCha Taxi Service provides reliable and efficient Dammam Airport taxi service for a hassle-free transportation experience.",
+    imgSrc: "/assets/img/dammam-airportjpg.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 10,
+    title: "Madina Airport Taxi",
+    description:
+      "Enjoy a hassle-free transportation experience to and from Madina Airport with ChaCha Taxi Service's reliable airport taxi service.",
+    imgSrc: "/assets/img/madina-airport.jpg",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+  {
+    id: 11,
+    title: "Taif Airport Taxi",
+    description:
+      "ChaCha Taxi Service offers a reliable and comfortable Taif Airport taxi service for convenient transportation to and from the airport.",
+    imgSrc: "/assets/img/taif-airport.png",
+    carImg: "/assets/img/car-1.png",
+    detailsLink: "/company/services-details", // Updated link
+  },
+];
 
 const page = () => {
   return (
@@ -12,158 +115,33 @@ const page = () => {
       <section className="service-section bg-grey bd-bottom padding">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-sm-6 padding-15">
-              <div className="service-item">
-                <div className="service-thumb">
-                  <img src="/assets/img/service-1.jpg" alt="img" />
-                  <div className="service-shape-wrap">
-                    <div className="service-shape"></div>
+            {serviceDetailData.map((service, index) => (
+              <div key={index} className="col-lg-4 col-sm-6 padding-15">
+                <div className="service-item">
+                  <div className="service-thumb">
+                    <img src={service.imgSrc} alt={service.title} />
+                    <div className="service-shape-wrap ">
+                      <div className="service-shape"></div>
+                    </div>
+                    <div className="service-car">
+                      <img src={"/assets/img/car-1.png"} alt="car" />
+                    </div>
                   </div>
-                  <div className="service-car">
-                    <img src="/assets/img/car-1.png" alt="car" />
+                  <div className="service-content">
+                    <h3>
+                      <a href={service.detailsLink}>{service.title}</a>
+                    </h3>
+                    <p className="truncate">{service.description}</p>
+                    <Link
+                      className="read-more"
+                      href={`/company/services-details/${service.slug}`}
+                    >
+                      Read More
+                    </Link>
                   </div>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Regular Transport</a>
-                  </h3>
-                  <p>
-                    MM Taxi Service offers reliable regular transport, ensuring
-                    consistent and comfortable rides for your daily needs.
-                  </p>
-                  <a className="read-more" href="service-details.html">
-                    Read More
-                  </a>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 padding-15">
-              <div className="service-item">
-                <div className="service-thumb">
-                  <img src="/assets/img/service-2.jpg" alt="img" />
-                  <div className="service-shape-wrap">
-                    <div className="service-shape"></div>
-                  </div>
-                  <div className="service-car">
-                    <img src="/assets/img/car-1.png" alt="car" />
-                  </div>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Airport Transport</a>
-                  </h3>
-                  <p>
-                    MM Taxi Service offers reliable and punctual airport
-                    transportation, ensuring you reach your destination
-                    comfortably and on time.
-                  </p>
-                  <a className="read-more" href="service-details.html">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 padding-15">
-              <div className="service-item">
-                <div className="service-thumb">
-                  <img src="/assets/img/service-3.jpg" alt="img" />
-                  <div className="service-shape-wrap">
-                    <div className="service-shape"></div>
-                  </div>
-                  <div className="service-car">
-                    <img src="/assets/img/car-1.png" alt="car" />
-                  </div>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Luggage Transport</a>
-                  </h3>
-                  <p>
-                    MM Taxi Service offers secure and efficient luggage
-                    transport, ensuring your belongings arrive safely and on
-                    time.
-                  </p>
-                  <a className="read-more" href="service-details.html">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 padding-15">
-              <div className="service-item">
-                <div className="service-thumb">
-                  <img src="/assets/img/service-4.jpg" alt="img" />
-                  <div className="service-shape-wrap">
-                    <div className="service-shape"></div>
-                  </div>
-                  <div className="service-car">
-                    <img src="/assets/img/car-1.png" alt="car" />
-                  </div>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">City Transport</a>
-                  </h3>
-                  <p>
-                    MM Taxi Service provides reliable city transport, ensuring
-                    smooth and convenient travel throughout the city.
-                  </p>
-                  <a className="read-more" href="service-details.html">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 padding-15">
-              <div className="service-item">
-                <div className="service-thumb">
-                  <img src="/assets/img/service-5.jpg" alt="img" />
-                  <div className="service-shape-wrap">
-                    <div className="service-shape"></div>
-                  </div>
-                  <div className="service-car">
-                    <img src="/assets/img/car-1.png" alt="car" />
-                  </div>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Business Transport</a>
-                  </h3>
-                  <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah &
-                    Hajj Transportation! Designed for Taxi Service Excellence!
-                  </p>
-                  <a className="read-more" href="service-details.html">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6 padding-15">
-              <div className="service-item">
-                <div className="service-thumb">
-                  <img src="/assets/img/service-5.jpg" alt="img" />
-                  <div className="service-shape-wrap">
-                    <div className="service-shape"></div>
-                  </div>
-                  <div className="service-car">
-                    <img src="/assets/img/car-1.png" alt="car" />
-                  </div>
-                </div>
-                <div className="service-content">
-                  <h3>
-                    <a href="service-details.html">Local Transport</a>
-                  </h3>
-                  <p>
-                    MM Taxi Service – Everything You Need for Reliable Umrah &
-                    Hajj Transportation! MM made for taxi service companies!
-                  </p>
-                  <a className="read-more" href="service-details.html">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

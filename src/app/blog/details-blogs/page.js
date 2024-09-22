@@ -144,7 +144,7 @@ function page() {
                   <li className="comment">
                     <div className="comment-inner">
                       <div className="comment-thumb">
-                        <img src="/assets/img/comment-1.png" alt="img" />
+                        <img src="/assets/img/comment-1.jpg" alt="img" />
                       </div>
                       <div className="comment-wrap">
                         <div className="comments-meta">

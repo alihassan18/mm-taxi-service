@@ -16,14 +16,21 @@ function page() {
                 </h4>
                 <h2>Mauricio Fernández</h2>
                 <p>
-                  At MM Taxi Service, we specialize in providing reliable and efficient transportation for Umrah and Hajj pilgrims. Whether it's short trips or long journeys, we ensure a seamless and comfortable experience. Our team is committed to delivering top-quality service with modern vehicles, ensuring your travel is smooth and stress-free. Trust us for safe, timely, and professional transportation during your sacred journey. Book your Umrah or Hajj taxi from anywhere today!
+                  At MM Taxi Service, we specialize in providing reliable and
+                  efficient transportation for Umrah and Hajj pilgrims. Whether
+                  it's short trips or long journeys, we ensure a seamless and
+                  comfortable experience. Our team is committed to delivering
+                  top-quality service with modern vehicles, ensuring your travel
+                  is smooth and stress-free. Trust us for safe, timely, and
+                  professional transportation during your sacred journey. Book
+                  your Umrah or Hajj taxi from anywhere today!
                 </p>
               </div>
               <ul className="about-info">
                 <li>
                   <img
                     className="owner-thumb"
-                    src="/assets/img/comment-1.png"
+                    src="/assets/img/comment-1.jpg"
                     alt="thumb"
                   />
                   <div className="owner">
@@ -66,7 +73,8 @@ function page() {
             <h2>MM Passenger Reviews...</h2>
             <p>
               MM Taxi Service handles trips of all complexities, provide
-              long-term <br /> offering long-term reliability for Umrah and Hajj.
+              long-term <br /> offering long-term reliability for Umrah and
+              Hajj.
             </p>
           </div>
           <div className="swiper-outside testi-pagination">
@@ -85,7 +93,7 @@ function page() {
                     </p>
                     <div className="testi-author">
                       <div className="author-thumb">
-                        <img src="/assets/img/comment-1.png" alt="author" />
+                        <img src="/assets/img/comment-1.jpg" alt="author" />
                       </div>
                       <div className="author-info">
                         <h3>
