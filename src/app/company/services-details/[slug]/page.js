@@ -25,7 +25,7 @@ const page = ({ params, searchParams }) => {
           <div className="row">
             <div className="col-lg-8 sm-padding">
               <div className="service-details-info">
-                <img src="/assets/img/post-2.jpg" alt="img" />
+                <img src={post.serviceDetails.image} alt="img" />
                 <h2>{post.title}</h2>
                 <p>{post.description}</p>
 
@@ -46,7 +46,7 @@ const page = ({ params, searchParams }) => {
                 </ul>
                 <p>{post.serviceDetails.concludingParagraph}</p>
                 <div className="service-details-list">
-                  <img src="/assets/img/post-1.jpg" alt="img" />
+                  <img src={post.serviceDetails.image} alt="img" />
                   <div>
                     <h3>{post.serviceDetails.passengerBenefits.title}</h3>
                     <p>{post.serviceDetails.passengerBenefits.description}</p>
