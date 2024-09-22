@@ -37,29 +37,29 @@
     }
 
     // Mobile Menu
-    function mobileMenu() {
-      if ($(".header-menu-wrap").length) {
-        $(".nav-menu-inner .burger-menu").on("click", function () {
-          $(this).toggleClass("menu-open");
-          $(".header-menu-wrap").slideToggle(300);
-        });
-      }
+    // function mobileMenu() {
+    //   if ($(".header-menu-wrap").length) {
+    //     $(".nav-menu-inner .burger-menu").on("click", function () {
+    //       $(this).toggleClass("menu-open");
+    //       $(".header-menu-wrap").slideToggle(300);
+    //     });
+    //   }
 
-      $(".header-menu-wrap ul li:has(ul)").each(function () {
-        $(this).append('<span className="dropdown-plus"></span>');
-        $(this).addClass("dropdown_menu");
-      });
+    //   $(".header-menu-wrap ul li:has(ul)").each(function () {
+    //     $(this).append('<span className="dropdown-plus"></span>');
+    //     $(this).addClass("dropdown_menu");
+    //   });
 
-      $(".header-menu-wrap .dropdown-plus").on("click", function () {
-        $(this).prev("ul").slideToggle(300);
-        $(this).toggleClass("dropdown-open");
-        $(".header-menu-wrap ul li:has(ul)").toggleClass("dropdown-open");
-      });
+    //   $(".header-menu-wrap .dropdown-plus").on("click", function () {
+    //     $(this).prev("ul").slideToggle(300);
+    //     $(this).toggleClass("dropdown-open");
+    //     $(".header-menu-wrap ul li:has(ul)").toggleClass("dropdown-open");
+    //   });
 
-      $(".header-menu-wrap .dropdown_menu a").append("<span></span>");
-    }
+    //   $(".header-menu-wrap .dropdown_menu a").append("<span></span>");
+    // }
 
-    mobileMenu();
+    // mobileMenu();
 
     // Responsive Classes
     function responsiveClasses() {
