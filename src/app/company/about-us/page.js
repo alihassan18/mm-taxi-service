@@ -54,7 +54,7 @@ const page = () => {
                 <li>
                   <img
                     className="owner-thumb"
-                    src="/assets/img/comment-1.png"
+                    src="/assets/img/comment-1.jpg"
                     alt="thumb"
                   />
                   <div className="owner">
@@ -277,7 +277,11 @@ const page = () => {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="/assets/img/comment-1.png" alt="author" />
+                            <img
+                              src="/assets/img/comment-1.jpg"
+                              height={100}
+                              alt="author"
+                            />
                           </div>
                           <div className="author-info">
                             <h3>
@@ -300,7 +304,11 @@ const page = () => {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="/assets/img/comment-1.png" alt="author" />
+                            <img
+                              src="/assets/img/comment-1.jpg"
+                              height={100}
+                              alt="author"
+                            />
                           </div>
                           <div className="author-info">
                             <h3>
@@ -323,7 +331,11 @@ const page = () => {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="/assets/img/comment-1.png" alt="author" />
+                            <img
+                              src="/assets/img/comment-1.jpg"
+                              height={100}
+                              alt="author"
+                            />
                           </div>
                           <div className="author-info">
                             <h3>

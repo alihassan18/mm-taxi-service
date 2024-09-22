@@ -16,7 +16,8 @@ function page() {
             <h2>MM Passenger Reviews...</h2>
             <p>
               MM Taxi Service handles trips of all complexities, provide
-              long-term <br /> offering long-term reliability for Umrah and Hajj.
+              long-term <br /> offering long-term reliability for Umrah and
+              Hajj.
             </p>
           </div>
           <div className="swiper-outside testi-pagination">
@@ -35,7 +36,7 @@ function page() {
                     </p>
                     <div className="testi-author">
                       <div className="author-thumb">
-                        <img src="/assets/img/comment-1.png" alt="author" />
+                        <img src="/assets/img/comment-1.jpg" alt="author" />
                       </div>
                       <div className="author-info">
                         <h3>

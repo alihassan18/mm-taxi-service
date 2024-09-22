@@ -324,3 +324,9 @@ section {
     width: 100%;
   }
 }
+.truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  overflow: hidden;
+}

@@ -51,7 +51,7 @@ function page() {
                 <li>
                   <img
                     className="owner-thumb"
-                    src="assets/img/comment-1.png"
+                    src="assets/img/comment-1.jpg"
                     alt="thumb"
                   />
                   <div className="owner">
@@ -271,7 +271,7 @@ function page() {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="/assets/img/comment-1.png" alt="author" />
+                            <img src="/assets/img/comment-1.jpg" alt="author" />
                           </div>
                           <div className="author-info">
                             <h3>
@@ -294,7 +294,7 @@ function page() {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="/assets/img/comment-1.png" alt="author" />
+                            <img src="/assets/img/comment-1.jpg" alt="author" />
                           </div>
                           <div className="author-info">
                             <h3>
@@ -317,7 +317,7 @@ function page() {
                         </p>
                         <div className="testi-author">
                           <div className="author-thumb">
-                            <img src="/assets/img/comment-1.png" alt="author" />
+                            <img src="/assets/img/comment-1.jpg" alt="author" />
                           </div>
                           <div className="author-info">
                             <h3>
