@@ -175,6 +175,8 @@ export default function RootLayout({ children }) {
           // strategy="lazyOnload"
           strategy="beforeInteractive"
         ></Script>
+        {/* <Script src="/assets/js/vendor/swiper.min.js"></Script> */}
+        {/* <Script src="/assets/js/main.js"></Script> */}
 
         {/* <Script
           src="/assets/js/vendor/jquary-3.6.0.min.js"
