@@ -18,6 +18,8 @@ const BookingForm = () => {
   const [formMessage, setFormMessage] = useState("");
 
   const handleChange = (e) => {
+    console.log(e.target.name, "name");
+
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -26,6 +28,7 @@ const BookingForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData, "formDataformDataformData");
 
     // Example of how to send the data to an API endpoint in your Next.js app
     try {
@@ -50,6 +53,7 @@ const BookingForm = () => {
       setIsLoading(false);
     }
   };
+  console.log(formData, "formData");
 
   return (
     <section className="booking-section">
@@ -159,7 +163,7 @@ const BookingForm = () => {
                     <i className="las la-calendar"></i>
                     <input
                       type="text"
-                      id="ride-date"
+                      id="rideDate"
                       name="rideDate"
                       className="form-control date-picker"
                       placeholder="Select Date"
@@ -172,7 +176,7 @@ const BookingForm = () => {
                     <i className="las la-clock"></i>
                     <input
                       type="text"
-                      id="ride-time"
+                      id="rideTime"
                       name="rideTime"
                       className="form-control time-picker"
                       placeholder="Select Time"

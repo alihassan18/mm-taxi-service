@@ -81,7 +81,10 @@ const page = () => {
                       Passengers: <span>{item.passengers} Person</span>
                     </li>
                     <li>
-                      <Link href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`} className="default-btn">
+                      <Link
+                        href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
+                        className="default-btn"
+                      >
                         Book Taxi Now
                       </Link>
                     </li>
