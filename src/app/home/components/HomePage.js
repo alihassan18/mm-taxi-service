@@ -4,6 +4,7 @@ import Link from "next/link";
 import blogs from "../../../components/common/data/blog.json";
 import Locationicon from "../../../components/common/icon/Locationicon";
 import BookingForm from "./BookingForm";
+import serviceDetailData from "../../../components/common/data/blogDetails.json";
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
@@ -101,6 +102,38 @@ const HomePage = () => {
     //   luggage: 20,
     //   image: "/assets/img/pricing-car-5.png",
     // },
+  ];
+  const sliderCard = [
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
   ];
   return (
     <React.Fragment>
@@ -470,145 +503,36 @@ const HomePage = () => {
             <div className="swiper-outside">
               <div className="service-carousel">
                 <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div
-                      className="service-item wow fade-in-bottom"
-                      data-wow-delay="200ms"
-                    >
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-1.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
+                  {serviceDetailData.map((service, index) => (
+                    <div key={index} className="swiper-slide">
+                      <div
+                        className="service-item wow fade-in-bottom"
+                        data-wow-delay="200ms"
+                      >
+                        <div className="service-thumb">
+                          <img src={service.imgSrc} alt={service.title} />
+                          <div className="service-shape-wrap">
+                            <div className="service-shape"></div>
+                          </div>
+                          <div className="service-car">
+                            <img src="/assets/img/car-1.png" alt="car" />
+                          </div>
                         </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
+                        <div className="service-content">
+                          <h3>
+                            <a href={service.detailsLink}>{service.title}</a>
+                          </h3>
+                          <p className="truncate">{service.description}</p>
+                          <Link
+                            className="read-more"
+                            href={`/company/services-details/${service.slug}`}
+                          >
+                            Read More
+                          </Link>
                         </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Regular Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service offers reliable regular transport,
-                          ensuring consistent and comfortable rides for your
-                          daily needs.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
                       </div>
                     </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div
-                      className="service-item wow fade-in-bottom"
-                      data-wow-delay="400ms"
-                    >
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-2.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Airport Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service offers reliable and punctual airport
-                          transportation, ensuring you reach your destination
-                          comfortably and on time.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div
-                      className="service-item wow fade-in-bottom"
-                      data-wow-delay="600ms"
-                    >
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-3.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Luggage Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service offers secure and efficient luggage
-                          transport, ensuring your belongings arrive safely and
-                          on time.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="service-item">
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-4.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">City Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service provides reliable city transport,
-                          ensuring smooth and convenient travel throughout the
-                          city.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="service-item">
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-5.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Business Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service – Everything You Need for Reliable
-                          Umrah & Hajj Transportation! Designed for Taxi Service
-                          Excellence!
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
                 <div className="swiper-pagination" />
                 {/* Carousel Dots */}
