@@ -10,7 +10,7 @@ const testimonials = [
       "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
     authorName: "Muhammad",
     authorLastName: "Ajmal",
-    authorImage: "/assets/img/comment-1.jpg",
+    authorImage: "/assets/img/ajmal.png",
   },
   {
     quote:
@@ -24,7 +24,7 @@ const testimonials = [
       "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
     authorName: "Muhammad",
     authorLastName: "Faizan",
-    authorImage: "/assets/img/comment-1.jpg",
+    authorImage: "/assets/img/faizan.jpg",
   },
 ];
 const page = () => {
@@ -286,14 +286,14 @@ const page = () => {
               </div>
               <div className="swiper-outside testi-pagination">
                 <div className="testimonial-carousel">
-                  <div className="swiper-wrapper bd">
+                  <div className="swiper-wrapper">
                     {testimonials.map((testimonial, index) => (
                       <div key={index} className="swiper-slide">
                         <div className="testi-item">
                           <div className="quote-icon">
                             <i className="las la-quote-right"></i>
                           </div>
-                          <p>{testimonial.quote}</p>
+                          <p className="truncate">{testimonial.quote}</p>
                           <div className="testi-author">
                             <div className="author-thumb ">
                               <img

@@ -34,7 +34,7 @@ const page = () => {
       name: "Toyota HIACE",
       passengers: 11,
       luggage: 16,
-      image: "/assets/img/pricing-car-4.png",
+      image: "/assets/img/toyotahiace.png",
     },
     {
       name: "Coaster Saloon",

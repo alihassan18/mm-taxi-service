@@ -11,24 +11,27 @@ const HomePage = () => {
   const testimonials = [
     {
       quote:
-        "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
+        "MM Taxi helps bridge the gap in areas where transportation is scarce. However, there is still room for improvement, particularly in enhancing the app's accessibility features. The service is reliable, but user experience can be further optimized for convenience.",
       authorName: "Muhammad",
       authorLastName: "Ajmal",
-      authorImage: "/assets/img/comment-1.jpg",
+      authorImage: "/assets/img/ajmal.png",
+      service: "Taxi",
+      // serviceImage: "/assets/img/ajmal.jpg",
     },
     {
       quote:
-        "MM Taxi provides a much-needed solution by making transportation easily available in areas where it's hard to find. However, the app could use some improvements, especially when it comes to accessibility features like support for large font phone settings.",
+        "For many, finding a ride was always a challenge, but MM Taxi has made it much easier. Still, improving the app's usability, especially for users with large font settings, would be beneficial.",
       authorName: "Muhammad",
       authorLastName: "Arslan",
       authorImage: "/assets/img/arslan.jpg",
     },
+
     {
       quote:
-        "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
+        "In locations where taxis were once hard to come by, MM Taxi has made transportation much more convenient. The app could improve, though, by offering more options for accessibility settings.",
       authorName: "Muhammad",
       authorLastName: "Faizan",
-      authorImage: "/assets/img/comment-1.jpg",
+      authorImage: "/assets/img/faizan.jpg",
     },
   ];
 
@@ -989,7 +992,7 @@ const HomePage = () => {
                             <div className="quote-icon">
                               <i className="las la-quote-right"></i>
                             </div>
-                            <p>{testimonial.quote}</p>
+                            <p className="truncate">{testimonial.quote}</p>
                             <div className="testi-author">
                               <div className="author-thumb ">
                                 <img
