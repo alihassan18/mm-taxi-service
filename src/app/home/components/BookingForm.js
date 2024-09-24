@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const BookingForm = () => {
+  const [rideDate, setRideDate] = useState("")
+  const [rideTime, setRideTime] = useState("")
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -27,6 +29,12 @@ const BookingForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const completeFormData = {
+      ...formData,
+      rideDate,
+      rideTime,
+    };
+
     // Example of how to send the data to an API endpoint in your Next.js app
     try {
       setIsLoading(true);
@@ -35,7 +43,7 @@ const BookingForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(completeFormData),
       });
 
       if (response.ok) {
@@ -52,7 +60,7 @@ const BookingForm = () => {
   };
 
   return (
-    <section className="booking-section">
+    <section className="booking-section ">
       <div className="container">
         <div className="row pos-relative padding">
           <div className="col-lg-4">
@@ -156,28 +164,28 @@ const BookingForm = () => {
                     />
                   </div>
                   <div className="form-field">
-                    <i className="las la-calendar"></i>
+                    {/* <i className="las la-calendar"></i> */}
                     <input
-                      type="text"
+                      type="date"
                       id="ride-date"
                       name="rideDate"
-                      className="form-control date-picker"
+                      className=""
                       placeholder="Select Date"
-                      value={formData.rideDate}
-                      onChange={handleChange}
+                      value={rideDate}
+                      onChange={(e) => setRideDate(e.target.value)}
                       required
                     />
                   </div>
                   <div className="form-field">
-                    <i className="las la-clock"></i>
+                    {/* <i className="las la-clock"></i> */}
                     <input
-                      type="text"
+                      type="time"
                       id="ride-time"
                       name="rideTime"
-                      className="form-control time-picker"
+                      className=""
                       placeholder="Select Time"
-                      value={formData.rideTime}
-                      onChange={handleChange}
+                      value={rideTime}
+                      onChange={(e) => setRideTime(e.target.value)}
                       required
                     />
                   </div>

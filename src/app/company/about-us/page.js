@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import blogs from "../../../components/common/data/blog.json";
 import Link from "next/link";
@@ -69,7 +70,7 @@ const page = () => {
                 <li>
                   <h2>
                     <span>Call For Taxi</span>
-                    <a href="tel:+966595783153">5267-214-392</a>
+                    <a href="tel:+966595783153">+966595783153</a>
                   </h2>
                 </li>
               </ul>
