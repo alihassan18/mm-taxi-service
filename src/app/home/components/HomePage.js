@@ -8,6 +8,33 @@ import serviceDetailData from "../../../components/common/data/blogDetails.json"
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
+  const testimonials = [
+    {
+      quote:
+        "MM Taxi helps bridge the gap in areas where transportation is scarce. However, there is still room for improvement, particularly in enhancing the app's accessibility features. The service is reliable, but user experience can be further optimized for convenience.",
+      authorName: "Muhammad",
+      authorLastName: "Ajmal",
+      authorImage: "/assets/img/ajmal.png",
+      service: "Taxi",
+      // serviceImage: "/assets/img/ajmal.jpg",
+    },
+    {
+      quote:
+        "For many, finding a ride was always a challenge, but MM Taxi has made it much easier. Still, improving the app's usability, especially for users with large font settings, would be beneficial.",
+      authorName: "Muhammad",
+      authorLastName: "Arslan",
+      authorImage: "/assets/img/arslan.jpg",
+    },
+
+    {
+      quote:
+        "In locations where taxis were once hard to come by, MM Taxi has made transportation much more convenient. The app could improve, though, by offering more options for accessibility settings.",
+      authorName: "Muhammad",
+      authorLastName: "Faizan",
+      authorImage: "/assets/img/faizan.jpg",
+    },
+  ];
+
   const locations = [
     {
       name: "Jeddah Airport ⟶ Makkah Hotel",
@@ -959,84 +986,31 @@ const HomePage = () => {
                 <div className="swiper-outside testi-pagination">
                   <div className="testimonial-carousel">
                     <div className="swiper-wrapper">
-                      <div className="swiper-slide">
-                        <div className="testi-item">
-                          <div className="quote-icon">
-                            <i className="las la-quote-right"></i>
-                          </div>
-                          <p>
-                            Good to have transportation available in places and
-                            times it is otherwise hard to find, but the app has
-                            always been a bit difficult to use especially how it
-                            works or doesnt with large font phone settings.
-                          </p>
-                          <div className="testi-author">
-                            <div className="author-thumb">
-                              <img
-                                src="/assets/img/comment-1.jpg"
-                                alt="author"
-                              />
+                      {testimonials.map((testimonial, index) => (
+                        <div key={index} className="swiper-slide">
+                          <div className="testi-item">
+                            <div className="quote-icon">
+                              <i className="las la-quote-right"></i>
                             </div>
-                            <div className="author-info">
-                              <h3>
-                                Eredrik Johanson <span>Financial .INC</span>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="swiper-slide">
-                        <div className="testi-item">
-                          <div className="quote-icon">
-                            <i className="las la-quote-right"></i>
-                          </div>
-                          <p>
-                            Good to have transportation available in places and
-                            times it is otherwise hard to find, but the app has
-                            always been a bit difficult to use especially how it
-                            works or doesnt with large font phone settings.
-                          </p>
-                          <div className="testi-author">
-                            <div className="author-thumb">
-                              <img
-                                src="/assets/img/comment-1.jpg"
-                                alt="author"
-                              />
-                            </div>
-                            <div className="author-info">
-                              <h3>
-                                Eredrik Johanson <span>Financial .INC</span>
-                              </h3>
+                            <p className="truncate">{testimonial.quote}</p>
+                            <div className="testi-author">
+                              <div className="author-thumb ">
+                                <img
+                                  src={testimonial.authorImage}
+                                  alt="author"
+                                  height={100}
+                                />
+                              </div>
+                              <div className="author-info">
+                                <h3>
+                                  {testimonial.authorName}{" "}
+                                  <span>{testimonial.authorLastName}</span>
+                                </h3>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="swiper-slide">
-                        <div className="testi-item">
-                          <div className="quote-icon">
-                            <i className="las la-quote-right"></i>
-                          </div>
-                          <p>
-                            Good to have transportation available in places and
-                            times it is otherwise hard to find, but the app has
-                            always been a bit difficult to use especially how it
-                            works or doesnt with large font phone settings.
-                          </p>
-                          <div className="testi-author">
-                            <div className="author-thumb">
-                              <img
-                                src="/assets/img/comment-1.jpg"
-                                alt="author"
-                              />
-                            </div>
-                            <div className="author-info">
-                              <h3>
-                                Eredrik Johanson <span>Financial .INC</span>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
                   <div className="swiper-pagination"></div>

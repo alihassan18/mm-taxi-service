@@ -4,6 +4,29 @@ import Link from "next/link";
 import Banner from "../../../components/common/banner/Banner";
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 
+const testimonials = [
+  {
+    quote:
+      "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
+    authorName: "Muhammad",
+    authorLastName: "Ajmal",
+    authorImage: "/assets/img/ajmal.png",
+  },
+  {
+    quote:
+      "MM Taxi provides a much-needed solution by making transportation easily available in areas where it's hard to find. However, the app could use some improvements, especially when it comes to accessibility features like support for large font phone settings.",
+    authorName: "Muhammad",
+    authorLastName: "Arslan",
+    authorImage: "/assets/img/arslan.jpg",
+  },
+  {
+    quote:
+      "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
+    authorName: "Muhammad",
+    authorLastName: "Faizan",
+    authorImage: "/assets/img/faizan.jpg",
+  },
+];
 const page = () => {
   return (
     <div>
@@ -264,87 +287,31 @@ const page = () => {
               <div className="swiper-outside testi-pagination">
                 <div className="testimonial-carousel">
                   <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                      <div className="testi-item">
-                        <div className="quote-icon">
-                          <i className="las la-quote-right"></i>
-                        </div>
-                        <p>
-                          Good to have transportation available in places and
-                          times it is otherwise hard to find, but the app has
-                          always been a bit difficult to use especially how it
-                          works or doesnt with large font phone settings.
-                        </p>
-                        <div className="testi-author">
-                          <div className="author-thumb">
-                            <img
-                              src="/assets/img/comment-1.jpg"
-                              height={100}
-                              alt="author"
-                            />
+                    {testimonials.map((testimonial, index) => (
+                      <div key={index} className="swiper-slide">
+                        <div className="testi-item">
+                          <div className="quote-icon">
+                            <i className="las la-quote-right"></i>
                           </div>
-                          <div className="author-info">
-                            <h3>
-                              Eredrik Johanson <span>Financial .INC</span>
-                            </h3>
+                          <p className="truncate">{testimonial.quote}</p>
+                          <div className="testi-author">
+                            <div className="author-thumb ">
+                              <img
+                                src={testimonial.authorImage}
+                                alt="author"
+                                height={100}
+                              />
+                            </div>
+                            <div className="author-info">
+                              <h3>
+                                {testimonial.authorName}{" "}
+                                <span>{testimonial.authorLastName}</span>
+                              </h3>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="testi-item">
-                        <div className="quote-icon">
-                          <i className="las la-quote-right"></i>
-                        </div>
-                        <p>
-                          Good to have transportation available in places and
-                          times it is otherwise hard to find, but the app has
-                          always been a bit difficult to use especially how it
-                          works or doesnt with large font phone settings.
-                        </p>
-                        <div className="testi-author">
-                          <div className="author-thumb">
-                            <img
-                              src="/assets/img/comment-1.jpg"
-                              height={100}
-                              alt="author"
-                            />
-                          </div>
-                          <div className="author-info">
-                            <h3>
-                              Eredrik Johanson <span>Financial .INC</span>
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="swiper-slide">
-                      <div className="testi-item">
-                        <div className="quote-icon">
-                          <i className="las la-quote-right"></i>
-                        </div>
-                        <p>
-                          Good to have transportation available in places and
-                          times it is otherwise hard to find, but the app has
-                          always been a bit difficult to use especially how it
-                          works or doesnt with large font phone settings.
-                        </p>
-                        <div className="testi-author">
-                          <div className="author-thumb">
-                            <img
-                              src="/assets/img/comment-1.jpg"
-                              height={100}
-                              alt="author"
-                            />
-                          </div>
-                          <div className="author-info">
-                            <h3>
-                              Eredrik Johanson <span>Financial .INC</span>
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
                 <div className="swiper-pagination"></div>
@@ -400,7 +367,7 @@ const page = () => {
       </section>
       {/* <!--/.testimonial-section--> */}
 
-      <section className="team-section padding">
+      {/* <section className="team-section padding">
         <div className="container">
           <div className="section-heading text-center mb-40">
             <h4>
@@ -468,7 +435,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <!--/.team-section--> */}
 
       <section className="cta-section padding">
