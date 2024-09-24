@@ -4,9 +4,37 @@ import Link from "next/link";
 import blogs from "../../../components/common/data/blog.json";
 import Locationicon from "../../../components/common/icon/Locationicon";
 import BookingForm from "./BookingForm";
+import serviceDetailData from "../../../components/common/data/blogDetails.json";
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
+  const testimonials = [
+    {
+      quote:
+        "MM Taxi helps bridge the gap in areas where transportation is scarce. However, there is still room for improvement, particularly in enhancing the app's accessibility features. The service is reliable, but user experience can be further optimized for convenience.",
+      authorName: "Muhammad",
+      authorLastName: "Ajmal",
+      authorImage: "/assets/img/ajmal.png",
+      service: "Taxi",
+      // serviceImage: "/assets/img/ajmal.jpg",
+    },
+    {
+      quote:
+        "For many, finding a ride was always a challenge, but MM Taxi has made it much easier. Still, improving the app's usability, especially for users with large font settings, would be beneficial.",
+      authorName: "Muhammad",
+      authorLastName: "Arslan",
+      authorImage: "/assets/img/arslan.jpg",
+    },
+
+    {
+      quote:
+        "In locations where taxis were once hard to come by, MM Taxi has made transportation much more convenient. The app could improve, though, by offering more options for accessibility settings.",
+      authorName: "Muhammad",
+      authorLastName: "Faizan",
+      authorImage: "/assets/img/faizan.jpg",
+    },
+  ];
+
   const locations = [
     {
       name: "Jeddah Airport ⟶ Makkah Hotel",
@@ -101,6 +129,38 @@ const HomePage = () => {
     //   luggage: 20,
     //   image: "/assets/img/pricing-car-5.png",
     // },
+  ];
+  const sliderCard = [
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
+    {
+      src: "/assets/img/service-1.jpg",
+    },
   ];
   return (
     <React.Fragment>
@@ -470,145 +530,36 @@ const HomePage = () => {
             <div className="swiper-outside">
               <div className="service-carousel">
                 <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div
-                      className="service-item wow fade-in-bottom"
-                      data-wow-delay="200ms"
-                    >
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-1.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
+                  {serviceDetailData.map((service, index) => (
+                    <div key={index} className="swiper-slide">
+                      <div
+                        className="service-item wow fade-in-bottom"
+                        data-wow-delay="200ms"
+                      >
+                        <div className="service-thumb">
+                          <img src={service.imgSrc} alt={service.title} />
+                          <div className="service-shape-wrap">
+                            <div className="service-shape"></div>
+                          </div>
+                          <div className="service-car">
+                            <img src="/assets/img/car-1.png" alt="car" />
+                          </div>
                         </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
+                        <div className="service-content">
+                          <h3>
+                            <a href={service.detailsLink}>{service.title}</a>
+                          </h3>
+                          <p className="truncate">{service.description}</p>
+                          <Link
+                            className="read-more"
+                            href={`/company/services-details/${service.slug}`}
+                          >
+                            Read More
+                          </Link>
                         </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Regular Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service offers reliable regular transport,
-                          ensuring consistent and comfortable rides for your
-                          daily needs.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
                       </div>
                     </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div
-                      className="service-item wow fade-in-bottom"
-                      data-wow-delay="400ms"
-                    >
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-2.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Airport Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service offers reliable and punctual airport
-                          transportation, ensuring you reach your destination
-                          comfortably and on time.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div
-                      className="service-item wow fade-in-bottom"
-                      data-wow-delay="600ms"
-                    >
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-3.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Luggage Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service offers secure and efficient luggage
-                          transport, ensuring your belongings arrive safely and
-                          on time.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="service-item">
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-4.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">City Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service provides reliable city transport,
-                          ensuring smooth and convenient travel throughout the
-                          city.
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="service-item">
-                      <div className="service-thumb">
-                        <img src="/assets/img/service-5.jpg" alt="img" />
-                        <div className="service-shape-wrap">
-                          <div className="service-shape" />
-                        </div>
-                        <div className="service-car">
-                          <img src="/assets/img/car-1.png" alt="car" />
-                        </div>
-                      </div>
-                      <div className="service-content">
-                        <h3>
-                          <a href="service-details.html">Business Transport</a>
-                        </h3>
-                        <p>
-                          MM Taxi Service – Everything You Need for Reliable
-                          Umrah & Hajj Transportation! Designed for Taxi Service
-                          Excellence!
-                        </p>
-                        <a className="read-more" href="service-details.html">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
                 <div className="swiper-pagination" />
                 {/* Carousel Dots */}
@@ -1035,84 +986,31 @@ const HomePage = () => {
                 <div className="swiper-outside testi-pagination">
                   <div className="testimonial-carousel">
                     <div className="swiper-wrapper">
-                      <div className="swiper-slide">
-                        <div className="testi-item">
-                          <div className="quote-icon">
-                            <i className="las la-quote-right"></i>
-                          </div>
-                          <p>
-                            Good to have transportation available in places and
-                            times it is otherwise hard to find, but the app has
-                            always been a bit difficult to use especially how it
-                            works or doesnt with large font phone settings.
-                          </p>
-                          <div className="testi-author">
-                            <div className="author-thumb">
-                              <img
-                                src="/assets/img/comment-1.jpg"
-                                alt="author"
-                              />
+                      {testimonials.map((testimonial, index) => (
+                        <div key={index} className="swiper-slide">
+                          <div className="testi-item">
+                            <div className="quote-icon">
+                              <i className="las la-quote-right"></i>
                             </div>
-                            <div className="author-info">
-                              <h3>
-                                Eredrik Johanson <span>Financial .INC</span>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="swiper-slide">
-                        <div className="testi-item">
-                          <div className="quote-icon">
-                            <i className="las la-quote-right"></i>
-                          </div>
-                          <p>
-                            Good to have transportation available in places and
-                            times it is otherwise hard to find, but the app has
-                            always been a bit difficult to use especially how it
-                            works or doesnt with large font phone settings.
-                          </p>
-                          <div className="testi-author">
-                            <div className="author-thumb">
-                              <img
-                                src="/assets/img/comment-1.jpg"
-                                alt="author"
-                              />
-                            </div>
-                            <div className="author-info">
-                              <h3>
-                                Eredrik Johanson <span>Financial .INC</span>
-                              </h3>
+                            <p className="truncate">{testimonial.quote}</p>
+                            <div className="testi-author">
+                              <div className="author-thumb ">
+                                <img
+                                  src={testimonial.authorImage}
+                                  alt="author"
+                                  height={100}
+                                />
+                              </div>
+                              <div className="author-info">
+                                <h3>
+                                  {testimonial.authorName}{" "}
+                                  <span>{testimonial.authorLastName}</span>
+                                </h3>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="swiper-slide">
-                        <div className="testi-item">
-                          <div className="quote-icon">
-                            <i className="las la-quote-right"></i>
-                          </div>
-                          <p>
-                            Good to have transportation available in places and
-                            times it is otherwise hard to find, but the app has
-                            always been a bit difficult to use especially how it
-                            works or doesnt with large font phone settings.
-                          </p>
-                          <div className="testi-author">
-                            <div className="author-thumb">
-                              <img
-                                src="/assets/img/comment-1.jpg"
-                                alt="author"
-                              />
-                            </div>
-                            <div className="author-info">
-                              <h3>
-                                Eredrik Johanson <span>Financial .INC</span>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      ))}
                     </div>
                   </div>
                   <div className="swiper-pagination"></div>

@@ -20,6 +20,8 @@ const BookingForm = () => {
   const [formMessage, setFormMessage] = useState("");
 
   const handleChange = (e) => {
+    console.log(e.target.name, "name");
+
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -28,6 +30,7 @@ const BookingForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData, "formDataformDataformData");
 
     const completeFormData = {
       ...formData,
@@ -58,6 +61,7 @@ const BookingForm = () => {
       setIsLoading(false);
     }
   };
+  console.log(formData, "formData");
 
   return (
     <section className="booking-section ">

@@ -34,7 +34,7 @@ const page = () => {
       name: "Toyota HIACE",
       passengers: 11,
       luggage: 16,
-      image: "/assets/img/pricing-car-4.png",
+      image: "/assets/img/toyotahiace.png",
     },
     {
       name: "Coaster Saloon",
@@ -48,6 +48,7 @@ const page = () => {
     <div>
       <DynamicScriptsLoader />
       <Banner title="OUR DRIVERS!" />
+
       <section className="our-taxi padding">
         <div className="container">
           <div className="row">
@@ -81,7 +82,10 @@ const page = () => {
                       Passengers: <span>{item.passengers} Person</span>
                     </li>
                     <li>
-                      <Link href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`} className="default-btn">
+                      <Link
+                        href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
+                        className="default-btn"
+                      >
                         Book Taxi Now
                       </Link>
                     </li>
