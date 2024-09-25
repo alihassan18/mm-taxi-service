@@ -32,6 +32,9 @@ const BookARide = () => {
         rideDate: '',
         rideTime: '',
     });
+    console.log(formData, 'formDataformData');
+
+
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
@@ -45,8 +48,8 @@ const BookARide = () => {
 
             setFormData(prevState => ({
                 ...prevState,
-                packageType: vehicle ? vehicle.value : '',
-                passengers: passenger ? passenger.passengers : ''
+                packageType: vehicle ? vehicle.value : formData.packageType,
+                passengers: passenger ? passenger.passengers : formData.passengers
             }));
         }
     }, []);
@@ -171,9 +174,9 @@ const BookARide = () => {
                     />
                 </div>
                 <div className="form-field">
-                    <i className="las la-calendar"></i>
+                    {/* <i className="las la-calendar"></i> */}
                     <input
-                        type="text"
+                        type="date"
                         id="ride-date"
                         name="rideDate"
                         className="form-control date-picker"
@@ -184,9 +187,9 @@ const BookARide = () => {
                     />
                 </div>
                 <div className="form-field">
-                    <i className="las la-clock"></i>
+                    {/* <i className="las la-clock"></i> */}
                     <input
-                        type="text"
+                        type="time"
                         id="ride-time"
                         name="rideTime"
                         className="form-control time-picker"

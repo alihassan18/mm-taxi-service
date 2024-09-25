@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import blogs from "../../../components/common/data/blog.json";
 import Link from "next/link";
