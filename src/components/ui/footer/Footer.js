@@ -15,7 +15,7 @@ function Footer() {
                     </a>
                     <p>
                       MM Taxi Service handles trips of all complexities,
-                      provide long-term offering long-term reliability for Umrah and Hajj.
+                      providing long-term reliability for Umrah and Hajj.
                     </p>
                   </div>
                 </div>
@@ -32,33 +32,35 @@ function Footer() {
             </div>
           </div>
         </div>
-        {/*/.footer-top-wrap*/}
-        {/*/.footer-top-wrap*/}
+
+        {/* Footer Middle Wrap */}
         <div className="footer-mid-wrap">
           <div className="container">
             <div className="row">
-              <div className="col-lg-3 col-md-6 sm-padding">
+              {/* Working Hours */}
+              <div className="col-lg-3 col-sm-6 col-6 sm-padding">
                 <div className="footer-item">
                   <div className="widget-title">
                     <h3>Working Hours</h3>
                   </div>
                   <ul className="footer-contact">
                     <li>
-                      <span>Monday - Friday:</span>9.00am To 8.00pm
+                      <span>Monday - Friday:</span> 9.00am To 8.00pm
                     </li>
                     <li>
-                      <span>Saturday:</span>10.00am To 7.30pm
+                      <span>Saturday:</span> 10.00am To 7.30pm
                     </li>
                     <li>
-                      <span>Sunday:</span>Close Day!
+                      <span>Sunday:</span> Close Day!
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 sm-padding">
+              {/* Useful Links */}
+              <div className="col-lg-3 col-sm-6 col-6 sm-padding ">
                 <div className="footer-item footer-list">
                   <div className="widget-title">
-                    <h3>Usefull Links</h3>
+                    <h3>Useful Links</h3>
                   </div>
                   <ul className="footer-links">
                     <li>
@@ -79,23 +81,24 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 sm-padding">
+              {/* Head Office */}
+              <div className="col-lg-3 col-sm-12 sm-padding ">
                 <div className="footer-item">
                   <div className="widget-title">
                     <h3>Head Office</h3>
                   </div>
                   <ul className="footer-contact">
                     <li>
-                      <span>Location:</span>Makkah Al Mukarma kingdom saudi
-                      Arabia
+                      <span>Location:</span> Makkah Al Mukarma, Saudi Arabia
                     </li>
                     <li>
-                      <span>Join Us:</span>mmtaxiservice95@gmail.com
+                      <span>Join Us:</span> mmtaxiservice95@gmail.com
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 sm-padding">
+              {/* Newsletter Signup */}
+              <div className="col-lg-3 col-sm-12 sm-padding">
                 <div className="footer-item subscribe-wrap">
                   <div className="widget-title">
                     <h3>Newsletter Signup</h3>
@@ -108,11 +111,6 @@ function Footer() {
                       placeholder="Your Email"
                       required=""
                     />
-                    <input
-                      type="hidden"
-                      name="action"
-                      defaultValue="mailchimpsubscribe"
-                    />
                     <button className="submit">Subscribe Now</button>
                     <div className="clearfix" />
                     <div id="subscribe-result">
@@ -124,13 +122,9 @@ function Footer() {
               </div>
             </div>
           </div>
-          <div className="running-taxi">
-            <div className="taxi" />
-            <div className="taxi-2" />
-            <div className="taxi-3" />
-          </div>
         </div>
 
+        {/* Copyright Section */}
         <div className="copyright-wrap">
           <div className="container">
             <p>
@@ -138,7 +132,13 @@ function Footer() {
             </p>
           </div>
         </div>
-        <a href="https://wa.me/+966595783153" target="_blank">
+
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/+966595783153"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="whatsapp-button" id="whatsapp-button">
             <img
               src="/assets/img/WSimages-removebg-preview.png"

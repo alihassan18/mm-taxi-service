@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
@@ -199,9 +200,15 @@ const BookingForm = () => {
                         Loading....
                       </button>
                     ) : (
-                      <button id="submit" className="default-btn" type="submit">
-                        Book Your Taxi
-                      </button>
+                      <Link href={"/company/book-a-ride"}>
+                        <button
+                          id="submit"
+                          className="default-btn"
+                          type="submit"
+                        >
+                          Book Your Taxi
+                        </button>
+                      </Link>
                     )}
                   </div>
                 </div>
