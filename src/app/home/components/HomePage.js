@@ -485,11 +485,7 @@ const HomePage = () => {
                     />
                     <div className="owner">
                       <h4>Founder - CEO</h4>
-                      <img
-                        className="signature"
-                        src="/assets/img/signature.png"
-                        alt="signature"
-                      />
+                      <span>Sanaullah</span>
                     </div>
                   </li>
                   <li>
