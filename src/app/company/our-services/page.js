@@ -154,9 +154,11 @@ const page = () => {
               <div className="cta-content">
                 <h4>MM Taxi Services!</h4>
                 <h2>Feel your journey with MM!</h2>
-                <a href="book-taxi.html" className="default-btn">
-                  Book a Taxi
-                </a>
+                <Link href={"/company/book-a-ride"}>
+                  <p href="book-taxi.html" className="default-btn">
+                    Book a Taxi
+                  </p>
+                </Link>
               </div>
             </div>
             <div className="col-lg-5">

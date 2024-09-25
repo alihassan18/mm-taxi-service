@@ -2374,3 +2374,8 @@ textarea:-ms-input-placeholder {
     left: -200px;
   }
 }
+
+@media (max-width: 400px) {
+  .col-xs-6 {
+  }
+}
