@@ -61,7 +61,7 @@ const page = () => {
                         src={item.image || "/assets/img/pricing-car-2.png"}
                         alt="car"
                       />
-                      <div className="price">$2.50/km</div>
+                      {/* <div className="price">$2.50/km</div> */}
                     </div>
                   </div>
                   <div className="pricing-head">
@@ -73,7 +73,7 @@ const page = () => {
                   </div>
                   <ul className="pricing-list">
                     <li>
-                      Initial Charge: <span>$2.50</span>
+                      Initial Charge: <span>Negotiable</span>
                     </li>
                     <li>
                       Luggage: <span>{item.luggage}</span>

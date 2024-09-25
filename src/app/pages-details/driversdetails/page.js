@@ -35,11 +35,7 @@ function page() {
                   />
                   <div className="owner">
                     <h4>Founder - CEO</h4>
-                    <img
-                      className="signature"
-                      src="/assets/img/signature.png"
-                      alt="signature"
-                    />
+                    <p>Sanaullah</p>
                   </div>
                 </li>
                 <li>
