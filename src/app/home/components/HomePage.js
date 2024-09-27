@@ -1115,7 +1115,7 @@ const HomePage = () => {
                 reliability for Umrah and Hajj.
               </p>
             </div>
-            <div className="row grid-post">
+            <div className="">
               <div className="row">
                 {blogs.slice(0, 3).map((post, index) => (
                   <div className="col-lg-4 col-md-6 padding-15" key={index}>
@@ -1146,7 +1146,7 @@ const HomePage = () => {
                               {post.title}
                             </Link>
                           </h3>
-                          <p>{post.description}</p>
+                          <p className="truncate">{post.description}</p>
                           <Link
                             href={`/blog/${post.slug}`}
                             className="read-more"

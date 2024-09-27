@@ -117,7 +117,7 @@ const page = () => {
           <div className="row">
             {serviceDetailData.map((service, index) => (
               <div key={index} className="col-lg-4 col-sm-6 padding-15">
-                <div className="service-item ">
+                <div className="service-item">
                   <div className="service-thumb">
                     <img src={service.imgSrc} alt={service.title} />
                     <div className="service-shape-wrap ">
@@ -200,11 +200,11 @@ const page = () => {
             </p>
           </div>
           {/* <!--/.section-heading--> */}
-          <div className="row grid-post ">
+          <div className="">
             <div className="row ">
               {blogs.slice(0, 3).map((post, index) => (
-                <div className="col-lg-4  col-md-6 padding-15 bd" key={index}>
-                  <div className="post-card ">
+                <div className="col-lg-4 col-md-6 padding-15 " key={index}>
+                  <div className="post-card">
                     <div className="post-thumb">
                       <img src={post.imgSrc} alt="post" />
                       <a href="blog-details.html" className="post-category">
@@ -231,7 +231,7 @@ const page = () => {
                             {post.title}
                           </Link>
                         </h3>
-                        <p>{post.description}</p>
+                        <p className="truncate">{post.description}</p>
                         <Link href={`/blog/${post.slug}`} className="read-more">
                           Read More
                         </Link>
