@@ -117,7 +117,7 @@ const page = () => {
           <div className="row">
             {serviceDetailData.map((service, index) => (
               <div key={index} className="col-lg-4 col-sm-6 padding-15">
-                <div className="service-item">
+                <div className="service-item ">
                   <div className="service-thumb">
                     <img src={service.imgSrc} alt={service.title} />
                     <div className="service-shape-wrap ">
@@ -147,7 +147,7 @@ const page = () => {
       </section>
       {/* <!--/.service-section--> */}
 
-      <section className="cta-section-2 padding">
+      <section className="cta-section-2 padding ">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4">
@@ -186,7 +186,7 @@ const page = () => {
       </section>
       {/* <!--/.cta-section--> */}
 
-      <section className="blog-section bg-grey padding">
+      <section className="blog-section bg-grey padding ">
         <div className="container">
           <div className="section-heading text-center mb-40">
             <h4>
@@ -200,11 +200,11 @@ const page = () => {
             </p>
           </div>
           {/* <!--/.section-heading--> */}
-          <div className="row grid-post">
-            <div className="row">
+          <div className="row grid-post ">
+            <div className="row ">
               {blogs.slice(0, 3).map((post, index) => (
-                <div className="col-lg-4 col-md-6 padding-15" key={index}>
-                  <div className="post-card">
+                <div className="col-lg-4  col-md-6 padding-15 bd" key={index}>
+                  <div className="post-card ">
                     <div className="post-thumb">
                       <img src={post.imgSrc} alt="post" />
                       <a href="blog-details.html" className="post-category">
