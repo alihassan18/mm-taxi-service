@@ -116,12 +116,12 @@ function page() {
                     </p>
                     <ul className="social-icon">
                       <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=61557116788383">
                           <i className="lab la-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://x.com/MMTaxiService">
                           <i className="lab la-twitter"></i>
                         </a>
                       </li>

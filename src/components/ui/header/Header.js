@@ -457,7 +457,7 @@ function Header() {
                 <ul className="header-social-share">
                   <li>
                     <Link
-                      href="https://www.facebook.com/share/p/oNtAg4rV9TA665Aw/?mibextid=qi2Omg"
+                      href="https://www.facebook.com/profile.php?id=61557116788383"
                       target="_blank"
                     >
                       <i className="fab fa-facebook-f"></i>
@@ -466,7 +466,7 @@ function Header() {
 
                   <li>
                     <Link
-                      href="https://www.twitter.com/@MM Taxi Service"
+                      href="https://x.com/MMTaxiService"
                       target="_blank"
                     >
                       <i className="fab fa-twitter"></i>
