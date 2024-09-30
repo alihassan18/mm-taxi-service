@@ -147,16 +147,18 @@ const page = () => {
       </section>
       {/* <!--/.service-section--> */}
 
-      <section className="cta-section-2 padding">
+      <section className="cta-section-2 padding ">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-4">
               <div className="cta-content">
                 <h4>MM Taxi Services!</h4>
                 <h2>Feel your journey with MM!</h2>
-                <a href="book-taxi.html" className="default-btn">
-                  Book a Taxi
-                </a>
+                <Link href={"/company/book-a-ride"}>
+                  <p href="book-taxi.html" className="default-btn">
+                    Book a Taxi
+                  </p>
+                </Link>
               </div>
             </div>
             <div className="col-lg-5">
@@ -184,7 +186,7 @@ const page = () => {
       </section>
       {/* <!--/.cta-section--> */}
 
-      <section className="blog-section bg-grey padding">
+      <section className="blog-section bg-grey padding ">
         <div className="container">
           <div className="section-heading text-center mb-40">
             <h4>
@@ -198,10 +200,10 @@ const page = () => {
             </p>
           </div>
           {/* <!--/.section-heading--> */}
-          <div className="row grid-post">
-            <div className="row">
+          <div className="">
+            <div className="row ">
               {blogs.slice(0, 3).map((post, index) => (
-                <div className="col-lg-4 col-md-6 padding-15" key={index}>
+                <div className="col-lg-4 col-md-6 padding-15 " key={index}>
                   <div className="post-card">
                     <div className="post-thumb">
                       <img src={post.imgSrc} alt="post" />
@@ -229,7 +231,7 @@ const page = () => {
                             {post.title}
                           </Link>
                         </h3>
-                        <p>{post.description}</p>
+                        <p className="truncate">{post.description}</p>
                         <Link href={`/blog/${post.slug}`} className="read-more">
                           Read More
                         </Link>

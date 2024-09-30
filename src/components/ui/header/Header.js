@@ -538,25 +538,45 @@ function Header() {
           <div className="container">
             <div className="nav-menu-inner">
               <div className="site-logo">
-                <a href="index.html">
+                <Link href="/">
                   <img src="/assets/img/logo-dark.png" alt="Logo" />
-                </a>
+                </Link>
               </div>
               <div className="header-menu-wrap">
-                <ul className={`nav-menu ${isMdOrAbove ? "" : "hide-on-mobile"}`}>
+                <ul
+                  className={`nav-menu ${isMdOrAbove ? "" : "hide-on-mobile"}`}
+                >
                   <li className={isPathActive("/") ? "active" : ""}>
                     <Link href="/">Home</Link>
                   </li>
-                  <li className={isPathActive("/company/our-services") ? "active" : ""}>
+                  <li
+                    className={
+                      isPathActive("/company/our-services") ? "active" : ""
+                    }
+                  >
                     <Link href="/company/our-services">Services</Link>
                   </li>
-                  <li className={isPathActive("/company/about-us") ? "active" : ""}>
+                  <li
+                    className={
+                      isPathActive("/company/about-us") ? "active" : ""
+                    }
+                  >
                     <Link href="/company/about-us">About Us</Link>
                   </li>
-                  <li className={isPathActive("/our-taxi/taxi-lists") ? "active" : ""}>
+                  <li
+                    className={
+                      isPathActive("/our-taxi/taxi-lists") ? "active" : ""
+                    }
+                  >
                     <Link href="/our-taxi/taxi-lists">Taxi Lists</Link>
                   </li>
-                  <li className={isDropdownActive(["/routes"]) ? "active dropdown_menu" : "dropdown_menu"}>
+                  <li
+                    className={
+                      isDropdownActive(["/routes"])
+                        ? "active dropdown_menu"
+                        : "dropdown_menu"
+                    }
+                  >
                     <Link href="/routes">Routes</Link>
                   </li>
                   <li className={isPathActive("/contact") ? "active" : ""}>
@@ -576,7 +596,9 @@ function Header() {
 
               {/* Mobile Menu Icon */}
               <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-                <div className={`burger-menu ${isMobileMenuOpen ? "open" : ""}`}>
+                <div
+                  className={`burger-menu ${isMobileMenuOpen ? "open" : ""}`}
+                >
                   <div className="line-menu line-half first-line"></div>
                   <div className="line-menu"></div>
                   <div className="line-menu line-half last-line"></div>
@@ -588,25 +610,55 @@ function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="container" >
+          <div className="container">
             <ul className="mobile-nav">
               <li className={isPathActive("/") ? "active" : ""}>
-                <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+                <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                  Home
+                </Link>
               </li>
-              <li className={isPathActive("/company/our-services") ? "active" : ""}>
-                <Link href="/company/our-services" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+              <li
+                className={
+                  isPathActive("/company/our-services") ? "active" : ""
+                }
+              >
+                <Link
+                  href="/company/our-services"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Services
+                </Link>
               </li>
               <li className={isPathActive("/company/about-us") ? "active" : ""}>
-                <Link href="/company/about-us" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
+                <Link
+                  href="/company/about-us"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About Us
+                </Link>
               </li>
-              <li className={isPathActive("/our-taxi/taxi-lists") ? "active" : ""}>
-                <Link href="/our-taxi/taxi-lists" onClick={() => setIsMobileMenuOpen(false)}>Taxi Lists</Link>
+              <li
+                className={isPathActive("/our-taxi/taxi-lists") ? "active" : ""}
+              >
+                <Link
+                  href="/our-taxi/taxi-lists"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Taxi Lists
+                </Link>
               </li>
               <li className={isDropdownActive(["/routes"]) ? "active" : ""}>
-                <Link href="/routes" onClick={() => setIsMobileMenuOpen(false)}>Routes</Link>
+                <Link href="/routes" onClick={() => setIsMobileMenuOpen(false)}>
+                  Routes
+                </Link>
               </li>
               <li className={isPathActive("/contact") ? "active" : ""}>
-                <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+                <Link
+                  href="/contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
