@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../../../components/common/banner/Banner";
-import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
+import Banner from "../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 
 function page() {
   return (
@@ -21,7 +21,7 @@ function page() {
                 <p>
                   At MM Taxi Service, we specialize in providing reliable and
                   efficient transportation for Umrah and Hajj pilgrims. Whether
-                  it's short trips or long journeys, we ensure a seamless and
+                  it&apos;s short trips or long journeys, we ensure a seamless and
                   comfortable experience. Our team is committed to delivering
                   top-quality service with modern vehicles, ensuring your travel
                   is smooth and stress-free. Trust us for safe, timely, and
@@ -394,7 +394,7 @@ export const metadata = {
     title: "About Us | MM Taxi Service",
     description:
       "Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.",
-    url: "https://www.mmtaxiservice.com/company/about-us",
+    url: "https://www.mmtaxiservice.com/about-us",
     siteName: "MM Taxi Service",
     type: "website",
     image: "https://www.mmtaxiservice.com/assets/img/logo-dark.png",

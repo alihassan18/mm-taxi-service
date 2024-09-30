@@ -142,9 +142,9 @@
 //                       <ul>
 //                         <li>
 //                           <Link
-//                             href="/company/about-us"
+//                             href="//about-us"
 //                             style={{
-//                               color: isPathActive("/company/about-us")
+//                               color: isPathActive("//about-us")
 //                                 ? activeLinkColor
 //                                 : "",
 //                             }}
@@ -154,9 +154,9 @@
 //                         </li>
 //                         <li>
 //                           <Link
-//                             href="/company/about-company"
+//                             href="//about-company"
 //                             style={{
-//                               color: isPathActive("/company/about-company")
+//                               color: isPathActive("//about-company")
 //                                 ? activeLinkColor
 //                                 : "",
 //                             }}
@@ -166,9 +166,9 @@
 //                         </li>
 //                         <li>
 //                           <Link
-//                             href="/company/our-services"
+//                             href="//our-services"
 //                             style={{
-//                               color: isPathActive("/company/our-services")
+//                               color: isPathActive("//our-services")
 //                                 ? activeLinkColor
 //                                 : "",
 //                             }}
@@ -178,9 +178,9 @@
 //                         </li>
 //                         <li>
 //                           <Link
-//                             href="/company/services-details"
+//                             href="/services-details"
 //                             style={{
-//                               color: isPathActive("/company/services-details")
+//                               color: isPathActive("/services-details")
 //                                 ? activeLinkColor
 //                                 : "",
 //                             }}
@@ -190,9 +190,9 @@
 //                         </li>
 //                         <li>
 //                           <Link
-//                             href="/company/book-a-ride"
+//                             href="/book-a-ride"
 //                             style={{
-//                               color: isPathActive("/company/book-a-ride")
+//                               color: isPathActive("//book-a-ride")
 //                                 ? activeLinkColor
 //                                 : "",
 //                             }}
@@ -240,17 +240,17 @@
 //                   </li> */}
 //                   <li
 //                     className={
-//                       isPathActive("/company/our-services") ? "active" : ""
+//                       isPathActive("/our-services") ? "active" : ""
 //                     }
 //                   >
-//                     <Link href="/company/our-services">Services</Link>
+//                     <Link href="/our-services">Services</Link>
 //                   </li>
 //                   <li
 //                     className={
-//                       isPathActive("/company/about-us") ? "active" : ""
+//                       isPathActive("/about-us") ? "active" : ""
 //                     }
 //                   >
-//                     <Link href="/company/about-us">About Us</Link>
+//                     <Link href="//about-us">About Us</Link>
 //                   </li>
 //                   <li
 //                     className={
@@ -387,7 +387,7 @@
 //                 <div className="sidebox-icon dl-sidebox-icon">
 //                   <i className="las la-bars"></i>
 //                 </div>
-//                 <Link href="/company/book-a-ride" className="menu-btn">
+//                 <Link href="/book-a-ride" className="menu-btn">
 //                   Book a Taxi
 //                 </Link>
 //               </div>
@@ -551,17 +551,17 @@ function Header() {
                   </li>
                   <li
                     className={
-                      isPathActive("/company/our-services") ? "active" : ""
+                      isPathActive("/our-services") ? "active" : ""
                     }
                   >
-                    <Link href="/company/our-services">Services</Link>
+                    <Link href="/our-services">Services</Link>
                   </li>
                   <li
                     className={
-                      isPathActive("/company/about-us") ? "active" : ""
+                      isPathActive("/about-us") ? "active" : ""
                     }
                   >
-                    <Link href="/company/about-us">About Us</Link>
+                    <Link href="/about-us">About Us</Link>
                   </li>
                   <li
                     className={
@@ -589,7 +589,7 @@ function Header() {
                 <div className="sidebox-icon dl-sidebox-icon">
                   <i className="las la-bars"></i>
                 </div>
-                <Link href="/company/book-a-ride" className="menu-btn">
+                <Link href="/book-a-ride" className="menu-btn">
                   Book a Taxi
                 </Link>
               </div>
@@ -619,19 +619,19 @@ function Header() {
               </li>
               <li
                 className={
-                  isPathActive("/company/our-services") ? "active" : ""
+                  isPathActive("/our-services") ? "active" : ""
                 }
               >
                 <Link
-                  href="/company/our-services"
+                  href="/our-services"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Services
                 </Link>
               </li>
-              <li className={isPathActive("/company/about-us") ? "active" : ""}>
+              <li className={isPathActive("/about-us") ? "active" : ""}>
                 <Link
-                  href="/company/about-us"
+                  href="/about-us"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   About Us

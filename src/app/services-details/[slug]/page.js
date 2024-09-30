@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "../../../../components/common/banner/Banner";
-import DynamicScriptsLoader from "../../../../components/common/script/ScriptLoader";
-import serviceDetailData from "../../../../components/common/data/blogDetails.json";
+import Banner from "../../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
+import serviceDetailData from "../../../components/common/data/blogDetails.json";
 
 export async function generateStaticParams() {
   return serviceDetailData.map((post) => ({

@@ -64,7 +64,7 @@ function Footer() {
                   </div>
                   <ul className="footer-links">
                     <li>
-                      <a href="/company/book-a-ride">Taxi Booking</a>
+                      <a href="/book-a-ride">Taxi Booking</a>
                     </li>
                     <li>
                       <a href="/pages-details/help-and-faqs">Help Center</a>

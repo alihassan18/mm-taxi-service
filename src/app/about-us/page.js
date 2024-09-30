@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import blogs from "../../../components/common/data/blog.json";
+import blogs from "../../components/common/data/blog.json";
 import Link from "next/link";
-import serviceDetailData from "../../../components/common/data/blogDetails.json";
-import Banner from "../../../components/common/banner/Banner";
-import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
+import serviceDetailData from "../../components/common/data/blogDetails.json";
+import Banner from "../../components/common/banner/Banner";
+import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 
 const testimonials = [
   {
@@ -144,7 +144,7 @@ const page = () => {
                         <p className="truncate">{service.description}</p>
                         <Link
                           className="read-more"
-                          href={`/company/services-details/${service.slug}`}
+                          href={`//services-details/${service.slug}`}
                         >
                           Read More
                         </Link>
@@ -440,7 +440,7 @@ export const metadata = {
     title: "About Us | MM Taxi Service",
     description:
       "Learn more about MM Taxi Service, our mission, vision, and the team behind our trusted Umra taxi service in Saudi Arabia.",
-    url: "https://www.mmtaxiservice.com/company/about-us",
+    url: "https://www.mmtaxiservice.com//about-us",
     siteName: "MM Taxi Service",
     type: "website",
     image: "https://www.mmtaxiservice.com/assets/img/logo-dark.png",

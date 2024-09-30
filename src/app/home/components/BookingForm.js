@@ -200,7 +200,7 @@ const BookingForm = () => {
                         Loading....
                       </button>
                     ) : (
-                      <Link href={"/company/book-a-ride"}>
+                      <Link href={"/book-a-ride"}>
                         <button
                           id="submit"
                           className="default-btn"

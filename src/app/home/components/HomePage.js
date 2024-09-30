@@ -218,14 +218,15 @@ const HomePage = () => {
                       </div>
                       <div className="slider-caption big">
                         <div className="inner-layer">
-                          <div
+                          <h1
                             data-animation="fade-in-bottom"
                             data-delay="0.5s"
+                            style={{ color: "white" }}
                           >
                             Book your taxi from
                             <br />
                             anywhare today!
-                          </div>
+                          </h1>
                         </div>
                       </div>
                       <div className="slider-caption small">
@@ -243,7 +244,7 @@ const HomePage = () => {
                       </div>
                       <div className="slider-btn">
                         <Link
-                          href="/company/book-a-ride"
+                          href="/book-a-ride"
                           className="default-btn"
                           data-animation="fade-in-bottom"
                           data-delay="0.9s"
@@ -304,14 +305,15 @@ const HomePage = () => {
                       </div>
                       <div className="slider-caption big">
                         <div className="inner-layer">
-                          <div
+                          <h1
                             data-animation="fade-in-bottom"
                             data-delay="0.5s"
+                            style={{ color: "white" }}
                           >
                             Book your taxi from
                             <br />
                             anywhare today!
-                          </div>
+                          </h1>
                         </div>
                       </div>
                       <div className="slider-caption small">
@@ -329,7 +331,7 @@ const HomePage = () => {
                       </div>
                       <div className="slider-btn">
                         <Link
-                          href="/company/book-a-ride"
+                          href="/book-a-ride"
                           className="default-btn"
                           data-animation="fade-in-bottom"
                           data-delay="0.9s"
@@ -548,7 +550,7 @@ const HomePage = () => {
                           <p className="truncate">{service.description}</p>
                           <Link
                             className="read-more"
-                            href={`/company/services-details/${service.slug}`}
+                            href={`/services-details/${service.slug}`}
                           >
                             Read More
                           </Link>
@@ -635,7 +637,7 @@ const HomePage = () => {
                     4
                   </li>
                 </ul>
-                <Link href="/company/book-a-ride" className="default-btn mt-30">
+                <Link href="/book-a-ride" className="default-btn mt-30">
                   Book Your Ride
                 </Link>
               </div>
@@ -684,9 +686,9 @@ const HomePage = () => {
           <div className="container ">
             <div className="section-heading  ">
               <h4>
-                <span></span>Clients Testimonial
+                <span></span>Registered Vehicles
               </h4>
-              <h2 className="my-2">MM Passenger Reviews...</h2>
+              <h1 className="my-2">MM Vehicles List...</h1>
             </div>
             <div className="row">
               {vehicles.map((item, key) => (
@@ -718,7 +720,7 @@ const HomePage = () => {
                       </li>
                       <li>
                         <Link
-                          href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
+                          href={`/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
                           className="default-btn"
                         >
                           Book Taxi Now
@@ -973,7 +975,7 @@ const HomePage = () => {
                   <h4>
                     <span></span>Clients Testimonial
                   </h4>
-                  <h2>MM Passenger Reviews...</h2>
+                  <h1>MM Passenger Reviews...</h1>
                   <p>
                     MM Taxi Service handles trips of all complexities, provide
                     long-term guarantees and regularly master technologies.
@@ -1021,7 +1023,7 @@ const HomePage = () => {
                     <h4 className="white">
                       <span></span>Why Choose Us!
                     </h4>
-                    <h2 className="white">Why Ride with MM?</h2>
+                    <h1 className="!white" style={{ color: "white" }}>Why Ride with MM?</h1>
                     <p className="white">
                       MM Taxi Service handles trips of all complexities, provide
                       long-term guarantees and regularly master technologies.

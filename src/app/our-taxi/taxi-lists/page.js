@@ -83,7 +83,7 @@ const page = () => {
                     </li>
                     <li>
                       <Link
-                        href={`/company/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
+                        href={`/book-a-ride?name=${item?.name}&passengers=${item?.passengers}`}
                         className="default-btn"
                       >
                         Book Taxi Now
