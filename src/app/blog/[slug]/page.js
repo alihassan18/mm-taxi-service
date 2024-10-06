@@ -106,7 +106,7 @@ export async function generateStaticParams() {
 // };
 
 export function generateMetadata({ params, searchParams }) {
-  const { slug } = params
+  const { slug } = params;
   const currentIndex = postsData.findIndex(
     (post) =>
       post.slug === slug ||
@@ -130,7 +130,8 @@ export function generateMetadata({ params, searchParams }) {
       url: `https://www.mmtaxiservice.com/blog/${post.slug}`,
       siteName: "MM Taxi Service Blog",
       type: "article",
-      image: "https://www.mmtaxiservice.com" + post.postDetails.postThumb.imgSrc,
+      image:
+        "https://www.mmtaxiservice.com" + post.postDetails.postThumb.imgSrc,
       images: post.postDetails.galleryImages.map((imgSrc) => ({
         url: "https://www.mmtaxiservice.com" + imgSrc,
         width: 800,
