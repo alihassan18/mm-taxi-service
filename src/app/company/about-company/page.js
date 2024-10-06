@@ -38,7 +38,7 @@ function page() {
                   />
                   <div className="owner">
                     <h4>Founder - CEO</h4>
-                    <p>Sanaullah</p>
+                    <p>Samiullah</p>
                   </div>
                 </li>
                 <li>

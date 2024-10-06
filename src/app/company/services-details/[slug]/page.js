@@ -19,7 +19,7 @@ const page = ({ params, searchParams }) => {
   return (
     <div>
       <DynamicScriptsLoader />
-      <Banner title="SERVICES DETAILS!" />
+      <Banner title="SERVICES DETAILS!" description="Ajmal" />
       <section className="service-details bg-grey padding">
         <div className="container">
           <div className="row">

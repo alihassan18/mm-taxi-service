@@ -485,7 +485,7 @@ const HomePage = () => {
                     />
                     <div className="owner">
                       <h4>Founder - CEO</h4>
-                      <span>Sanaullah</span>
+                      <span>Samiullah</span>
                     </div>
                   </li>
                   <li>
