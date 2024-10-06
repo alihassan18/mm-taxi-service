@@ -487,7 +487,7 @@ const HomePage = () => {
                     />
                     <div className="owner">
                       <h4>Founder - CEO</h4>
-                      <span>Sanaullah</span>
+                      <span>Samiullah</span>
                     </div>
                   </li>
                   <li>
@@ -1023,7 +1023,9 @@ const HomePage = () => {
                     <h4 className="white">
                       <span></span>Why Choose Us!
                     </h4>
-                    <h1 className="!white" style={{ color: "white" }}>Why Ride with MM?</h1>
+                    <h1 className="!white" style={{ color: "white" }}>
+                      Why Ride with MM?
+                    </h1>
                     <p className="white">
                       MM Taxi Service handles trips of all complexities, provide
                       long-term guarantees and regularly master technologies.

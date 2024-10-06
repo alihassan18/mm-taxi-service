@@ -7,7 +7,13 @@ function page() {
   return (
     <div>
       <DynamicScriptsLoader />
-      <Banner title="OUR DRIVERS!" />
+      <Banner
+        title="taxi list"
+        headingLine1="Effortless Transportation Choices"
+        headingLine2=" For Every Type of Traveler"
+        descriptionLine1="Explore our range of taxi services that cater to individuals and groups alike."
+        descriptionLine2="We guarantee a pleasant and efficient ride, no matter the distance."
+      />
 
       <section className="team-section padding">
         <div className="container">
@@ -17,10 +23,9 @@ function page() {
             </h4>
             <h2>Our Expert Drivers</h2>
             <p>
-              MM Taxi Service handles trips of all complexities, offering long-term  <br />
+              MM Taxi Service handles trips of all complexities, offering
+              long-term <br />
               reliability for Umrah and Hajj.
-
-
             </p>
           </div>
           <div className="row">

@@ -34,7 +34,13 @@ const page = () => {
     <div>
       {/* <!--/.page-header--> */}
       <DynamicScriptsLoader />
-      <Banner title="ABOUT US!" />
+      <Banner
+        title="About Us"
+        headingLine1="Dedicated to Providing Safe"
+        headingLine2=" and Reliable Taxi Services"
+        descriptionLine1="At MM Taxi, we believe in connecting people with convenient and trustworthy"
+        descriptionLine2=" transportation, ensuring every ride is a memorable experience."
+      />
       <section className="about-section padding">
         <div className="container">
           <div className="row align-items-center">
@@ -84,7 +90,7 @@ const page = () => {
                   />
                   <div className="owner">
                     <h4>Founder - CEO</h4>
-                    <span>Sanaullah</span>
+                    <span>Samiullah</span>
                   </div>
                 </li>
                 <li>

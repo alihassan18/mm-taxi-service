@@ -9,12 +9,117 @@ export async function generateStaticParams() {
   }));
 }
 
-const page = ({ params, searchParams }) => {
+// export function generateMetadata({ params, searchParams }) {
+//   const { slug } = params;
+//   const currentIndex = serviceDetailData.findIndex(
+//     (post) =>
+//       post.slug === slug ||
+//       post?.postDetails?.tags?.some(
+//         (tag) => tag.replace(/\s+/g, "-") === slug
+//       ) ||
+//       post.category.replace(/\s+/g, "-").replace(/&/g, "-and-") === slug
+//   );
+//   const post = serviceDetailData[currentIndex];
+
+//   console.log(post, "post");
+
+//   return {
+//     title: `${post.title} | MM Taxi Service Blog`,
+//     description: post.description,
+//     keywords: post.keywords,
+//     author: "MM Taxi Service",
+//     robots: "index, follow",
+//     viewport: "width=device-width, initial-scale=1.0",
+//     openGraph: {
+//       title: `${post.title} | MM Taxi Service Blog`,
+//       description: post.description,
+//       url: `https://www.mmtaxiservice.com/blog/${post.slug}`,
+//       siteName: "MM Taxi Service Blog",
+//       type: "article",
+//       image:
+//         "https://www.mmtaxiservice.com" + post.postDetails.postThumb.imgSrc,
+//       images: post.postDetails.galleryImages.map((imgSrc) => ({
+//         url: "https://www.mmtaxiservice.com" + imgSrc,
+//         width: 800,
+//         height: 600,
+//         alt: "Image",
+//       })),
+//     },
+//     twitter: {
+//       card: "summary",
+//       title: `${post.postDetails.title} | MM Taxi Service Blog`,
+//       description: post.postDetails.description,
+//       image: post.postDetails.postThumb.imgSrc,
+//     },
+//     canonical: `https://www.mmtaxiservice.com/blog/${post.slug}`,
+//     favicon: "https://www.mmtaxiservice.com/favicon.ico",
+//     appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+//     msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
+//   };
+// }
+
+export function generateMetadata({ params, searchParams }) {
   const { slug } = params;
   const currentIndex = serviceDetailData.findIndex(
-    (post) => post.slug === slug
+    (service) => service.slug === slug
   );
   const post = serviceDetailData[currentIndex];
+
+  console.log(post, "post");
+
+  return {
+    title: `${post.serviceDetails.title} | MM Taxi Service`,
+    description: post.serviceDetails.paragraphs,
+    keywords: post.tags.join(", "),
+    author: "MM Taxi Service",
+    robots: "index, follow",
+    viewport: "width=device-width, initial-scale=1.0",
+    openGraph: {
+      title: `${post.title} | MM Taxi Service`,
+      description: post.description,
+      url: `https://www.mmtaxiservice.com/${post.slug}`,
+      siteName: "MM Taxi Service",
+      type: "article",
+      image: `https://www.mmtaxiservice.com${post.imgSrc}`,
+    },
+    twitter: {
+      card: "summary",
+      title: `${post.title} | MM Taxi Service`,
+      description: post.description,
+      image: post.imgSrc,
+    },
+    canonical: `https://www.mmtaxiservice.com/${post.slug}`,
+    favicon: "https://www.mmtaxiservice.com/favicon.ico",
+    appleTouchIcon: "https://www.mmtaxiservice.com/apple-touch-icon.png",
+    msApplicationTileImage: "https://www.mmtaxiservice.com/mstile-144x144.png",
+    alternates: {
+      canonical: `https://www.mmtaxiservice.com/services-details/${post.slug}`,
+    },
+  };
+}
+
+const page = ({ params }) => {
+  // const { slug } = params;
+  // const currentIndex = serviceDetailData.findIndex(
+  //   (post) => post.slug === slug
+  // );
+  // const post = serviceDetailData[currentIndex];
+
+  const { slug } = params;
+
+  const currentIndex = serviceDetailData.findIndex(
+    (service) => service.slug === slug
+  );
+
+  const post = serviceDetailData[currentIndex];
+
+  if (currentIndex === -1 || !post) {
+    notFound();
+  }
+
+  // Get previous and next post
+  // const prevPost = serviceDetailData[currentIndex - 1];
+  // const nextPost = serviceDetailData[currentIndex + 1];
 
   return (
     <div>
