@@ -41,17 +41,26 @@ function Footer() {
               <div className="col-lg-3 col-sm-6 col-6 sm-padding">
                 <div className="footer-item">
                   <div className="widget-title">
-                    <h3>Working Hours</h3>
+                    <h3>Quick Links</h3>
                   </div>
-                  <ul className="footer-contact">
+                  <ul className="footer-links">
                     <li>
-                      <span>Monday - Friday:</span> 9.00am To 8.00pm
+                      <a href="/">Home</a>
                     </li>
                     <li>
-                      <span>Saturday:</span> 10.00am To 7.30pm
+                      <a href="/company/our-services">Services</a>
                     </li>
                     <li>
-                      <span>Sunday:</span> Close Day!
+                      <a href="/company/about-us">About Us</a>
+                    </li>
+                    <li>
+                      <a href="/our-taxi/taxi-lists">Taxi List</a>
+                    </li>
+                    <li>
+                      <a href="/routes">Routes</a>
+                    </li>
+                    <li>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -60,23 +69,30 @@ function Footer() {
               <div className="col-lg-3 col-sm-6 col-6 sm-padding ">
                 <div className="footer-item footer-list">
                   <div className="widget-title">
-                    <h3>Useful Links</h3>
+                    <h3>Services</h3>
                   </div>
                   <ul className="footer-links">
                     <li>
-                      <a href="/book-a-ride">Taxi Booking</a>
+                      <a href="/services-details/role-of-makkah-and-madinah-in-hajj-and-umrah">
+                        Makkah Taxi
+                      </a>
                     </li>
                     <li>
-                      <a href="/pages-details/help-and-faqs">Help Center</a>
+                      <a href="/services-details/madina-taxi">Madina Taxi</a>
                     </li>
                     <li>
-                      <a href="about-us.html">Privacy and Policy</a>
+                      <a href="/services-details/jeddah-taxi">Jeddah Taxi</a>
                     </li>
                     <li>
-                      <a href="about-company.html">Terms of Use</a>
+                      <a href="/services-details/city-transport">
+                        City Transport
+                      </a>
                     </li>
                     <li>
-                      <a href="/contact">Contact Us</a>
+                      <a href="/services-details/riyadh-taxi">Riyadh Taxi</a>
+                    </li>
+                    <li>
+                      <a href="/services-details/dammam-taxi">Dammam Taxi</a>
                     </li>
                   </ul>
                 </div>

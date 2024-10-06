@@ -1,6 +1,12 @@
 import React from "react";
 
-const Banner = ({ title }) => {
+const Banner = ({
+  title,
+  headingLine1,
+  headingLine2,
+  descriptionLine1,
+  descriptionLine2,
+}) => {
   return (
     <div>
       <section className="page-header">
@@ -9,11 +15,14 @@ const Banner = ({ title }) => {
           <div className="page-header-info">
             <h4>{title}</h4>
             <h2>
-              Feel your journey <br /> with <span>MM!</span>
+              {headingLine1}
+              <br />
+              {headingLine2}
             </h2>
             <p>
-              Everything your taxi business <br />
-              needs is already here!
+              {descriptionLine1}
+              <br />
+              {descriptionLine2}
             </p>
           </div>
         </div>

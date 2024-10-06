@@ -111,7 +111,13 @@ const page = () => {
   return (
     <div>
       <DynamicScriptsLoader />
-      <Banner title="OUR SERVICES!" />
+      <Banner
+        title="OUR SERVICES!"
+        headingLine1="Affordable and Reliable"
+        headingLine2="Taxi Services at Your Fingertips"
+        descriptionLine1="Experience hassle-free travel with our professional drivers"
+        descriptionLine2="and a fleet of well-maintained vehicles designed for your comfort."
+      />
       <section className="service-section bg-grey bd-bottom padding">
         <div className="container">
           <div className="row">
