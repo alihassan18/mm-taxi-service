@@ -12,7 +12,7 @@ const testimonials = [
       "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
     authorName: "Muhammad",
     authorLastName: "Ajmal",
-    authorImage: "/assets/img/ajmal.png",
+    authorImage: "/assets/img/majmal.jpg",
   },
   {
     quote:

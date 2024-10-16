@@ -14,7 +14,7 @@ const HomePage = () => {
         "MM Taxi helps bridge the gap in areas where transportation is scarce. However, there is still room for improvement, particularly in enhancing the app's accessibility features. The service is reliable, but user experience can be further optimized for convenience.",
       authorName: "Muhammad",
       authorLastName: "Ajmal",
-      authorImage: "/assets/img/ajmal.png",
+      authorImage: "/assets/img/majmal.jpg",
       service: "Taxi",
       // serviceImage: "/assets/img/ajmal.jpg",
     },
