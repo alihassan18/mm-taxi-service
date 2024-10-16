@@ -33,6 +33,13 @@ const HomePage = () => {
       authorLastName: "Faizan",
       authorImage: "/assets/img/faizan.jpg",
     },
+    {
+      quote:
+        "In locations where taxis were once hard to come by, MM Taxi has made transportation much more convenient. The app could improve, though, by offering more options for accessibility settings.",
+      authorName: "Muhammad",
+      authorLastName: "Muzammal",
+      authorImage: "/assets/img/muzammal.jpg",
+    },
   ];
 
   const locations = [

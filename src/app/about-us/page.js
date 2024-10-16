@@ -28,6 +28,13 @@ const testimonials = [
     authorLastName: "Faizan",
     authorImage: "/assets/img/faizan.jpg",
   },
+  {
+    quote:
+      "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
+    authorName: "Muhammad",
+    authorLastName: "Muzammal",
+    authorImage: "/assets/img/muzammal.jpg",
+  },
 ];
 const page = () => {
   return (
