@@ -54,6 +54,9 @@ export const metadata = {
   favicon: 'https://www.mmtaxiservice.com/favicon.ico',
   appleTouchIcon: 'https://www.mmtaxiservice.com/apple-touch-icon.png',
   msApplicationTileImage: 'https://www.mmtaxiservice.com/mstile-144x144.png',
+  alternates: {
+    canonical: 'https://www.mmtaxiservice.com/book-a-ride',
+  },
 };
 
 
