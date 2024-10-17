@@ -124,7 +124,7 @@ const page = ({ params }) => {
   return (
     <div>
       <DynamicScriptsLoader />
-      <Banner title="SERVICES DETAILS!" />
+      <Banner title="SERVICES DETAILS!" headingLine1={post.title} descriptionLine1={post?.serviceDetails?.concludingParagraph} />
       <section className="service-details bg-grey padding">
         <div className="container">
           <div className="row">
