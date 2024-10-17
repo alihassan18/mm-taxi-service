@@ -550,7 +550,7 @@ const HomePage = () => {
                           <p className="truncate">{service.description}</p>
                           <Link
                             className="read-more"
-                            href={`/services-details/${service.slug}`}
+                            href={`/services/${service.slug}`}
                           >
                             Read More
                           </Link>

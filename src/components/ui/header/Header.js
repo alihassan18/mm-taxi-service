@@ -166,9 +166,9 @@
 //                         </li>
 //                         <li>
 //                           <Link
-//                             href="//our-services"
+//                             href="//services"
 //                             style={{
-//                               color: isPathActive("//our-services")
+//                               color: isPathActive("//services")
 //                                 ? activeLinkColor
 //                                 : "",
 //                             }}
@@ -178,9 +178,9 @@
 //                         </li>
 //                         <li>
 //                           <Link
-//                             href="/services-details"
+//                             href="/services"
 //                             style={{
-//                               color: isPathActive("/services-details")
+//                               color: isPathActive("/services")
 //                                 ? activeLinkColor
 //                                 : "",
 //                             }}
@@ -240,10 +240,10 @@
 //                   </li> */}
 //                   <li
 //                     className={
-//                       isPathActive("/our-services") ? "active" : ""
+//                       isPathActive("/services") ? "active" : ""
 //                     }
 //                   >
-//                     <Link href="/our-services">Services</Link>
+//                     <Link href="/services">Services</Link>
 //                   </li>
 //                   <li
 //                     className={
@@ -551,10 +551,10 @@ function Header() {
                   </li>
                   <li
                     className={
-                      isPathActive("/our-services") ? "active" : ""
+                      isPathActive("/services") ? "active" : ""
                     }
                   >
-                    <Link href="/our-services">Services</Link>
+                    <Link href="/services">Services</Link>
                   </li>
                   <li
                     className={
@@ -619,11 +619,11 @@ function Header() {
               </li>
               <li
                 className={
-                  isPathActive("/our-services") ? "active" : ""
+                  isPathActive("/services") ? "active" : ""
                 }
               >
                 <Link
-                  href="/our-services"
+                  href="/services"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Services

@@ -13,7 +13,7 @@ const servicesData = [
       "A company in Mecca, Saudi Arabia, that provides transportation services to both residents and visitors.",
     imgSrc: "/assets/img/service-1.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const servicesData = [
       "Operating as a taxi service in Medina, Saudi Arabia, we offer transportation services to both local residents and visitors.",
     imgSrc: "/assets/img/service-3.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const servicesData = [
       "A taxi service operates in Jeddah, Saudi Arabia, providing transportation services to both locals and tourists.",
     imgSrc: "/assets/img/jeddah.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const servicesData = [
       "MM Taxi Service provides reliable city transport, ensuring smooth and convenient travel throughout the city.",
     imgSrc: "/assets/img/service-4.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const servicesData = [
       "This taxi company's transportation services are accessible to both the city's residents and tourists in Riyadh, Saudi Arabia.",
     imgSrc: "/assets/img/riyadh.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const servicesData = [
       "This taxi service provides transportation to both residents and tourists in Dammam, Saudi Arabia, as part of its operations.",
     imgSrc: "/assets/img/dammim.webp",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const servicesData = [
       "ChaCha Taxi Service offers reliable Jeddah Airport taxi services for hassle-free transportation to and from the airport.",
     imgSrc: "/assets/img/jaddah-airport.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ const servicesData = [
       "ChaCha Taxi Service offers a dependable airport taxi service for convenient and comfortable transportation.",
     imgSrc: "/assets/img/riydah-airport.png",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 9,
@@ -85,7 +85,7 @@ const servicesData = [
       "ChaCha Taxi Service provides reliable and efficient Dammam Airport taxi service for a hassle-free transportation experience.",
     imgSrc: "/assets/img/dammam-airportjpg.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 10,
@@ -94,7 +94,7 @@ const servicesData = [
       "Enjoy a hassle-free transportation experience to and from Madina Airport with ChaCha Taxi Service's reliable airport taxi service.",
     imgSrc: "/assets/img/madina-airport.jpg",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
   {
     id: 11,
@@ -103,7 +103,7 @@ const servicesData = [
       "ChaCha Taxi Service offers a reliable and comfortable Taif Airport taxi service for convenient transportation to and from the airport.",
     imgSrc: "/assets/img/taif-airport.png",
     carImg: "/assets/img/car-1.png",
-    detailsLink: "/services-details", // Updated link
+    detailsLink: "/services", // Updated link
   },
 ];
 
@@ -134,7 +134,7 @@ const page = () => {
                     <p className="truncate">{service.description}</p>
                     <Link
                       className="read-more"
-                      href={`/services-details/${service.slug}`}
+                      href={`/services/${service.slug}`}
                     >
                       Read More
                     </Link>
@@ -266,7 +266,7 @@ export const metadata = {
     title: "Our Services | MM Taxi Service",
     description:
       "Explore the range of services offered by MM Taxi Service, including Umra taxi services, airport transfers, hotel transfers, and city tours in Saudi Arabia.",
-    url: "https://www.mmtaxiservice.com/our-services",
+    url: "https://www.mmtaxiservice.com/services",
     siteName: "MM Taxi Service",
     type: "website",
     image: "https://www.mmtaxiservice.com/assets/img/logo-dark.png",
