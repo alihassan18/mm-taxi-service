@@ -47,7 +47,13 @@ const page = () => {
   return (
     <div>
       <DynamicScriptsLoader />
-      <Banner title="OUR DRIVERS!" />
+      <Banner
+        title="taxi list"
+        headingLine1="Effortless Transportation Choices"
+        headingLine2=" For Every Type of Traveler"
+        descriptionLine1="Explore our range of taxi services that cater to individuals and groups alike."
+        descriptionLine2="We guarantee a pleasant and efficient ride, no matter the distance."
+      />
 
       <section className="our-taxi padding">
         <div className="container">

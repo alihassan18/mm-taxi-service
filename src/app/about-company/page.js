@@ -21,12 +21,12 @@ function page() {
                 <p>
                   At MM Taxi Service, we specialize in providing reliable and
                   efficient transportation for Umrah and Hajj pilgrims. Whether
-                  it&apos;s short trips or long journeys, we ensure a seamless and
-                  comfortable experience. Our team is committed to delivering
-                  top-quality service with modern vehicles, ensuring your travel
-                  is smooth and stress-free. Trust us for safe, timely, and
-                  professional transportation during your sacred journey. Book
-                  your Umrah or Hajj taxi from anywhere today!
+                  it&apos;s short trips or long journeys, we ensure a seamless
+                  and comfortable experience. Our team is committed to
+                  delivering top-quality service with modern vehicles, ensuring
+                  your travel is smooth and stress-free. Trust us for safe,
+                  timely, and professional transportation during your sacred
+                  journey. Book your Umrah or Hajj taxi from anywhere today!
                 </p>
               </div>
               <ul className="about-info">
@@ -38,7 +38,7 @@ function page() {
                   />
                   <div className="owner">
                     <h4>Founder - CEO</h4>
-                    <p>Sanaullah</p>
+                    <p>Samiullah</p>
                   </div>
                 </li>
                 <li>

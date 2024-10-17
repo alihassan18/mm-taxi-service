@@ -12,7 +12,7 @@ const testimonials = [
       "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
     authorName: "Muhammad",
     authorLastName: "Ajmal",
-    authorImage: "/assets/img/ajmal.png",
+    authorImage: "/assets/img/majmal.jpg",
   },
   {
     quote:
@@ -28,13 +28,26 @@ const testimonials = [
     authorLastName: "Faizan",
     authorImage: "/assets/img/faizan.jpg",
   },
+  {
+    quote:
+      "Good to have transportation available in places and times it is otherwise hard to find, but the app has always been a bit difficult to use especially how it works or doesn't with large font phone settings.",
+    authorName: "Muhammad",
+    authorLastName: "Muzammal",
+    authorImage: "/assets/img/muzammal.jpg",
+  },
 ];
 const page = () => {
   return (
     <div>
       {/* <!--/.page-header--> */}
       <DynamicScriptsLoader />
-      <Banner title="ABOUT US!" />
+      <Banner
+        title="About Us"
+        headingLine1="Dedicated to Providing Safe"
+        headingLine2=" and Reliable Taxi Services"
+        descriptionLine1="At MM Taxi, we believe in connecting people with convenient and trustworthy"
+        descriptionLine2=" transportation, ensuring every ride is a memorable experience."
+      />
       <section className="about-section padding">
         <div className="container">
           <div className="row align-items-center">
@@ -84,7 +97,7 @@ const page = () => {
                   />
                   <div className="owner">
                     <h4>Founder - CEO</h4>
-                    <span>Sanaullah</span>
+                    <span>Samiullah</span>
                   </div>
                 </li>
                 <li>

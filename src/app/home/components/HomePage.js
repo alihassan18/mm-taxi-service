@@ -14,7 +14,7 @@ const HomePage = () => {
         "MM Taxi helps bridge the gap in areas where transportation is scarce. However, there is still room for improvement, particularly in enhancing the app's accessibility features. The service is reliable, but user experience can be further optimized for convenience.",
       authorName: "Muhammad",
       authorLastName: "Ajmal",
-      authorImage: "/assets/img/ajmal.png",
+      authorImage: "/assets/img/majmal.jpg",
       service: "Taxi",
       // serviceImage: "/assets/img/ajmal.jpg",
     },
@@ -32,6 +32,13 @@ const HomePage = () => {
       authorName: "Muhammad",
       authorLastName: "Faizan",
       authorImage: "/assets/img/faizan.jpg",
+    },
+    {
+      quote:
+        "In locations where taxis were once hard to come by, MM Taxi has made transportation much more convenient. The app could improve, though, by offering more options for accessibility settings.",
+      authorName: "Muhammad",
+      authorLastName: "Muzammal",
+      authorImage: "/assets/img/muzammal.jpg",
     },
   ];
 
@@ -487,7 +494,7 @@ const HomePage = () => {
                     />
                     <div className="owner">
                       <h4>Founder - CEO</h4>
-                      <span>Sanaullah</span>
+                      <span>Samiullah</span>
                     </div>
                   </li>
                   <li>
@@ -1023,7 +1030,9 @@ const HomePage = () => {
                     <h4 className="white">
                       <span></span>Why Choose Us!
                     </h4>
-                    <h1 className="!white" style={{ color: "white" }}>Why Ride with MM?</h1>
+                    <h1 className="!white" style={{ color: "white" }}>
+                      Why Ride with MM?
+                    </h1>
                     <p className="white">
                       MM Taxi Service handles trips of all complexities, provide
                       long-term guarantees and regularly master technologies.
