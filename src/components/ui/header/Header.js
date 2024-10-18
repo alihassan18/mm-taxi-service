@@ -474,7 +474,7 @@ function Header() {
                   </li>
                   <li>
                     <Link
-                      href="https://www.instagram.com/mmtaxiservice?igsh=d2piMGp2NnpsbTMw "
+                      href="https://www.instagram.com/mmtaxiservice "
                       target="_blank"
                     >
                       <i className="fab fa-instagram"></i>
