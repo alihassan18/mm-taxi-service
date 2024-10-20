@@ -330,3 +330,21 @@ section {
   -webkit-line-clamp: 3; /* Number of lines to show */
   overflow: hidden;
 }
+
+.icon-list {
+  display: flex;
+  gap: 10px; /* Add space between icons */
+  list-style: none;
+  padding: 0;
+}
+
+.icon-list li {
+  background-color: #198754;
+  border-radius: 50%; /* Makes the background round */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Icon color */
+  font-size: 24px; /* Adjust icon size */
+}
