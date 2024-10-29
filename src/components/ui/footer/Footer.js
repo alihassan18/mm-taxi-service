@@ -49,6 +49,7 @@ function Footer() {
                   <div className="widget-title">
                     <h3>Quick Links</h3>
                   </div>
+
                   <ul className="footer-links">
                     <li>
                       <a href="/">Home</a>
