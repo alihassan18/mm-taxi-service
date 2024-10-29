@@ -19,8 +19,8 @@ import Header from "../components/ui/header/Header";
 import Footer from "../components/ui/footer/Footer";
 import Script from "next/script";
 import Head from "next/head";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import DynamicScriptsLoader from "../components/common/script/ScriptLoader";
 
 {
@@ -44,10 +44,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'MM Taxi Service',
-  description: 'Reliable Umra taxi service in Saudi Arabia',
+  title: "MM Taxi Service",
+  description: "Reliable Umra taxi service in Saudi Arabia",
 };
-
 
 export default function RootLayout({ children }) {
   return (
@@ -63,12 +62,10 @@ export default function RootLayout({ children }) {
             src="https://www.googletagmanager.com/ns.html?id=GTM-WPHGK9HC"
             height="0"
             width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
-
-
 
         <Header />
         {children}
@@ -81,8 +78,8 @@ export default function RootLayout({ children }) {
               </a>
             </div>
             <p>
-              MM Taxi Service – Everything You Need for Reliable Umrah & Hajj Transportation!
-              Designed for Taxi Service Excellence!
+              MM Taxi Service – Everything You Need for Reliable Umrah & Hajj
+              Transportation! Designed for Taxi Service Excellence!
             </p>
             <ul className="sidebox-list">
               <li className="call">
@@ -100,7 +97,7 @@ export default function RootLayout({ children }) {
 
         <div id="sidebox-overlay"></div>
         {/* Google Tag Manager */}
-        <Script
+        {/* <Script
           id="google-tag-manager"
           dangerouslySetInnerHTML={{
             __html: `
@@ -111,9 +108,24 @@ export default function RootLayout({ children }) {
               })(window,document,'script','dataLayer','GTM-WPHGK9HC');
             `,
           }}
+        /> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z3S7HC18S7"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Z3S7HC18S7', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
         />
         {/* End Google Tag Manager */}
-
 
         <Script
           id="google-schema"
@@ -206,7 +218,6 @@ export default function RootLayout({ children }) {
         <Script src="/assets/js/book-ride.js"></Script>
         <Script src="/assets/js/main.js"></Script> */}
       </body>
-
     </html>
   );
 }

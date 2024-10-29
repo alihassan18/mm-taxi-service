@@ -54,10 +54,10 @@ function Footer() {
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="/company/our-services">Services</a>
+                      <a href="/our-services">Services</a>
                     </li>
                     <li>
-                      <a href="/company/about-us">About Us</a>
+                      <a href="/about-us">About Us</a>
                     </li>
                     <li>
                       <a href="/our-taxi/taxi-lists">Taxi List</a>
@@ -157,7 +157,7 @@ function Footer() {
                     </li>
                   </ul>
                   <ul className="footer-contact">
-                    <li>Privacy Policy</li>
+                    {/* <li>Privacy Policy</li> */}
                   </ul>
                 </div>
               </div>
