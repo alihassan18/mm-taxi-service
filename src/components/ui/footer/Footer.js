@@ -54,7 +54,7 @@ function Footer() {
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="/our-services">Services</a>
+                      <a href="/services">Services</a>
                     </li>
                     <li>
                       <a href="/about-us">About Us</a>
@@ -79,26 +79,24 @@ function Footer() {
                   </div>
                   <ul className="footer-links">
                     <li>
-                      <a href="/services-details/role-of-makkah-and-madinah-in-hajj-and-umrah">
+                      <a href="/services/role-of-makkah-and-madinah-in-hajj-and-umrah">
                         Makkah Taxi
                       </a>
                     </li>
                     <li>
-                      <a href="/services-details/madina-taxi">Madina Taxi</a>
+                      <a href="/services/madina-taxi">Madina Taxi</a>
                     </li>
                     <li>
-                      <a href="/services-details/jeddah-taxi">Jeddah Taxi</a>
+                      <a href="/services/jeddah-taxi">Jeddah Taxi</a>
                     </li>
                     <li>
-                      <a href="/services-details/city-transport">
-                        City Transport
-                      </a>
+                      <a href="/services/city-transport">City Transport</a>
                     </li>
                     <li>
-                      <a href="/services-details/riyadh-taxi">Riyadh Taxi</a>
+                      <a href="/services/riyadh-taxi">Riyadh Taxi</a>
                     </li>
                     <li>
-                      <a href="/services-details/dammam-taxi">Dammam Taxi</a>
+                      <a href="/services/dammam-taxi">Dammam Taxi</a>
                     </li>
                   </ul>
                 </div>
