@@ -1,4 +1,10 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoFacebook } from "react-icons/io5";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { RiInstagramFill } from "react-icons/ri";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -48,10 +54,10 @@ function Footer() {
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href="/company/our-services">Services</a>
+                      <a href="/services">Services</a>
                     </li>
                     <li>
-                      <a href="/company/about-us">About Us</a>
+                      <a href="/about-us">About Us</a>
                     </li>
                     <li>
                       <a href="/our-taxi/taxi-lists">Taxi List</a>
@@ -73,26 +79,24 @@ function Footer() {
                   </div>
                   <ul className="footer-links">
                     <li>
-                      <a href="/services-details/role-of-makkah-and-madinah-in-hajj-and-umrah">
+                      <a href="/services/role-of-makkah-and-madinah-in-hajj-and-umrah">
                         Makkah Taxi
                       </a>
                     </li>
                     <li>
-                      <a href="/services-details/madina-taxi">Madina Taxi</a>
+                      <a href="/services/madina-taxi">Madina Taxi</a>
                     </li>
                     <li>
-                      <a href="/services-details/jeddah-taxi">Jeddah Taxi</a>
+                      <a href="/services/jeddah-taxi">Jeddah Taxi</a>
                     </li>
                     <li>
-                      <a href="/services-details/city-transport">
-                        City Transport
-                      </a>
+                      <a href="/services/city-transport">City Transport</a>
                     </li>
                     <li>
-                      <a href="/services-details/riyadh-taxi">Riyadh Taxi</a>
+                      <a href="/services/riyadh-taxi">Riyadh Taxi</a>
                     </li>
                     <li>
-                      <a href="/services-details/dammam-taxi">Dammam Taxi</a>
+                      <a href="/services/dammam-taxi">Dammam Taxi</a>
                     </li>
                   </ul>
                 </div>
@@ -117,23 +121,42 @@ function Footer() {
               <div className="col-lg-3 col-sm-12 sm-padding">
                 <div className="footer-item subscribe-wrap">
                   <div className="widget-title">
-                    <h3>Newsletter Signup</h3>
+                    <h3>Follow Us</h3>
                   </div>
-                  <form action="#" className="subscribe-form">
-                    <input
-                      className="form-control"
-                      type="email"
-                      name="email"
-                      placeholder="Your Email"
-                      required=""
-                    />
-                    <button className="submit">Subscribe Now</button>
-                    <div className="clearfix" />
-                    <div id="subscribe-result">
-                      <div className="subscription-success" />
-                      <div className="subscription-error" />
-                    </div>
-                  </form>
+                  <ul class="icon-list">
+                    <li>
+                      <Link
+                        href="https://www.linkedin.com/in/mmtaxiservice"
+                        target="_blank"
+                      >
+                        <IoLogoLinkedin />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="https://www.facebook.com/profile.php?id=61557116788383"
+                        target="_blank"
+                      >
+                        <IoLogoFacebook />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="https://x.com/MMTaxiService" target="_blank">
+                        <AiFillTwitterCircle />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="https://www.instagram.com/mmtaxiservice?igsh=d2piMGp2NnpsbTMw "
+                        target="_blank"
+                      >
+                        <RiInstagramFill />
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul className="footer-contact">
+                    {/* <li>Privacy Policy</li> */}
+                  </ul>
                 </div>
               </div>
             </div>
