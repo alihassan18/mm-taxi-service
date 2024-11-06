@@ -49,24 +49,43 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const GTM_ID = 'G-Z3S7HC18S7';
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ToastContainer />
-        {/* <DynamicScriptsLoader /> */}
+      <head>
+        <Script
+          src="/assets/js/vendor/jquary-3.6.0.min.js"
+          // strategy="lazyOnload"
+          strategy="beforeInteractive"
+        ></Script>
+        {/* Google Tag Manager */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','${GTM_ID}');
+            `,
+          }}
+        />
+      </head>
 
-        {/* <!-- Google Tag Manager (noscript) --> */}
+      <body className={inter.className}>
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            title="google tag manager"
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WPHGK9HC"
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
         </noscript>
-        {/* <!-- End Google Tag Manager (noscript) --> */}
 
+        <ToastContainer />
         <Header />
         {children}
         <Footer />
@@ -96,36 +115,7 @@ export default function RootLayout({ children }) {
         </div>
 
         <div id="sidebox-overlay"></div>
-        {/* Google Tag Manager */}
-        {/* <Script
-          id="google-tag-manager"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-WPHGK9HC');
-            `,
-          }}
-        /> */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-Z3S7HC18S7"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-Z3S7HC18S7', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
-        {/* End Google Tag Manager */}
+
 
         <Script
           id="google-schema"
@@ -181,42 +171,6 @@ export default function RootLayout({ children }) {
           `,
           }}
         />
-
-        <Script
-          src="/assets/js/vendor/jquary-3.6.0.min.js"
-          // strategy="lazyOnload"
-          strategy="beforeInteractive"
-        ></Script>
-        {/* <Script src="/assets/js/vendor/swiper.min.js"></Script> */}
-        {/* <Script src="/assets/js/main.js"></Script> */}
-
-        {/* <Script
-          src="/assets/js/vendor/jquary-3.6.0.min.js"
-          // strategy="lazyOnload"
-          strategy="beforeInteractive"
-        ></Script>
-        <Script
-          src="/assets/js/vendor/bootstrap.min.js"
-          // strategy="lazyOnload"
-          strategy="afterInteractive"
-        ></Script>
-        <Script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></Script>
-        <Script
-          src="/assets/js/vendor/jquery.ajaxchimp.min.js"
-          strategy="afterInteractive"
-        ></Script>
-        <Script src="/assets/js/vendor/popper.min.js"></Script>
-        <Script src="/assets/js/vendor/swiper.min.js"></Script>
-        <Script
-          src="/assets/js/vendor/jquery.datetimepicker.full.js"
-          strategy="afterInteractive"
-        ></Script>
-        <Script src="/assets/js/vendor/jquery.nice-select.min.js"></Script>
-        <Script src="/assets/js/vendor/venobox.min.js"></Script>
-        <Script src="/assets/js/vendor/smooth-scroll.js"></Script>
-        <Script src="/assets/js/vendor/wow.min.js"></Script>
-        <Script src="/assets/js/book-ride.js"></Script>
-        <Script src="/assets/js/main.js"></Script> */}
       </body>
     </html>
   );
