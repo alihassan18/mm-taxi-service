@@ -465,10 +465,7 @@ function Header() {
                   </li>
 
                   <li>
-                    <Link
-                      href="https://x.com/MMTaxiService"
-                      target="_blank"
-                    >
+                    <Link href="https://x.com/MMTaxiService" target="_blank">
                       <i className="fab fa-twitter"></i>
                     </Link>
                   </li>
@@ -549,18 +546,10 @@ function Header() {
                   <li className={isPathActive("/") ? "active" : ""}>
                     <Link href="/">Home</Link>
                   </li>
-                  <li
-                    className={
-                      isPathActive("/our-services") ? "active" : ""
-                    }
-                  >
+                  <li className={isPathActive("/our-services") ? "active" : ""}>
                     <Link href="/our-services">Services</Link>
                   </li>
-                  <li
-                    className={
-                      isPathActive("/about-us") ? "active" : ""
-                    }
-                  >
+                  <li className={isPathActive("/about-us") ? "active" : ""}>
                     <Link href="/about-us">About Us</Link>
                   </li>
                   <li
@@ -617,11 +606,7 @@ function Header() {
                   Home
                 </Link>
               </li>
-              <li
-                className={
-                  isPathActive("/our-services") ? "active" : ""
-                }
-              >
+              <li className={isPathActive("/our-services") ? "active" : ""}>
                 <Link
                   href="/our-services"
                   onClick={() => setIsMobileMenuOpen(false)}

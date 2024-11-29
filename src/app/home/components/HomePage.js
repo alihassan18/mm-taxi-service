@@ -6,6 +6,7 @@ import Locationicon from "../../../components/common/icon/Locationicon";
 import BookingForm from "./BookingForm";
 import serviceDetailData from "../../../components/common/data/blogDetails.json";
 import DynamicScriptsLoader from "../../../components/common/script/ScriptLoader";
+import ImageComponent from "../../../components/common/ImageComponent";
 // import OurTaxi from "@/components/common/ourtaxi/page";
 const HomePage = () => {
   const testimonials = [
@@ -178,10 +179,18 @@ const HomePage = () => {
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className="slider-img">
-                  <img
+                  {/* <img
                     src="/assets/img/slider-bg.jpg"
                     alt="img"
                     className="kenburns"
+                    style={{ animationDuration: "12000ms" }}
+                  /> */}
+                  <ImageComponent
+                    src={"/assets/img/slider-bg.jpg"}
+                    alt="img"
+                    className="kenburns"
+                    fill
+                    figClassName=""
                     style={{ animationDuration: "12000ms" }}
                   />
                 </div>
@@ -265,19 +274,34 @@ const HomePage = () => {
               </div>
               <div className="swiper-slide">
                 <div className="slider-img">
-                  <img
+                  {/* <img
                     src="/assets/img/slider-bg.jpg"
                     alt="img"
                     className="kenburns"
                     style={{ animationDuration: "12000ms" }}
+                  /> */}
+                  <ImageComponent
+                    src={"/assets/img/slider-bg.jpg"}
+                    alt="img"
+                    className="kenburns"
+                    fill
+                    figClassName=""
+                    style={{ animationDuration: "12000ms" }}
                   />
                 </div>
                 <div className="car-holder">
-                  <img
+                  {/* <img
                     src="/assets/img/car-1.png"
                     alt="car"
                     data-animation="car-animation"
                     data-duration="1.5s"
+                  /> */}
+                  <ImageComponent
+                    src={"/assets/img/car-1.png"}
+                    alt="car"
+                    fill
+                    figClassName=""
+                    style={{ animationDuration: "12000ms" }}
                   />
                   <div className="shape">
                     <div

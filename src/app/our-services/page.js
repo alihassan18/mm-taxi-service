@@ -4,6 +4,7 @@ import DynamicScriptsLoader from "../../components/common/script/ScriptLoader";
 import blogs from "../../components/common/data/blog.json";
 import Link from "next/link";
 import serviceDetailData from "../../components/common/data/blogDetails.json";
+import ImageComponent from "../../components/common/ImageComponent";
 
 const servicesData = [
   {
@@ -125,12 +126,28 @@ const page = () => {
               <div key={index} className="col-lg-4 col-sm-6 padding-15">
                 <div className="service-item">
                   <div className="service-thumb">
-                    <img src={service.imgSrc} alt={service.title} />
+                    <img
+                      src={service.imgSrc}
+                      alt={service.title}
+                      className=""
+                    />
+                    {/* <ImageComponent
+                      src={service.imgSrc}
+                      alt={service.title}
+                      fill
+                      figClassName=""
+                    /> */}
                     <div className="service-shape-wrap ">
                       <div className="service-shape"></div>
                     </div>
                     <div className="service-car">
                       <img src={"/assets/img/car-1.png"} alt="car" />
+                      {/* <ImageComponent
+                        src={"/assets/img/car-1.png"}
+                        alt="car"
+                        fill
+                        figClassName=""
+                      /> */}
                     </div>
                   </div>
                   <div className="service-content">
